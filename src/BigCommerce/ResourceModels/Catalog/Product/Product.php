@@ -66,7 +66,7 @@ class Product extends ResourceModel
     public string $date_created;
     public string $date_modified;
     public int $view_count;
-    public ?string $preorder_release_date;
+    public ?object $preorder_release_date;
     public string $preorder_message;
     public bool $is_preorder_only;
     public bool $is_price_hidden;

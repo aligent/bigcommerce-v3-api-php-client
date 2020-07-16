@@ -9,6 +9,12 @@ use GuzzleHttp\Middleware;
 
 class Client
 {
+    const DEFAULT_HANDLER      = 'handler';
+    const DEFAULT_BASE_URI     = 'base_uri';
+    const DEFAULT_HEADERS      = 'headers';
+    const HEADERS__AUTH_CLIENT = 'X-Auth-Client';
+    const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
+    const API_URI              = 'https://api.bigcommerce.com/stores/%s/v3/';
 
     private string $storeHash;
 
@@ -22,28 +28,31 @@ class Client
 
     private array $debugContainer = [];
 
-    public function __construct(string $storeHash, string $clientId, string $accessToken)
+    public function __construct(string $storeHash,
+                                string $clientId,
+                                string $accessToken,
+                                ?\GuzzleHttp\Client $client = null)
     {
         $this->storeHash    = $storeHash;
         $this->clientId     = $clientId;
         $this->accessToken  = $accessToken;
-        $this->setBaseUri("https://api.bigcommerce.com/stores/$this->storeHash/v3/");
+        $this->setBaseUri(sprintf(self::API_URI, $this->storeHash));
 
-        $this->client = $this->buildHttpClient();
+        $this->client = $client ?? $this->buildDefaultHttpClient();
     }
 
-    private function buildHttpClient() : \GuzzleHttp\Client
+    private function buildDefaultHttpClient() : \GuzzleHttp\Client
     {
         $history = Middleware::history($this->debugContainer);
         $stack   = HandlerStack::create();
         $stack->push($history);
 
         return new \GuzzleHttp\Client([
-            'handler' => $stack,
-            'base_uri' => $this->getBaseUri(),
-            'headers' => [
-                'X-Auth-Client' => $this->clientId,
-                'X-Auth-Token'  => $this->accessToken,
+            self::DEFAULT_HANDLER  => $stack,
+            self::DEFAULT_BASE_URI => $this->getBaseUri(),
+            self::DEFAULT_HEADERS  => [
+                self::HEADERS__AUTH_CLIENT => $this->clientId,
+                self::HEADERS__AUTH_TOKEN  => $this->accessToken,
             ],
         ]);
     }
@@ -61,6 +70,11 @@ class Client
     public function getRestClient(): \GuzzleHttp\Client
     {
         return $this->client;
+    }
+
+    public function setRestClient(\GuzzleHttp\Client $client): void
+    {
+        $this->client = $client;
     }
 
     public function printDebug()

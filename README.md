@@ -1,4 +1,5 @@
 # BigCommerce V3 Api Library
+
 ## Introduction
 
 ## Getting Started
@@ -7,8 +8,7 @@
 
 ## Still To Do
 
-- include license
-- add composer json
-- move to github
-- document apis that are missed
-- test 
+- Packagist / Versions
+- Document apis that are still to be implemented
+- Test coverage and build
+- Documentation
