@@ -1,0 +1,22 @@
+{
+    "name": "aligent/bigcommerce-api-client",
+    "description": "API client for BigCommerce",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*",
+        "ext-mysqli": "*"
+    },
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Jarrod Swift",
+            "email": "jarrod.swift@aligent.com.au"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BigCommerce\\ApiV3\\": "src/BigCommerce/"
+        }
+    }
+}
