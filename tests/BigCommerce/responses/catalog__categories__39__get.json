@@ -1,0 +1,25 @@
+{
+  "data": {
+    "id": 39,
+    "parent_id": 19,
+    "name": "Bath",
+    "description": "",
+    "views": 0,
+    "sort_order": 0,
+    "page_title": "",
+    "meta_keywords": [
+      ""
+    ],
+    "meta_description": "",
+    "layout_file": "category.html",
+    "image_url": "",
+    "is_visible": true,
+    "search_keywords": "",
+    "default_product_sort": "use_store_settings",
+    "custom_url": {
+      "url": "/garden/bath/",
+      "is_customized": false
+    }
+  },
+  "meta": {}
+}

@@ -1,0 +1,148 @@
+{
+  "data": [
+    {
+      "id": 19,
+      "parent_id": 0,
+      "name": "Garden",
+      "description": "<p>This is the garden description</p>",
+      "views": 0,
+      "sort_order": 2,
+      "page_title": "page title",
+      "meta_keywords": [
+        "meta keyword"
+      ],
+      "meta_description": "meta description",
+      "layout_file": "category.html",
+      "image_url": "",
+      "is_visible": true,
+      "search_keywords": "search keywords",
+      "default_product_sort": "use_store_settings",
+      "custom_url": {
+        "url": "/garden/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 20,
+      "parent_id": 0,
+      "name": "Publications",
+      "description": "",
+      "views": 0,
+      "sort_order": 4,
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "layout_file": "category_with_facets.html",
+      "image_url": "",
+      "is_visible": true,
+      "search_keywords": "",
+      "default_product_sort": "use_store_settings",
+      "custom_url": {
+        "url": "/publications/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 21,
+      "parent_id": 0,
+      "name": "Kitchen",
+      "description": "",
+      "views": 0,
+      "sort_order": 3,
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "layout_file": "category_with_facets.html",
+      "image_url": "",
+      "is_visible": true,
+      "search_keywords": "",
+      "default_product_sort": "use_store_settings",
+      "custom_url": {
+        "url": "/kitchen/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 22,
+      "parent_id": 0,
+      "name": "Utility",
+      "description": "",
+      "views": 0,
+      "sort_order": 5,
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "layout_file": "category_with_facets.html",
+      "image_url": "",
+      "is_visible": true,
+      "search_keywords": "",
+      "default_product_sort": "use_store_settings",
+      "custom_url": {
+        "url": "/utility/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 23,
+      "parent_id": 0,
+      "name": "Shop All",
+      "description": "",
+      "views": 0,
+      "sort_order": 0,
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "layout_file": "category_with_facets.html",
+      "image_url": "",
+      "is_visible": true,
+      "search_keywords": "",
+      "default_product_sort": "use_store_settings",
+      "custom_url": {
+        "url": "/shop-all/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 39,
+      "parent_id": 19,
+      "name": "Bath",
+      "description": "",
+      "views": 0,
+      "sort_order": 0,
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "layout_file": "category.html",
+      "image_url": "",
+      "is_visible": true,
+      "search_keywords": "",
+      "default_product_sort": "use_store_settings",
+      "custom_url": {
+        "url": "/garden/bath/",
+        "is_customized": false
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 6,
+      "count": 6,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}
