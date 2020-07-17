@@ -16,12 +16,12 @@ class ProductVariant extends ResourceModel
     public ?float $calculated_price;
     public ?float $sale_price;
     public ?float $retail_price;
-    public float $weight;
-    public float $width;
-    public float $height;
-    public float $depth;
+    public ?float $weight;
+    public ?float $width;
+    public ?float $height;
+    public ?float $depth;
     public bool $is_free_shipping;
-    public float $fixed_cost_shipping_price;
+    public ?float $fixed_cost_shipping_price;
     public bool $purchasing_disabled;
     public string  $purchasing_disabled_message;
     public string $image_url;
