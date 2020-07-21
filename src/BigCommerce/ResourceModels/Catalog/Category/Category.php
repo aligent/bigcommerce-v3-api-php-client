@@ -16,7 +16,7 @@ class Category extends ResourceModel
     public int $sort_order;
     public string $page_title;
     public array $meta_keywords;
-    public string $meta_description;
+    public ?string $meta_description;
     public string $layout_file;
     public string $image_url;
     public bool $is_visible;
