@@ -9,6 +9,10 @@ use PHPUnit\Framework\TestCase;
 
 abstract class BigCommerceApiTest extends TestCase
 {
+    const EMPTY_RESPONSE = 'blank.json';
+    const REQUESTS_PATH  = __DIR__.'/requests/';
+    const RESPONSES_PATH = __DIR__.'/responses/';
+
     private const API_STORE_HASH    = 'HASH';
     private const API_CLIENT_ID     = 'ID';
     private const API_ACCESS_TOKEN  = "TOKEN";
@@ -32,7 +36,7 @@ abstract class BigCommerceApiTest extends TestCase
     protected function setReturnData(string $filename, int $statusCode = 200, array $headers = []): void
     {
         $mock = new MockHandler([
-            new Response($statusCode, $headers, file_get_contents(__DIR__ . '/responses/' .$filename)),
+            new Response($statusCode, $headers, file_get_contents(self::RESPONSES_PATH . $filename)),
         ]);
 
         $client = new \GuzzleHttp\Client(['handler' => HandlerStack::create($mock)]);

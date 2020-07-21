@@ -5,6 +5,7 @@ namespace BigCommerce\ApiV3\Catalog;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
 use BigCommerce\ApiV3\ResponseModels\CategoriesResponse;
 use BigCommerce\ApiV3\ResponseModels\CategoryResponse;
@@ -14,6 +15,11 @@ class CategoriesApi extends ResourceApi
     const RESOURCE_NAME       = 'categories';
     const CATEGORIES_ENDPOINT = 'catalog/categories';
     const CATEGORY_ENDPOINT   = 'catalog/categories/%d';
+
+    public function image(): CategoryImageApi
+    {
+        return new CategoryImageApi($this->getClient(), null, $this->getResourceId());
+    }
 
     public function get(): CategoryResponse
     {

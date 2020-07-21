@@ -3,7 +3,8 @@
     "description": "API client for BigCommerce",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-json": "*"
     },
     "license": "GPL-3.0-only",
     "authors": [
