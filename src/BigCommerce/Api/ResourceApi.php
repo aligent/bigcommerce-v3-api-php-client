@@ -89,7 +89,7 @@ abstract class ResourceApi
         return $this->getClient()->getRestClient()->delete($this->singleResourceUrl());
     }
 
-    private function singleResourceUrl(): string
+    protected function singleResourceUrl(): string
     {
         if (is_null($this->resourceId)) {
             throw new UnexpectedValueException("A {$this->resourceName()} id must be to be set");
@@ -102,7 +102,7 @@ abstract class ResourceApi
         );
     }
 
-    private function multipleResourceUrl(): string
+    protected function multipleResourceUrl(): string
     {
         return sprintf($this->multipleResourcesEndpoint(), $this->getParentResourceId());
     }

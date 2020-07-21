@@ -19,18 +19,18 @@ class CategoryImageApi extends ResourceApi
 
     protected function multipleResourcesEndpoint(): string
     {
-        throw new UnexpectedValueException(__CLASS__ . 'does not support multiple resource endpoints');
+        return self::CATEGORY_IMAGE_ENDPOINT;
     }
 
     protected function resourceName(): string
     {
-        self::RESOURCE_NAME;
+        return self::RESOURCE_NAME;
     }
 
     public function create(string $filename): string
     {
         $response = $this->getClient()->getRestClient()->post(
-            $this->singleResourceEndpoint(),
+            $this->multipleResourceUrl(),
             [
                 RequestOptions::MULTIPART => [
                     ['name' => 'image_file', 'contents'  => fopen($filename, 'r')]
