@@ -1,0 +1,39 @@
+{
+  "data": {
+    "id": 384,
+    "product_id": 192,
+    "sku": "SMIT-2",
+    "sku_id": 350,
+    "price": null,
+    "calculated_price": 25,
+    "sale_price": null,
+    "retail_price": null,
+    "map_price": null,
+    "weight": null,
+    "calculated_weight": 1,
+    "width": null,
+    "height": null,
+    "depth": null,
+    "is_free_shipping": false,
+    "fixed_cost_shipping_price": null,
+    "purchasing_disabled": false,
+    "purchasing_disabled_message": "",
+    "image_url": "",
+    "cost_price": null,
+    "upc": "",
+    "mpn": "",
+    "gtin": "",
+    "inventory_level": 0,
+    "inventory_warning_level": 0,
+    "bin_picking_number": "",
+    "option_values": [
+      {
+        "id": 176,
+        "label": "Black",
+        "option_id": 220,
+        "option_display_name": "Color"
+      }
+    ]
+  },
+  "meta": null
+}
