@@ -13,14 +13,14 @@ class CategoriesApiTest extends BigCommerceApiTest
         $this->assertEquals($expectedCategoryId, $categoryApi->getResourceId());
     }
 
-    public function testCanGetCategories(): void
+    public function testCanGetCategory(): void
     {
         $this->setReturnData('catalog__categories__39__get.json');
         $categoryResponse = $this->getApi()->catalog()->category(39)->get();
         $this->assertEquals(39, $categoryResponse->getCategory()->id);
     }
 
-    public function testCanGetCategory(): void
+    public function testCanGetCategories(): void
     {
         $this->setReturnData('catalog__categories__get_all.json');
         $categoriesResponse = $this->getApi()->catalog()->categories()->getAll();
@@ -33,5 +33,13 @@ class CategoriesApiTest extends BigCommerceApiTest
         $imageApi = $this->getApi()->catalog()->category(123)->image();
         $this->assertInstanceOf(CategoryImageApi::class, $imageApi);
         $this->assertEquals(123, $imageApi->getParentResourceId());
+    }
+
+    public function testCanGetAllCategoryPages(): void
+    {
+        $this->setReturnData('catalog__categories__get_all.json');
+        $categoriesResponse = $this->getApi()->catalog()->categories()->getAllPages();
+        $this->assertEquals(6, $categoriesResponse->getPagination()->total);
+        $this->assertCount(6, $categoriesResponse->getCategories());
     }
 }

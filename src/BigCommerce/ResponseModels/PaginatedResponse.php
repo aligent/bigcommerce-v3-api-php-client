@@ -23,9 +23,6 @@ abstract class PaginatedResponse
         $this->pagination = new Pagination($rawData->meta->pagination);
     }
 
-    /**
-     * @return Pagination
-     */
     public function getPagination(): Pagination
     {
         return $this->pagination;

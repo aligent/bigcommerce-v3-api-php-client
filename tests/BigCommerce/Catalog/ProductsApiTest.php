@@ -31,4 +31,12 @@ final class ProductsApiTest extends BigCommerceApiTest
         $productResponse = $this->getApi()->catalog()->product(174)->get();
         $this->assertEquals(174, $productResponse->getProduct()->id);
     }
+
+    public function testCanGetAllPagesForProducts(): void
+    {
+        $this->setReturnData('catalog__products__get_all.json');
+
+        $productsResponse = $this->getApi()->catalog()->products()->getAllPages();
+        $this->assertEquals(2, $productsResponse->getPagination()->total);
+    }
 }

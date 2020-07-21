@@ -31,6 +31,13 @@ class CategoriesApi extends ResourceApi
         return new CategoriesResponse($this->getAllResources($filters, $page, $limit));
     }
 
+    public function getAllPages(array $filter = []): CategoriesResponse
+    {
+        return CategoriesResponse::BuildFromAllPages(function($page) use ($filter) {
+            return $this->getAllResources($filter, $page, 200);
+        });
+    }
+
     public function create(Category $category): CategoryResponse
     {
         return new CategoryResponse($this->createResource($category));
