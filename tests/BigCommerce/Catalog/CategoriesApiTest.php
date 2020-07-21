@@ -1,6 +1,7 @@
 <?php
 namespace BigCommerce\Tests\Catalog;
 
+use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class CategoriesApiTest extends BigCommerceApiTest
@@ -27,4 +28,10 @@ class CategoriesApiTest extends BigCommerceApiTest
         $this->assertCount(6, $categoriesResponse->getCategories());
     }
 
+    public function testCanGetImageApi(): void
+    {
+        $imageApi = $this->getApi()->catalog()->category(123)->image();
+        $this->assertInstanceOf(CategoryImageApi::class, $imageApi);
+        $this->assertEquals(123, $imageApi->getParentResourceId());
+    }
 }
