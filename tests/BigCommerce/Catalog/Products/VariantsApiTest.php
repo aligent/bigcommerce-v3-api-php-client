@@ -1,7 +1,9 @@
 <?php
+namespace BigCommerce\Tests\Catalog\Products;
 
+use BigCommerce\Tests\BigCommerceApiTest;
 
-class VariantsApiTest extends \BigCommerce\Tests\BigCommerceApiTest
+class VariantsApiTest extends BigCommerceApiTest
 {
     public function testHasProductAndVariantId(): void
     {
