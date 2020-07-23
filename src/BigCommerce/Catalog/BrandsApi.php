@@ -5,6 +5,7 @@ namespace BigCommerce\ApiV3\Catalog;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Catalog\Brands\BrandImageApi;
 use BigCommerce\ApiV3\ResponseModels\BrandResponse;
 use BigCommerce\ApiV3\ResponseModels\BrandsResponse;
 
@@ -44,5 +45,10 @@ class BrandsApi extends ResourceApi
         return BrandsResponse::BuildFromAllPages(function($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
+    }
+
+    public function image(): BrandImageApi
+    {
+        return new BrandImageApi($this->getClient(), null, $this->getResourceId());
     }
 }

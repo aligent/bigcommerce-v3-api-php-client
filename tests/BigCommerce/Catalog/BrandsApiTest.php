@@ -1,6 +1,7 @@
 <?php
 namespace BigCommerce\Tests\Catalog;
 
+use BigCommerce\ApiV3\Catalog\Brands\BrandImageApi;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class BrandsApiTest extends BigCommerceApiTest
@@ -33,5 +34,13 @@ class BrandsApiTest extends BigCommerceApiTest
         $brandsResponse = $this->getApi()->catalog()->brands()->getAllPages();
         $this->assertEquals(15, $brandsResponse->getPagination()->total);
         $this->assertCount(15, $brandsResponse->getBrands());
+    }
+
+    public function testCanGetBrandImageApi(): void
+    {
+        $this->assertInstanceOf(
+            BrandImageApi::class,
+            $this->getApi()->catalog()->brand(1)->image()
+        );
     }
 }
