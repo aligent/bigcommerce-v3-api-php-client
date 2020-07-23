@@ -19,6 +19,19 @@ try {
 }
 ```
 
+Fetching all visible products (all pages of products):
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$productsResponse = $api->catalog()->products()->getAllPages(['is_visible' => true]);
+
+echo "Found {$productsResponse->getPagination()->total} products";
+
+$products = $productsResponse->getProducts();
+
+```
+
 ## Development
 
 Running tests: `./vendor/bin/phpunit tests`
