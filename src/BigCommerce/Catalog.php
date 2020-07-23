@@ -7,6 +7,7 @@ namespace BigCommerce\ApiV3;
 use BigCommerce\ApiV3\Catalog\BrandsApi;
 use BigCommerce\ApiV3\Catalog\CategoriesApi;
 use BigCommerce\ApiV3\Catalog\ProductsApi;
+use BigCommerce\ApiV3\Catalog\SummaryApi;
 
 class Catalog
 {
@@ -45,5 +46,10 @@ class Catalog
     public function brand(int $brandId): BrandsApi
     {
         return new BrandsApi($this->client, $brandId);
+    }
+
+    public function summary(): SummaryApi
+    {
+        return new SummaryApi($this->client);
     }
 }

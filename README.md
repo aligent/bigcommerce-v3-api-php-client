@@ -42,8 +42,9 @@ Catalog API
  - Brands
  - Category
  - Product (partial) 
+ - Summary
 
-- Partial
+
 
 ## Still To Do
 
