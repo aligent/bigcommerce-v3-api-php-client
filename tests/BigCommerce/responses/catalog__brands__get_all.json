@@ -1,0 +1,243 @@
+{
+  "data": [
+    {
+      "id": 35,
+      "name": "Sagaform",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/brands/Sagaform.html",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 36,
+      "name": "OFS",
+      "page_title": "OFS",
+      "meta_keywords": [
+        "modern",
+        " clean",
+        " contemporary"
+      ],
+      "meta_description": "OFS is a modern brand.",
+      "image_url": "",
+      "search_keywords": "kitchen, laundry, cart, storage",
+      "custom_url": {
+        "url": "/brands/OFS.html",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 37,
+      "name": "Common Good",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "image_url": "https://cdn8.bigcommerce.com/s-jrah6gmn/product_images/k/screen%20shot%202018-05-07%20at%2012.24.24%20pm_1525785365__65102.png",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/brands/Common-Good.html",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 38,
+      "name": "BigCommerce",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/bigcommerce/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 39,
+      "name": "Test Brand One",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": "",
+      "image_url": "https://cdn8.bigcommerce.com/s-jrah6gmn/product_images/q/apihqggzm__53766.jpg",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/test-brand-one/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 40,
+      "name": "Fog Linen Work",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/fog-linen-work/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 41,
+      "name": "Barr-Co.",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/barr-co/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 42,
+      "name": "Thames & Hudson",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/thames-hudson/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 43,
+      "name": "Able Brewing",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/able-brewing/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 44,
+      "name": "Chemex",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/chemex/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 45,
+      "name": "Kinfolk",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/kinfolk/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 46,
+      "name": "Iris Hantverk",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/iris-hantverk/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 47,
+      "name": "Gather Journal",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/gather-journal/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 48,
+      "name": "Openhouse Magazine",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/openhouse-magazine/",
+        "is_customized": false
+      }
+    },
+    {
+      "id": 49,
+      "name": "Smith Journal",
+      "page_title": "",
+      "meta_keywords": [
+        ""
+      ],
+      "meta_description": null,
+      "image_url": "",
+      "search_keywords": "",
+      "custom_url": {
+        "url": "/smith-journal/",
+        "is_customized": false
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 15,
+      "count": 15,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}

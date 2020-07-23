@@ -1,0 +1,17 @@
+{
+  "data": {
+    "id": 50,
+    "name": "Common Good",
+    "meta_keywords": [
+      "modern, clean, contemporary"
+    ],
+    "meta_description": "Common Good is a modern brand",
+    "image_url": "",
+    "search_keywords": "kitchen, laundry, cart, storage",
+    "custom_url": {
+      "url": "/brands/Common-Good.html",
+      "is_customized": false
+    }
+  },
+  "meta": {}
+}

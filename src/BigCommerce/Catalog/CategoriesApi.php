@@ -12,9 +12,9 @@ use BigCommerce\ApiV3\ResponseModels\CategoryResponse;
 
 class CategoriesApi extends ResourceApi
 {
-    const RESOURCE_NAME       = 'categories';
-    const CATEGORIES_ENDPOINT = 'catalog/categories';
-    const CATEGORY_ENDPOINT   = 'catalog/categories/%d';
+    private const RESOURCE_NAME       = 'categories';
+    private const CATEGORIES_ENDPOINT = 'catalog/categories';
+    private const CATEGORY_ENDPOINT   = 'catalog/categories/%d';
 
     public function image(): CategoryImageApi
     {
