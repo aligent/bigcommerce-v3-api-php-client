@@ -4,18 +4,9 @@
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Brand;
 
 
-use BigCommerce\ApiV3\ResourceModels\ResourceModel;
+use BigCommerce\ApiV3\ResourceModels\Metafield;
 
-class BrandMetafield extends ResourceModel
+class BrandMetafield extends Metafield
 {
-    public int $id;
-    public string $key;
-    public string $value;
-    public string $namespace;
-    public string $permission_set;
-    public string $resource_type;
-    public int $resource_id;
-    public string $description;
-    public string $date_created;
-    public string $date_modified;
+    public string $resource_type = 'brand';
 }

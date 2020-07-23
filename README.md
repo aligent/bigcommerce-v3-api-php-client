@@ -29,7 +29,6 @@ $productsResponse = $api->catalog()->products()->getAllPages(['is_visible' => tr
 echo "Found {$productsResponse->getPagination()->total} products";
 
 $products = $productsResponse->getProducts();
-
 ```
 
 ## Development
@@ -39,6 +38,10 @@ Running tests: `./vendor/bin/phpunit tests`
 ## Coverage
 
 Catalog API
+
+ - Brands
+ - Category
+ - Product (partial) 
 
 - Partial
 
