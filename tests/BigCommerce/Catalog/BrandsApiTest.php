@@ -2,6 +2,7 @@
 namespace BigCommerce\Tests\Catalog;
 
 use BigCommerce\ApiV3\Catalog\Brands\BrandImageApi;
+use BigCommerce\ApiV3\Catalog\Brands\BrandMetafieldsApi;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class BrandsApiTest extends BigCommerceApiTest
@@ -41,6 +42,14 @@ class BrandsApiTest extends BigCommerceApiTest
         $this->assertInstanceOf(
             BrandImageApi::class,
             $this->getApi()->catalog()->brand(1)->image()
+        );
+    }
+
+    public function testCanGetMetafieldsApi(): void
+    {
+        $this->assertInstanceOf(
+            BrandMetafieldsApi::class,
+            $this->getApi()->catalog()->brand(123)->metafields()
         );
     }
 }

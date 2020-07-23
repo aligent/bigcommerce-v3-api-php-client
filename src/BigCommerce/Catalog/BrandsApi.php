@@ -6,6 +6,7 @@ namespace BigCommerce\ApiV3\Catalog;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Brands\BrandImageApi;
+use BigCommerce\ApiV3\Catalog\Brands\BrandMetafieldsApi;
 use BigCommerce\ApiV3\ResponseModels\BrandResponse;
 use BigCommerce\ApiV3\ResponseModels\BrandsResponse;
 
@@ -50,5 +51,15 @@ class BrandsApi extends ResourceApi
     public function image(): BrandImageApi
     {
         return new BrandImageApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function metafields(): BrandMetafieldsApi
+    {
+        return new BrandMetafieldsApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function metafield(int $id): BrandMetafieldsApi
+    {
+        return new BrandMetafieldsApi($this->getClient(), $id, $this->getResourceId());
     }
 }
