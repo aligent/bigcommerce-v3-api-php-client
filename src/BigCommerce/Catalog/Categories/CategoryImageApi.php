@@ -27,6 +27,13 @@ class CategoryImageApi extends ResourceApi
         return self::RESOURCE_NAME;
     }
 
+    /**
+     * Add an image to a category
+     *
+     * @param string $filename Any path that can be opened using fopen
+     * @return string The url to the stored image
+     * @throws \Psr\Http\Client\ClientExceptionInterface
+     */
     public function create(string $filename): string
     {
         $response = $this->getClient()->getRestClient()->post(
