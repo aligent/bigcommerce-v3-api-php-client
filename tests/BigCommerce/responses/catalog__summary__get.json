@@ -1,0 +1,15 @@
+{
+  "data": {
+    "inventory_count": 4995,
+    "variant_count": 54,
+    "inventory_value": 702350.03,
+    "highest_variant_price": 555,
+    "average_variant_price": 74.40055556,
+    "lowest_variant_price": 7,
+    "oldest_variant_date": "2018-08-15",
+    "newest_variant_date": "2018-09-07",
+    "primary_category_id": 23,
+    "primary_category_name": "Shop All"
+  },
+  "meta": {}
+}
