@@ -3,6 +3,7 @@
 
 namespace BigCommerce\Tests\Catalog\Products;
 
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class ProductImagesApiTest extends BigCommerceApiTest
@@ -42,6 +43,17 @@ class ProductImagesApiTest extends BigCommerceApiTest
 
     public function testCanCreateImage(): void
     {
-        $this->markTestIncomplete();
+        $productId = 158;
+        $imageId   = 485;
+        $this->setReturnData('catalog__products__158__images__485__get.json');
+
+        $productImage = new ProductImage();
+        $productImage->is_thumbnail = true;
+        $productImage->sort_order   = 1;
+        $productImage->description  = "Something";
+        $productImage->image_url    = "https://this-image.png";
+
+        $imageResponse = $this->getApi()->catalog()->product($productId)->images()->create($productImage);
+        $this->assertEquals($imageId, $imageResponse->getProductImage()->id);
     }
 }

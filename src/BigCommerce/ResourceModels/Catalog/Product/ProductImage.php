@@ -19,4 +19,5 @@ class ProductImage extends ResourceModel
     public string $url_thumbnail;
     public string $url_tiny;
     public string $date_modified;
+    public ?string $image_url;
 }

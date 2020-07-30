@@ -5,10 +5,9 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;
 use BigCommerce\ApiV3\ResponseModels\ProductImageResponse;
 use BigCommerce\ApiV3\ResponseModels\ProductImagesResponse;
-use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 
 class ProductImagesApi extends ResourceApi
 {
@@ -39,5 +38,10 @@ class ProductImagesApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductImagesResponse
     {
         return new ProductImagesResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function create(ProductImage $productImage): ProductImageResponse
+    {
+        return new ProductImageResponse($this->createResource($productImage));
     }
 }
