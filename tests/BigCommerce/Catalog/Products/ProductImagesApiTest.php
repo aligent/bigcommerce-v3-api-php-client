@@ -30,7 +30,14 @@ class ProductImagesApiTest extends BigCommerceApiTest
 
     public function testCanGetAllImages(): void
     {
-        $this->markTestIncomplete();
+        $productId = 158;
+        $this->setReturnData('catalog__products__158__images__get_all.json');
+
+        $imageResponse = $this->getApi()->catalog()->product($productId)->images()->getAll();
+
+        $this->assertEquals(2, $imageResponse->getPagination()->total);
+        $this->assertCount(2, $imageResponse->getProductImages());
+        $this->assertEquals($productId, $imageResponse->getProductImages()[0]->product_id);
     }
 
     public function testCanCreateImage(): void
