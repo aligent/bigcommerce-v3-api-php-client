@@ -61,4 +61,14 @@ trait ProductsSubResourceApi
     {
         return new OptionsApi($this->getClient(), $optionId, $this->getResourceId());
     }
+
+    public function images(): ProductImagesApi
+    {
+        return new ProductImagesApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function image(int $imageId): ProductImagesApi
+    {
+        return new ProductImagesApi($this->getClient(), $imageId, $this->getResourceId());
+    }
 }
