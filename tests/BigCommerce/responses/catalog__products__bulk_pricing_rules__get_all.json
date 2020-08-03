@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "id": 83,
+      "quantity_min": 1,
+      "quantity_max": 3,
+      "type": "price",
+      "amount": 1
+    },
+    {
+      "id": 84,
+      "quantity_min": 4,
+      "quantity_max": 0,
+      "type": "price",
+      "amount": 1.25
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 2,
+      "count": 2,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}

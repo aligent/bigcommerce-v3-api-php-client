@@ -71,4 +71,14 @@ trait ProductsSubResourceApi
     {
         return new ProductImagesApi($this->getClient(), $imageId, $this->getResourceId());
     }
+
+    public function bulkPricingRule(int $ruleId): ProductBulkPricingRulesApi
+    {
+        return new ProductBulkPricingRulesApi($this->getClient(), $ruleId, $this->getResourceId());
+    }
+
+    public function bulkPricingRules(): ProductBulkPricingRulesApi
+    {
+        return new ProductBulkPricingRulesApi($this->getClient(), null, $this->getResourceId());
+    }
 }

@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": 83,
+    "quantity_min": 1,
+    "quantity_max": 3,
+    "type": "price",
+    "amount": 1
+  },
+  "meta": {}
+}

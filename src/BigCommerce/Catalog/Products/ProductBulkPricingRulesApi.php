@@ -5,8 +5,8 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
-use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductBulkPricingRuleResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductBulkPricingRulesResponse;
 
 class ProductBulkPricingRulesApi extends ResourceApi
 {
@@ -29,13 +29,13 @@ class ProductBulkPricingRulesApi extends ResourceApi
         self::RESOURCE_NAME;
     }
 
-    public function get(): SingleResourceResponse
+    public function get(): ProductBulkPricingRuleResponse
     {
-        // TODO: Implement get() method.
+        return new ProductBulkPricingRuleResponse($this->getResource());
     }
 
-    public function getAll(array $filters = [], int $page = 1, int $limit = 250): PaginatedResponse
+    public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductBulkPricingRulesResponse
     {
-        // TODO: Implement getAll() method.
+        return new ProductBulkPricingRulesResponse($this->getAllResources($filters, $page, $limit));
     }
 }
