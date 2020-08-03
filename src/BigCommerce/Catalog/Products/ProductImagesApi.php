@@ -6,8 +6,8 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;
-use BigCommerce\ApiV3\ResponseModels\ProductImageResponse;
-use BigCommerce\ApiV3\ResponseModels\ProductImagesResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductImageResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductImagesResponse;
 
 class ProductImagesApi extends ResourceApi
 {

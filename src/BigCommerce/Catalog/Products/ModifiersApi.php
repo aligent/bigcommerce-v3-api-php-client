@@ -6,8 +6,8 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifier;
-use BigCommerce\ApiV3\ResponseModels\ModifierResponse;
-use BigCommerce\ApiV3\ResponseModels\ModifiersResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ModifierResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ModifiersResponse;
 
 class ModifiersApi extends ResourceApi
 {

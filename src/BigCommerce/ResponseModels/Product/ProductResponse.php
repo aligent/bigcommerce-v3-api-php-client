@@ -1,10 +1,11 @@
 <?php
 
 
-namespace BigCommerce\ApiV3\ResponseModels;
+namespace BigCommerce\ApiV3\ResponseModels\Product;
 
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\Product;
+use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 use stdClass;
 
 class ProductResponse extends SingleResourceResponse

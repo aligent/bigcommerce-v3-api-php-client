@@ -5,6 +5,7 @@ namespace BigCommerce\ApiV3\ResponseModels;
 
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\CustomField;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class CustomFieldsResponse extends PaginatedResponse
 {

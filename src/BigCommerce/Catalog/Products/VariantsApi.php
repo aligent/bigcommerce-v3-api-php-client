@@ -5,8 +5,8 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\ProductVariantResponse;
-use BigCommerce\ApiV3\ResponseModels\ProductVariantsResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantsResponse;
 
 class VariantsApi extends ResourceApi
 {

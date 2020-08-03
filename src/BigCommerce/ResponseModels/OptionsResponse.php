@@ -5,16 +5,17 @@ namespace BigCommerce\ApiV3\ResponseModels;
 
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOption;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class OptionsResponse extends PaginatedResponse
 {
     /**
-     * @var Option[]
+     * @var ProductOption[]
      */
     private array $options;
 
     /**
-     * @return Option[]
+     * @return ProductOption[]
      */
     public function getOptions(): array
     {

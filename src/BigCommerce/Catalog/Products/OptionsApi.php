@@ -6,7 +6,7 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOption;
-use BigCommerce\ApiV3\ResponseModels\OptionResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\OptionResponse;
 use BigCommerce\ApiV3\ResponseModels\OptionsResponse;
 
 class OptionsApi extends ResourceApi

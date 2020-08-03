@@ -1,10 +1,11 @@
 <?php
 
 
-namespace BigCommerce\ApiV3\ResponseModels;
+namespace BigCommerce\ApiV3\ResponseModels\Product;
 
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class ProductImagesResponse extends PaginatedResponse
 {
