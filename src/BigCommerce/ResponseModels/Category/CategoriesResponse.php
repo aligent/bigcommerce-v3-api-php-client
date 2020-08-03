@@ -1,11 +1,12 @@
 <?php
 
 
-namespace BigCommerce\ApiV3\ResponseModels;
+namespace BigCommerce\ApiV3\ResponseModels\Category;
 
 
 use BigCommerce\ApiV3\Api\FetchAllPages;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class CategoriesResponse extends PaginatedResponse
 {

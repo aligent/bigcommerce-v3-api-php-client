@@ -1,10 +1,11 @@
 <?php
 
 
-namespace BigCommerce\ApiV3\ResponseModels;
+namespace BigCommerce\ApiV3\ResponseModels\Category;
 
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\CategoryMetafield;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class CategoryMetafieldsResponse extends PaginatedResponse
 {

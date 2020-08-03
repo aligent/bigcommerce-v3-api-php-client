@@ -7,8 +7,8 @@ namespace BigCommerce\ApiV3\Catalog;
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
-use BigCommerce\ApiV3\ResponseModels\CategoriesResponse;
-use BigCommerce\ApiV3\ResponseModels\CategoryResponse;
+use BigCommerce\ApiV3\ResponseModels\Category\CategoriesResponse;
+use BigCommerce\ApiV3\ResponseModels\Category\CategoryResponse;
 
 class CategoriesApi extends ResourceApi
 {
