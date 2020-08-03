@@ -9,6 +9,7 @@ use BigCommerce\ApiV3\Client;
 trait ProductsSubResourceApi
 {
     abstract function getClient(): Client;
+
     abstract function getResourceId(): ?int;
 
     public function variants(): VariantsApi
@@ -22,7 +23,7 @@ trait ProductsSubResourceApi
     }
 
 
-    public function modifiers() : ModifiersApi
+    public function modifiers(): ModifiersApi
     {
         return new ModifiersApi($this->getClient(), null, $this->getResourceId());
     }
@@ -32,7 +33,7 @@ trait ProductsSubResourceApi
         return new ModifiersApi($this->getClient(), $modifierId, $this->getResourceId());
     }
 
-    public function complexRules() : ComplexRulesApi
+    public function complexRules(): ComplexRulesApi
     {
         return new ComplexRulesApi($this->getClient(), null, $this->getResourceId());
     }
@@ -80,5 +81,15 @@ trait ProductsSubResourceApi
     public function bulkPricingRules(): ProductBulkPricingRulesApi
     {
         return new ProductBulkPricingRulesApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function metafield(int $metafieldId): ProductMetafieldsApi
+    {
+        return new ProductMetafieldsApi($this->getClient(), $metafieldId, $this->getResourceId());
+    }
+
+    public function metafields(): ProductMetafieldsApi
+    {
+        return new ProductMetafieldsApi($this->getClient(), null, $this->getResourceId());
     }
 }
