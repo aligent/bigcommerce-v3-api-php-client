@@ -5,8 +5,8 @@ namespace BigCommerce\ApiV3\Catalog\Brands;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\BrandMetafieldResponse;
-use BigCommerce\ApiV3\ResponseModels\BrandMetafieldsResponse;
+use BigCommerce\ApiV3\ResponseModels\Brand\BrandMetafieldResponse;
+use BigCommerce\ApiV3\ResponseModels\Brand\BrandMetafieldsResponse;
 
 class BrandMetafieldsApi extends ResourceApi
 {

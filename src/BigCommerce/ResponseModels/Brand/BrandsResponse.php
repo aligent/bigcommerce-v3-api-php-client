@@ -1,11 +1,12 @@
 <?php
 
 
-namespace BigCommerce\ApiV3\ResponseModels;
+namespace BigCommerce\ApiV3\ResponseModels\Brand;
 
 
 use BigCommerce\ApiV3\Api\FetchAllPages;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Brand\Brand;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class BrandsResponse extends PaginatedResponse
 {

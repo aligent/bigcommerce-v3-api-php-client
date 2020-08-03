@@ -1,10 +1,11 @@
 <?php
 
 
-namespace BigCommerce\ApiV3\ResponseModels;
+namespace BigCommerce\ApiV3\ResponseModels\Brand;
 
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Brand\Brand;
+use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 use stdClass;
 
 class BrandResponse extends SingleResourceResponse
