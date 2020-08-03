@@ -11,8 +11,8 @@ use BigCommerce\ApiV3\ResponseModels\Product\ProductBulkPricingRulesResponse;
 class ProductBulkPricingRulesApi extends ResourceApi
 {
     const RESOURCE_NAME = 'bulk-pricing-rules';
-    const BULK_PRICING_RULE_ENDPOINT  = 'catalog/products/{product_id}/bulk-pricing-rules/%d';
-    const BULK_PRICING_RULES_ENDPOINT = 'catalog/products/{product_id}/bulk-pricing-rules';
+    const BULK_PRICING_RULE_ENDPOINT  = 'catalog/products/%d/bulk-pricing-rules/%d';
+    const BULK_PRICING_RULES_ENDPOINT = 'catalog/products/%d/bulk-pricing-rules';
 
     protected function singleResourceEndpoint(): string
     {
