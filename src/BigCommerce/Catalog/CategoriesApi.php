@@ -6,6 +6,7 @@ namespace BigCommerce\ApiV3\Catalog;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;
+use BigCommerce\ApiV3\Catalog\Categories\CategoryMetafieldsApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoriesResponse;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryResponse;
@@ -61,5 +62,15 @@ class CategoriesApi extends ResourceApi
     protected function resourceName(): string
     {
         return self::RESOURCE_NAME;
+    }
+
+    public function metafield(int $metafieldId): CategoryMetafieldsApi
+    {
+        return new CategoryMetafieldsApi($this->getClient(), $metafieldId, $this->getResourceId());
+    }
+
+    public function metafields(): CategoryMetafieldsApi
+    {
+        return new CategoryMetafieldsApi($this->getClient(), null, $this->getResourceId());
     }
 }

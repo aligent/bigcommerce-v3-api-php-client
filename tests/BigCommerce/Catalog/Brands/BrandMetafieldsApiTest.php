@@ -23,7 +23,7 @@ class BrandMetafieldsApiTest extends BigCommerceApiTest
         $this->assertEquals('Shelf 3, Bin 5', $response->getMetafield()->value);
     }
 
-    public function testCanGetAllProductVariants(): void
+    public function testCanGetAllBrandMetafields(): void
     {
         $this->setReturnData('catalog__brands__11__metafields__get_all.json');
 

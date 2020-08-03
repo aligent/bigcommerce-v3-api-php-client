@@ -10,23 +10,28 @@ class CategoryMetafieldsApiTest extends BigCommerceApiTest
 {
     public function testHasSetCategoryAndMetafieldId(): void
     {
-        $brandId = 678;
+        $categoryId = 678;
         $metafieldId = 8495;
 
-        $api = $this->getApi()->catalog()->brand($brandId)->metafield($metafieldId);
-        $this->assertEquals($brandId, $api->getParentResourceId());
+        $api = $this->getApi()->catalog()->category($categoryId)->metafield($metafieldId);
+        $this->assertEquals($categoryId, $api->getParentResourceId());
         $this->assertEquals($metafieldId, $api->getResourceId());
     }
 
     public function testCanGetCategoryMetafield(): void
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('catalog__categories__158__metafields__8__get.json');
+
+        $response = $this->getApi()->catalog()->category(158)->metafield(8)->get();
+        $this->assertEquals('Shelf 3, Bin 5', $response->getMetafield()->value);
     }
 
     public function testCanGetCategoryMetafields(): void
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('catalog__categories__111__metafields__get_all.json');
+
+        $response = $this->getApi()->catalog()->category(111)->metafields()->getAll();
+        $this->assertEquals(2, $response->getPagination()->total);
+        $this->assertEquals('Warehouse Locations', $response->getMetafields()[0]->namespace);
     }
-
-
 }
