@@ -1,4 +1,4 @@
-name: PHP Composer
+name: Validate PHP dependancies and test
 
 on:
   push:
