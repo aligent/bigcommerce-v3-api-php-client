@@ -4,7 +4,8 @@
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
-        "ext-json": "*"
+        "ext-json": "*",
+        "php": ">=7.4"
     },
     "license": "GPL-3.0-only",
     "authors": [
