@@ -20,6 +20,10 @@ class ProductModifier extends ResourceModel
     public int $id;
     public int $product_id;
     public string $name;
+
+    /**
+     * @var ProductModifierValue[]
+     */
     public array $option_values;
 
     public function __construct(?stdClass $optionObject = null)

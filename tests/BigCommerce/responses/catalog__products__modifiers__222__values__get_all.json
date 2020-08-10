@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "id": 190,
+      "option_id": 222,
+      "label": "Yes",
+      "sort_order": 0,
+      "value_data": {
+        "checked_value": true
+      },
+      "is_default": false,
+      "adjusters": {
+        "price": {
+          "adjuster": "relative",
+          "adjuster_value": 5
+        },
+        "weight": {},
+        "image_url": "",
+        "purchasing_disabled": {
+          "status": false,
+          "message": ""
+        }
+      }
+    },
+    {
+      "id": 191,
+      "option_id": 222,
+      "label": "No",
+      "sort_order": 1,
+      "value_data": {
+        "checked_value": false
+      },
+      "is_default": true,
+      "adjusters": {
+        "price": {},
+        "weight": {},
+        "image_url": "",
+        "purchasing_disabled": {
+          "status": false,
+          "message": ""
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 2,
+      "count": 2,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}

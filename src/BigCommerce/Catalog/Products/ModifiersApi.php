@@ -5,6 +5,7 @@ namespace BigCommerce\ApiV3\Catalog\Products;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Catalog\Products\ProductModifier\ProductModifierValuesApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifier;
 use BigCommerce\ApiV3\ResponseModels\Product\ModifierResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ModifiersResponse;
@@ -48,5 +49,19 @@ class ModifiersApi extends ResourceApi
     protected function multipleResourcesEndpoint(): string
     {
         return self::MODIFIERS_ENDPOINT;
+    }
+
+    public function values(): ProductModifierValuesApi
+    {
+        $api = new ProductModifierValuesApi($this->getClient(), null, $this->getResourceId());
+        $api->setProductId($this->getParentResourceId());
+        return $api;
+    }
+
+    public function value(int $valueId): ProductModifierValuesApi
+    {
+        $api = new ProductModifierValuesApi($this->getClient(), $valueId, $this->getResourceId());
+        $api->setProductId($this->getParentResourceId());
+        return $api;
     }
 }
