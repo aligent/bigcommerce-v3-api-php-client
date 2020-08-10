@@ -33,7 +33,7 @@ $products = $productsResponse->getProducts();
 
 ## Development
 
-Running tests: `./vendor/bin/phpunit tests`
+Running tests: `composer run-script test`
 
 ## Coverage
 
@@ -44,13 +44,8 @@ Catalog API
  - Product (partial) 
  - Summary
 
-
-
 ## Still To Do
 
-
-
-- Packagist / Versions
 - Document apis that are still to be implemented
-- Test coverage and build
+- Test coverage
 - Documentation
