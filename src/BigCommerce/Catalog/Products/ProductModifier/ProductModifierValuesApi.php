@@ -2,6 +2,7 @@
 namespace BigCommerce\ApiV3\Catalog\Products\ProductModifier;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValue;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductModifierValueResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductModifierValuesResponse;
 
@@ -66,5 +67,15 @@ class ProductModifierValuesApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductModifierValuesResponse
     {
         return new ProductModifierValuesResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function update(ProductModifierValue $modifierValue): ProductModifierValueResponse
+    {
+        return new ProductModifierValueResponse($this->updateResource($modifierValue));
+    }
+
+    public function create(ProductModifierValue $modifierValue): ProductModifierValueResponse
+    {
+        return new ProductModifierValueResponse($this->createResource($modifierValue));
     }
 }
