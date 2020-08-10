@@ -3,6 +3,10 @@
 ## Introduction
 This is an (very) early development version of an easy-to-use API client for BigCommerce.
 
+## Installation
+
+Install via _composer_: `composer require aligent/bigcommerce-api-client`.
+
 ## Usage
 
 Trivial example of updating a product name:
