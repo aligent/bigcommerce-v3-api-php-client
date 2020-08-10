@@ -1,7 +1,6 @@
 {
     "name": "aligent/bigcommerce-api-client",
     "description": "API client for BigCommerce",
-    "version": "0.1.0",
     "type": "library",
     "require": {
         "guzzlehttp/guzzle": "^7.0",
