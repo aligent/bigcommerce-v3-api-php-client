@@ -13,7 +13,7 @@ class CustomField extends ResourceModel
     public const MAX_LENGTH_NAME = 250;
     public const MAX_LENGTH_VALUE = 250;
 
-    public static function Build(string $name, string $value): CustomField
+    public static function build(string $name, string $value): CustomField
     {
         $field = new CustomField();
         $field->setName($name);
