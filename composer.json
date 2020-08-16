@@ -25,6 +25,7 @@
     },
     "scripts": {
         "test": "./vendor/bin/phpunit tests",
-        "check-style": "./vendor/bin/phpcs --standard=PSR12 ./src ./tests"
+        "check-style": "./vendor/bin/phpcs --standard=PSR12 ./src ./tests",
+        "fix-style": "./vendor/bin/phpcbf --standard=PSR12 ./src ./tests"
     }
 }
