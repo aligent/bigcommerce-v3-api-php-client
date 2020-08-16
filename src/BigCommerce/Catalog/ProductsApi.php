@@ -43,7 +43,7 @@ class ProductsApi extends ResourceWithBatchUpdateApi
      */
     public function getAllPages(array $filter = []): ProductsResponse
     {
-        return ProductsResponse::BuildFromAllPages(function ($page) use ($filter) {
+        return ProductsResponse::buildFromAllPages(function ($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
     }

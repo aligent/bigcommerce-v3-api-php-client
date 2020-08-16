@@ -41,7 +41,7 @@ class BrandsApi extends ResourceApi
 
     public function getAllPages(array $filter = []): BrandsResponse
     {
-        return BrandsResponse::BuildFromAllPages(function ($page) use ($filter) {
+        return BrandsResponse::buildFromAllPages(function ($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
     }

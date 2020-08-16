@@ -32,7 +32,7 @@ class CategoriesApi extends ResourceApi
 
     public function getAllPages(array $filter = []): CategoriesResponse
     {
-        return CategoriesResponse::BuildFromAllPages(function ($page) use ($filter) {
+        return CategoriesResponse::buildFromAllPages(function ($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
     }

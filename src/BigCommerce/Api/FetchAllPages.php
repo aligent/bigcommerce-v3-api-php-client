@@ -27,7 +27,7 @@ trait FetchAllPages
      * @param Closure $request Must return a ResponseInterface
      * @return static
      */
-    public static function BuildFromAllPages(Closure $request): ?PaginatedResponse
+    public static function buildFromAllPages(Closure $request): ?PaginatedResponse
     {
         $response = $request(1);
         if (!$response instanceof ResponseInterface) {
