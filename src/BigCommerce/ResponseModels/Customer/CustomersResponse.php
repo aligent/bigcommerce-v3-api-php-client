@@ -20,6 +20,8 @@ class CustomersResponse extends PaginatedResponse
 
     protected function addData(array $data): void
     {
-        $this->customers = array_map(function(stdClass $c) { return new Customer($c); }, $data);
+        $this->customers = array_map(function (stdClass $c) {
+            return new Customer($c);
+        }, $data);
     }
 }

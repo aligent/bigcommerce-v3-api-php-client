@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Customer;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
@@ -26,5 +25,4 @@ class Customer extends ResourceModel
     public string $country;
     public string $country_iso2;
     public string $phone;
-
 }

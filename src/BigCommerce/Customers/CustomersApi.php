@@ -13,12 +13,12 @@ use UnexpectedValueException;
 
 class CustomersApi extends ResourceApi
 {
-    const RESOURCE_NAME       = 'customers';
-    const CUSTOMERS_ENDPOINT = 'customers';
-    const CUSTOMER_ENDPOINT   = 'customer/%d';
+    public const RESOURCE_NAME       = 'customers';
+    public const CUSTOMERS_ENDPOINT = 'customers';
+    public const CUSTOMER_ENDPOINT   = 'customer/%d';
 
 
-    public function get() : CustomerResponse
+    public function get(): CustomerResponse
     {
         return new CustomerResponse($this->getResource());
     }
@@ -28,7 +28,7 @@ class CustomersApi extends ResourceApi
         return new CustomersResponse($this->getAllResources($filters, $page, $limit));
     }
 
-    public function getByEmail($email) : ?Customer
+    public function getByEmail($email): ?Customer
     {
         $customers = $this->getAll(['email:in' => $email])->getCustomers();
 
@@ -57,7 +57,6 @@ class CustomersApi extends ResourceApi
             [
                 RequestOptions::QUERY => $resource,
             ]
-
         );
     }
 

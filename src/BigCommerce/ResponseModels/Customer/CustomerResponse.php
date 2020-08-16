@@ -2,7 +2,6 @@
 
 namespace BigCommerce\ApiV3\ResponseModels\Customer;
 
-
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 use stdClass;
