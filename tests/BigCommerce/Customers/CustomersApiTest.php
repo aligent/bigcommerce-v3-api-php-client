@@ -6,19 +6,23 @@ use BigCommerce\Tests\BigCommerceApiTest;
 
 class CustomersApiTest extends BigCommerceApiTest
 {
-    public function testCanGetProduct() {
+    public function testCanGetProduct()
+    {
         $this->markTestIncomplete();
     }
 
-    public function testCanGetAllProducts() {
+    public function testCanGetAllProducts()
+    {
         $this->markTestIncomplete();
     }
 
-    public function testCanGetCustomerByEmail() {
+    public function testCanGetCustomerByEmail()
+    {
         $this->markTestIncomplete();
     }
 
-    public function testCanDeleteCustomersIn() {
+    public function testCanDeleteCustomersIn()
+    {
         $this->markTestIncomplete();
     }
 }
