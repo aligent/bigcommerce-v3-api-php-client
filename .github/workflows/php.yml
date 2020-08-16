@@ -32,3 +32,6 @@ jobs:
 
     - name: Run test suite
       run: composer run-script test
+
+    - name: Run linter to check code style
+      run: composer run-script check-style
