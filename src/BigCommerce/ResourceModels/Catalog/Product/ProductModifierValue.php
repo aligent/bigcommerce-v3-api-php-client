@@ -19,7 +19,7 @@ class ProductModifierValue implements JsonSerializable
         $this->label = $label;
     }
 
-    public static function BuildFromResponse(\stdClass $optionObject): ProductModifierValue
+    public static function buildFromResponse(\stdClass $optionObject): ProductModifierValue
     {
         $modifierValue = new ProductModifierValue(null, '');
         foreach ($optionObject as $key => $value) {

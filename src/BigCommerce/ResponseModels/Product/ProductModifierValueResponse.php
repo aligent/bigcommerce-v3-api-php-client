@@ -17,6 +17,6 @@ class ProductModifierValueResponse extends SingleResourceResponse
 
     protected function addData(stdClass $rawData): void
     {
-        $this->modifierValue = ProductModifierValue::BuildFromResponse($rawData);
+        $this->modifierValue = ProductModifierValue::buildFromResponse($rawData);
     }
 }

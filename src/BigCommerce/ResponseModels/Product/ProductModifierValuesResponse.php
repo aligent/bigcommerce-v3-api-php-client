@@ -23,7 +23,7 @@ class ProductModifierValuesResponse extends PaginatedResponse
     protected function addData(array $data): void
     {
         $this->modifierValues = array_map(function (\stdClass $v) {
-            return ProductModifierValue::BuildFromResponse($v);
+            return ProductModifierValue::buildFromResponse($v);
         }, $data);
     }
 }
