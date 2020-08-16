@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;
@@ -34,7 +32,9 @@ class ComplexRule extends ResourceModel
             $this->weight_adjuster = new WeightAdjuster($optionObject->weight_adjuster);
             unset($optionObject->weight_adjuster);
 
-            $this->conditions = array_map(function($c) { return new ComplexRuleConditions($c); }, $optionObject->conditions);
+            $this->conditions = array_map(function ($c) {
+                return new ComplexRuleConditions($c);
+            }, $optionObject->conditions);
             unset($optionObject->conditions);
         }
 

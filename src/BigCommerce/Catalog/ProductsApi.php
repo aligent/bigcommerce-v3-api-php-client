@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog;
-
 
 use BigCommerce\ApiV3\Api\ResourceWithBatchUpdateApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductsSubResourceApi;
@@ -14,18 +12,18 @@ class ProductsApi extends ResourceWithBatchUpdateApi
 {
     use ProductsSubResourceApi;
 
-    const RESOURCE_NAME     = 'products';
-    const PRODUCT_ENDPOINT  = 'catalog/products/%d';
-    const PRODUCTS_ENDPOINT = 'catalog/products';
+    public const RESOURCE_NAME     = 'products';
+    public const PRODUCT_ENDPOINT  = 'catalog/products/%d';
+    public const PRODUCTS_ENDPOINT = 'catalog/products';
 
-    const FILTER_IS_FEATURED = 'is_featured';
-    const FILTER_IS_VISIBLE  = 'is_visible';
-    const FILTER_SKU_IS      = 'sku';
+    public const FILTER_IS_FEATURED = 'is_featured';
+    public const FILTER_IS_VISIBLE  = 'is_visible';
+    public const FILTER_SKU_IS      = 'sku';
 
-    const FILTER_INCLUDE_FIELDS = 'include_fields';
+    public const FILTER_INCLUDE_FIELDS = 'include_fields';
 
-    const FILTER_INCLUDE     = 'include';
-    const INCLUDE_MODIFIERS = 'modifiers';
+    public const FILTER_INCLUDE     = 'include';
+    public const INCLUDE_MODIFIERS = 'modifiers';
 
     public function get(): ProductResponse
     {
@@ -45,7 +43,7 @@ class ProductsApi extends ResourceWithBatchUpdateApi
      */
     public function getAllPages(array $filter = []): ProductsResponse
     {
-        return ProductsResponse::BuildFromAllPages(function($page) use ($filter) {
+        return ProductsResponse::buildFromAllPages(function ($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
     }
@@ -67,7 +65,7 @@ class ProductsApi extends ResourceWithBatchUpdateApi
      */
     public function batchUpdate(array $products): ProductsResponse
     {
-        return ProductsResponse::BuildFromMultipleResponses($this->batchUpdateResource($products));
+        return ProductsResponse::buildFromMultipleResponses($this->batchUpdateResource($products));
     }
 
     protected function singleResourceEndpoint(): string

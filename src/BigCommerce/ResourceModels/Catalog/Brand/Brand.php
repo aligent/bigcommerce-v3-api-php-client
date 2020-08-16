@@ -13,5 +13,4 @@ class Brand extends ResourceModel
     public string $image_url;
     public string $search_keywords;
     public ?object $custom_url;
-
 }

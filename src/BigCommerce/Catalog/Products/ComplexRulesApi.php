@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ComplexRule;
@@ -12,21 +10,21 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 
 class ComplexRulesApi extends ResourceApi
 {
-    const RESOURCE_NAME    = 'complex-rules';
-    const COMPLEX_RULES_ENDPOINT  = 'catalog/products/%d/complex-rules';
-    const COMPLEX_RULE_ENDPOINT = 'catalog/products/%d/complex-rules/%d';
+    public const RESOURCE_NAME    = 'complex-rules';
+    public const COMPLEX_RULES_ENDPOINT  = 'catalog/products/%d/complex-rules';
+    public const COMPLEX_RULE_ENDPOINT = 'catalog/products/%d/complex-rules/%d';
 
     protected function resourceName(): string
     {
         return self::RESOURCE_NAME;
     }
 
-    public function create(ComplexRule $complexRule) : ComplexRuleResponse
+    public function create(ComplexRule $complexRule): ComplexRuleResponse
     {
         return new ComplexRuleResponse($this->createResource($complexRule));
     }
 
-    public function update(ComplexRule $complexRule) : ComplexRuleResponse
+    public function update(ComplexRule $complexRule): ComplexRuleResponse
     {
         return new ComplexRuleResponse($this->updateResource($complexRule));
     }

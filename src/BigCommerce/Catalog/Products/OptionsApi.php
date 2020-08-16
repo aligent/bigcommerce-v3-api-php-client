@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOption;
@@ -11,10 +9,9 @@ use BigCommerce\ApiV3\ResponseModels\OptionsResponse;
 
 class OptionsApi extends ResourceApi
 {
-    const OPTIONS_ENDPOINT = 'catalog/products/%d/options';
-    const OPTION_ENDPOINT  = 'catalog/products/%d/options/%d';
-
-    const RESOURCE_NAME = 'options';
+    public const OPTIONS_ENDPOINT = 'catalog/products/%d/options';
+    public const OPTION_ENDPOINT  = 'catalog/products/%d/options/%d';
+    public const RESOURCE_NAME = 'options';
 
     protected function resourceName(): string
     {

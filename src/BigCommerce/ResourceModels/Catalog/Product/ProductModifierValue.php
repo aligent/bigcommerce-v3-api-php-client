@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
-
 
 use JsonSerializable;
 
@@ -21,7 +19,7 @@ class ProductModifierValue implements JsonSerializable
         $this->label = $label;
     }
 
-    public static function BuildFromResponse(\stdClass $optionObject): ProductModifierValue
+    public static function buildFromResponse(\stdClass $optionObject): ProductModifierValue
     {
         $modifierValue = new ProductModifierValue(null, '');
         foreach ($optionObject as $key => $value) {
@@ -37,15 +35,19 @@ class ProductModifierValue implements JsonSerializable
         return $modifierValue;
     }
 
-    public function jsonSerialize() : array
+    public function jsonSerialize(): array
     {
         $json = [
             'is_default' => $this->is_default,
             'label'      => $this->label,
         ];
 
-        if (isset($this->adjusters)) $json['adjusters'] = $this->adjusters;
-        if (isset($this->productId) && $this->productId > 0) $json['value_data'] = ['product_id' => $this->productId];
+        if (isset($this->adjusters)) {
+            $json['adjusters'] = $this->adjusters;
+        }
+        if (isset($this->productId) && $this->productId > 0) {
+            $json['value_data'] = ['product_id' => $this->productId];
+        }
 
         return $json;
     }

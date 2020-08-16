@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels;
-
 
 use Psr\Http\Message\ResponseInterface;
 use stdClass;

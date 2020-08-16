@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests;
 
 use BigCommerce\ApiV3\Client;
@@ -9,9 +10,9 @@ use PHPUnit\Framework\TestCase;
 
 abstract class BigCommerceApiTest extends TestCase
 {
-    const EMPTY_RESPONSE = 'blank.json';
-    const REQUESTS_PATH  = __DIR__.'/requests/';
-    const RESPONSES_PATH = __DIR__.'/responses/';
+    public const EMPTY_RESPONSE = 'blank.json';
+    public const REQUESTS_PATH  = __DIR__ . '/requests/';
+    public const RESPONSES_PATH = __DIR__ . '/responses/';
 
     private const API_STORE_HASH    = 'HASH';
     private const API_CLIENT_ID     = 'ID';

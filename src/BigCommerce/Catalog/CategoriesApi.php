@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;
@@ -34,7 +32,7 @@ class CategoriesApi extends ResourceApi
 
     public function getAllPages(array $filter = []): CategoriesResponse
     {
-        return CategoriesResponse::BuildFromAllPages(function($page) use ($filter) {
+        return CategoriesResponse::buildFromAllPages(function ($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
     }

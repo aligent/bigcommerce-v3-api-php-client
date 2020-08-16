@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValue;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
@@ -24,6 +22,8 @@ class ProductModifierValuesResponse extends PaginatedResponse
 
     protected function addData(array $data): void
     {
-        $this->modifierValues = array_map(function(\stdClass $v) { return ProductModifierValue::BuildFromResponse($v); }, $data);
+        $this->modifierValues = array_map(function (\stdClass $v) {
+            return ProductModifierValue::buildFromResponse($v);
+        }, $data);
     }
 }

@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests\Catalog;
 
 use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValue;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
@@ -19,6 +17,6 @@ class ProductModifierValueResponse extends SingleResourceResponse
 
     protected function addData(stdClass $rawData): void
     {
-        $this->modifierValue = ProductModifierValue::BuildFromResponse($rawData);
+        $this->modifierValue = ProductModifierValue::buildFromResponse($rawData);
     }
 }

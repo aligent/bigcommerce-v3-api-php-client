@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\Catalog\Brands;
 
 use BigCommerce\ApiV3\Api\ResourceImageApi;

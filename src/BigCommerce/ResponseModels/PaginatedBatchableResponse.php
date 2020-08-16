@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels;
-
 
 use BigCommerce\ApiV3\Api\FetchAllPages;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
@@ -16,7 +14,7 @@ abstract class PaginatedBatchableResponse extends PaginatedResponse
      * @param ResponseInterface[] $responses
      * @return static
      */
-    public static function BuildFromMultipleResponses(array $responses): ?PaginatedResponse
+    public static function buildFromMultipleResponses(array $responses): ?PaginatedResponse
     {
         $data = [];
         $paginatedResponse = null;

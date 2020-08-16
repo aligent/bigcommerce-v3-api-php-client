@@ -1,20 +1,18 @@
 <?php
 
-
 namespace BigCommerce\ApiV3;
-
 
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 
 class Client
 {
-    const DEFAULT_HANDLER      = 'handler';
-    const DEFAULT_BASE_URI     = 'base_uri';
-    const DEFAULT_HEADERS      = 'headers';
-    const HEADERS__AUTH_CLIENT = 'X-Auth-Client';
-    const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
-    const API_URI              = 'https://api.bigcommerce.com/stores/%s/v3/';
+    public const DEFAULT_HANDLER      = 'handler';
+    public const DEFAULT_BASE_URI     = 'base_uri';
+    public const DEFAULT_HEADERS      = 'headers';
+    public const HEADERS__AUTH_CLIENT = 'X-Auth-Client';
+    public const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
+    public const API_URI              = 'https://api.bigcommerce.com/stores/%s/v3/';
 
     private string $storeHash;
 
@@ -28,11 +26,12 @@ class Client
 
     private array $debugContainer = [];
 
-    public function __construct(string $storeHash,
-                                string $clientId,
-                                string $accessToken,
-                                ?\GuzzleHttp\Client $client = null)
-    {
+    public function __construct(
+        string $storeHash,
+        string $clientId,
+        string $accessToken,
+        ?\GuzzleHttp\Client $client = null
+    ) {
         $this->storeHash    = $storeHash;
         $this->clientId     = $clientId;
         $this->accessToken  = $accessToken;
@@ -41,7 +40,7 @@ class Client
         $this->client = $client ?? $this->buildDefaultHttpClient();
     }
 
-    private function buildDefaultHttpClient() : \GuzzleHttp\Client
+    private function buildDefaultHttpClient(): \GuzzleHttp\Client
     {
         $history = Middleware::history($this->debugContainer);
         $stack   = HandlerStack::create();
@@ -57,7 +56,7 @@ class Client
         ]);
     }
 
-    public function getBaseUri() : string
+    public function getBaseUri(): string
     {
         return $this->baseUri;
     }
@@ -89,7 +88,7 @@ class Client
         print_r(json_decode(array_pop($this->debugContainer)['request']->getBody()));
     }
 
-    public function catalog() : Catalog
+    public function catalog(): Catalog
     {
         return new Catalog($this);
     }
