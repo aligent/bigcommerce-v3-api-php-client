@@ -65,7 +65,7 @@ class ProductsApi extends ResourceWithBatchUpdateApi
      */
     public function batchUpdate(array $products): ProductsResponse
     {
-        return ProductsResponse::BuildFromMultipleResponses($this->batchUpdateResource($products));
+        return ProductsResponse::buildFromMultipleResponses($this->batchUpdateResource($products));
     }
 
     protected function singleResourceEndpoint(): string
