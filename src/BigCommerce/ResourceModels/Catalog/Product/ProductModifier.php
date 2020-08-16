@@ -51,7 +51,7 @@ class ProductModifier extends ResourceModel
         parent::__construct($optionObject);
     }
 
-    public static function Build(
+    public static function build(
         string $type,
         bool $required,
         string $display_name,
