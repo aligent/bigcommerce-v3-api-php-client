@@ -12,6 +12,10 @@
         {
             "name": "Jarrod Swift",
             "email": "jarrod.swift@aligent.com.au"
+        },
+        {
+            "name": "Matthew Smith",
+            "email": "matthew.smith@aligent.com.au"
         }
     ],
     "autoload": {
