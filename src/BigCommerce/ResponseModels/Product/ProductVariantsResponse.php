@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductVariant;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
@@ -24,6 +22,8 @@ class ProductVariantsResponse extends PaginatedResponse
 
     protected function addData(array $data): void
     {
-        $this->productVariants = array_map(function(\stdClass $v) { return new ProductVariant($v); }, $data);
+        $this->productVariants = array_map(function (\stdClass $v) {
+            return new ProductVariant($v);
+        }, $data);
     }
 }

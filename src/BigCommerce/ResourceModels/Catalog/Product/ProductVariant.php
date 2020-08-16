@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
@@ -23,7 +21,7 @@ class ProductVariant extends ResourceModel
     public bool $is_free_shipping;
     public ?float $fixed_cost_shipping_price;
     public bool $purchasing_disabled;
-    public string  $purchasing_disabled_message;
+    public string $purchasing_disabled_message;
     public string $image_url;
     public ?float $cost_price;
     public string $upc;

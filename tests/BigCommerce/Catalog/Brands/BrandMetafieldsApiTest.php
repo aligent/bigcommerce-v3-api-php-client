@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests\Catalog\Brands;
 
 use BigCommerce\Tests\BigCommerceApiTest;

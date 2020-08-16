@@ -1,5 +1,7 @@
 <?php
 
+namespace BigCommerce\Tests\Catalog;
+
 use BigCommerce\Tests\BigCommerceApiTest;
 
 final class ProductsApiTest extends BigCommerceApiTest

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Brand;
-
 
 use BigCommerce\ApiV3\ResourceModels\Metafield;
 

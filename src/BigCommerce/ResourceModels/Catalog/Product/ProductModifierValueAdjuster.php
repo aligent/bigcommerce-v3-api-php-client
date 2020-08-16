@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Api;
-
 
 use BigCommerce\ApiV3\ResponseModels\Meta\Pagination;
 use BigCommerce\ApiV3\ResponseModels\PaginatedBatchableResponse;
@@ -17,7 +15,7 @@ trait FetchAllPages
     abstract protected function setData(array $data): void;
     abstract public function getPagination(): Pagination;
 
-    abstract function __construct(ResponseInterface $response);
+    abstract public function __construct(ResponseInterface $response);
 
     private function appendData(array $data): array
     {
@@ -29,7 +27,7 @@ trait FetchAllPages
      * @param Closure $request Must return a ResponseInterface
      * @return static
      */
-    public static function BuildFromAllPages(Closure $request): ?PaginatedResponse
+    public static function buildFromAllPages(Closure $request): ?PaginatedResponse
     {
         $response = $request(1);
         if (!$response instanceof ResponseInterface) {

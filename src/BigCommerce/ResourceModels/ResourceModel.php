@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels;
-
 
 use JsonSerializable;
 use stdClass;
@@ -18,11 +16,13 @@ abstract class ResourceModel implements JsonSerializable
         }
     }
 
-    public function jsonSerialize() : array
+    public function jsonSerialize(): array
     {
         $data = [];
         foreach ($this as $key => $value) {
-            if (isset($this->$key)) $data[$key] = $value;
+            if (isset($this->$key)) {
+                $data[$key] = $value;
+            }
         }
 
         return $data;

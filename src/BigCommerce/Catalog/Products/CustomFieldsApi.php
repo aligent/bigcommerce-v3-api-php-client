@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\CustomField;
@@ -11,9 +9,9 @@ use BigCommerce\ApiV3\ResponseModels\CustomFieldsResponse;
 
 class CustomFieldsApi extends ResourceApi
 {
-    const RESOURCE_NAME = 'custom-fields';
-    const CUSTOM_FIELDS_ENDPOINT = 'catalog/products/%d/custom-fields';
-    const CUSTOM_FIELD_ENDPOINT  = 'catalog/products/%d/custom-fields/%d';
+    public const RESOURCE_NAME = 'custom-fields';
+    public const CUSTOM_FIELDS_ENDPOINT = 'catalog/products/%d/custom-fields';
+    public const CUSTOM_FIELD_ENDPOINT  = 'catalog/products/%d/custom-fields/%d';
 
     protected function resourceName(): string
     {

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Api;
-
 
 use BigCommerce\ApiV3\Client;
 use GuzzleHttp\RequestOptions;
