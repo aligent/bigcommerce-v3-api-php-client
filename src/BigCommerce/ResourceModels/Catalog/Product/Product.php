@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
@@ -14,12 +13,12 @@ use stdClass;
  */
 class Product extends ResourceModel
 {
-    const INVENTORY_TRACKING_NONE    = 'none';
-    const INVENTORY_TRACKING_PRODUCT = 'product';
-    const INVENTORY_TRACKING_VARIANT = 'variant';
+    public const INVENTORY_TRACKING_NONE    = 'none';
+    public const INVENTORY_TRACKING_PRODUCT = 'product';
+    public const INVENTORY_TRACKING_VARIANT = 'variant';
 
-    const PRODUCT_TYPE_PHYSICAL = 'physical';
-    const PRODUCT_TYPE_DIGITAL  = 'digital';
+    public const PRODUCT_TYPE_PHYSICAL = 'physical';
+    public const PRODUCT_TYPE_DIGITAL  = 'digital';
 
     public int $id;
     public string $name;
@@ -93,7 +92,9 @@ class Product extends ResourceModel
     public function __construct(?stdClass $optionObject = null)
     {
         if (!is_null($optionObject) && isset($optionObject->modifiers)) {
-            $this->modifiers = array_map(function($m) { return new ProductModifier($m); }, $optionObject->modifiers);
+            $this->modifiers = array_map(function ($m) {
+                return new ProductModifier($m);
+            }, $optionObject->modifiers);
             unset($optionObject->modifiers);
         }
 

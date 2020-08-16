@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\Tests\Catalog\Products;
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;

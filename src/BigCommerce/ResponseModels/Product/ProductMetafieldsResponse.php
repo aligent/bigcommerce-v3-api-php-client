@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductMetafield;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
@@ -24,6 +22,8 @@ class ProductMetafieldsResponse extends PaginatedResponse
 
     protected function addData(array $data): void
     {
-        $this->metafields = array_map(function(\stdClass $m) { return new ProductMetafield($m); }, $data);
+        $this->metafields = array_map(function (\stdClass $m) {
+            return new ProductMetafield($m);
+        }, $data);
     }
 }

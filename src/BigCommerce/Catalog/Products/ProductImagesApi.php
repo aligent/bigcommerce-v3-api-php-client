@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;
@@ -11,9 +9,9 @@ use BigCommerce\ApiV3\ResponseModels\Product\ProductImagesResponse;
 
 class ProductImagesApi extends ResourceApi
 {
-    const RESOURCE_NAME   = 'images';
-    const IMAGES_ENDPOINT = 'catalog/products/%d/images';
-    const IMAGE_ENDPOINT  = 'catalog/products/%d/images/%d';
+    public const RESOURCE_NAME   = 'images';
+    public const IMAGES_ENDPOINT = 'catalog/products/%d/images';
+    public const IMAGE_ENDPOINT  = 'catalog/products/%d/images/%d';
 
     protected function singleResourceEndpoint(): string
     {

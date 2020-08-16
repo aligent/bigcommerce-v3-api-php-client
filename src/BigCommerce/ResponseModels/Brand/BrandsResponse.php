@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Brand;
-
 
 use BigCommerce\ApiV3\Api\FetchAllPages;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Brand\Brand;
@@ -27,7 +25,9 @@ class BrandsResponse extends PaginatedResponse
 
     protected function addData(array $data): void
     {
-        $this->setData(array_map(function(\stdClass $b) { return new Brand($b); }, $data));
+        $this->setData(array_map(function (\stdClass $b) {
+            return new Brand($b);
+        }, $data));
     }
 
     protected function getData(): array

@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests\Catalog;
 
 use BigCommerce\ApiV3\Catalog\Brands\BrandImageApi;
@@ -7,7 +8,7 @@ use BigCommerce\Tests\BigCommerceApiTest;
 
 class BrandsApiTest extends BigCommerceApiTest
 {
-    public function testCanSetBrandId():void
+    public function testCanSetBrandId(): void
     {
         $expectedId = 1234;
         $brandApi = $this->getApi()->catalog()->brand($expectedId);

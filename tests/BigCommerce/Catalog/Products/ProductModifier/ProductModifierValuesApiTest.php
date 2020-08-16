@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\Catalog\Products\ProductModifier;
 
 use BigCommerce\Tests\BigCommerceApiTest;
@@ -11,7 +12,8 @@ class ProductModifierValuesApiTest extends BigCommerceApiTest
         $expectedModifierId = 3;
         $expectedValueId    = 1990;
 
-        $modifierValueApi = $this->getApi()->catalog()->product($expectedProductId)->modifier($expectedModifierId)->value($expectedValueId);
+        $modifierValueApi = $this->getApi()
+            ->catalog()->product($expectedProductId)->modifier($expectedModifierId)->value($expectedValueId);
         $this->assertEquals($expectedModifierId, $modifierValueApi->getParentResourceId());
         $this->assertEquals($expectedValueId, $modifierValueApi->getResourceId());
         $this->assertEquals($expectedProductId, $modifierValueApi->getProductId());

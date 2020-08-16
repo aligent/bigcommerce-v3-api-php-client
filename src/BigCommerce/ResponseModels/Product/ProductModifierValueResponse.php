@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValue;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\Tests\Catalog\Categories;
-
 
 use BigCommerce\Tests\BigCommerceApiTest;
 

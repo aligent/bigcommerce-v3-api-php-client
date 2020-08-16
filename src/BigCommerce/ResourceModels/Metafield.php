@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels;
-
 
 abstract class Metafield extends ResourceModel
 {

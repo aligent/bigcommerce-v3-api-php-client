@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantResponse;
@@ -10,9 +8,9 @@ use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantsResponse;
 
 class VariantsApi extends ResourceApi
 {
-    const RESOURCE_NAME     = 'variants';
-    const VARIANTS_ENDPOINT = 'catalog/products/%d/variants';
-    const VARIANT_ENDPOINT  = 'catalog/products/%d/variants/%d';
+    public const RESOURCE_NAME     = 'variants';
+    public const VARIANTS_ENDPOINT = 'catalog/products/%d/variants';
+    public const VARIANT_ENDPOINT  = 'catalog/products/%d/variants/%d';
 
     protected function resourceName(): string
     {

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\CustomField;
 use stdClass;

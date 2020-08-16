@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductModifier\ProductModifierValuesApi;
@@ -12,9 +10,9 @@ use BigCommerce\ApiV3\ResponseModels\Product\ModifiersResponse;
 
 class ModifiersApi extends ResourceApi
 {
-    const RESOURCE_NAME      = 'modifiers';
-    const MODIFIERS_ENDPOINT = 'catalog/products/%d/modifiers';
-    const MODIFIER_ENDPOINT  = 'catalog/products/%d/modifiers/%d';
+    public const RESOURCE_NAME      = 'modifiers';
+    public const MODIFIERS_ENDPOINT = 'catalog/products/%d/modifiers';
+    public const MODIFIER_ENDPOINT  = 'catalog/products/%d/modifiers/%d';
 
     protected function resourceName(): string
     {

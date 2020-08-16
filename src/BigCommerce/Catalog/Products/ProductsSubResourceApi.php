@@ -1,16 +1,14 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products;
-
 
 use BigCommerce\ApiV3\Client;
 
 trait ProductsSubResourceApi
 {
-    abstract function getClient(): Client;
+    abstract public function getClient(): Client;
 
-    abstract function getResourceId(): ?int;
+    abstract public function getResourceId(): ?int;
 
     public function variants(): VariantsApi
     {

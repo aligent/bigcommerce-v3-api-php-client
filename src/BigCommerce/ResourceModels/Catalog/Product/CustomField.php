@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
@@ -12,10 +10,10 @@ class CustomField extends ResourceModel
     public string $name;
     public string $value;
 
-    const MAX_LENGTH_NAME = 250;
-    const MAX_LENGTH_VALUE = 250;
+    public const MAX_LENGTH_NAME = 250;
+    public const MAX_LENGTH_VALUE = 250;
 
-    public static function Build(string $name, string $value) : CustomField
+    public static function Build(string $name, string $value): CustomField
     {
         $field = new CustomField();
         $field->setName($name);

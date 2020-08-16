@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels;
 
 use BigCommerce\ApiV3\ResponseModels\Meta\Pagination;
@@ -10,7 +9,8 @@ abstract class PaginatedResponse
 {
     private Pagination $pagination;
 
-    public function __construct(ResponseInterface $response) {
+    public function __construct(ResponseInterface $response)
+    {
         $rawData = json_decode($response->getBody());
         $this->decodeResponseData($rawData);
     }

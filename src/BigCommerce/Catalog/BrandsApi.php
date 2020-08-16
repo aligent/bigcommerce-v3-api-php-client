@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog;
-
 
 use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Brands\BrandImageApi;
@@ -43,7 +41,7 @@ class BrandsApi extends ResourceApi
 
     public function getAllPages(array $filter = []): BrandsResponse
     {
-        return BrandsResponse::BuildFromAllPages(function($page) use ($filter) {
+        return BrandsResponse::BuildFromAllPages(function ($page) use ($filter) {
             return $this->getAllResources($filter, $page, 200);
         });
     }
