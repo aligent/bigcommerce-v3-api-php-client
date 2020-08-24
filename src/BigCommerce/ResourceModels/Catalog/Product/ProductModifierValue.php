@@ -11,6 +11,7 @@ class ProductModifierValue implements JsonSerializable
     public ?int $productId;
     public string $label;
     public bool $is_default = false;
+    public int $sort_order;
     public ?ProductModifierValueAdjuster $adjusters;
 
     public function __construct(?int $productId, string $label)
