@@ -41,6 +41,7 @@ class ProductModifierValue implements JsonSerializable
         $json = [
             'is_default' => $this->is_default,
             'label'      => $this->label,
+            'sort_order' => $this->sort_order,
         ];
 
         if (isset($this->adjusters)) {
