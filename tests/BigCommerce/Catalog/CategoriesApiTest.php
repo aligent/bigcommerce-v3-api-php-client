@@ -3,6 +3,7 @@
 namespace BigCommerce\Tests\Catalog;
 
 use BigCommerce\ApiV3\Catalog\Categories\CategoryImageApi;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Category\CategoryTreeBranch;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class CategoriesApiTest extends BigCommerceApiTest
@@ -42,5 +43,83 @@ class CategoriesApiTest extends BigCommerceApiTest
         $categoriesResponse = $this->getApi()->catalog()->categories()->getAllPages();
         $this->assertEquals(6, $categoriesResponse->getPagination()->total);
         $this->assertCount(6, $categoriesResponse->getCategories());
+    }
+
+    public function testCanGetCategoryTree(): void
+    {
+        $this->setReturnData('catalog__categories__get_tree.json');
+
+        $expectedTree = [
+            new CategoryTreeBranch((object)[
+                "id" => 23,
+                "parent_id" => 0,
+                "name" => "Shop All",
+                "is_visible" => true,
+                "url" => "/shop-all/",
+                "children" => [],
+            ]),
+            new CategoryTreeBranch((object)[
+                "id" => 18,
+                "parent_id" =>  0,
+                "name" => "Bath",
+                "is_visible" => true,
+                "url" => "/bath/",
+                "children" => [
+                    new CategoryTreeBranch((object)[
+                        "id" => 24,
+                        "parent_id" => 18,
+                        "name" => "Small Baths",
+                        "is_visible" => true,
+                        "url" => "/bath/small-baths/",
+                        "children" => [
+                            new CategoryTreeBranch((object)[
+                                "id" => 25,
+                                "parent_id" => 24,
+                                "name" => "Small Red Baths",
+                                "is_visible" => true,
+                                "url" => "/bath/small-baths/small-red-baths/",
+                                "children" => []
+                            ])
+                        ]
+                    ])
+                ]
+            ]),
+            new CategoryTreeBranch((object)[
+                "id" => 19,
+                "parent_id" => 0,
+                "name" => "Garden",
+                "is_visible" => true,
+                "url" => "/garden/",
+                "children" => []
+            ]),
+            new CategoryTreeBranch((object)[
+                "id" => 21,
+                "parent_id" => 0,
+                "name" => "Kitchen",
+                "is_visible" => true,
+                "url" => "/kitchen/",
+                "children" => []
+            ]),
+            new CategoryTreeBranch((object)[
+                "id" => 20,
+                "parent_id" => 0,
+                "name" => "Publications",
+                "is_visible" => true,
+                "url" => "/publications/",
+                "children" => []
+            ]),
+            new CategoryTreeBranch((object)[
+                "id" => 22,
+                "parent_id" => 0,
+                "name" => "Utility",
+                "is_visible" => true,
+                "url" => "/utility/",
+                "children" => []
+            ])
+        ];
+
+        $response = $this->getApi()->catalog()->categories()->getCategoryTree()->getTree();
+
+        $this->assertEquals($expectedTree, $response);
     }
 }

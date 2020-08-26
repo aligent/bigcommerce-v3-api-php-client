@@ -8,12 +8,15 @@ use BigCommerce\ApiV3\Catalog\Categories\CategoryMetafieldsApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoriesResponse;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryResponse;
+use BigCommerce\ApiV3\ResponseModels\Category\CategoryTreeResponse;
+use GuzzleHttp\RequestOptions;
 
 class CategoriesApi extends ResourceApi
 {
     private const RESOURCE_NAME       = 'categories';
     private const CATEGORIES_ENDPOINT = 'catalog/categories';
     private const CATEGORY_ENDPOINT   = 'catalog/categories/%d';
+    private const CATEGORY_TREE_ENDPOINT = 'catalog/categories/tree';
 
     public function image(): CategoryImageApi
     {
@@ -28,6 +31,15 @@ class CategoriesApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): CategoriesResponse
     {
         return new CategoriesResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function getCategoryTree(): CategoryTreeResponse
+    {
+        $response = $this->getClient()->getRestClient()->get(
+            self::CATEGORY_TREE_ENDPOINT
+        );
+
+        return new CategoryTreeResponse($response);
     }
 
     public function getAllPages(array $filter = []): CategoriesResponse
