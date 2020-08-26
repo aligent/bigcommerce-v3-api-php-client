@@ -7,6 +7,8 @@ use BigCommerce\ApiV3\Catalog\Products\ProductsSubResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\Product;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductsResponse;
+use GuzzleHttp\RequestOptions;
+use Psr\Http\Client\ClientExceptionInterface;
 
 class ProductsApi extends ResourceWithBatchUpdateApi
 {
@@ -66,6 +68,22 @@ class ProductsApi extends ResourceWithBatchUpdateApi
     public function batchUpdate(array $products): ProductsResponse
     {
         return ProductsResponse::buildFromMultipleResponses($this->batchUpdateResource($products));
+    }
+
+    public function batchDelete(array $productIds): bool
+    {
+        try {
+            $this->getClient()->getRestClient()->delete(
+                $this->multipleResourcesEndpoint(),
+                [
+                    RequestOptions::QUERY => ['id:in' => implode(',', $productIds)],
+                ]
+            );
+
+            return true;
+        } catch (ClientExceptionInterface $exception) {
+            return false;
+        }
     }
 
     protected function singleResourceEndpoint(): string
