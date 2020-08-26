@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Category;
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\CategoryTreeBranch;

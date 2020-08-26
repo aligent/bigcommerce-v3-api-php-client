@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Api;
-
 
 class AttributeFilter
 {
@@ -56,7 +54,9 @@ class AttributeFilter
 
     public static function createFilter(string $attribute, string $value, string $filterType): array
     {
-        if (!self::isValidFilter($filterType)) throw new \InvalidArgumentException("");
+        if (!self::isValidFilter($filterType)) {
+            throw new \InvalidArgumentException("");
+        }
 
         return ["$attribute:$filterType" => $value];
     }

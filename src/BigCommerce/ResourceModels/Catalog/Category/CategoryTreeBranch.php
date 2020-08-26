@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Category;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;
@@ -23,7 +21,8 @@ class CategoryTreeBranch extends ResourceModel
     public function __construct(?stdClass $optionObject = null)
     {
         foreach ($optionObject->children as $categoryData) {
-            $this->children[] = $categoryData instanceof CategoryTreeBranch ? $categoryData : new CategoryTreeBranch($categoryData);
+            $this->children[] = $categoryData instanceof CategoryTreeBranch
+                ? $categoryData : new CategoryTreeBranch($categoryData);
         }
 
         unset($optionObject->children);
