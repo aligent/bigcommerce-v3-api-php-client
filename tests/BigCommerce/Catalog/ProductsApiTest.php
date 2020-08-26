@@ -41,4 +41,18 @@ final class ProductsApiTest extends BigCommerceApiTest
         $productsResponse = $this->getApi()->catalog()->products()->getAllPages();
         $this->assertEquals(2, $productsResponse->getPagination()->total);
     }
+
+    public function testCanBatchDeleteProducts(): void
+    {
+        $this->setReturnData('blank.json', 204);
+        $response = $this->getApi()->catalog()->products()->batchDelete([1,2,3]);
+        $this->assertTrue($response);
+    }
+
+    public function testCanFailToDeleteBatchDeleteProducts(): void
+    {
+        $this->setReturnData(self::EMPTY_RESPONSE, 400);
+        $response = $this->getApi()->catalog()->products()->batchDelete([1,2,3]);
+        $this->assertFalse($response);
+    }
 }

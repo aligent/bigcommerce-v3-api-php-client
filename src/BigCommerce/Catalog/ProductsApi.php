@@ -2,6 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog;
 
+use BigCommerce\ApiV3\Api\AttributeFilter;
 use BigCommerce\ApiV3\Api\ResourceWithBatchUpdateApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductsSubResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\Product;
@@ -76,7 +77,7 @@ class ProductsApi extends ResourceWithBatchUpdateApi
             $this->getClient()->getRestClient()->delete(
                 $this->multipleResourcesEndpoint(),
                 [
-                    RequestOptions::QUERY => ['id:in' => implode(',', $productIds)],
+                    RequestOptions::QUERY => AttributeFilter::in('id', $productIds),
                 ]
             );
 
