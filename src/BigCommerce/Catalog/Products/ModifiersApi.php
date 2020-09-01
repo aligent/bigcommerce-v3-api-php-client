@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV3\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Catalog\Products\ProductModifier\ProductModifierImagesApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductModifier\ProductModifierValuesApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifier;
 use BigCommerce\ApiV3\ResponseModels\Product\ModifierResponse;
@@ -59,6 +60,13 @@ class ModifiersApi extends ResourceApi
     public function value(int $valueId): ProductModifierValuesApi
     {
         $api = new ProductModifierValuesApi($this->getClient(), $valueId, $this->getResourceId());
+        $api->setProductId($this->getParentResourceId());
+        return $api;
+    }
+
+    public function image(int $imageId): ProductModifierImagesApi
+    {
+        $api = new ProductModifierImagesApi($this->getClient(), $imageId, $this->getResourceId());
         $api->setProductId($this->getParentResourceId());
         return $api;
     }
