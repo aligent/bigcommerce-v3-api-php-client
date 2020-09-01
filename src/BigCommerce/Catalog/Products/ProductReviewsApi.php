@@ -1,0 +1,43 @@
+<?php
+
+
+namespace BigCommerce\ApiV3\Catalog\Products;
+
+
+use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductReviewResponse;
+use BigCommerce\ApiV3\ResponseModels\Product\ProductReviewsResponse;
+use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
+
+class ProductReviewsApi extends ResourceApi
+{
+    public const RESOURCE_NAME     = 'reviews';
+    public const REVIEW_ENDPOINT   = 'catalog/products/%s/reviews';
+    public const REVIEWS_ENDPOINT  = 'catalog/products/%s/reviews';
+
+    protected function singleResourceEndpoint(): string
+    {
+        return self::REVIEW_ENDPOINT;
+    }
+
+    protected function multipleResourcesEndpoint(): string
+    {
+        return self::REVIEWS_ENDPOINT;
+    }
+
+    protected function resourceName(): string
+    {
+        return self::RESOURCE_NAME;
+    }
+
+    public function get(): ProductReviewResponse
+    {
+        return new ProductReviewResponse($this->getResource());
+    }
+
+    public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductReviewsResponse
+    {
+        return new ProductReviewsResponse($this->getAllResources($filters, $page, $limit));
+    }
+}
