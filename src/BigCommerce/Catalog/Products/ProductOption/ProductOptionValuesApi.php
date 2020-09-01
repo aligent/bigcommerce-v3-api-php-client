@@ -5,10 +5,8 @@ namespace BigCommerce\ApiV3\Catalog\Products\ProductOption;
 
 
 use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValueResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValuesResponse;
-use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 
 class ProductOptionValuesApi extends ResourceApi
 {

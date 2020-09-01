@@ -36,4 +36,14 @@ class VariantsApi extends ResourceApi
     {
         return new ProductVariantsResponse($this->getAllResources($filters, $page, $limit));
     }
+
+    public function metafield(int $metafieldId): ProductMetafieldsApi
+    {
+        return new ProductMetafieldsApi($this->getClient(), $metafieldId, $this->getResourceId());
+    }
+
+    public function metafields(): ProductMetafieldsApi
+    {
+        return new ProductMetafieldsApi($this->getClient(), null, $this->getResourceId());
+    }
 }
