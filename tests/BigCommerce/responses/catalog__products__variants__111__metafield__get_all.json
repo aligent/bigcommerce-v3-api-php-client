@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "permission_set": "app_only",
+      "namespace": "Warehouse Locations",
+      "key": "Location",
+      "value": "4HG",
+      "description": "Location in the warehouse",
+      "resource_type": "brand",
+      "resource_id": 111,
+      "id": 6,
+      "created_at": "1973-01-20T21:34:57.903Z",
+      "updated_at": "1990-12-30T00:29:23.515Z"
+    },
+    {
+      "permission_set": "read",
+      "namespace": "Warehouse Locations",
+      "key": "Location",
+      "value": "4HG",
+      "description": "Location in the warehouse",
+      "resource_type": "brand",
+      "resource_id": 111,
+      "id": 6,
+      "created_at": "1973-01-20T21:34:57.903Z",
+      "updated_at": "1990-12-30T00:29:23.515Z"
+    },
+    {
+      "permission_set": "app_only",
+      "namespace": "Warehouse Locations",
+      "key": "Location",
+      "value": "4HG",
+      "description": "Location in the warehouse",
+      "resource_type": "brand",
+      "resource_id": 111,
+      "id": 6,
+      "created_at": "1973-01-20T21:34:57.903Z",
+      "updated_at": "1990-12-30T00:29:23.515Z"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 3,
+      "count": 3,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}

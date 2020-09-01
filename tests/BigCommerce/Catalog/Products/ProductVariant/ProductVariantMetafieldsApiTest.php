@@ -22,11 +22,18 @@ class ProductVariantMetafieldsApiTest extends BigCommerceApiTest
 
     public function testCanGetProductVariantMetafield()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('catalog__products__variants__158__metafield__get_8.json');
+
+        $response = $this->getApi()->catalog()->product(1)->variant(158)->metafield(8)->get();
+        $this->assertEquals('Shelf 3, Bin 5', $response->getMetafield()->value);
     }
 
     public function testCanGetAllProductVariantMetafields()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('catalog__products__variants__111__metafield__get_all.json');
+
+        $response = $this->getApi()->catalog()->product(1)->variant(111)->metafields()->getAll();
+        $this->assertEquals(3, $response->getPagination()->total);
+        $this->assertEquals('Warehouse Locations', $response->getMetafields()[0]->namespace);
     }
 }
