@@ -100,4 +100,14 @@ trait ProductsSubResourceApi
     {
         return new ProductReviewsApi($this->getClient(), null, $this->getResourceId());
     }
+
+    public function video(int $videoId): ProductVideosApi
+    {
+        return new ProductVideosApi($this->getClient(), $videoId, $this->getResourceId());
+    }
+
+    public function videos(): ProductVideosApi
+    {
+        return new ProductVideosApi($this->getClient(), null, $this->getResourceId());
+    }
 }
