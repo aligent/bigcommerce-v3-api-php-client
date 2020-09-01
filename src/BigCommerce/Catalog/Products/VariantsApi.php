@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV3\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Catalog\Products\ProductVariant\ProductVariantMetafieldsApi;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantsResponse;
 
@@ -37,13 +38,15 @@ class VariantsApi extends ResourceApi
         return new ProductVariantsResponse($this->getAllResources($filters, $page, $limit));
     }
 
-    public function metafield(int $metafieldId): ProductMetafieldsApi
+    public function metafield(int $metafieldId = null): ProductVariantMetafieldsApi
     {
-        return new ProductMetafieldsApi($this->getClient(), $metafieldId, $this->getResourceId());
+        $api = new ProductVariantMetafieldsApi($this->getClient(), $metafieldId, $this->getResourceId());
+        $api->setProductId($this->getParentResourceId());
+        return $api;
     }
 
-    public function metafields(): ProductMetafieldsApi
+    public function metafields(): ProductVariantMetafieldsApi
     {
-        return new ProductMetafieldsApi($this->getClient(), null, $this->getResourceId());
+        return $this->metafield();
     }
 }
