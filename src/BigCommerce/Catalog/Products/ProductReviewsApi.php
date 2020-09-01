@@ -13,7 +13,7 @@ use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 class ProductReviewsApi extends ResourceApi
 {
     public const RESOURCE_NAME     = 'reviews';
-    public const REVIEW_ENDPOINT   = 'catalog/products/%s/reviews';
+    public const REVIEW_ENDPOINT   = 'catalog/products/%s/reviews/%s';
     public const REVIEWS_ENDPOINT  = 'catalog/products/%s/reviews';
 
     protected function singleResourceEndpoint(): string
