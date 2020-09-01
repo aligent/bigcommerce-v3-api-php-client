@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV3\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Catalog\Products\ProductOption\ProductOptionValuesApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOption;
 use BigCommerce\ApiV3\ResponseModels\Product\OptionResponse;
 use BigCommerce\ApiV3\ResponseModels\OptionsResponse;
@@ -46,5 +47,19 @@ class OptionsApi extends ResourceApi
     protected function multipleResourcesEndpoint(): string
     {
         return self::OPTIONS_ENDPOINT;
+    }
+
+    public function values(): ProductOptionValuesApi
+    {
+        $api = new ProductOptionValuesApi($this->getClient(), null, $this->getResourceId());
+        $api->setProductId($this->getParentResourceId());
+        return $api;
+    }
+
+    public function value(int $valueId): ProductOptionValuesApi
+    {
+        $api = new ProductOptionValuesApi($this->getClient(), $valueId, $this->getResourceId());
+        $api->setProductId($this->getParentResourceId());
+        return $api;
     }
 }
