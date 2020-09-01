@@ -41,15 +41,66 @@ $products = $productsResponse->getProducts();
 
 Running tests: `composer run-script test`
 
+
 ## Coverage
+
+### Store Management
+
+#### Customers 
+
+- ☑️ Customers
+- ☐ Addresses
+- ☐ Attributes
+- ☐ Attribute Values
+- ☐ Form Field Values
+- ☐ Consent
+
+#### Orders (V3)
+
+- ☐ Transactions
+- ☐ Order Refunds
+
+#### Payment Methods
+
+- ☐ Payment Access Token
+- ☐ Payment Methods
+
+#### Scripts
+
+- ☐ Scripts
+
+#### Subscribers
+
+- ☐ Subscribers
+
+#### Themes
+
+- ☐ Themes
+- ☐ Theme Actions
+- ☐ Theme Jobs
+
+#### Widgets
+
+- ☐ Regions
+- ☐ Widget Template
+- ☐ Widget
+- ☐ Placement
+
+### Catalog
 
 #### Catalog API
 
- - ☑️ Brands
- - ☑️ Category
- - ☑️ Product
- - ☑️ Summary
- - ☐ Variants
+- ☑️ Brands
+- ☑️ Category
+- ☑️ Product
+- ☑️ Summary
+- ☐ Variants
+
+#### Price Lists
+
+- ☐ Price Lists
+- ☐ Assignments
+- ☐ Records 
 
 ## Still To Do
 
