@@ -1,6 +1,6 @@
 # BigCommerce V3 Api Library
 
-![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/aligent/bigcommerce-api-client)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/aligent/bigcommerce-api-client/dev-main)
 
 ## Introduction
 This is an (very) early development version of an easy-to-use API client for BigCommerce.
