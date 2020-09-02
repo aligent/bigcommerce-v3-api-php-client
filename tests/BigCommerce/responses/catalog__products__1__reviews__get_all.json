@@ -1,0 +1,29 @@
+{
+  "data": [{
+    "title": "Great Product",
+    "text": "This product is amazing!!!",
+    "status": "approved",
+    "rating": 5,
+    "email": "janedoe@email.com",
+    "name": "Jane Doe",
+    "date_reviewed": "2018-05-07T19:37:13+00:00",
+    "id": 5,
+    "product_id": 1,
+    "date_created": "2018-05-07T19:37:13+00:00\"",
+    "date_modified": "2018-05-07T19:38:36+00:00"
+  }],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "previous": "?page=1&limit=50",
+        "current": "?page=1&limit=50",
+        "next": "?page=1&limit=50"
+      }
+    }
+  }
+}
