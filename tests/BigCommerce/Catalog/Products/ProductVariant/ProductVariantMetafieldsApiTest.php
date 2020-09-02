@@ -4,7 +4,6 @@ namespace BigCommerce\ApiV3\Catalog\Products\ProductVariant;
 
 use BigCommerce\Tests\BigCommerceApiTest;
 
-
 class ProductVariantMetafieldsApiTest extends BigCommerceApiTest
 {
     public function testHasProductVariantAndMetafieldIds()

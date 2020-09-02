@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Catalog\Products\ProductModifier;
-
 
 use BigCommerce\Tests\BigCommerceApiTest;
 
