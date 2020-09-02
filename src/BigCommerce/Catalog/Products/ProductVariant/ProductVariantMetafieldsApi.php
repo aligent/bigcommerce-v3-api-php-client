@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\Catalog\Products\ProductVariant;
 
 use BigCommerce\ApiV3\Api\ResourceApi;

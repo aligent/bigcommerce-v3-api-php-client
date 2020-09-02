@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Product;
-
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductVariantMetafield;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
@@ -22,6 +20,6 @@ class ProductVariantMetafieldResponse extends SingleResourceResponse
 
     protected function addData(stdClass $rawData): void
     {
-        $this->metafield= new ProductVariantMetafield($rawData);
+        $this->metafield = new ProductVariantMetafield($rawData);
     }
 }
