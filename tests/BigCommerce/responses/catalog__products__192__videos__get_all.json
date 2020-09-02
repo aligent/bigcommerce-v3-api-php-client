@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "id": 6,
+      "type": "youtube",
+      "video_id": "PqBTp23RLhI",
+      "product_id": 192,
+      "sort_order": 1,
+      "title": "Creating and Editing Banners | BigCommerce Tutorials",
+      "description": "Learn how to create and edit marketing banners. Marketing banners are a great way to advertise sales, display coupon codes, and add design elements. Let’s take a look at how you can leverage banners to convert your store’s visitors into paying customers.",
+      "length": "01:54"
+    },
+    {
+      "id": 7,
+      "type": "youtube",
+      "video_id": "EhYBjzqd-nI",
+      "product_id": 192,
+      "sort_order": 2,
+      "title": "BigCommerce Company Values",
+      "description": "These are the core principles upon which BigCommerce was built, guiding what we do and how we do it. Each employee learns them, loves them and lives them. Our merchants benefit from them every time they use our product or get help from our support team.\n\nJoin the BigCommerce team and help us build software that changes lives!\n\nhttps://www.bigcommerce.com/careers/",
+      "length": "03:30"
+    },
+    {
+      "id": 8,
+      "type": "youtube",
+      "video_id": "vAUdo4kRjrU",
+      "product_id": 192,
+      "sort_order": 3,
+      "title": "TOP WORKPLACES 2016 - Austin American Statesman + BigCommerce",
+      "description": "We've been named one of Austin American-Statesman's Top WorkPlaces for the 5th year in a row! Here's what some employees have to say:\n\n“I am given the freedom and trust to make a difference.”\n\n“Everyone believes in the product and growing the company.”\n\n“I'm appreciated for the work I do and there is room to grown within the company.”\n\nWork With Us!\nhttp://www.bigcommerce.com/careers.php",
+      "length": "01:37"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 3,
+      "count": 3,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}
