@@ -1,5 +1,8 @@
 # BigCommerce V3 Api Library
 
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/aligent/bigcommerce-api-client/dev-main)
+![Latest Release](https://img.shields.io/github/v/release/aligent/bigcommerce-v3-api-php-client?sort=semver)
+
 ## Introduction
 This is an (very) early development version of an easy-to-use API client for BigCommerce.
 
@@ -39,14 +42,66 @@ $products = $productsResponse->getProducts();
 
 Running tests: `composer run-script test`
 
+
 ## Coverage
 
-Catalog API
+### Store Management
 
- - Brands
- - Category
- - Product (partial) 
- - Summary
+#### Customers 
+
+- ☑️ Customers
+- ☐ Addresses
+- ☐ Attributes
+- ☐ Attribute Values
+- ☐ Form Field Values
+- ☐ Consent
+
+#### Orders (V3)
+
+- ☐ Transactions
+- ☐ Order Refunds
+
+#### Payment Methods
+
+- ☐ Payment Access Token
+- ☐ Payment Methods
+
+#### Scripts
+
+- ☐ Scripts
+
+#### Subscribers
+
+- ☐ Subscribers
+
+#### Themes
+
+- ☐ Themes
+- ☐ Theme Actions
+- ☐ Theme Jobs
+
+#### Widgets
+
+- ☐ Regions
+- ☐ Widget Template
+- ☐ Widget
+- ☐ Placement
+
+### Catalog
+
+#### Catalog API
+
+- ☑️ Brands
+- ☑️ Category
+- ☑️ Product
+- ☑️ Summary
+- ☐ Variants
+
+#### Price Lists
+
+- ☐ Price Lists
+- ☐ Assignments
+- ☐ Records 
 
 ## Still To Do
 

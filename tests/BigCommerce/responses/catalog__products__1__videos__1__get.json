@@ -1,0 +1,12 @@
+{
+  "data": {
+    "title": "Your Video",
+    "description": "Company Values",
+    "sort_order": 1,
+    "type": "youtube",
+    "video_id": "123345AA",
+    "product_id": 1,
+    "id": 1
+  },
+  "meta": {}
+}
