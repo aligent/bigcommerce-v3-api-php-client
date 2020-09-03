@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "price_list_id": 3,
+      "variant_id": 388,
+      "price": 10.78,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 10.78,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:35:42Z",
+      "currency": "usd",
+      "product_id": 195,
+      "bulk_pricing_tiers": [
+        {
+          "quantity_min": 2,
+          "quantity_max": 9,
+          "type": "percent",
+          "amount": 1
+        },
+        {
+          "quantity_min": 10,
+          "quantity_max": 19,
+          "type": "percent",
+          "amount": 2
+        },
+        {
+          "quantity_min": 20,
+          "quantity_max": 2147483647,
+          "type": "percent",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}

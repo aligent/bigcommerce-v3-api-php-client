@@ -39,6 +39,11 @@ class PriceListsApi extends ResourceApi
 
     public function assignments(): PriceListAssignmentsApi
     {
-        return new PriceListAssignmentsApi($this->getClient(), null, $this->getResourceId());
+        return new PriceListAssignmentsApi($this->getClient());
+    }
+
+    public function records(): PriceListRecordsApi
+    {
+        return new PriceListRecordsApi($this->getClient(), null, $this->getResourceId());
     }
 }

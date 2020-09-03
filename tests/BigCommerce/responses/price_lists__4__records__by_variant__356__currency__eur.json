@@ -1,0 +1,16 @@
+{
+  "data": {
+    "price_list_id": 4,
+    "variant_id": 356,
+    "price": 22.544,
+    "sale_price": {},
+    "retail_price": {},
+    "map_price": {},
+    "calculated_price": 22.544,
+    "date_created": "2018-09-18T13:18:15Z",
+    "date_modified": "2018-09-18T13:18:15Z",
+    "currency": "eur",
+    "product_id": 185
+  },
+  "meta": {}
+}
