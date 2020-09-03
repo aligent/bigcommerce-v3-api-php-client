@@ -99,7 +99,7 @@ Running tests: `composer run-script test`
 - ☑️ Category
 - ☑️ Product
 - ☑️ Summary
-- ☐ Variants
+- ☑️ Variants
 
 #### Price Lists
 
