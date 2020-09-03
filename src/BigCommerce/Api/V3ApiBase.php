@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Api;
 
 use BigCommerce\ApiV3\Client;
@@ -41,5 +40,4 @@ class V3ApiBase implements V3Api
     {
         return $this->client;
     }
-
 }
