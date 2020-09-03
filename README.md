@@ -105,7 +105,7 @@ Running tests: `composer run-script test`
 
 - ☑️ Price Lists
 - ☑️ Assignments
-- ☐ Records 
+- ☑️ Records 
 
 ## Still To Do
 

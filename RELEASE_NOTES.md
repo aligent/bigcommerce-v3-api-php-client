@@ -3,3 +3,4 @@ Adds support for the [Price Lists API](https://developer.bigcommerce.com/api-ref
 
 Includes:
  - Price List Assignments
+ - Price List Records
