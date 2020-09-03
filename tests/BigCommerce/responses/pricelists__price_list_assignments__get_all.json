@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "price_list_id": 1,
+      "customer_group_id": 1,
+      "channel_id": null
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 10,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}
