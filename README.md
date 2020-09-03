@@ -103,7 +103,7 @@ Running tests: `composer run-script test`
 
 #### Price Lists
 
-- ☐ Price Lists
+- ☑️ Price Lists
 - ☐ Assignments
 - ☐ Records 
 

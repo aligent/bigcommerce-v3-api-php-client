@@ -2,6 +2,7 @@
 
 namespace BigCommerce\ApiV3;
 
+use BigCommerce\ApiV3\PriceLists\PriceListsApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 
@@ -91,5 +92,15 @@ class Client
     public function catalog(): Catalog
     {
         return new Catalog($this);
+    }
+
+    public function priceLists(): PriceListsApi
+    {
+        return new PriceListsApi($this);
+    }
+
+    public function priceList(int $priceListId): PriceListsApi
+    {
+        return new PriceListsApi($this, $priceListId);
     }
 }
