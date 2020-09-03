@@ -1,0 +1,304 @@
+{
+  "data": [
+    {
+      "price_list_id": 3,
+      "variant_id": 358,
+      "price": 25.48,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 25.48,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 187,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 359,
+      "price": 31.31,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 31.31,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 188,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 360,
+      "price": 18.57,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 18.57,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 189,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 361,
+      "price": 22.54,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 22.54,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 190,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 362,
+      "price": 27.39,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 27.39,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:51:26Z",
+      "currency": "usd",
+      "product_id": 191,
+      "bulk_pricing_tiers": [
+        {
+          "quantity_min": 10,
+          "quantity_max": 19,
+          "type": "percent",
+          "amount": 1
+        },
+        {
+          "quantity_min": 20,
+          "quantity_max": 29,
+          "type": "percent",
+          "amount": 3
+        },
+        {
+          "quantity_min": 30,
+          "quantity_max": 2147483647,
+          "type": "percent",
+          "amount": 5
+        }
+      ]
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 382,
+      "price": 9.8,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 9.8,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 192,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 383,
+      "price": 24.5,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 24.5,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 192,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 384,
+      "price": 24.5,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 24.5,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 192,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 385,
+      "price": 9.8,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 9.8,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 193,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 386,
+      "price": 10.78,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 10.78,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:33:14Z",
+      "currency": "usd",
+      "product_id": 194,
+      "bulk_pricing_tiers": []
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 388,
+      "price": 10.78,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 10.78,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:35:42Z",
+      "currency": "usd",
+      "product_id": 195,
+      "bulk_pricing_tiers": [
+        {
+          "quantity_min": 2,
+          "quantity_max": 9,
+          "type": "percent",
+          "amount": 1
+        },
+        {
+          "quantity_min": 10,
+          "quantity_max": 19,
+          "type": "percent",
+          "amount": 2
+        },
+        {
+          "quantity_min": 20,
+          "quantity_max": 2147483647,
+          "type": "percent",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 389,
+      "price": 18.62,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 18.62,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:35:42Z",
+      "currency": "usd",
+      "product_id": 195,
+      "bulk_pricing_tiers": [
+        {
+          "quantity_min": 2,
+          "quantity_max": 9,
+          "type": "percent",
+          "amount": 1
+        },
+        {
+          "quantity_min": 10,
+          "quantity_max": 19,
+          "type": "percent",
+          "amount": 2
+        },
+        {
+          "quantity_min": 20,
+          "quantity_max": 2147483647,
+          "type": "percent",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 390,
+      "price": 10.78,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 10.78,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:35:42Z",
+      "currency": "usd",
+      "product_id": 195,
+      "bulk_pricing_tiers": [
+        {
+          "quantity_min": 2,
+          "quantity_max": 9,
+          "type": "percent",
+          "amount": 1
+        },
+        {
+          "quantity_min": 10,
+          "quantity_max": 19,
+          "type": "percent",
+          "amount": 2
+        },
+        {
+          "quantity_min": 20,
+          "quantity_max": 2147483647,
+          "type": "percent",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "price_list_id": 3,
+      "variant_id": 391,
+      "price": 10.78,
+      "sale_price": {},
+      "retail_price": {},
+      "map_price": {},
+      "calculated_price": 10.78,
+      "date_created": "2018-09-17T20:33:14Z",
+      "date_modified": "2018-09-17T20:35:42Z",
+      "currency": "usd",
+      "product_id": 195,
+      "bulk_pricing_tiers": [
+        {
+          "quantity_min": 2,
+          "quantity_max": 9,
+          "type": "percent",
+          "amount": 1
+        },
+        {
+          "quantity_min": 10,
+          "quantity_max": 19,
+          "type": "percent",
+          "amount": 2
+        },
+        {
+          "quantity_min": 20,
+          "quantity_max": 2147483647,
+          "type": "percent",
+          "amount": 3
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 14,
+      "count": 14,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}

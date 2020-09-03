@@ -24,6 +24,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+          body_path: RELEASE_NOTES.md
 
       - name: Update Packagist
         env:

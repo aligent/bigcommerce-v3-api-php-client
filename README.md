@@ -99,13 +99,13 @@ Running tests: `composer run-script test`
 - ☑️ Category
 - ☑️ Product
 - ☑️ Summary
-- ☐ Variants
+- ☑️ Variants
 
 #### Price Lists
 
-- ☐ Price Lists
-- ☐ Assignments
-- ☐ Records 
+- ☑️ Price Lists
+- ☑️ Assignments
+- ☑️ Records 
 
 ## Still To Do
 

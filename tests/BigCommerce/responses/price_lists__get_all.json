@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Warehouse",
+      "date_created": "2018-02-26T17:33:11Z",
+      "date_modified": "2018-05-08T14:05:27Z",
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "B2B",
+      "date_created": "2018-02-26T17:37:01Z",
+      "date_modified": "2018-02-26T17:37:01Z",
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Wholesale",
+      "date_created": "2018-04-05T16:05:12Z",
+      "date_modified": "2018-04-05T16:05:12Z",
+      "active": true
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 3,
+      "count": 3,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}

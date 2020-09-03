@@ -10,39 +10,11 @@ use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\ResponseInterface;
 use UnexpectedValueException;
 
-abstract class ResourceApi
+abstract class ResourceApi extends V3ApiBase
 {
-    private Client $client;
-
-    private ?int $resourceId;
-
-    private ?int $parentResourceId;
-
-    public function __construct(Client $client, ?int $resourceId = null, ?int $parentResourceId = null)
-    {
-        $this->client           = $client;
-        $this->resourceId       = $resourceId;
-        $this->parentResourceId = $parentResourceId;
-    }
-
-    public function getParentResourceId(): ?int
-    {
-        return $this->parentResourceId;
-    }
-
-    public function getResourceId(): ?int
-    {
-        return $this->resourceId;
-    }
-
     abstract protected function singleResourceEndpoint(): string;
     abstract protected function multipleResourcesEndpoint(): string;
     abstract protected function resourceName(): string;
-
-    public function getClient(): Client
-    {
-        return $this->client;
-    }
 
     protected function getResource(): ResponseInterface
     {
@@ -89,7 +61,7 @@ abstract class ResourceApi
 
     protected function singleResourceUrl(): string
     {
-        if (is_null($this->resourceId)) {
+        if (is_null($this->getResourceId())) {
             throw new UnexpectedValueException("A {$this->resourceName()} id must be to be set");
         }
 
