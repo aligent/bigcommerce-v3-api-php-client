@@ -12,6 +12,8 @@ use UnexpectedValueException;
 
 abstract class ResourceApi extends V3ApiBase
 {
+    use GetAllFromBigCommerce;
+
     abstract protected function singleResourceEndpoint(): string;
     abstract protected function multipleResourcesEndpoint(): string;
     abstract protected function resourceName(): string;
@@ -19,19 +21,6 @@ abstract class ResourceApi extends V3ApiBase
     protected function getResource(): ResponseInterface
     {
         return $this->getClient()->getRestClient()->get($this->singleResourceUrl());
-    }
-
-    protected function getAllResources(array $filters = [], int $page = 1, int $limit = 250): ResponseInterface
-    {
-        return $this->getClient()->getRestClient()->get(
-            $this->multipleResourceUrl(),
-            [
-                RequestOptions::QUERY => array_merge($filters, [
-                    'page'  => $page,
-                    'limit' => $limit,
-                ])
-            ]
-        );
     }
 
     protected function createResource(object $resource): ResponseInterface
