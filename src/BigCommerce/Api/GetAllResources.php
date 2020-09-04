@@ -6,7 +6,7 @@ use BigCommerce\ApiV3\Client;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\ResponseInterface;
 
-trait GetAllFromBigCommerce
+trait GetAllResources
 {
     abstract public function multipleResourceUrl(): string;
     abstract public function getClient(): Client;

@@ -12,7 +12,7 @@ use UnexpectedValueException;
 
 abstract class ResourceApi extends V3ApiBase
 {
-    use GetAllFromBigCommerce;
+    use GetAllResources;
     use GetResource;
     use UpdateResource;
 
