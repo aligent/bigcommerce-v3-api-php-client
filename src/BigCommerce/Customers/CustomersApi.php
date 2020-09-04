@@ -67,4 +67,13 @@ class CustomersApi extends CustomerApiBase
     {
         return new CustomerFormFieldValuesApi($this->getClient());
     }
+
+    public function consent(): CustomerConsentApi
+    {
+        if (!$this->getResourceId()) {
+            throw new UnexpectedValueException('Customer ID must be set');
+        }
+
+        return new CustomerConsentApi($this->getClient(), null, $this->getResourceId());
+    }
 }

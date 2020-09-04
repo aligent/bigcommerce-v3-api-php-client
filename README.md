@@ -58,7 +58,7 @@ Running tests: `composer run-script test`
 - ☑️ Attributes
 - ☑️ Attribute Values
 - ☑️ Form Field Values
-- ☐ Consent
+- ☑️ Consent
 
 #### Orders (V3)
 
