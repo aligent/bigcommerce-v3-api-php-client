@@ -11,26 +11,20 @@ use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\ResponseInterface;
 use UnexpectedValueException;
 
-class CustomersApi extends ResourceApi
+class CustomersApi extends CustomerApiBase
 {
-    public const RESOURCE_NAME       = 'customers';
-    public const CUSTOMERS_ENDPOINT = 'customers';
-    public const CUSTOMER_ENDPOINT   = 'customer/%d';
+    public const FILTER__EMAIL_IN = 'email:in';
 
-
-    public function get(): CustomerResponse
-    {
-        return new CustomerResponse($this->getResource());
-    }
+    private const RESOURCE_NAME = 'customers';
 
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): CustomersResponse
     {
         return new CustomersResponse($this->getAllResources($filters, $page, $limit));
     }
 
-    public function getByEmail($email): ?Customer
+    public function getByEmail(string $email): ?Customer
     {
-        $customers = $this->getAll(['email:in' => $email])->getCustomers();
+        $customers = $this->getAll([self::FILTER__EMAIL_IN => $email])->getCustomers();
 
         if (!$customers[0]) {
             return null;
@@ -41,43 +35,14 @@ class CustomersApi extends ResourceApi
         return $customers[0];
     }
 
-    /** the Customers API allows us to delete a batch of customers at a time by passing an a query string containing a
-     * list of Customer IDs
-     * @param array $ids
-     * @return ResponseInterface
-     * @throws GuzzleException
-     */
-    public function deleteIn(array $ids): ResponseInterface
+    public function create(array $customers): CustomersResponse
     {
-        $ids = implode(",", $ids);
-        $resource = ["id:in" => $ids];
-
-        return $this->getClient()->getRestClient()->delete(
-            $this->multipleResourcesEndpoint(),
-            [
-                RequestOptions::QUERY => $resource,
-            ]
-        );
+        return new CustomersResponse($this->createResources($customers));
     }
 
-    public function create(Customer $category): CustomerResponse
+    public function update(array $customers): CustomersResponse
     {
-        return new CustomerResponse($this->createResource($category));
-    }
-
-    public function update(Customer $category): CustomerResponse
-    {
-        return new CustomerResponse($this->updateResource($category));
-    }
-
-    protected function singleResourceEndpoint(): string
-    {
-        return self::CUSTOMER_ENDPOINT;
-    }
-
-    protected function multipleResourcesEndpoint(): string
-    {
-        return self::CUSTOMERS_ENDPOINT;
+        return new CustomersResponse($this->updateResources($customers));
     }
 
     protected function resourceName(): string
