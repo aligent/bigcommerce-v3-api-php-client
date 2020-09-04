@@ -62,4 +62,9 @@ class CustomersApi extends CustomerApiBase
     {
         return new CustomerAttributeValuesApi($this->getClient());
     }
+
+    public function formFieldValues(): CustomerFormFieldValuesApi
+    {
+        return new CustomerFormFieldValuesApi($this->getClient());
+    }
 }
