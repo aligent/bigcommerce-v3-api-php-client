@@ -12,8 +12,6 @@ abstract class CustomerApiBase extends V3ApiBase
 {
     use GetAllFromBigCommerce;
 
-    public const FILTER__ID_IN = 'id:in';
-
     private const CUSTOMERS = 'customers';
 
     abstract protected function resourceName(): string;
@@ -21,21 +19,7 @@ abstract class CustomerApiBase extends V3ApiBase
     abstract public function create(array $resources): PaginatedResponse;
     abstract public function update(array $resources): PaginatedResponse;
 
-    public function delete(array $ids = []): bool
-    {
-        $response = $this->getClient()->getRestClient()->delete(
-            $this->multipleResourceUrl(),
-            [
-                RequestOptions::QUERY => [
-                    self::FILTER__ID_IN => implode(',', $ids)
-                ]
-            ]
-        );
-
-        return $response->getStatusCode() === 204;
-    }
-
-    private function multipleResourceUrl(): string
+    protected function multipleResourceUrl(): string
     {
         return $this->resourceName() !== self::CUSTOMERS
             ? self::CUSTOMERS . '/' . $this->resourceName() : self::CUSTOMERS;

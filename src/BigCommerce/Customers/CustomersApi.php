@@ -2,18 +2,15 @@
 
 namespace BigCommerce\ApiV3\Customers;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\Customer\CustomerResponse;
+use BigCommerce\ApiV3\Api\DeleteInIdList;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomersResponse;
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
-use BigCommerce\Tests\Customers\CustomerAddressesApiTest;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\RequestOptions;
-use Psr\Http\Message\ResponseInterface;
 use UnexpectedValueException;
 
 class CustomersApi extends CustomerApiBase
 {
+    use DeleteInIdList;
+
     public const FILTER__EMAIL_IN = 'email:in';
 
     private const RESOURCE_NAME = 'customers';

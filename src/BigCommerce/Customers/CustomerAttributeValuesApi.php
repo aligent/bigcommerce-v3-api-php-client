@@ -2,10 +2,13 @@
 
 namespace BigCommerce\ApiV3\Customers;
 
+use BigCommerce\ApiV3\Api\DeleteInIdList;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomerAttributeValuesResponse;
 
 class CustomerAttributeValuesApi extends CustomerApiBase
 {
+    use DeleteInIdList;
+
     private const RESOURCE_NAME = 'attribute-values';
 
     protected function resourceName(): string
