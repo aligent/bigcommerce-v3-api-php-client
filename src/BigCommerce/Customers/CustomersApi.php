@@ -6,6 +6,7 @@ use BigCommerce\ApiV3\Api\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomerResponse;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomersResponse;
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
+use BigCommerce\Tests\Customers\CustomerAddressesApiTest;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\ResponseInterface;
@@ -48,5 +49,10 @@ class CustomersApi extends CustomerApiBase
     protected function resourceName(): string
     {
         return self::RESOURCE_NAME;
+    }
+
+    public function addresses(): CustomerAddressesApi
+    {
+        return new CustomerAddressesApi($this->getClient());
     }
 }

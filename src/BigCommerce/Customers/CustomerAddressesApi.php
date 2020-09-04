@@ -4,7 +4,7 @@ namespace BigCommerce\ApiV3\Customers;
 
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomerAddressesResponse;
 
-class CustomerAddresses extends CustomerApiBase
+class CustomerAddressesApi extends CustomerApiBase
 {
     private const RESOURCE_NAME = 'addresses';
 

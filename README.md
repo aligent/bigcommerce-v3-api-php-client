@@ -54,7 +54,7 @@ Running tests: `composer run-script test`
 #### Customers 
 
 - ☑️ Customers
-- ☐ Addresses
+- ☑️ Addresses
 - ☐ Attributes
 - ☐ Attribute Values
 - ☐ Form Field Values
