@@ -4,4 +4,5 @@ Including:
 - Customers
 - Customer Addresses
 - Customer Attributes
+- Customer Attribute Values
 
