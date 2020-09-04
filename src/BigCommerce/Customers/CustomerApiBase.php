@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Customers;
-
 
 use BigCommerce\ApiV3\Api\GetAllFromBigCommerce;
 use BigCommerce\ApiV3\Api\V3ApiBase;
@@ -39,7 +37,8 @@ abstract class CustomerApiBase extends V3ApiBase
 
     private function multipleResourceUrl(): string
     {
-        return $this->resourceName() !== self::CUSTOMERS ? self::CUSTOMERS.'/'.$this->resourceName() : self::CUSTOMERS;
+        return $this->resourceName() !== self::CUSTOMERS
+            ? self::CUSTOMERS . '/' . $this->resourceName() : self::CUSTOMERS;
     }
 
     protected function createResources(array $resources): ResponseInterface
