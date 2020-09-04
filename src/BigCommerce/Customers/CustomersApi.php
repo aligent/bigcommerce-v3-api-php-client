@@ -55,4 +55,9 @@ class CustomersApi extends CustomerApiBase
     {
         return new CustomerAddressesApi($this->getClient());
     }
+
+    public function attributes(): CustomerAttributesApi
+    {
+        return new CustomerAttributesApi($this->getClient());
+    }
 }
