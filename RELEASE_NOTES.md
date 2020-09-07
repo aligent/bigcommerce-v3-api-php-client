@@ -5,6 +5,7 @@ Add support for the [Themes API](https://developer.bigcommerce.com/api-reference
 Includes
 
 - Themes
+- Theme Actions
 - Theme Jobs
 
 #### Code Improvements

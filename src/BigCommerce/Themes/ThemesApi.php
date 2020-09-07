@@ -58,6 +58,15 @@ class ThemesApi extends UuidResourceApi
     {
         $api = new ThemeJobsApi($this->getClient());
         $api->setUuid($jobId);
+
+        return $api;
+    }
+
+    public function actions(): ThemeActionsApi
+    {
+        $api = new ThemeActionsApi($this->getClient());
+        $api->setUuid($this->getUuid());
+
         return $api;
     }
 }

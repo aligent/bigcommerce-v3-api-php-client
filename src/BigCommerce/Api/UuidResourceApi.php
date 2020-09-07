@@ -4,7 +4,7 @@ namespace BigCommerce\ApiV3\Api;
 
 abstract class UuidResourceApi extends V3ApiBase
 {
-    private string $uuid;
+    private string $uuid = '';
 
     public function getUuid(): string
     {
