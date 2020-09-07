@@ -8,20 +8,16 @@ use stdClass;
 
 class CustomersResponse extends PaginatedResponse
 {
-    private array $customers;
-
     /**
      * @return Customer[]
      */
     public function getCustomers(): array
     {
-        return $this->customers;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->customers = array_map(function (stdClass $c) {
-            return new Customer($c);
-        }, $data);
+        return Customer::class;
     }
 }
