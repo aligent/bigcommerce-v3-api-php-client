@@ -12,42 +12,18 @@ use UnexpectedValueException;
 
 abstract class ResourceApi extends V3ApiBase
 {
+    use GetAllResources;
+    use GetResource;
+    use UpdateResource;
+
     abstract protected function singleResourceEndpoint(): string;
     abstract protected function multipleResourcesEndpoint(): string;
     abstract protected function resourceName(): string;
-
-    protected function getResource(): ResponseInterface
-    {
-        return $this->getClient()->getRestClient()->get($this->singleResourceUrl());
-    }
-
-    protected function getAllResources(array $filters = [], int $page = 1, int $limit = 250): ResponseInterface
-    {
-        return $this->getClient()->getRestClient()->get(
-            $this->multipleResourceUrl(),
-            [
-                RequestOptions::QUERY => array_merge($filters, [
-                    'page'  => $page,
-                    'limit' => $limit,
-                ])
-            ]
-        );
-    }
 
     protected function createResource(object $resource): ResponseInterface
     {
         return $this->getClient()->getRestClient()->post(
             $this->multipleResourceUrl(),
-            [
-                RequestOptions::JSON => $resource,
-            ]
-        );
-    }
-
-    protected function updateResource(object $resource): ResponseInterface
-    {
-        return $this->getClient()->getRestClient()->put(
-            $this->singleResourceUrl(),
             [
                 RequestOptions::JSON => $resource,
             ]

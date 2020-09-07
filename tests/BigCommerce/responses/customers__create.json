@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "authentication": {
+        "force_password_reset": false
+      },
+      "company": "",
+      "customer_group_id": 0,
+      "email": "john.smith@spam.me",
+      "first_name": "John",
+      "last_name": "Smith",
+      "notes": "",
+      "phone": "",
+      "registration_ip_address": "",
+      "tax_exempt_category": "",
+      "date_created": "2020-09-04T00:17:10Z",
+      "date_modified": "2020-09-04T00:17:10Z",
+      "accepts_product_review_abandoned_cart_emails": false,
+      "store_credit_amounts": [
+        {
+          "amount": 0
+        }
+      ],
+      "channel_ids": null
+    },
+    {
+      "id": 3,
+      "authentication": {
+        "force_password_reset": false
+      },
+      "company": "",
+      "customer_group_id": 0,
+      "email": "joe@spam.me",
+      "first_name": "Joe",
+      "last_name": "Blogs",
+      "notes": "",
+      "phone": "",
+      "registration_ip_address": "",
+      "tax_exempt_category": "",
+      "date_created": "2020-09-04T00:17:10Z",
+      "date_modified": "2020-09-04T00:17:10Z",
+      "accepts_product_review_abandoned_cart_emails": false,
+      "store_credit_amounts": [
+        {
+          "amount": 0
+        }
+      ],
+      "channel_ids": null
+    }
+  ],
+  "meta": {}
+}

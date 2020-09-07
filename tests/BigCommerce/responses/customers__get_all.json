@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "authentication": {
+        "force_password_reset": false
+      },
+      "company": "Aligent",
+      "customer_group_id": 1,
+      "email": "jan.plank@aligent.com.au",
+      "first_name": "Jan",
+      "last_name": "Plank",
+      "notes": "",
+      "phone": "",
+      "registration_ip_address": "",
+      "tax_exempt_category": "",
+      "date_created": "2020-08-27T06:18:07Z",
+      "date_modified": "2020-08-28T06:03:38Z",
+      "accepts_product_review_abandoned_cart_emails": true,
+      "channel_ids": null
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}

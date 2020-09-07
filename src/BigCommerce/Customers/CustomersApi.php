@@ -2,35 +2,27 @@
 
 namespace BigCommerce\ApiV3\Customers;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\Customer\CustomerResponse;
+use BigCommerce\ApiV3\Api\DeleteInIdList;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomersResponse;
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
-use GuzzleHttp\Exception\GuzzleException;
-use GuzzleHttp\RequestOptions;
-use Psr\Http\Message\ResponseInterface;
 use UnexpectedValueException;
 
-class CustomersApi extends ResourceApi
+class CustomersApi extends CustomerApiBase
 {
-    public const RESOURCE_NAME       = 'customers';
-    public const CUSTOMERS_ENDPOINT = 'customers';
-    public const CUSTOMER_ENDPOINT   = 'customer/%d';
+    use DeleteInIdList;
 
+    public const FILTER__EMAIL_IN = 'email:in';
 
-    public function get(): CustomerResponse
-    {
-        return new CustomerResponse($this->getResource());
-    }
+    private const RESOURCE_NAME = 'customers';
 
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): CustomersResponse
     {
         return new CustomersResponse($this->getAllResources($filters, $page, $limit));
     }
 
-    public function getByEmail($email): ?Customer
+    public function getByEmail(string $email): ?Customer
     {
-        $customers = $this->getAll(['email:in' => $email])->getCustomers();
+        $customers = $this->getAll([self::FILTER__EMAIL_IN => $email])->getCustomers();
 
         if (!$customers[0]) {
             return null;
@@ -41,47 +33,47 @@ class CustomersApi extends ResourceApi
         return $customers[0];
     }
 
-    /** the Customers API allows us to delete a batch of customers at a time by passing an a query string containing a
-     * list of Customer IDs
-     * @param array $ids
-     * @return ResponseInterface
-     * @throws GuzzleException
-     */
-    public function deleteIn(array $ids): ResponseInterface
+    public function create(array $customers): CustomersResponse
     {
-        $ids = implode(",", $ids);
-        $resource = ["id:in" => $ids];
-
-        return $this->getClient()->getRestClient()->delete(
-            $this->multipleResourcesEndpoint(),
-            [
-                RequestOptions::QUERY => $resource,
-            ]
-        );
+        return new CustomersResponse($this->createResources($customers));
     }
 
-    public function create(Customer $category): CustomerResponse
+    public function update(array $customers): CustomersResponse
     {
-        return new CustomerResponse($this->createResource($category));
-    }
-
-    public function update(Customer $category): CustomerResponse
-    {
-        return new CustomerResponse($this->updateResource($category));
-    }
-
-    protected function singleResourceEndpoint(): string
-    {
-        return self::CUSTOMER_ENDPOINT;
-    }
-
-    protected function multipleResourcesEndpoint(): string
-    {
-        return self::CUSTOMERS_ENDPOINT;
+        return new CustomersResponse($this->updateResources($customers));
     }
 
     protected function resourceName(): string
     {
         return self::RESOURCE_NAME;
+    }
+
+    public function addresses(): CustomerAddressesApi
+    {
+        return new CustomerAddressesApi($this->getClient());
+    }
+
+    public function attributes(): CustomerAttributesApi
+    {
+        return new CustomerAttributesApi($this->getClient());
+    }
+
+    public function attributeValues(): CustomerAttributeValuesApi
+    {
+        return new CustomerAttributeValuesApi($this->getClient());
+    }
+
+    public function formFieldValues(): CustomerFormFieldValuesApi
+    {
+        return new CustomerFormFieldValuesApi($this->getClient());
+    }
+
+    public function consent(): CustomerConsentApi
+    {
+        if (!$this->getResourceId()) {
+            throw new UnexpectedValueException('Customer ID must be set');
+        }
+
+        return new CustomerConsentApi($this->getClient(), null, $this->getResourceId());
     }
 }

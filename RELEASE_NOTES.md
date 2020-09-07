@@ -1,6 +1,9 @@
+Adds better support for the [Customers V3 API](https://developer.bigcommerce.com/api-reference/customer-subscribers/v3-customers-api)
 
-Adds support for the [Price Lists API](https://developer.bigcommerce.com/api-reference/catalog/pricelists-api)
-
-Includes:
- - Price List Assignments
- - Price List Records
+Including:
+- Customers
+- Customer Addresses
+- Customer Attributes
+- Customer Attribute Values
+- Customer Form Field Values
+- Customer Consent

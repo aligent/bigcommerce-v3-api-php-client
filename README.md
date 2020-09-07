@@ -54,11 +54,11 @@ Running tests: `composer run-script test`
 #### Customers 
 
 - ☑️ Customers
-- ☐ Addresses
-- ☐ Attributes
-- ☐ Attribute Values
-- ☐ Form Field Values
-- ☐ Consent
+- ☑️ Addresses
+- ☑️ Attributes
+- ☑️ Attribute Values
+- ☑️ Form Field Values
+- ☑️ Consent
 
 #### Orders (V3)
 

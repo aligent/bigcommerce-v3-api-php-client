@@ -20,7 +20,7 @@ abstract class PaginatedResponse
     private function decodeResponseData($rawData): void
     {
         $this->addData($rawData->data);
-        $this->pagination = new Pagination($rawData->meta->pagination);
+        $this->pagination = new Pagination($rawData->meta->pagination ?? null);
     }
 
     public function getPagination(): Pagination
