@@ -44,7 +44,6 @@ class ThemesApi extends UuidResourceApi
         return new ThemeResponse($this->getResource());
     }
 
-
     public function multipleResourceUrl(): string
     {
         return self::THEMES_ENDPOINT;
