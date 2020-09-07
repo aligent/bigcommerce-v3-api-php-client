@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductBulkPricingRulesResponse extends PaginatedResponse
 {
     /**
-     * @var ProductBulkPricingRule[]
-     */
-    private array $bulkPricingRules;
-
-    /**
      * @return ProductBulkPricingRule[]
      */
     public function getBulkPricingRules(): array
     {
-        return $this->bulkPricingRules;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->bulkPricingRules = array_map(function (\stdClass $r) {
-            return new ProductBulkPricingRule($r);
-        }, $data);
+        return ProductBulkPricingRule::class;
     }
 }

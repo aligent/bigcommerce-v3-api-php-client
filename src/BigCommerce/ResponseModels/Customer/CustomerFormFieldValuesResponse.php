@@ -9,22 +9,15 @@ use stdClass;
 class CustomerFormFieldValuesResponse extends PaginatedResponse
 {
     /**
-     * @var CustomerFormFieldValue[]
-     */
-    private array $values;
-
-    /**
      * @return CustomerFormFieldValue[]
      */
     public function getValues(): array
     {
-        return $this->values;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->values = array_map(function (stdClass $v) {
-            return new CustomerFormFieldValue($v);
-        }, $data);
+        return CustomerFormFieldValue::class;
     }
 }

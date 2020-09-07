@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class PriceListAssignmentsResponse extends PaginatedResponse
 {
     /**
-     * @var PriceListAssignment[]
-     */
-    private array $assignments;
-
-    /**
      * @return PriceListAssignment[]
      */
     public function getAssignments(): array
     {
-        return $this->assignments;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->assignments = array_map(function (\stdClass $pla) {
-            return new PriceListAssignment($pla);
-        }, $data);
+        return PriceListAssignment::class;
     }
 }

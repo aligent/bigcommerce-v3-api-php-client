@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductVideosResponse extends PaginatedResponse
 {
     /**
-     * @var ProductVideo[]
-     */
-    private array $videos;
-
-    /**
      * @return ProductVideo[]
      */
     public function getVideos(): array
     {
-        return $this->videos;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->videos = array_map(function (\stdClass $v) {
-            return new ProductVideo($v);
-        }, $data);
+        return ProductVideo::class;
     }
 }

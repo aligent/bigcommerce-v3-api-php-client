@@ -1,9 +1,6 @@
-Adds better support for the [Customers V3 API](https://developer.bigcommerce.com/api-reference/customer-subscribers/v3-customers-api)
 
-Including:
-- Customers
-- Customer Addresses
-- Customer Attributes
-- Customer Attribute Values
-- Customer Form Field Values
-- Customer Consent
+
+
+Code Improvements
+
+- Refactor PaginatedResponse to be simpler to implement

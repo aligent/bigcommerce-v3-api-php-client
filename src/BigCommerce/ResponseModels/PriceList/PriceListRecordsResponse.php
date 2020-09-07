@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class PriceListRecordsResponse extends PaginatedResponse
 {
     /**
-     * @var PriceListRecord[]
-     */
-    private array $records;
-
-    /**
      * @return PriceListRecord[]
      */
     public function getRecords(): array
     {
-        return $this->records;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->records = array_map(function (\stdClass $r) {
-            return new PriceListRecord($r);
-        }, $data);
+        return PriceListRecord::class;
     }
 }

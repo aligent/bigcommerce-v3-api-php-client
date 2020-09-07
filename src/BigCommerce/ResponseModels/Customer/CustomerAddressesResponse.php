@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class CustomerAddressesResponse extends PaginatedResponse
 {
     /**
-     * @var CustomerAddress[]
-     */
-    private array $addresses;
-
-    /**
      * @return CustomerAddress[]
      */
     public function getAddresses(): array
     {
-        return $this->addresses;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->addresses = array_map(function (stdClass $a) {
-            return new CustomerAddress($a);
-        }, $data);
+        return CustomerAddress::class;
     }
 }

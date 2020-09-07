@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductVariantMetafieldsResponse extends PaginatedResponse
 {
     /**
-     * @var ProductVariantMetafield[]
-     */
-    private array $metafields;
-
-    /**
      * @return ProductVariantMetafield[]
      */
     public function getMetafields(): array
     {
-        return $this->metafields;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->metafields = array_map(function (\stdClass $m) {
-            return new ProductVariantMetafield($m);
-        }, $data);
+        return ProductVariantMetafield::class;
     }
 }

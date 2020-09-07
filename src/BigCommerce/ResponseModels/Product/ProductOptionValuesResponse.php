@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductOptionValuesResponse extends PaginatedResponse
 {
     /**
-     * @var ProductOptionValue[]
-     */
-    private array $optionValues;
-
-    /**
      * @return ProductOptionValue[]
      */
     public function getOptionValues(): array
     {
-        return $this->optionValues;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->optionValues = array_map(function (\stdClass $v) {
-            return new ProductOptionValue($v);
-        }, $data);
+        return ProductOptionValue::class;
     }
 }

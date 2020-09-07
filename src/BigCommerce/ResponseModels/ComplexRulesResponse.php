@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ComplexRulesResponse extends PaginatedResponse
 {
     /**
-     * @var ComplexRule[]
-     */
-    private array $complexRules;
-
-    /**
      * @return ComplexRule[]
      */
     public function getComplexRules(): array
     {
-        return $this->complexRules;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->complexRules = array_map(function (\stdClass $r) {
-            return new ComplexRule($r);
-        }, $data);
+        return ComplexRule::class;
     }
 }
