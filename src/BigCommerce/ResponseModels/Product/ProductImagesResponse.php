@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductImagesResponse extends PaginatedResponse
 {
     /**
-     * @var ProductImage[]
-     */
-    private array $productImages;
-
-    /**
      * @return ProductImage[]
      */
     public function getProductImages(): array
     {
-        return $this->productImages;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->productImages = array_map(function (\stdClass $v) {
-            return new ProductImage($v);
-        }, $data);
+        return ProductImage::class;
     }
 }

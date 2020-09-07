@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class CustomerAttributesResponse extends PaginatedResponse
 {
     /**
-     * @var CustomerAttribute[]
-     */
-    private array $attributes;
-
-    /**
      * @return CustomerAttribute[]
      */
     public function getAttributes(): array
     {
-        return $this->attributes;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->customers = array_map(function (stdClass $a) {
-            return new CustomerAttribute($a);
-        }, $data);
+        return CustomerAttribute::class;
     }
 }

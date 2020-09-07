@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductVariantsResponse extends PaginatedResponse
 {
     /**
-     * @var ProductVariant[]
-     */
-    private array $productVariants;
-
-    /**
      * @return ProductVariant[]
      */
     public function getProductVariants(): array
     {
-        return $this->productVariants;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->productVariants = array_map(function (\stdClass $v) {
-            return new ProductVariant($v);
-        }, $data);
+        return ProductVariant::class;
     }
 }

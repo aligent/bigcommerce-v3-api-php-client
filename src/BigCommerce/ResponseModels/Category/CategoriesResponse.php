@@ -10,30 +10,16 @@ class CategoriesResponse extends PaginatedResponse
 {
     use FetchAllPages;
 
-    private array $categories;
-
     /**
      * @return Category[]
      */
     public function getCategories(): array
     {
-        return $this->categories;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->categories = array_map(function (\stdClass $c) {
-            return new Category($c);
-        }, $data);
-    }
-
-    protected function getData(): array
-    {
-        return $this->categories;
-    }
-
-    protected function setData(array $data): void
-    {
-        $this->categories = $data;
+        return Category::class;
     }
 }

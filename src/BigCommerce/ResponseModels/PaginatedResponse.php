@@ -17,13 +17,14 @@ abstract class PaginatedResponse
         $this->decodeResponseData($rawData);
     }
 
-    protected function resourceClass(): string {
+    protected function resourceClass(): string
+    {
         return stdClass::class;
     }
 
     protected function addData(array $data): void
     {
-        $this->data = $this->mapDataAsClass($data, $this->resourceClass());
+        $this->setData($this->mapDataAsClass($data, $this->resourceClass()));
     }
 
     private function decodeResponseData($rawData): void
@@ -39,7 +40,7 @@ abstract class PaginatedResponse
 
     protected function mapDataAsClass(array $data, string $className): array
     {
-        return array_map(function (stdClass $c) use($className) {
+        return array_map(function (stdClass $c) use ($className) {
             return new $className($c);
         }, $data);
     }
@@ -47,5 +48,10 @@ abstract class PaginatedResponse
     protected function getData(): array
     {
         return $this->data;
+    }
+
+    protected function setData(array $data): void
+    {
+        $this->data = $data;
     }
 }

@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class CustomFieldsResponse extends PaginatedResponse
 {
     /**
-     * @var CustomField[]
-     */
-    private array $customFields;
-
-    /**
      * @return CustomField[]
      */
     public function getCustomFields(): array
     {
-        return $this->customFields;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->customFields = array_map(function (\stdClass $f) {
-            return new CustomField($f);
-        }, $data);
+        return CustomField::class;
     }
 }

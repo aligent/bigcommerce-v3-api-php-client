@@ -11,32 +11,15 @@ class BrandsResponse extends PaginatedResponse
     use FetchAllPages;
 
     /**
-     * @var Brand[]
-     */
-    private array $brands;
-
-    /**
      * @return Brand[]
      */
     public function getBrands(): array
     {
-        return $this->brands;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->setData(array_map(function (\stdClass $b) {
-            return new Brand($b);
-        }, $data));
-    }
-
-    protected function getData(): array
-    {
-        return $this->getBrands();
-    }
-
-    protected function setData(array $data): void
-    {
-        $this->brands = $data;
+        return Brand::class;
     }
 }

@@ -8,27 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class CategoryMetafieldsResponse extends PaginatedResponse
 {
     /**
-     * @var CategoryMetafield[]
-     */
-    private array $metafields;
-
-    /**
      * @return CategoryMetafield[]
      */
     public function getMetafields(): array
     {
-        return $this->metafields;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->setData(array_map(function (\stdClass $m) {
-            return new CategoryMetafield($m);
-        }, $data));
-    }
-
-    protected function setData(array $data): void
-    {
-        $this->metafields = $data;
+        return CategoryMetafield::class;
     }
 }

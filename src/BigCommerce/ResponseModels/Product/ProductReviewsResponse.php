@@ -8,22 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductReviewsResponse extends PaginatedResponse
 {
     /**
-     * @var ProductReview[]
-     */
-    private array $reviews;
-
-    /**
      * @return ProductReview[]
      */
     public function getReviews(): array
     {
-        return $this->reviews;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->reviews = array_map(function (\stdClass $r) {
-            return new ProductReview($r);
-        }, $data);
+        return ProductReview::class;
     }
 }
