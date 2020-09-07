@@ -15,6 +15,7 @@ abstract class ResourceApi extends V3ApiBase
     use GetAllResources;
     use GetResource;
     use UpdateResource;
+    use DeleteResource;
 
     abstract protected function singleResourceEndpoint(): string;
     abstract protected function multipleResourcesEndpoint(): string;
@@ -28,11 +29,6 @@ abstract class ResourceApi extends V3ApiBase
                 RequestOptions::JSON => $resource,
             ]
         );
-    }
-
-    public function delete(): ResponseInterface
-    {
-        return $this->getClient()->getRestClient()->delete($this->singleResourceUrl());
     }
 
     protected function singleResourceUrl(): string

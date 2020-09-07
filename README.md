@@ -8,7 +8,7 @@
 
 
 ## Introduction
-This is an (very) early development version of an easy-to-use API client for BigCommerce.
+This is an early development version of an easy-to-use API client for BigCommerce.
 
 ## Installation
 
@@ -80,7 +80,7 @@ Running tests: `composer run-script test`
 
 #### Themes
 
-- ☐ Themes
+- ☑️ Themes
 - ☐ Theme Actions
 - ☐ Theme Jobs
 
