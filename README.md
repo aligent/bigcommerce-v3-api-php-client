@@ -82,7 +82,7 @@ Running tests: `composer run-script test`
 
 - ☑️ Themes
 - ☐ Theme Actions
-- ☐ Theme Jobs
+- ☑️ Theme Jobs
 
 #### Widgets
 
