@@ -20,7 +20,7 @@ class CategoriesApi extends ResourceApi
 
     public function image(): CategoryImageApi
     {
-        return new CategoryImageApi($this->getClient(), null, $this->getResourceId());
+        return new CategoryImageApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function get(): CategoryResponse
@@ -81,6 +81,6 @@ class CategoriesApi extends ResourceApi
 
     public function metafields(): CategoryMetafieldsApi
     {
-        return new CategoryMetafieldsApi($this->getClient(), null, $this->getResourceId());
+        return new CategoryMetafieldsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 }
