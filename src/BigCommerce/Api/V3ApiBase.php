@@ -13,18 +13,11 @@ use BigCommerce\ApiV3\Client;
  */
 class V3ApiBase implements V3Api
 {
-    private Client $client;
-
-    private ?int $resourceId;
-
-    private ?int $parentResourceId;
-
-    public function __construct(Client $client, ?int $resourceId = null, ?int $parentResourceId = null)
-    {
-        $this->client           = $client;
-        $this->resourceId       = $resourceId;
-        $this->parentResourceId = $parentResourceId;
-    }
+    public function __construct(
+        private Client $client,
+        private ?int $resourceId = null,
+        private ?int $parentResourceId = null
+    ) {}
 
     public function getParentResourceId(): ?int
     {
