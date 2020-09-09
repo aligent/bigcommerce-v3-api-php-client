@@ -16,12 +16,6 @@ class Client
     public const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
     public const API_URI              = 'https://api.bigcommerce.com/stores/%s/v3/';
 
-    private string $storeHash;
-
-    private string $clientId;
-
-    private string $accessToken;
-
     private string $baseUri;
 
     private \GuzzleHttp\Client $client;
@@ -29,14 +23,11 @@ class Client
     private array $debugContainer = [];
 
     public function __construct(
-        string $storeHash,
-        string $clientId,
-        string $accessToken,
+        private string $storeHash,
+        private string $clientId,
+        private string $accessToken,
         ?\GuzzleHttp\Client $client = null
     ) {
-        $this->storeHash    = $storeHash;
-        $this->clientId     = $clientId;
-        $this->accessToken  = $accessToken;
         $this->setBaseUri(sprintf(self::API_URI, $this->storeHash));
 
         $this->client = $client ?? $this->buildDefaultHttpClient();
