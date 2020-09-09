@@ -3,4 +3,4 @@
 
 Code Improvements
 
-- Refactor PaginatedResponse to be simpler to implement
+- Take advantage of PHP 8 features
