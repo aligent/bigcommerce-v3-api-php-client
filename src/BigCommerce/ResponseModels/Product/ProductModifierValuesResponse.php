@@ -8,22 +8,22 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 class ProductModifierValuesResponse extends PaginatedResponse
 {
     /**
-     * @var ProductModifierValue[]
-     */
-    private array $modifierValues;
-
-    /**
      * @return ProductModifierValue[]
      */
     public function getModifierValues(): array
     {
-        return $this->modifierValues;
+        return $this->getData();
     }
 
     protected function addData(array $data): void
     {
-        $this->modifierValues = array_map(function (\stdClass $v) {
+        $this->setData(array_map(function (\stdClass $v) {
             return ProductModifierValue::buildFromResponse($v);
-        }, $data);
+        }, $data));
+    }
+
+    protected function resourceClass(): string
+    {
+        return ProductModifierValue::class;
     }
 }
