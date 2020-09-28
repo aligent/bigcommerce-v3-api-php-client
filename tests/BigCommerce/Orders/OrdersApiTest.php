@@ -15,4 +15,14 @@ class OrdersApiTest extends BigCommerceApiTest
         $this->assertInstanceOf(OrdersApi::class, $ordersApi);
         $this->assertEquals($orderId, $ordersApi->getResourceId());
     }
+
+    public function testCanGetOrderTransactions()
+    {
+        $this->setReturnData('orders__transactions__get.json');
+        $orderId = 121;
+
+        $transactionsResponse = $this->getApi()->order($orderId)->transactions();
+        $this->assertCount(1, $transactionsResponse->getTransactions());
+        $this->assertEquals(1, $transactionsResponse->getPagination()->total);
+    }
 }
