@@ -1,0 +1,14 @@
+{
+  "data": {
+    "order_id": 1,
+    "total_refund_amount": 1.99,
+    "total_refund_tax_amount": 1.95,
+    "rounding": 1,
+    "adjustment": 1.99,
+    "tax_inclusive": true,
+    "refund_methods": [
+      ""
+    ]
+  },
+  "meta": {}
+}
