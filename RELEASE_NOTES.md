@@ -1,13 +1,8 @@
 #### New Features
 
-Add support for the [Themes API](https://developer.bigcommerce.com/api-reference/store-management/themes)
+Add support for the [Orders v3 API](https://developer.bigcommerce.com/api-reference/store-management/order-transactions)
 
 Includes
 
-- Themes
-- Theme Actions
-- Theme Jobs
-
-#### Code Improvements
-
-- Refactor PaginatedResponse to be simpler to implement
+- Transactions
+- Order refunds

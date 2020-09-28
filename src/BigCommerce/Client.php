@@ -2,6 +2,7 @@
 
 namespace BigCommerce\ApiV3;
 
+use BigCommerce\ApiV3\Orders\OrdersApi;
 use BigCommerce\ApiV3\Customers\CustomersApi;
 use BigCommerce\ApiV3\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Themes\ThemesApi;
@@ -121,5 +122,10 @@ class Client
         $api = $this->themes();
         $api->setUuid($uuid);
         return $api;
+    }
+
+    public function order(int $orderId): OrdersApi
+    {
+        return new OrdersApi($this, $orderId);
     }
 }

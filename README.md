@@ -62,8 +62,8 @@ Running tests: `composer run-script test`
 
 #### Orders (V3)
 
-- ☐ Transactions
-- ☐ Order Refunds
+- ☑️ Transactions
+- ☑️ Order Refunds
 
 #### Payment Methods
 
