@@ -28,7 +28,13 @@ class RefundsApiTest extends BigCommerceApiTest
 
     public function testCanGetAll()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('orders__order_refunds__get_all.json', 201);
+        $orderId = 1;
+
+        $response = $this->getApi()->order($orderId)->refunds()->getAll();
+        $this->assertCount(1, $response->refunds());
+        $this->assertCount(1, $response->refunds()[0]->items);
+        $this->assertInstanceOf(OrderRefundItem::class, $response->refunds()[0]->items[0]);
     }
 
     public function testCanCreateRefund()
