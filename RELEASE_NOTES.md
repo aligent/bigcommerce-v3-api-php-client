@@ -1,8 +1,6 @@
-#### New Features
 
-Add support for the [Orders v3 API](https://developer.bigcommerce.com/api-reference/store-management/order-transactions)
+# Minor Update
 
-Includes
+- Bump guzzlehttp/guzzle from 7.1.0 to 7.1.1
 
-- Transactions
-- Order refunds
+
