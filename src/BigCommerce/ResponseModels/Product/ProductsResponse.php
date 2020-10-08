@@ -8,35 +8,15 @@ use BigCommerce\ApiV3\ResponseModels\PaginatedBatchableResponse;
 class ProductsResponse extends PaginatedBatchableResponse
 {
     /**
-     * @var Product[]
-     */
-    private array $products;
-
-    /**
      * @return Product[]
      */
     public function getProducts(): array
     {
-        return $this->products;
+        return $this->getData();
     }
 
-    protected function addData(array $data): void
+    protected function resourceClass(): string
     {
-        $this->products = array_map(function (\stdClass $p) {
-            return new Product($p);
-        }, $data);
-    }
-
-    /**
-     * @return Product[]
-     */
-    protected function getData(): array
-    {
-        return $this->getProducts();
-    }
-
-    protected function setData(array $data): void
-    {
-        $this->products = $data;
+        return Product::class;
     }
 }

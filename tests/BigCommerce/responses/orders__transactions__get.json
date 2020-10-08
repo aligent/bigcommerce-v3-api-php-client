@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "id": 85926313,
+      "order_id": "121",
+      "event": "purchase",
+      "method": "nonce",
+      "amount": 1,
+      "currency": "USD",
+      "gateway": "squarev2",
+      "gateway_transaction_id": "pN5Kd7R9ilEI2ygBawCy7tMF|qwnAFAxRZ7tYRtIpZULg1yMF",
+      "status": "ok",
+      "test": false,
+      "fraud_review": false,
+      "reference_transaction_id": null,
+      "date_created": "2018-05-08T15:06:12+00:00",
+      "avs_result": {
+        "code": "",
+        "message": "",
+        "street_match": "",
+        "postal_match": ""
+      },
+      "cvv_result": {
+        "code": "",
+        "message": ""
+      },
+      "credit_card": {},
+      "gift_certificate": {},
+      "store_credit": {},
+      "offline": {},
+      "custom": {},
+      "payment_instrument_token": "qwsdfghyuio",
+      "payment_method_id": "squarev2.card"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}

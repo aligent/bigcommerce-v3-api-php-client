@@ -1,0 +1,29 @@
+{
+  "data": {
+    "uuid": "e3d82ce0-9bae-0133-0de7-525400970412",
+    "variations": [
+      {
+        "uuid": "b16c3fe0-7bcb-0136-b5fc-07fe54a9e639",
+        "name": "Light",
+        "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+        "external_id": "light"
+      },
+      {
+        "uuid": "b17d57e0-7bcb-0136-b5fc-07fe54a9e639",
+        "name": "Bold",
+        "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+        "external_id": "bold"
+      },
+      {
+        "uuid": "b18ad610-7bcb-0136-b5fc-07fe54a9e639",
+        "name": "Warm",
+        "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+        "external_id": "warm"
+      }
+    ],
+    "name": "Cornerstone",
+    "is_private": false,
+    "is_active": false
+  },
+  "meta": {}
+}

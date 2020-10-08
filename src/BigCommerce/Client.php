@@ -2,8 +2,10 @@
 
 namespace BigCommerce\ApiV3;
 
+use BigCommerce\ApiV3\Orders\OrdersApi;
 use BigCommerce\ApiV3\Customers\CustomersApi;
 use BigCommerce\ApiV3\PriceLists\PriceListsApi;
+use BigCommerce\ApiV3\Themes\ThemesApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 
@@ -99,5 +101,22 @@ class Client
     public function priceList(int $priceListId): PriceListsApi
     {
         return new PriceListsApi($this, $priceListId);
+    }
+
+    public function themes(): ThemesApi
+    {
+        return new ThemesApi($this);
+    }
+
+    public function theme(string $uuid): ThemesApi
+    {
+        $api = $this->themes();
+        $api->setUuid($uuid);
+        return $api;
+    }
+
+    public function order(int $orderId): OrdersApi
+    {
+        return new OrdersApi($this, $orderId);
     }
 }

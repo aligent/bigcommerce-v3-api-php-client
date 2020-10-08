@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "uuid": "872b3e20-731f-0136-9d2f-633ff0d6ced1",
+      "variations": [
+        {
+          "uuid": "877427a0-731f-0136-9d2f-633ff0d6ced1",
+          "name": "Light",
+          "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+          "external_id": "light"
+        },
+        {
+          "uuid": "87be3180-731f-0136-9d2f-633ff0d6ced1",
+          "name": "Bold",
+          "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+          "external_id": "bold"
+        },
+        {
+          "uuid": "87d48e90-731f-0136-9d2f-633ff0d6ced1",
+          "name": "Warm",
+          "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+          "external_id": "warm"
+        }
+      ],
+      "name": "Cornerstone-blog",
+      "is_private": true,
+      "is_active": false
+    },
+    {
+      "uuid": "e3d82ce0-9bae-0133-0de7-525400970412",
+      "variations": [
+        {
+          "uuid": "b16c3fe0-7bcb-0136-b5fc-07fe54a9e639",
+          "name": "Light",
+          "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+          "external_id": "light"
+        },
+        {
+          "uuid": "b17d57e0-7bcb-0136-b5fc-07fe54a9e639",
+          "name": "Bold",
+          "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+          "external_id": "bold"
+        },
+        {
+          "uuid": "b18ad610-7bcb-0136-b5fc-07fe54a9e639",
+          "name": "Warm",
+          "description": "Ideal for a wide range of businesses and brands, this design is fully responsive, simple, and ready for you to add your branding, logo, and products. It comes ready to build a clean looking and beautiful store with features such as homepage carousel, social media icons, featured and top selling products, and faceted search (which is available on select BigCommerce plans). Fully express your brand by using our Theme Editor to quickly and easily style your site's fonts and colors, all without the need to write code.",
+          "external_id": "warm"
+        }
+      ],
+      "name": "Cornerstone",
+      "is_private": false,
+      "is_active": true
+    },
+    {
+      "uuid": "1242c920-a5a6-0133-a20e-525400970412",
+      "variations": [
+        {
+          "uuid": "fec9fe60-7ede-0136-effe-0cbd49ed50aa",
+          "name": "Minimal",
+          "description": "Fortune is a standout theme for cutting-edge online stores. Customers will be transfixed by its striking hero area, which puts your imagery on full display, along with its sleek navigation and unique product grid. Ideal for small-to-medium-sized catalogs, Fortune has everything you need to command and convert shoppers.",
+          "external_id": "minimal"
+        },
+        {
+          "uuid": "fee26530-7ede-0136-effe-0cbd49ed50aa",
+          "name": "Bright",
+          "description": "Fortune is a standout theme for cutting-edge online stores. Customers will be transfixed by its striking hero area, which puts your imagery on full display, along with its sleek navigation and unique product grid. Ideal for small-to-medium-sized catalogs, Fortune has everything you need to command and convert shoppers.",
+          "external_id": "bright"
+        },
+        {
+          "uuid": "fef38820-7ede-0136-effe-0cbd49ed50aa",
+          "name": "Contrast",
+          "description": "Fortune is a standout theme for cutting-edge online stores. Customers will be transfixed by its striking hero area, which puts your imagery on full display, along with its sleek navigation and unique product grid. Ideal for small-to-medium-sized catalogs, Fortune has everything you need to command and convert shoppers.",
+          "external_id": "contrast"
+        },
+        {
+          "uuid": "ff085ab0-7ede-0136-effe-0cbd49ed50aa",
+          "name": "Highlight",
+          "description": "Fortune is a standout theme for cutting-edge online stores. Customers will be transfixed by its striking hero area, which puts your imagery on full display, along with its sleek navigation and unique product grid. Ideal for small-to-medium-sized catalogs, Fortune has everything you need to command and convert shoppers.",
+          "external_id": "highlight"
+        }
+      ],
+      "name": "Fortune",
+      "is_private": false,
+      "is_active": false
+    }
+  ],
+  "meta": {}
+}

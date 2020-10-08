@@ -17,10 +17,7 @@ abstract class PaginatedResponse
         $this->decodeResponseData($rawData);
     }
 
-    protected function resourceClass(): string
-    {
-        return stdClass::class;
-    }
+    abstract protected function resourceClass(): string;
 
     protected function addData(array $data): void
     {
