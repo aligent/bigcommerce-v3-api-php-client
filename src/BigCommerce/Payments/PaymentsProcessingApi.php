@@ -11,8 +11,8 @@ use GuzzleHttp\RequestOptions;
 class PaymentsProcessingApi extends V3ApiBase
 {
     private const PAYMENTS_ENDPOINT = 'payments/';
-    private const ACCESS_TOKENS_ENDPOINT   = self::PAYMENTS_ENDPOINT.'access_tokens';
-    private const PAYMENT_METHODS_ENDPOINT = self::PAYMENTS_ENDPOINT.'methods';
+    private const ACCESS_TOKENS_ENDPOINT   = self::PAYMENTS_ENDPOINT . 'access_tokens';
+    private const PAYMENT_METHODS_ENDPOINT = self::PAYMENTS_ENDPOINT . 'methods';
 
     public function createToken(Order $order): PaymentAccessTokenResponse
     {

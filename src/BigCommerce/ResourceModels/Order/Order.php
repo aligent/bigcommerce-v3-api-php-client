@@ -2,7 +2,6 @@
 
 namespace BigCommerce\ApiV3\ResourceModels\Order;
 
-
 class Order
 {
     public int $id;
