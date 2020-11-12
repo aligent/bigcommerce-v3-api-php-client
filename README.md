@@ -67,8 +67,8 @@ Running tests: `composer run-script test`
 
 #### Payment Methods
 
-- ☐ Payment Access Token
-- ☐ Payment Methods
+- ☑️ Payment Access Token
+- ☑️ Payment Methods
 
 #### Scripts
 
