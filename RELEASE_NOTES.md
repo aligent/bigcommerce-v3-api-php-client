@@ -1,5 +1,6 @@
 ## New Features
 
+- Implement new Order Metafields api
 - Implement V3 Payment endpoints (Create Payment Access Token, Get Accepted Payment Methods)
 
 ## Minor Update

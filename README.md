@@ -62,6 +62,7 @@ Running tests: `composer run-script test`
 
 #### Orders (V3)
 
+- ☑️ Order Metafields
 - ☑️ Transactions
 - ☑️ Order Refunds
 

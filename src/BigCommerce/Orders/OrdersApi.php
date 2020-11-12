@@ -28,4 +28,14 @@ class OrdersApi extends V3ApiBase
     {
         return $this->refunds();
     }
+
+    public function metafields(): OrderMetafieldsApi
+    {
+        return new OrderMetafieldsApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function metafield(int $id): OrderMetafieldsApi
+    {
+        return new OrderMetafieldsApi($this->getClient(), $id, $this->getResourceId());
+    }
 }
