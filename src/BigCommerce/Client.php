@@ -4,6 +4,7 @@ namespace BigCommerce\ApiV3;
 
 use BigCommerce\ApiV3\Orders\OrdersApi;
 use BigCommerce\ApiV3\Customers\CustomersApi;
+use BigCommerce\ApiV3\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Themes\ThemesApi;
 use GuzzleHttp\HandlerStack;
@@ -127,5 +128,10 @@ class Client
     public function order(int $orderId): OrdersApi
     {
         return new OrdersApi($this, $orderId);
+    }
+
+    public function payments(): PaymentsProcessingApi
+    {
+        return new PaymentsProcessingApi($this);
     }
 }
