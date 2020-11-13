@@ -1,10 +1,4 @@
 ## New Features
 
-- Implement new Order Metafields api
-- Implement V3 Payment endpoints (Create Payment Access Token, Get Accepted Payment Methods)
-
-## Minor Update
-
-- Bump guzzlehttp/guzzle from 7.1.1 to 7.2.0
-
+- Implement [Scripts API](https://developer.bigcommerce.com/api-reference/store-management/scripts)
 

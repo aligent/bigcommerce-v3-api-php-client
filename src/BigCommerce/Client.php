@@ -6,6 +6,7 @@ use BigCommerce\ApiV3\Orders\OrdersApi;
 use BigCommerce\ApiV3\Customers\CustomersApi;
 use BigCommerce\ApiV3\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\PriceLists\PriceListsApi;
+use BigCommerce\ApiV3\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Themes\ThemesApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
@@ -133,5 +134,17 @@ class Client
     public function payments(): PaymentsProcessingApi
     {
         return new PaymentsProcessingApi($this);
+    }
+
+    public function script(string $uuid): ScriptsApi
+    {
+        $api = $this->scripts();
+        $api->setUuid($uuid);
+        return $api;
+    }
+
+    public function scripts(): ScriptsApi
+    {
+        return new ScriptsApi($this);
     }
 }
