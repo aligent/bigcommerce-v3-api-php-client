@@ -1,8 +1,8 @@
 <?php
 
-namespace BigCommerce\Tests\Orders;
+namespace BigCommerce\Tests\Api\Orders;
 
-use BigCommerce\ApiV3\Orders\RefundsApi;
+use BigCommerce\ApiV3\Api\Orders\RefundsApi;
 use BigCommerce\ApiV3\ResourceModels\Order\OrderRefundItem;
 use BigCommerce\Tests\BigCommerceApiTest;
 

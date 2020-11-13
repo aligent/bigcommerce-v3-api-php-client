@@ -1,8 +1,8 @@
 <?php
 
-namespace BigCommerce\Tests\Orders;
+namespace BigCommerce\Tests\Api\Orders;
 
-use BigCommerce\ApiV3\Orders\OrdersApi;
+use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class OrdersApiTest extends BigCommerceApiTest

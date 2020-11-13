@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Orders;
+namespace BigCommerce\ApiV3\Api\Orders;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Order\OrderMetafieldResponse;

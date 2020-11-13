@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\Orders;
+namespace BigCommerce\Tests\Api\Orders;
 
 use BigCommerce\Tests\BigCommerceApiTest;
 
