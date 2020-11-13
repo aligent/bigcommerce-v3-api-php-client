@@ -2,10 +2,10 @@
 
 namespace BigCommerce\ApiV3;
 
-use BigCommerce\ApiV3\Catalog\BrandsApi;
-use BigCommerce\ApiV3\Catalog\CategoriesApi;
-use BigCommerce\ApiV3\Catalog\ProductsApi;
-use BigCommerce\ApiV3\Catalog\SummaryApi;
+use BigCommerce\ApiV3\Api\Catalog\BrandsApi;
+use BigCommerce\ApiV3\Api\Catalog\CategoriesApi;
+use BigCommerce\ApiV3\Api\Catalog\ProductsApi;
+use BigCommerce\ApiV3\Api\Catalog\SummaryApi;
 
 class Catalog
 {
