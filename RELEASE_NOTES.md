@@ -1,4 +1,4 @@
 ## New Features
 
-## Minor Update
+- Implement [Scripts API](https://developer.bigcommerce.com/api-reference/store-management/scripts)
 

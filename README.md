@@ -73,7 +73,7 @@ Running tests: `composer run-script test`
 
 #### Scripts
 
-- ☐ Scripts
+- ☑️ Scripts
 
 #### Subscribers
 
