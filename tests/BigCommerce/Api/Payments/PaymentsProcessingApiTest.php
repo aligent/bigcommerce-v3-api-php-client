@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\Payments;
+namespace BigCommerce\Tests\Api\Payments;
 
 use BigCommerce\ApiV3\ResourceModels\Order\Order;
 use BigCommerce\Tests\BigCommerceApiTest;

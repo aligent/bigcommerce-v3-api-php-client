@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Payments;
+namespace BigCommerce\ApiV3\Api\Payments;
 
 use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResourceModels\Order\Order;
