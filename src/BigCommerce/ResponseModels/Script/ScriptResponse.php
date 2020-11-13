@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\ResponseModels\Script;
 
 use BigCommerce\ApiV3\ResourceModels\Script\Script;
