@@ -5,9 +5,9 @@ namespace BigCommerce\ApiV3;
 use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
 use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
-use BigCommerce\ApiV3\PriceLists\PriceListsApi;
-use BigCommerce\ApiV3\Scripts\ScriptsApi;
-use BigCommerce\ApiV3\Themes\ThemesApi;
+use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
+use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
+use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 

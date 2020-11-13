@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\PriceLists;
+namespace BigCommerce\ApiV3\Api\PriceLists;
 
 use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResourceModels\PriceList\PriceListAssignment;

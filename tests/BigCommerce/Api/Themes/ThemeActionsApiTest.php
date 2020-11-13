@@ -1,8 +1,8 @@
 <?php
 
-namespace BigCommerce\Tests\Themes;
+namespace BigCommerce\Tests\Api\Themes;
 
-use BigCommerce\ApiV3\Themes\ThemeActionsApi;
+use BigCommerce\ApiV3\Api\Themes\ThemeActionsApi;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class ThemeActionsApiTest extends BigCommerceApiTest

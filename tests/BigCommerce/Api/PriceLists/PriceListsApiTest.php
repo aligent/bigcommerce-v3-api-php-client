@@ -1,8 +1,8 @@
 <?php
 
-namespace BigCommerce\Tests\PriceLists;
+namespace BigCommerce\Tests\Api\PriceLists;
 
-use BigCommerce\ApiV3\PriceLists\PriceListsApi;
+use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class PriceListsApiTest extends BigCommerceApiTest

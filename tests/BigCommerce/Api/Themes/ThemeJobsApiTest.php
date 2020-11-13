@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\Themes;
+namespace BigCommerce\Tests\Api\Themes;
 
 use BigCommerce\ApiV3\ResourceModels\Theme\ThemeJob;
 use BigCommerce\Tests\BigCommerceApiTest;

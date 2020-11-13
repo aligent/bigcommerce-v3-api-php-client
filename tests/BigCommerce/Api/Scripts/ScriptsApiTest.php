@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\Scripts;
+namespace BigCommerce\Tests\Api\Scripts;
 
 use BigCommerce\ApiV3\ResourceModels\Script\Script;
 use BigCommerce\Tests\BigCommerceApiTest;

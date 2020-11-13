@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Themes;
+namespace BigCommerce\ApiV3\Api\Themes;
 
 use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Theme\JobIdentifierResponse;

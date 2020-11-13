@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Scripts;
+namespace BigCommerce\ApiV3\Api\Scripts;
 
 use BigCommerce\ApiV3\Api\Generic\CreateResource;
 use BigCommerce\ApiV3\Api\Generic\DeleteResource;
