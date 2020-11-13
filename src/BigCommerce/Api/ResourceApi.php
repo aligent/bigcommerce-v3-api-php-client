@@ -16,20 +16,11 @@ abstract class ResourceApi extends V3ApiBase
     use GetResource;
     use UpdateResource;
     use DeleteResource;
+    use CreateResource;
 
     abstract protected function singleResourceEndpoint(): string;
     abstract protected function multipleResourcesEndpoint(): string;
     abstract protected function resourceName(): string;
-
-    protected function createResource(object $resource): ResponseInterface
-    {
-        return $this->getClient()->getRestClient()->post(
-            $this->multipleResourceUrl(),
-            [
-                RequestOptions::JSON => $resource,
-            ]
-        );
-    }
 
     protected function singleResourceUrl(): string
     {
