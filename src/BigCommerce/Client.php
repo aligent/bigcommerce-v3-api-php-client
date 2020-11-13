@@ -2,6 +2,7 @@
 
 namespace BigCommerce\ApiV3;
 
+use BigCommerce\ApiV3\Api\Catalog\CatalogApi;
 use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
 use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;

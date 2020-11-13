@@ -1,11 +1,12 @@
 <?php
 
-namespace BigCommerce\ApiV3;
+namespace BigCommerce\ApiV3\Api\Catalog;
 
 use BigCommerce\ApiV3\Api\Catalog\BrandsApi;
 use BigCommerce\ApiV3\Api\Catalog\CategoriesApi;
 use BigCommerce\ApiV3\Api\Catalog\ProductsApi;
 use BigCommerce\ApiV3\Api\Catalog\SummaryApi;
+use BigCommerce\ApiV3\Client;
 
 class CatalogApi
 {
