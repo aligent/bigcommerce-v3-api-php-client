@@ -138,7 +138,9 @@ class Client
 
     public function script(string $uuid): ScriptsApi
     {
-        return new ScriptsApi($this, $uuid);
+        $api = $this->scripts();
+        $api->setUuid($uuid);
+        return $api;
     }
 
     public function scripts(): ScriptsApi
