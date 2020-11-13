@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\Customers;
+namespace BigCommerce\Tests\Api\Customers;
 
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
 use BigCommerce\Tests\BigCommerceApiTest;

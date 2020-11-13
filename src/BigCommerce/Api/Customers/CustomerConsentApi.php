@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Customers;
+namespace BigCommerce\ApiV3\Api\Customers;
 
 use BigCommerce\ApiV3\Api\Generic\GetResource;
 use BigCommerce\ApiV3\Api\Generic\UpdateResource;
