@@ -7,7 +7,7 @@ use BigCommerce\ApiV3\Api\Catalog\CategoriesApi;
 use BigCommerce\ApiV3\Api\Catalog\ProductsApi;
 use BigCommerce\ApiV3\Api\Catalog\SummaryApi;
 
-class Catalog
+class CatalogApi
 {
     private Client $client;
 

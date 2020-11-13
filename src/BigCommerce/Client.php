@@ -94,9 +94,9 @@ class Client
         print_r(json_decode(array_pop($this->debugContainer)['request']->getBody()));
     }
 
-    public function catalog(): Catalog
+    public function catalog(): CatalogApi
     {
-        return new Catalog($this);
+        return new CatalogApi($this);
     }
 
     public function customers(): CustomersApi
