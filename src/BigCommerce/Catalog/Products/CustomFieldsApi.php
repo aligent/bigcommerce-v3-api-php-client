@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Products;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\CustomField;
 use BigCommerce\ApiV3\ResponseModels\CustomFieldResponse;
 use BigCommerce\ApiV3\ResponseModels\CustomFieldsResponse;

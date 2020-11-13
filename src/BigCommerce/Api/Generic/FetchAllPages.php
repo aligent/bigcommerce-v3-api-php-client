@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Api;
+namespace BigCommerce\ApiV3\Api\Generic;
 
 use BigCommerce\ApiV3\ResponseModels\Meta\Pagination;
 use BigCommerce\ApiV3\ResponseModels\PaginatedBatchableResponse;

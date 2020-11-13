@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\PriceLists;
 
-use BigCommerce\ApiV3\Api\V3ApiBase;
+use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResourceModels\PriceList\PriceListAssignment;
 use BigCommerce\ApiV3\ResponseModels\PriceList\PriceListAssignmentsResponse;
 use GuzzleHttp\RequestOptions;

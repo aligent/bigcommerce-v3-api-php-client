@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Products;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductVariant\ProductVariantMetafieldsApi;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductVariantsResponse;

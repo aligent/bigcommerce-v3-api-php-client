@@ -2,9 +2,9 @@
 
 namespace BigCommerce\ApiV3\Customers;
 
-use BigCommerce\ApiV3\Api\GetResource;
-use BigCommerce\ApiV3\Api\UpdateResource;
-use BigCommerce\ApiV3\Api\V3ApiBase;
+use BigCommerce\ApiV3\Api\Generic\GetResource;
+use BigCommerce\ApiV3\Api\Generic\UpdateResource;
+use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomerConsentResponse;
 
 class CustomerConsentApi extends V3ApiBase

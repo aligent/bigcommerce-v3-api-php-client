@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 use BigCommerce\ApiV3\ResponseModels\SummaryResponse;

@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Payments;
 
-use BigCommerce\ApiV3\Api\V3ApiBase;
+use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResourceModels\Order\Order;
 use BigCommerce\ApiV3\ResponseModels\Payment\AcceptedPaymentMethodsResponse;
 use BigCommerce\ApiV3\ResponseModels\Payment\PaymentAccessTokenResponse;

@@ -1,8 +1,8 @@
 <?php
 
-namespace BigCommerce\Tests\Api;
+namespace BigCommerce\Tests\Api\Generic;
 
-use BigCommerce\ApiV3\Api\AttributeFilter;
+use BigCommerce\ApiV3\Api\Generic\AttributeFilter;
 use PHPUnit\Framework\TestCase;
 
 class AttributeFilterTest extends TestCase

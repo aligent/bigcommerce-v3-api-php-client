@@ -2,8 +2,8 @@
 
 namespace BigCommerce\ApiV3\Customers;
 
-use BigCommerce\ApiV3\Api\GetAllResources;
-use BigCommerce\ApiV3\Api\V3ApiBase;
+use BigCommerce\ApiV3\Api\Generic\GetAllResources;
+use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use GuzzleHttp\RequestOptions;
 use Psr\Http\Message\ResponseInterface;

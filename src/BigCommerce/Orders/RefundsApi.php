@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Orders;
 
-use BigCommerce\ApiV3\Api\V3ApiBase;
+use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResourceModels\Order\OrderRefundItem;
 use BigCommerce\ApiV3\ResponseModels\Order\RefundQuoteResponse;
 use BigCommerce\ApiV3\ResponseModels\Order\RefundResponse;

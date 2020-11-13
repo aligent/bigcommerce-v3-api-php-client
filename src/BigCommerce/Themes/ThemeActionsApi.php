@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Themes;
 
-use BigCommerce\ApiV3\Api\UuidResourceApi;
+use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Theme\JobIdentifierResponse;
 use GuzzleHttp\RequestOptions;
 

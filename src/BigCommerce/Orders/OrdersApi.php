@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Orders;
 
-use BigCommerce\ApiV3\Api\V3ApiBase;
+use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResponseModels\Order\TransactionsResponse;
 
 class OrdersApi extends V3ApiBase

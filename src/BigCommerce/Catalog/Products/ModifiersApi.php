@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Products;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductModifier\ProductModifierImagesApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductModifier\ProductModifierValuesApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifier;

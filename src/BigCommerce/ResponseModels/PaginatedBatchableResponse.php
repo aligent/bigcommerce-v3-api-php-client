@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\ResponseModels;
 
-use BigCommerce\ApiV3\Api\FetchAllPages;
+use BigCommerce\ApiV3\Api\Generic\FetchAllPages;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use Psr\Http\Message\ResponseInterface;
 

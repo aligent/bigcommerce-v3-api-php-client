@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Api;
+namespace BigCommerce\ApiV3\Api\Generic;
 
 abstract class UuidResourceApi extends V3ApiBase
 {

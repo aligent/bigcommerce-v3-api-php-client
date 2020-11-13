@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\PriceLists;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\PriceList\PriceListResponse;
 use BigCommerce\ApiV3\ResponseModels\PriceList\PriceListsResponse;
 

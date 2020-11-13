@@ -2,10 +2,10 @@
 
 namespace BigCommerce\ApiV3\Themes;
 
-use BigCommerce\ApiV3\Api\DeleteResource;
-use BigCommerce\ApiV3\Api\GetAllResources;
-use BigCommerce\ApiV3\Api\GetResource;
-use BigCommerce\ApiV3\Api\UuidResourceApi;
+use BigCommerce\ApiV3\Api\Generic\DeleteResource;
+use BigCommerce\ApiV3\Api\Generic\GetAllResources;
+use BigCommerce\ApiV3\Api\Generic\GetResource;
+use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Theme\JobIdentifierResponse;
 use BigCommerce\ApiV3\ResponseModels\Theme\ThemeResponse;
 use BigCommerce\ApiV3\ResponseModels\Theme\ThemesResponse;

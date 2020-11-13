@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Products\ProductModifier;
 
-use BigCommerce\ApiV3\Api\ResourceImageApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceImageApi;
 
 class ProductModifierImagesApi extends ResourceImageApi
 {

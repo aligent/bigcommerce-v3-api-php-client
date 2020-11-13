@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\ApiV3\Api;
+namespace BigCommerce\ApiV3\Api\Generic;
 
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use GuzzleHttp\RequestOptions;

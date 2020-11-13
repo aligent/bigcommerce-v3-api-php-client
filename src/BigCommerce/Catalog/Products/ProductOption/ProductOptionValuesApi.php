@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Products\ProductOption;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValueResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValuesResponse;
 

@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Categories;
 
-use BigCommerce\ApiV3\Api\ResourceImageApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceImageApi;
 
 class CategoryImageApi extends ResourceImageApi
 {

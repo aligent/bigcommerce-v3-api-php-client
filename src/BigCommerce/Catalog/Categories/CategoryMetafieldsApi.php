@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Catalog\Categories;
 
-use BigCommerce\ApiV3\Api\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryMetafieldResponse;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryMetafieldsResponse;
 

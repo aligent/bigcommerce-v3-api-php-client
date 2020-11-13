@@ -2,8 +2,8 @@
 
 namespace BigCommerce\ApiV3\Catalog;
 
-use BigCommerce\ApiV3\Api\AttributeFilter;
-use BigCommerce\ApiV3\Api\ResourceWithBatchUpdateApi;
+use BigCommerce\ApiV3\Api\Generic\AttributeFilter;
+use BigCommerce\ApiV3\Api\Generic\ResourceWithBatchUpdateApi;
 use BigCommerce\ApiV3\Catalog\Products\ProductsSubResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\Product;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductResponse;

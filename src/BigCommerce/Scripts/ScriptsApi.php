@@ -2,12 +2,12 @@
 
 namespace BigCommerce\ApiV3\Scripts;
 
-use BigCommerce\ApiV3\Api\CreateResource;
-use BigCommerce\ApiV3\Api\DeleteResource;
-use BigCommerce\ApiV3\Api\GetAllResources;
-use BigCommerce\ApiV3\Api\GetResource;
-use BigCommerce\ApiV3\Api\UpdateResource;
-use BigCommerce\ApiV3\Api\UuidResourceApi;
+use BigCommerce\ApiV3\Api\Generic\CreateResource;
+use BigCommerce\ApiV3\Api\Generic\DeleteResource;
+use BigCommerce\ApiV3\Api\Generic\GetAllResources;
+use BigCommerce\ApiV3\Api\Generic\GetResource;
+use BigCommerce\ApiV3\Api\Generic\UpdateResource;
+use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Script\Script;
 use BigCommerce\ApiV3\ResponseModels\Script\ScriptResponse;
 use BigCommerce\ApiV3\ResponseModels\Script\ScriptsResponse;

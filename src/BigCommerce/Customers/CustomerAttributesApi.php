@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\Customers;
 
-use BigCommerce\ApiV3\Api\DeleteInIdList;
+use BigCommerce\ApiV3\Api\Generic\DeleteInIdList;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomerAttributesResponse;
 
 class CustomerAttributesApi extends CustomerApiBase

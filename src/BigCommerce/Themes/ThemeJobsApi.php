@@ -2,8 +2,8 @@
 
 namespace BigCommerce\ApiV3\Themes;
 
-use BigCommerce\ApiV3\Api\GetResource;
-use BigCommerce\ApiV3\Api\UuidResourceApi;
+use BigCommerce\ApiV3\Api\Generic\GetResource;
+use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
 use BigCommerce\ApiV3\ResponseModels\Theme\ThemeJobResponse;
 
 class ThemeJobsApi extends UuidResourceApi
