@@ -1,4 +1,3 @@
-## New Features
+### Breaking Change
 
-- Implement [Scripts API](https://developer.bigcommerce.com/api-reference/store-management/scripts)
-
+API classes have been refactored to all be under the `Api/` namespace, with the exception of `Client`, which has not moved.
