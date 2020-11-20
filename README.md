@@ -77,7 +77,7 @@ Running tests: `composer run-script test`
 
 #### Subscribers
 
-- ☐ Subscribers
+- ☑️ Subscribers
 
 #### Themes
 
