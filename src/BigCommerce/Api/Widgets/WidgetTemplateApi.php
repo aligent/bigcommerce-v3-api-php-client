@@ -2,24 +2,13 @@
 
 namespace BigCommerce\ApiV3\Api\Widgets;
 
-use BigCommerce\ApiV3\Api\Generic\CreateResource;
-use BigCommerce\ApiV3\Api\Generic\DeleteResource;
-use BigCommerce\ApiV3\Api\Generic\GetAllResources;
-use BigCommerce\ApiV3\Api\Generic\GetResource;
-use BigCommerce\ApiV3\Api\Generic\UpdateResource;
-use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
+use BigCommerce\ApiV3\Api\Generic\UuidCompleteResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Widget\WidgetTemplate;
 use BigCommerce\ApiV3\ResponseModels\Widget\WidgetTemplateResponse;
 use BigCommerce\ApiV3\ResponseModels\Widget\WidgetTemplatesResponse;
 
-class WidgetTemplateApi extends UuidResourceApi
+class WidgetTemplateApi extends UuidCompleteResourceApi
 {
-    use CreateResource;
-    use DeleteResource;
-    use GetAllResources;
-    use GetResource;
-    use UpdateResource;
-
     private const TEMPLATE_ENDPOINT  = 'content/widget-templates';
     private const TEMPLATES_ENDPOINT = 'content/widget-templates/%s';
 
