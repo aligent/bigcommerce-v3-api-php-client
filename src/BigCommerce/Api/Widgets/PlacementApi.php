@@ -5,6 +5,7 @@ namespace BigCommerce\ApiV3\Api\Widgets;
 use BigCommerce\ApiV3\Api\Generic\UuidCompleteResourceApi;
 use BigCommerce\ApiV3\ResourceModels\Widget\Placement;
 use BigCommerce\ApiV3\ResponseModels\Widget\PlacementResponse;
+use BigCommerce\ApiV3\ResponseModels\Widget\PlacementsResponse;
 
 class PlacementApi extends UuidCompleteResourceApi
 {
@@ -34,5 +35,10 @@ class PlacementApi extends UuidCompleteResourceApi
     public function get(): PlacementResponse
     {
         return new PlacementResponse($this->getResource());
+    }
+
+    public function getAll(array $filters = [], int $page = 0, int $limit = 250): PlacementsResponse
+    {
+        return new PlacementsResponse($this->getAllResources($filters, $page, $limit));
     }
 }
