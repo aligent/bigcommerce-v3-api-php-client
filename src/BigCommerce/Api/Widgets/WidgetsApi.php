@@ -2,6 +2,7 @@
 
 namespace BigCommerce\ApiV3\Api\Widgets;
 
+use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
 use BigCommerce\ApiV3\Client;
 
 class WidgetsApi
@@ -15,7 +16,7 @@ class WidgetsApi
 
     public function widget(string $id): WidgetApi
     {
-        $widgetApi = new WidgetApi($this->client);
+        $widgetApi = $this->widgets();
         $widgetApi->setUuid($id);
 
         return $widgetApi;
@@ -28,7 +29,7 @@ class WidgetsApi
 
     public function template(string $id): WidgetTemplateApi
     {
-        $templateApi = new WidgetTemplateApi($this->client);
+        $templateApi = $this->templates();
         $templateApi->setUuid($id);
 
         return $templateApi;
@@ -45,5 +46,18 @@ class WidgetsApi
         $regionApi->setTemplateFile($templateFile);
 
         return $regionApi;
+    }
+
+    public function placements(): PlacementApi
+    {
+        return new PlacementApi($this->client);
+    }
+
+    public function placement(string $uuid): PlacementApi
+    {
+        $placementApi = $this->placements();
+        $placementApi->setUuid($uuid);
+
+        return $placementApi;
     }
 }
