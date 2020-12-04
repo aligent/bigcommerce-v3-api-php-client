@@ -89,7 +89,7 @@ Running tests: `composer run-script test`
 
 - ☐ Regions
 - ☐ Widget Template
-- ☐ Widget
+- ☑️ Widget
 - ☐ Placement
 
 ### Catalog
