@@ -25,4 +25,17 @@ class WidgetsApi
     {
         return new WidgetApi($this->client);
     }
+
+    public function template(string $id): WidgetTemplateApi
+    {
+        $templateApi = new WidgetTemplateApi($this->client);
+        $templateApi->setUuid($id);
+
+        return $templateApi;
+    }
+
+    public function templates(): WidgetTemplateApi
+    {
+        return new WidgetTemplateApi($this->client);
+    }
 }
