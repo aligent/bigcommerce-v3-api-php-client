@@ -88,10 +88,10 @@ Running tests: `composer run-script test`
 
 #### Widgets
 
-- ☐ Regions
-- ☐ Widget Template
+- ☑️ Regions
+- ☑️ Widget Template
 - ☑️ Widget
-- ☐ Placement
+- ☑️ Placement
 
 ### Catalog
 

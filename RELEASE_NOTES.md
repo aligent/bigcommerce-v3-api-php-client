@@ -4,6 +4,7 @@ Adding support for the Widget/Content endpoints. See the [Widgets Tutorial](http
 for usage.
 
 Implemented:
- - [Widgets API](https://developer.bigcommerce.com/api-reference/store-management/widgets/widget/createwidget)
- - [Widget Templates](https://developer.bigcommerce.com/api-reference/store-management/widgets/widget-template/createwidgettemplate)
- - Get Theme Regions
+- [Widgets API](https://developer.bigcommerce.com/api-reference/store-management/widgets/widget/createwidget)
+- [Widget Templates](https://developer.bigcommerce.com/api-reference/store-management/widgets/widget-template/createwidgettemplate)
+- Get Theme Regions
+- [Placements API](https://developer.bigcommerce.com/api-reference/store-management/widgets/placement/getplacements)
