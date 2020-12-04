@@ -38,4 +38,12 @@ class WidgetsApi
     {
         return new WidgetTemplateApi($this->client);
     }
+
+    public function regions(string $templateFile): RegionApi
+    {
+        $regionApi = new RegionApi($this->client);
+        $regionApi->setTemplateFile($templateFile);
+
+        return $regionApi;
+    }
 }
