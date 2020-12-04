@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "uuid": "a8940709-5655-4401-a341-62c44e3180b2",
+      "name": "Header Images",
+      "widget_configuration": {
+        "images": [
+          {
+            "image_url": "https://www.bigcommerce.com",
+            "image_source": "https://cdn11.bigcommerce.com/s-n0i50vy/images/stencil/1280x1280/products/91/309/thekinfolktablecover_1024x1024__80715.1456436719.jpg?c=2&imbypass=on"
+          },
+          {
+            "image_url": "hhttps://www.bigcommerce.com",
+            "image_source": "https://cdn11.bigcommerce.com/s-n0i50vy/images/stencil/1280x1280/products/109/361/kinfolkessentialissue_1024x1024__22507.1456436715.jpg?c=2&imbypass=on"
+          },
+          {
+            "image_url": "https://www.bigcommerce.com",
+            "image_source": "https://cdn11.bigcommerce.com/s-n0i50vy/images/stencil/500x659/products/85/282/livingwithplants_grande__26452.1456436666.jpg?c=2&imbypass=on"
+          }
+        ],
+        "_": {
+          "id": "a8940709-5655-4401-a341-62c44e3180b2"
+        }
+      },
+      "widget_template": {
+        "uuid": "3a1b0044-c9b3-47d3-9929-01ab0c20243b",
+        "name": "Header Images",
+        "schema": [],
+        "template": "{{#each images}}<a href='{{image_url}}'><img src={{image_source}} style='width:33.3%'/></a>{{/each}}",
+        "date_created": "2019-02-25T18:35:04.904Z",
+        "date_modified": "2019-02-25T18:35:04.904Z",
+        "kind": "custom"
+      },
+      "date_created": "2019-02-25T18:36:45.238Z",
+      "date_modified": "2019-02-25T18:36:45.238Z",
+      "description": ""
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}

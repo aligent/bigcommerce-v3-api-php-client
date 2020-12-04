@@ -9,6 +9,7 @@ use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
+use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 
@@ -147,5 +148,15 @@ class Client
     public function scripts(): ScriptsApi
     {
         return new ScriptsApi($this);
+    }
+
+    public function widgets(): WidgetsApi
+    {
+        return new WidgetsApi($this);
+    }
+
+    public function content(): WidgetsApi
+    {
+        return $this->widgets();
     }
 }
