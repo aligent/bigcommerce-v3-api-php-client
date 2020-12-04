@@ -13,7 +13,7 @@ class Widget extends ResourceModel
     public string $name;
     public string $uuid;
     public string $version_uuid;
-    public object $widget_configuration; // @todo Implement Widget Configuration
+    public WidgetConfiguration $widget_configuration;
     public WidgetTemplate $widget_template;
 
     public function __construct(?stdClass $optionObject = null)
@@ -22,6 +22,12 @@ class Widget extends ResourceModel
             $this->widget_template = new WidgetTemplate($optionObject->widget_template);
             unset($optionObject->widget_template);
         }
+
+        if (isset($optionObject->widget_configuration)) {
+            $this->widget_configuration = new WidgetConfiguration($optionObject->widget_configuration);
+            unset($optionObject->widget_configuration);
+        }
+
         parent::__construct($optionObject);
     }
 }

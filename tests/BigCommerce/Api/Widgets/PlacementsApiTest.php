@@ -28,5 +28,12 @@ class PlacementsApiTest extends BigCommerceApiTest
             '3a1b0044-c9b3-47d3-9929-01ab0c20243b',
             $placements[0]->widget->widget_template->uuid
         );
+
+        // phpcs:disable Generic.Files.LineLength
+        $this->assertEquals(
+            'https://cdn11.bigcommerce.com/s-n0i50vy/images/stencil/1280x1280/products/109/361/kinfolkessentialissue_1024x1024__22507.1456436715.jpg?c=2&imbypass=on',
+            $placements[0]->widget->widget_configuration->images[1]->image_source
+        );
+        // phpcs:enable Generic.Files.LineLength
     }
 }
