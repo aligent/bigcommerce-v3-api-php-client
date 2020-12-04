@@ -14,6 +14,14 @@ class WidgetApiTest extends BigCommerceApiTest
         $this->assertEquals('Header Images', $widget->name);
     }
 
+    public function testCanGetTemplateFromWidget(): void
+    {
+        $this->setReturnData('content__widgets__456__get.json');
+
+        $widget = $this->getApi()->widgets()->widget('456851d3-0125-440e-820d-1b11c19da553')->get()->getWidget();
+        $this->assertEquals('Header Images', $widget->widget_template->name);
+    }
+
     public function testCanGetWidgets(): void
     {
         $this->setReturnData('content__widgets__get_all.json');
