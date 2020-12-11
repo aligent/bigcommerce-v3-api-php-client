@@ -6,22 +6,24 @@ use JsonSerializable;
 
 class ProductModifierValue implements JsonSerializable
 {
-    public int $id;
-    public int $option_id;
-    public bool $is_default = false;
-    public int $sort_order;
-    public ?ProductModifierValueAdjuster $adjusters;
+public int $id;
+public int $option_id;
+public bool $is_default = false;
+public int $sort_order;
+public ?ProductModifierValueAdjuster $adjusters;
 
-    public function __construct(public ?int $productId, public string $label) {}
+public function __construct(public ?int $productId, public string $label)
+{
+}
 
-    public static function buildFromResponse(\stdClass $optionObject): ProductModifierValue
-    {
-        $modifierValue = new ProductModifierValue(null, '');
-        foreach ($optionObject as $key => $value) {
-            $modifierValue->$key = match () {
-                'adjusters' => new ProductModifierValueAdjuster($optionObject->$key),
-                default => $value,
-            }
+public static function buildFromResponse(\stdClass $optionObject): ProductModifierValue
+{
+    $modifierValue = new ProductModifierValue(null, '');
+    foreach ($optionObject as $key => $value) {
+        $modifierValue->$key = match () {
+            'adjusters' => new ProductModifierValueAdjuster($optionObject->$key),
+        default => $value,
+        }
         }
         return $modifierValue;
     }

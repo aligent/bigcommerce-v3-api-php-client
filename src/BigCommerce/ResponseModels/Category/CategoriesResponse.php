@@ -2,7 +2,7 @@
 
 namespace BigCommerce\ApiV3\ResponseModels\Category;
 
-use BigCommerce\ApiV3\Api\FetchAllPages;
+use BigCommerce\ApiV3\Api\Generic\FetchAllPages;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 

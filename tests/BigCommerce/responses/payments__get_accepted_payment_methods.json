@@ -1,0 +1,53 @@
+{
+  "data": [
+    {
+      "id": "stripe.card",
+      "name": "Stripe",
+      "test_mode": true,
+      "type": "card",
+      "supported_instruments": [
+        {
+          "instrument_type": "VISA",
+          "verification_value_required": true
+        },
+        {
+          "instrument_type": "MASTERCARD",
+          "verification_value_required": true
+        },
+        {
+          "instrument_type": "AMEX",
+          "verification_value_required": true
+        },
+        {
+          "instrument_type": "DISCOVER",
+          "verification_value_required": true
+        },
+        {
+          "instrument_type": "JCB",
+          "verification_value_required": true
+        },
+        {
+          "instrument_type": "DINERS_CLUB",
+          "verification_value_required": true
+        },
+        {
+          "instrument_type": "STORED_CARD",
+          "verification_value_required": true
+        }
+      ],
+      "stored_instruments": [
+        {
+          "type": "stored_card",
+          "brand": "VISA",
+          "expiry_month": 9,
+          "expiry_year": 2020,
+          "issuer_identification_number": "424242",
+          "last_4": "4242",
+          "token": "050a1e5c982e5905288ec5ec33f292772762033a0704f46fccb16bf1940b51ef",
+          "is_default": true
+        }
+      ]
+    }
+  ],
+  "meta": {}
+}

@@ -8,7 +8,8 @@
 
 
 ## Introduction
-This is an early development version of an easy-to-use API client for BigCommerce.
+
+This is an easy-to-use API client for BigCommerce.
 
 ## Installation
 
@@ -62,21 +63,22 @@ Running tests: `composer run-script test`
 
 #### Orders (V3)
 
+- ☑️ Order Metafields
 - ☑️ Transactions
 - ☑️ Order Refunds
 
 #### Payment Methods
 
-- ☐ Payment Access Token
-- ☐ Payment Methods
+- ☑️ Payment Access Token
+- ☑️ Payment Methods
 
 #### Scripts
 
-- ☐ Scripts
+- ☑️ Scripts
 
 #### Subscribers
 
-- ☐ Subscribers
+- ☑️ Subscribers
 
 #### Themes
 
@@ -86,10 +88,10 @@ Running tests: `composer run-script test`
 
 #### Widgets
 
-- ☐ Regions
-- ☐ Widget Template
-- ☐ Widget
-- ☐ Placement
+- ☑️ Regions
+- ☑️ Widget Template
+- ☑️ Widget
+- ☑️ Placement
 
 ### Catalog
 
@@ -106,9 +108,3 @@ Running tests: `composer run-script test`
 - ☑️ Price Lists
 - ☑️ Assignments
 - ☑️ Records 
-
-## Still To Do
-
-- Document apis that are still to be implemented
-- Test coverage
-- Documentation
