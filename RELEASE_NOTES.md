@@ -1,13 +1,10 @@
-#### New Features
+### New Features
 
-Add support for the [Themes API](https://developer.bigcommerce.com/api-reference/store-management/themes)
+Adding support for the Widget/Content endpoints. See the [Widgets Tutorial](https://developer.bigcommerce.com/api-docs/store-management/widgets/tutorials/tutorial)
+for usage.
 
-Includes
-
-- Themes
-- Theme Actions
-- Theme Jobs
-
-#### Code Improvements
-
-- Refactor PaginatedResponse to be simpler to implement
+Implemented:
+- [Widgets API](https://developer.bigcommerce.com/api-reference/store-management/widgets/widget/createwidget)
+- [Widget Templates](https://developer.bigcommerce.com/api-reference/store-management/widgets/widget-template/createwidgettemplate)
+- Get Theme Regions
+- [Placements API](https://developer.bigcommerce.com/api-reference/store-management/widgets/placement/getplacements)

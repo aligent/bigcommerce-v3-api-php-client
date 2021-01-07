@@ -20,7 +20,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "BigCommerce\\ApiV3\\": "src/BigCommerce/"
+            "BigCommerce\\ApiV3\\": "src/BigCommerce/",
+            "BigCommerce\\Tests\\": "tests/BigCommerce"
         }
     },
     "require-dev": {
@@ -29,7 +30,7 @@
     },
     "scripts": {
         "test": "./vendor/bin/phpunit tests",
-        "check-style": "./vendor/bin/phpcs --standard=PSR12 ./src ./tests",
+        "check-style": "./vendor/bin/phpcs --standard=PSR12 -s ./src ./tests",
         "fix-style": "./vendor/bin/phpcbf --standard=PSR12 ./src ./tests"
     }
 }

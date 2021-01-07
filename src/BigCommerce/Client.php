@@ -2,9 +2,14 @@
 
 namespace BigCommerce\ApiV3;
 
-use BigCommerce\ApiV3\Customers\CustomersApi;
-use BigCommerce\ApiV3\PriceLists\PriceListsApi;
-use BigCommerce\ApiV3\Themes\ThemesApi;
+use BigCommerce\ApiV3\Api\Catalog\CatalogApi;
+use BigCommerce\ApiV3\Api\Orders\OrdersApi;
+use BigCommerce\ApiV3\Api\Customers\CustomersApi;
+use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
+use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
+use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
+use BigCommerce\ApiV3\Api\Themes\ThemesApi;
+use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 
@@ -91,9 +96,9 @@ class Client
         print_r(json_decode(array_pop($this->debugContainer)['request']->getBody()));
     }
 
-    public function catalog(): Catalog
+    public function catalog(): CatalogApi
     {
-        return new Catalog($this);
+        return new CatalogApi($this);
     }
 
     public function customers(): CustomersApi
@@ -121,5 +126,37 @@ class Client
         $api = $this->themes();
         $api->setUuid($uuid);
         return $api;
+    }
+
+    public function order(int $orderId): OrdersApi
+    {
+        return new OrdersApi($this, $orderId);
+    }
+
+    public function payments(): PaymentsProcessingApi
+    {
+        return new PaymentsProcessingApi($this);
+    }
+
+    public function script(string $uuid): ScriptsApi
+    {
+        $api = $this->scripts();
+        $api->setUuid($uuid);
+        return $api;
+    }
+
+    public function scripts(): ScriptsApi
+    {
+        return new ScriptsApi($this);
+    }
+
+    public function widgets(): WidgetsApi
+    {
+        return new WidgetsApi($this);
+    }
+
+    public function content(): WidgetsApi
+    {
+        return $this->widgets();
     }
 }

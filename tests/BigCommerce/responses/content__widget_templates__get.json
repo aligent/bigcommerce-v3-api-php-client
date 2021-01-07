@@ -1,0 +1,14 @@
+{
+  "data": {
+    "current_version_uuid": "c48b131a-ae9d-4767-b5d6-63d9e43bcf75",
+    "date_created": "2020-11-03T18:51:22.877Z",
+    "date_modified": "2020-11-03T18:51:22.877Z",
+    "icon_name": "default",
+    "kind": "custom",
+    "name": "Header Images",
+    "schema": [],
+    "template": "{{#each images}}<a href='{{image_url}}'><img src={{image_source}} style='width:33.3%'/></a>{{/each}}",
+    "uuid": "b9790903-09b9-4736-87ca-19ff61582ee7"
+  },
+  "meta": {}
+}
