@@ -43,6 +43,38 @@ echo "Found {$productsResponse->getPagination()->total} products";
 $products = $productsResponse->getProducts();
 ```
 
+Example of updating a product variant
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$productVariant = $api->catalog()->product(123)->variant(456)->get()->getProductVariant();
+$productVariant->price = '12';
+
+try {
+    $api->catalog()->product($productVariant->product_id)->variant($productVariant->id)->update($productVariant);
+} catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+    echo "Unable to update product variant: {$exception->getMessage()}";
+}
+```
+
+Example of creating a product variant
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$productVariant = new \BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductVariant();
+$productVariant->product_id = 123;
+$productVariant->sku = "SKU-123";
+//...
+
+try {
+    $api->catalog()->product($productVariant->product_id)->variants()->create($productVariant);
+} catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+    echo "Unable to create product variant: {$exception->getMessage()}";
+}
+```
+
 ## Development
 
 Running tests: `composer run-script test`
