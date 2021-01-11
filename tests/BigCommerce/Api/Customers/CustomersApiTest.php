@@ -17,7 +17,10 @@ class CustomersApiTest extends BigCommerceApiTest
 
     public function testCanGetCustomerByEmail()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('customers__get_all.json');
+        $customer = $this->getApi()->customers()->getByEmail('jan.plank@aligent.com.au');
+
+        $this->assertEquals('Jan', $customer->first_name);
     }
 
     public function testCanGetCustomerById()
