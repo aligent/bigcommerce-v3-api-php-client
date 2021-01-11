@@ -12,6 +12,7 @@ class CustomersApi extends CustomerApiBase
     use DeleteInIdList;
 
     public const FILTER__EMAIL_IN = 'email:in';
+    public const FILTER__ID_IN = 'id:in';
 
     private const RESOURCE_NAME = 'customers';
 
@@ -31,6 +32,13 @@ class CustomersApi extends CustomerApiBase
         }
 
         return $customers[0];
+    }
+
+    public function getById(int $id): ?Customer
+    {
+        $customers = $this->getAll([self::FILTER__ID_IN => $id])->getCustomers();
+
+        return $customers[0] ?? null;
     }
 
     public function create(array $customers): CustomersResponse

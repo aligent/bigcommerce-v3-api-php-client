@@ -1,3 +1,3 @@
 ### New Features
 
-Implemented create and update Product Variant as this has been missed previously.
+Until BigCommerce decide to be consistent and include a _Get Customer_ endpoint, add `CustomersApi::getById(int $id)`.
