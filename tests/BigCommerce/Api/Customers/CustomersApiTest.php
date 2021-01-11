@@ -12,12 +12,31 @@ class CustomersApiTest extends BigCommerceApiTest
         $this->setReturnData('customers__get_all.json');
         $customersResponse = $this->getApi()->customers()->getAll();
         $this->assertEquals(1, $customersResponse->getPagination()->total);
-        $this->assertEquals('Jan', $customersResponse->getCustomers()[0]->first_name);
+        $this->assertEquals('John', $customersResponse->getCustomers()[0]->first_name);
     }
 
     public function testCanGetCustomerByEmail()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('customers__get_all.json');
+        $customer = $this->getApi()->customers()->getByEmail('john.smith@spam.me');
+
+        $this->assertEquals('John', $customer->first_name);
+    }
+
+    public function testCanGetCustomerById()
+    {
+        $this->setReturnData('customers__get_all.json');
+        $customer = $this->getApi()->customers()->getById(1);
+
+        $this->assertEquals('john.smith@spam.me', $customer->email);
+    }
+
+    public function testCanGetNullCustomerById()
+    {
+        $this->setReturnData('customers__get_all_no_results.json');
+        $customer = $this->getApi()->customers()->getById(2);
+
+        $this->assertNull($customer);
     }
 
     public function testCanCreateCustomers()
