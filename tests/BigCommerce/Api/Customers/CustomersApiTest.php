@@ -20,6 +20,22 @@ class CustomersApiTest extends BigCommerceApiTest
         $this->markTestIncomplete();
     }
 
+    public function testCanGetCustomerById()
+    {
+        $this->setReturnData('customers__get_all.json');
+        $customer = $this->getApi()->customers()->getById(1);
+
+        $this->assertEquals('jan.plank@aligent.com.au', $customer->email);
+    }
+
+    public function testCanGetNullCustomerById()
+    {
+        $this->setReturnData('customers__get_all_no_results.json');
+        $customer = $this->getApi()->customers()->getById(2);
+
+        $this->assertNull($customer);
+    }
+
     public function testCanCreateCustomers()
     {
         $customers = [
