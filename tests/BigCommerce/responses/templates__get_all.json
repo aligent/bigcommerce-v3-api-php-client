@@ -1,0 +1,31 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "channel_id": 1,
+      "entity_type": "product",
+      "entity_id": 123,
+      "file_name": "custom-product-1.html"
+    },
+    {
+      "id": 2,
+      "channel_id": 12345,
+      "entity_type": "page",
+      "entity_id": 123,
+      "file_name": "custom-page.html"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 246,
+      "count": 5,
+      "per_page": 5,
+      "current_page": 1,
+      "total_pages": 50,
+      "links": {
+        "next": "?limit=5&page=2",
+        "current": "?limit=5&page=1"
+      }
+    }
+  }
+}
