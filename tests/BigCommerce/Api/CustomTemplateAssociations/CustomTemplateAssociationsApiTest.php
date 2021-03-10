@@ -2,6 +2,7 @@
 
 namespace BigCommerce\Tests\Api\CustomTemplateAssociation;
 
+use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
 use BigCommerce\ApiV3\ResourceModels\CustomTemplateAssociation\CustomTemplateAssociation;
 use BigCommerce\Tests\BigCommerceApiTest;
 
@@ -19,7 +20,15 @@ class CustomTemplateAssociationsApiTest extends BigCommerceApiTest
 
     public function testCanDeleteAssociation()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData(self::EMPTY_RESPONSE, 204);
+
+        $customTemplateAssocApi = $this->getApi()->customTemplateAssociations();
+        $customTemplateAssocApi->deleteByChannelId(1);
+        $this->setReturnData(self::EMPTY_RESPONSE, 204);
+        $customTemplateAssocApi->deleteByIds([1, 2, 3]);
+        $this->setReturnData(self::EMPTY_RESPONSE, 204);
+        $customTemplateAssocApi->deleteByEntityIds(CustomTemplateAssociation::TYPE_CATEGORY, [4, 5, 6]);
+        $this->assertTrue(true);
     }
 
     public function testCanUpsertAssociation()

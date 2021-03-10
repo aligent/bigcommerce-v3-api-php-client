@@ -5,6 +5,11 @@ use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
 class CustomTemplateAssociation extends ResourceModel
 {
+    public const TYPE_PRODUCT   = 'product';
+    public const TYPE_CATEGORY  = 'category';
+    public const TYPE_BRAND     = 'brand';
+    public const TYPE_PAGE      = 'page';
+
     public int $id;
     public int $channel_id;
     public string $entity_type;
