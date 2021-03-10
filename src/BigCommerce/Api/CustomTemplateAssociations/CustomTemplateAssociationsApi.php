@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\Api\CustomTemplateAssociations;
 
 use BigCommerce\ApiV3\Api\Generic\BatchUpdateResource;
@@ -62,7 +63,8 @@ class CustomTemplateAssociationsApi extends V3ApiBase
             $this->multipleResourceUrl(),
             [
                 RequestOptions::QUERY => $query
-            ]);
+            ]
+        );
     }
 
     public function deleteByIds(array $ids): void

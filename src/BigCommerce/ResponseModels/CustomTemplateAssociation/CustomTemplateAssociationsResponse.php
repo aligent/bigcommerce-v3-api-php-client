@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\ResponseModels\CustomTemplateAssociation;
 
 use BigCommerce\ApiV3\ResponseModels\PaginatedBatchableResponse;

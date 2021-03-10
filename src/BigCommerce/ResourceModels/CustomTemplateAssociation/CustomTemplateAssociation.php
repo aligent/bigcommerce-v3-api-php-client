@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\ResourceModels\CustomTemplateAssociation;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;

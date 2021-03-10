@@ -6,7 +6,6 @@ use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsA
 use BigCommerce\ApiV3\ResourceModels\CustomTemplateAssociation\CustomTemplateAssociation;
 use BigCommerce\Tests\BigCommerceApiTest;
 
-
 class CustomTemplateAssociationsApiTest extends BigCommerceApiTest
 {
     public function testCanGetAssociations()
