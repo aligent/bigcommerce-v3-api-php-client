@@ -14,6 +14,7 @@ class SubscribersResponse extends PaginatedResponse
     {
         return $this->getData();
     }
+
     protected function resourceClass(): string
     {
         return Subscriber::class;

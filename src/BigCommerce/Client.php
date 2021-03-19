@@ -10,6 +10,7 @@ use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
+use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 
@@ -158,5 +159,10 @@ class Client
     public function content(): WidgetsApi
     {
         return $this->widgets();
+    }
+
+    public function customTemplateAssociations(): CustomTemplateAssociationsApi
+    {
+        return new CustomTemplateAssociationsApi($this);
     }
 }
