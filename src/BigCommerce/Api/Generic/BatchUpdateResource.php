@@ -10,7 +10,7 @@ use Psr\Http\Message\ResponseInterface;
 trait BatchUpdateResource
 {
     abstract public function batchUpdate(array $resources): PaginatedResponse;
-    abstract public function multipleResourcesEndpoint(): string;
+    abstract protected function multipleResourcesEndpoint(): string;
     abstract public function getClient(): Client;
 
     protected function maxBatchSize(): int

@@ -1,4 +1,3 @@
-### New Features
+### Bug Fix
 
-Implement the new (Custom Template Associations)[https://developer.bigcommerce.com/api-reference/store-management/custom-template-associations]
-API.
+Fix issue with all batch operations under PHP 7.4
