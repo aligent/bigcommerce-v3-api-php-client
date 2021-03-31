@@ -2,6 +2,7 @@
 
 namespace BigCommerce\ApiV3;
 
+use BigCommerce\ApiV3\Api\Carts\CartsApi;
 use BigCommerce\ApiV3\Api\Catalog\CatalogApi;
 use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
@@ -125,6 +126,18 @@ class Client
     public function theme(string $uuid): ThemesApi
     {
         $api = $this->themes();
+        $api->setUuid($uuid);
+        return $api;
+    }
+
+    public function carts(): CartsApi
+    {
+        return new CartsApi($this);
+    }
+
+    public function cart(string $uuid): CartsApi
+    {
+        $api = $this->carts();
         $api->setUuid($uuid);
         return $api;
     }
