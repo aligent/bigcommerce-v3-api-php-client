@@ -1,3 +1,3 @@
 ### Bug Fix
 
-Fix issue with Metafield APIs not working.
+Fix issue with Metafield APIs missing create and update endpoints.
