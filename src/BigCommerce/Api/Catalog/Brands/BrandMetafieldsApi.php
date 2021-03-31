@@ -9,8 +9,8 @@ use BigCommerce\ApiV3\ResponseModels\Brand\BrandMetafieldsResponse;
 class BrandMetafieldsApi extends ResourceApi
 {
     private const RESOURCE_NAME       = 'metafields';
-    private const METAFIELD_ENDPOINT  = 'catalog/brands/{brand_id}/metafields';
-    private const METAFIELDS_ENDPOINT = 'catalog/brands/{brand_id}/metafields/%d';
+    private const METAFIELDS_ENDPOINT = 'catalog/brands/%d/metafields';
+    private const METAFIELD_ENDPOINT  = 'catalog/brands/%d/metafields/%d';
 
     protected function singleResourceEndpoint(): string
     {

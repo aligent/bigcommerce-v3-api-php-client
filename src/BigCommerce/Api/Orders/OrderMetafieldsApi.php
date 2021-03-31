@@ -9,8 +9,8 @@ use BigCommerce\ApiV3\ResponseModels\Order\OrderMetafieldsResponse;
 class OrderMetafieldsApi extends ResourceApi
 {
     private const RESOURCE_NAME       = 'metafields';
-    private const METAFIELD_ENDPOINT  = 'orders/{order_id}/metafields';
-    private const METAFIELDS_ENDPOINT = 'orders/{order_id}/metafields/%d';
+    private const METAFIELDS_ENDPOINT = 'orders/%d/metafields';
+    private const METAFIELD_ENDPOINT  = 'orders/%d/metafields/%d';
 
     protected function singleResourceEndpoint(): string
     {

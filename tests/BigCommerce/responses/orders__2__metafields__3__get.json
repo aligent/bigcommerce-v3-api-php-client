@@ -1,0 +1,15 @@
+{
+  "data": {
+    "id": 3,
+    "key": "location_id",
+    "value": "Shelf 3, Bin 5",
+    "namespace": "Inventory Namespace",
+    "permission_set": "read",
+    "resource_type": "order",
+    "resource_id": 2,
+    "description": "Where products are located",
+    "date_created": "2018-09-13T16:42:37+00:00",
+    "date_modified": "2018-09-13T16:42:37+00:00"
+  },
+  "meta": {}
+}

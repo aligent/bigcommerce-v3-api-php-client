@@ -5,6 +5,8 @@ namespace BigCommerce\Tests;
 use BigCommerce\ApiV3\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Middleware;
+use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 
@@ -19,6 +21,7 @@ abstract class BigCommerceApiTest extends TestCase
     private const API_ACCESS_TOKEN  = "TOKEN";
 
     private Client $api;
+    private array $container = [];
 
     public function getApi(): Client
     {
@@ -40,8 +43,21 @@ abstract class BigCommerceApiTest extends TestCase
             new Response($statusCode, $headers, file_get_contents(self::RESPONSES_PATH . $filename)),
         ]);
 
-        $client = new \GuzzleHttp\Client(['handler' => HandlerStack::create($mock)]);
+        $handlerStack = HandlerStack::create($mock);
+        $handlerStack->push(Middleware::history($this->container));
+
+        $client = new \GuzzleHttp\Client(['handler' => $handlerStack]);
 
         $this->getApi()->setRestClient($client);
+    }
+
+    public function getRequestHistory(): array
+    {
+        return $this->container;
+    }
+
+    public function getLastRequest(): Request
+    {
+        return end($this->container)['request'];
     }
 }
