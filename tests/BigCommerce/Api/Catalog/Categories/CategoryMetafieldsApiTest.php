@@ -33,11 +33,19 @@ class CategoryMetafieldsApiTest extends BigCommerceApiTest
         $this->assertEquals('Warehouse Locations', $response->getMetafields()[0]->namespace);
     }
 
-    public function testCanGetSetsApiUrlCorrectly(): void
+    public function testCanSetApiUrlCorrectlyForGetAll(): void
     {
         $this->setReturnData('catalog__categories__111__metafields__get_all.json');
         $this->getApi()->catalog()->category(111)->metafields()->getAll();
 
         $this->assertEquals('catalog/categories/111/metafields', $this->getLastRequest()->getUri()->getPath());
+    }
+
+    public function testCanSetApiUrlCorrectlyForGet(): void
+    {
+        $this->setReturnData('catalog__categories__158__metafields__8__get.json');
+        $this->getApi()->catalog()->category(158)->metafield(8)->get();
+
+        $this->assertEquals('catalog/categories/158/metafields/8', $this->getLastRequest()->getUri()->getPath());
     }
 }
