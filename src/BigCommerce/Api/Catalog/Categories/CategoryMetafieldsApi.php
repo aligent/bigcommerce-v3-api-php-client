@@ -10,7 +10,7 @@ class CategoryMetafieldsApi extends ResourceApi
 {
     private const RESOURCE_NAME       = 'metafields';
     private const METAFIELD_ENDPOINT  = 'catalog/categories/{category_id}/metafields/%d';
-    private const METAFIELDS_ENDPOINT = 'catalog/categories/{category_id}/metafields';
+    private const METAFIELDS_ENDPOINT = 'catalog/categories/%d/metafields';
 
     protected function singleResourceEndpoint(): string
     {
