@@ -1,3 +1,3 @@
 ### Bug Fix
 
-Fix issue with all batch operations under PHP 7.4
+Fix issue with Metafield APIs not working.
