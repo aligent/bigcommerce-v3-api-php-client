@@ -9,7 +9,6 @@ use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoriesResponse;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryResponse;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryTreeResponse;
-use GuzzleHttp\RequestOptions;
 
 class CategoriesApi extends ResourceApi
 {
