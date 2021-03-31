@@ -40,6 +40,12 @@ class CategoryMetafieldsApi extends ResourceApi
         return new CategoryMetafieldsResponse($this->getAllResources($filters, $page, $limit));
     }
 
+    public function create(CategoryMetafield $categoryMetafield): CategoryMetafieldResponse
+    {
+        $categoryMetafield->resource_id = $this->getParentResourceId() ?? 0;
+        return new CategoryMetafieldResponse($this->createResource($categoryMetafield));
+    }
+
     public function update(CategoryMetafield $categoryMetafield): CategoryMetafieldResponse
     {
         return new CategoryMetafieldResponse($this->updateResource($categoryMetafield));
