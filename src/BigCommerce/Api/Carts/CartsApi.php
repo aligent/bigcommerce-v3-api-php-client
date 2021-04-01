@@ -2,14 +2,18 @@
 
 namespace BigCommerce\ApiV3\Api\Carts;
 
+use BigCommerce\ApiV3\Api\Generic\CreateResource;
 use BigCommerce\ApiV3\Api\Generic\DeleteResource;
 use BigCommerce\ApiV3\Api\Generic\GetResource;
 use BigCommerce\ApiV3\Api\Generic\UuidResourceApi;
+use BigCommerce\ApiV3\ResourceModels\Cart\Cart;
 use BigCommerce\ApiV3\ResponseModels\Cart\CartResponse;
+use GuzzleHttp\RequestOptions;
 
 class CartsApi extends UuidResourceApi
 {
     use GetResource;
+    use CreateResource;
     use DeleteResource;
 
     private const CARTS_ENDPOINT = 'carts';
@@ -20,8 +24,30 @@ class CartsApi extends UuidResourceApi
         return new CartResponse($this->getResource());
     }
 
+    public function create(Cart $cart): CartResponse
+    {
+        return new CartResponse($this->createResource($cart));
+    }
+
+    public function updateCustomerId(int $customerId): CartResponse
+    {
+        $response = $this->getClient()->getRestClient()->put(
+            $this->singleResourceUrl(),
+            [
+                RequestOptions::JSON => ['customer_id' => $customerId],
+            ]
+        );
+
+        return new CartResponse($response);
+    }
+
     public function singleResourceUrl(): string
     {
         return sprintf(self::CART_ENDPOINT, $this->getUuid());
+    }
+
+    public function multipleResourceUrl(): string
+    {
+        return self::CARTS_ENDPOINT;
     }
 }
