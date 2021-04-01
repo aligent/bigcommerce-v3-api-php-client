@@ -50,4 +50,20 @@ class CartsApi extends UuidResourceApi
     {
         return self::CARTS_ENDPOINT;
     }
+
+    public function item(string $id): CartItemsApi
+    {
+        $itemsApi = $this->items();
+        $itemsApi->setUuid($id);
+
+        return $itemsApi;
+    }
+
+    public function items(): CartItemsApi
+    {
+        $itemsApi = new CartItemsApi($this->getClient());
+        $itemsApi->setParentUuid($this->getUuid());
+
+        return $itemsApi;
+    }
 }

@@ -1,3 +1,4 @@
 ### New Features
 
-- Implement the Cart API.
+- Implement the [Cart API](https://developer.bigcommerce.com/api-reference/store-management/carts/cart/createacart).
+- Implement the [Cart Items API](https://developer.bigcommerce.com/api-reference/store-management/carts/cart-items/addcartlineitem)
