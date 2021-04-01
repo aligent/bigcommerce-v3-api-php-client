@@ -1,3 +1,3 @@
-### Bug Fix
+### New Features
 
-Fix issue with Metafield APIs missing create and update endpoints.
+- Implement the Cart API.
