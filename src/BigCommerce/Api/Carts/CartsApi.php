@@ -66,4 +66,12 @@ class CartsApi extends UuidResourceApi
 
         return $itemsApi;
     }
+
+    public function redirectUrls(): CartRedirectUrlsApi
+    {
+        $redirectsApi = new CartRedirectUrlsApi();
+        $redirectsApi->setParentUuid($this->getUuid());
+
+        return $redirectsApi;
+    }
 }
