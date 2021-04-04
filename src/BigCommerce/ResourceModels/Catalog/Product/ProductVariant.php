@@ -9,7 +9,7 @@ class ProductVariant extends ResourceModel
     public int $id;
     public int $product_id;
     public string $sku;
-    public int $sku_id;
+    public ?int $sku_id;
     public ?float $price;
     public ?float $calculated_price;
     public ?float $sale_price;
