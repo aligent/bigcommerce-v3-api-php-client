@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\Tests\Api\Carts;
-
 
 use BigCommerce\ApiV3\Api\Carts\CartItemsApi;
 use BigCommerce\ApiV3\ResourceModels\Cart\CartItem;

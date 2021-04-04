@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Api\Carts;
-
 
 use BigCommerce\ApiV3\Api\Generic\UuidResourceWithUuidParentApi;
 use BigCommerce\ApiV3\ResponseModels\Cart\CartRedirectUrlsResponse;

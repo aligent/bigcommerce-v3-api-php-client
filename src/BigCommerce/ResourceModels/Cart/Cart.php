@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\ResourceModels\Cart;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;

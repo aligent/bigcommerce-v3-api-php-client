@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Cart;
-
 
 use BigCommerce\ApiV3\ResourceModels\Cart\CartRedirectUrls;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
