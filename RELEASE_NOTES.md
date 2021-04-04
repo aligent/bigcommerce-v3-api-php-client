@@ -1,3 +1,4 @@
 ### Bug Fix
 
-Fix issue with Metafield APIs missing create and update endpoints.
+Fix issue with ProductVariant::sku_id not being nullable #47 (thanks @Yorgv)
+
