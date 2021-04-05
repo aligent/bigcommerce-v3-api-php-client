@@ -1,3 +1,14 @@
+### New Features
+
+Allow the use of [parameters in ProductsApi::Get](https://developer.bigcommerce.com/api-reference/store-management/catalog/products/getproductbyid).
+
+Here's an example using PHP 8:
+
+```php
+$product = $api->catalog()->product(123)->get(include_fields: ['description', 'sku'])->getProduct();
+```
+
 ### Bug Fix
 
-Fix issue with Metafield APIs missing create and update endpoints.
+Fix issue with ProductVariant::sku_id not being nullable #47 (thanks @Yorgv)
+
