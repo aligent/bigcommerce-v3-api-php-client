@@ -24,13 +24,30 @@ class ProductsApi extends ResourceWithBatchUpdateApi
     public const FILTER_SKU_IS      = 'sku';
 
     public const FILTER_INCLUDE_FIELDS = 'include_fields';
+    public const FILTER_EXCLUDE_FIELDS = 'exclude_fields';
 
     public const FILTER_INCLUDE     = 'include';
     public const INCLUDE_MODIFIERS = 'modifiers';
 
-    public function get(): ProductResponse
-    {
-        return new ProductResponse($this->getResource());
+    public function get(
+        ?string $include = null,
+        ?array $include_fields = null,
+        ?array $exclude_fields = null
+    ): ProductResponse {
+        $params = [];
+
+        if (!is_null($include)) {
+            $params[self::FILTER_INCLUDE] = $include;
+        }
+        if (!is_null($include_fields)) {
+            $params[self::FILTER_INCLUDE_FIELDS] = implode(',', $include_fields);
+            ;
+        }
+        if (!is_null($exclude_fields)) {
+            $params[self::FILTER_EXCLUDE_FIELDS] = implode(',', $exclude_fields);
+        }
+
+        return new ProductResponse($this->getResource($params));
     }
 
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductsResponse
