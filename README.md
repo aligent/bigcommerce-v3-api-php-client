@@ -170,3 +170,8 @@ being tested after this, e.g. `BigCommerce\Tests\Api\Carts` for testing `BigComm
 
 Responses can be mocked using the  `BigCommerceApiTest::setReturnData()` function then you can inspect the request that
 was made with `BigCommerceApiTest::getLastRequest()`. Response JSON files are stored in _tests/BigCommerce/responses_.
+
+## Full Documentation
+
+If you would like to have full class documentation, run 
+`docker run --rm -v /path/to/vendor/aligent/bigcommerce-api:/data phpdoc/phpdoc:3 run -d /data/src -t /data/docs --defaultpackagename BigCommerce --visibility public`
