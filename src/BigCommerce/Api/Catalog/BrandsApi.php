@@ -9,6 +9,10 @@ use BigCommerce\ApiV3\ResourceModels\Catalog\Brand\Brand;
 use BigCommerce\ApiV3\ResponseModels\Brand\BrandResponse;
 use BigCommerce\ApiV3\ResponseModels\Brand\BrandsResponse;
 
+/**
+ * Class BrandsApi
+ *
+ */
 class BrandsApi extends ResourceApi
 {
     private const RESOURCE_NAME   = 'brands';
@@ -30,11 +34,34 @@ class BrandsApi extends ResourceApi
         return self::RESOURCE_NAME;
     }
 
-    public function get(): BrandResponse
+    /**
+     * Returns a single Brand.
+     *
+     * Optionally it is possible to specify fields to be include or excluded from results.
+     *
+     * @param string[]|null $include_fields
+     *              Fields to include, in a comma-separated list. The ID and the specified fields will be returned.
+     * @param string[]|null $exclude_fields
+     *              Fields to exclude, in a comma-separated list. The specified fields will be excluded from a response.
+     *              The ID cannot be excluded.
+     * @return BrandResponse
+     */
+    public function get(?array $include_fields = null, ?array $exclude_fields = null): BrandResponse
     {
         return new BrandResponse($this->getResource());
     }
 
+    /**
+     * Returns a list of Brands.
+     *
+     * Optional filter parameters can be passed in.
+     *
+     * @param array<string, mixed> $filters
+     *                          Array of optional features. For available filters, see {@see https://developer.bigcommerce.com/api-reference/store-management/catalog/brands/getbrands}
+     * @param int $page         The page number to be fetched
+     * @param int $limit        Maximum brands per page returned
+     * @return BrandsResponse
+     */
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): BrandsResponse
     {
         return new BrandsResponse($this->getAllResources($filters, $page, $limit));
