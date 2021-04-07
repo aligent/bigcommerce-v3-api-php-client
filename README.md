@@ -1,15 +1,14 @@
 # BigCommerce V3 Api Library
 
-![Latest Release](https://img.shields.io/github/v/release/aligent/bigcommerce-v3-api-php-client?sort=semver)
-![Packagist Latest](https://img.shields.io/packagist/v/aligent/bigcommerce-api-client)
+[![Latest Release](https://img.shields.io/github/v/release/aligent/bigcommerce-v3-api-php-client?sort=semver)](https://github.com/aligent/bigcommerce-v3-api-php-client/releases)
+[![Packagist Latest](https://img.shields.io/packagist/v/aligent/bigcommerce-api-client)](https://packagist.org/packages/aligent/bigcommerce-api-client)
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/aligent/bigcommerce-api-client/dev-main)
-![Packagist PHP Version Support](https://img.shields.io/github/license/aligent/bigcommerce-v3-api-php-client)
-![Packagist PHP Version Support](https://img.shields.io/github/workflow/status/aligent/bigcommerce-v3-api-php-client/Validate%20PHP%20dependancies%20and%20test)
-
+[![License](https://img.shields.io/github/license/aligent/bigcommerce-v3-api-php-client)](https://github.com/aligent/bigcommerce-v3-api-php-client/blob/main/LICENSE.md)
+[![Build Status](https://img.shields.io/github/workflow/status/aligent/bigcommerce-v3-api-php-client/Validate%20PHP%20dependancies%20and%20test)](https://github.com/aligent/bigcommerce-v3-api-php-client/actions/workflows/php.yml)
 
 ## Introduction
 
-This is an easy-to-use API client for BigCommerce.
+This is an easy-to-use API client for [BigCommerce](https://developer.bigcommerce.com/api-reference).
 
 ## Installation
 
