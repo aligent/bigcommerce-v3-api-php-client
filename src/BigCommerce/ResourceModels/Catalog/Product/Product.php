@@ -5,12 +5,6 @@ namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;
 
-/**
- * Need to rethink how this works for updating, as it will update any thing that is present
- *
- *
- * @package BigCommerce\ApiV3\ResourceModels
- */
 class Product extends ResourceModel
 {
     public const INVENTORY_TRACKING_NONE    = 'none';
