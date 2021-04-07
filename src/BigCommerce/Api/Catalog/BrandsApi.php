@@ -5,6 +5,7 @@ namespace BigCommerce\ApiV3\Api\Catalog;
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
 use BigCommerce\ApiV3\Api\Catalog\Brands\BrandImageApi;
 use BigCommerce\ApiV3\Api\Catalog\Brands\BrandMetafieldsApi;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Brand\Brand;
 use BigCommerce\ApiV3\ResponseModels\Brand\BrandResponse;
 use BigCommerce\ApiV3\ResponseModels\Brand\BrandsResponse;
 
@@ -37,6 +38,16 @@ class BrandsApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): BrandsResponse
     {
         return new BrandsResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function create(Brand $brand): BrandResponse
+    {
+        return new BrandResponse($this->createResource($brand));
+    }
+
+    public function update(Brand $brand): BrandResponse
+    {
+        return new BrandResponse($this->updateResource($brand));
     }
 
     public function getAllPages(array $filter = []): BrandsResponse
