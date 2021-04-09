@@ -23,4 +23,13 @@ class ChannelsApiTest extends BigCommerceApiTest
         $this->assertEquals('bigcommerce', $channels[0]->platform);
         $this->assertEquals('channels', $this->getLastRequest()->getUri()->getPath());
     }
+
+    public function testCanGetActiveTheme()
+    {
+        $this->setReturnData('channels__1__active-theme.json');
+
+        $theme = $this->getApi()->channel(1)->getActiveTheme()->getChannelTheme();
+        $this->assertEquals('15b2e0f0-e387-0138-ad46-0242ac110007', $theme->active_theme_uuid);
+        $this->assertEquals('channels/1/active-theme', $this->getLastRequest()->getUri()->getPath());
+    }
 }
