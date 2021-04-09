@@ -2,6 +2,7 @@
 namespace BigCommerce\ApiV3\Api\Channels;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
+use BigCommerce\ApiV3\ResourceModels\Channel\Channel;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelActiveThemeResponse;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelResponse;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelsResponse;
@@ -57,5 +58,25 @@ class ChannelsApi extends ResourceApi
         );
 
         return new ChannelActiveThemeResponse($response);
+    }
+
+    public function create(Channel $channel): ChannelResponse
+    {
+        return new ChannelResponse($this->createResource($channel));
+    }
+
+    public function update(Channel $channel): ChannelResponse
+    {
+        return new ChannelResponse($this->updateResource($channel));
+    }
+
+    public function listing(int $id): ChannelListingsApi
+    {
+        return new ChannelListingsApi($this->getClient(), $id, $this->getResourceId());
+    }
+
+    public function listings(): ChannelListingsApi
+    {
+        return new ChannelListingsApi($this->getClient(), null, $this->getResourceId());
     }
 }
