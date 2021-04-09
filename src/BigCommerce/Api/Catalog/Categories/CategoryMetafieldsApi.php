@@ -8,6 +8,23 @@ use BigCommerce\ApiV3\ResponseModels\Category\CategoryMetafieldResponse;
 use BigCommerce\ApiV3\ResponseModels\Category\CategoryMetafieldsResponse;
 use Psr\Http\Message\ResponseInterface;
 
+/**
+ * Category Metafields API
+ *
+ * Usage:
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * // Get All Metafields
+ * $metafields = $api->catalog()->category(1)->metafields();
+ *
+ * // Delete a single Metafield
+ * $api->catalog()->category(1)->metafield($metafields[0]->id)->delete();
+ * ```
+ *
+ * @see https://developer.bigcommerce.com/api-reference/store-management/catalog/category-metafields/getcategorymetafieldsbycategoryid
+ *
+ */
 class CategoryMetafieldsApi extends ResourceApi
 {
     private const RESOURCE_NAME       = 'metafields';
