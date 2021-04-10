@@ -20,8 +20,8 @@ class ScriptsApi extends UuidResourceApi
     use UpdateResource;
     use CreateResource;
 
-    private const SCRIPT_ENDPOINT  = 'content/scripts';
-    private const SCRIPTS_ENDPOINT = 'content/scripts/%s';
+    private const SCRIPT_ENDPOINT  = 'content/scripts/%s';
+    private const SCRIPTS_ENDPOINT = 'content/scripts';
 
     public function get(): ScriptResponse
     {
