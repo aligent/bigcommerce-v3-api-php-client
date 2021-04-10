@@ -18,4 +18,14 @@ class ChannelListingsApiTest extends BigCommerceApiTest
         $this->assertEquals('consequat sunt in', $listing->name);
         $this->assertEquals('channels/76953441/listings/41642934', $this->getLastRequest()->getUri()->getPath());
     }
+
+    public function testCanGetListings()
+    {
+        $this->setReturnData('channel__42527118__listings__get.json');
+        $id = 42527118;
+
+        $listings = $this->getApi()->channel($id)->listings()->getAll()->getChannelListings();
+        $this->assertEquals("channels/$id/listings", $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('Baseball bat', $listings[0]->name);
+    }
 }
