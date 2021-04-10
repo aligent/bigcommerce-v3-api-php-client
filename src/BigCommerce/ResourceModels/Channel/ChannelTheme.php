@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels\Channel;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 

@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\ResponseModels\Channel;
 
 use BigCommerce\ApiV3\ResourceModels\Channel\Channel;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\Api\Generic;
-
 
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;

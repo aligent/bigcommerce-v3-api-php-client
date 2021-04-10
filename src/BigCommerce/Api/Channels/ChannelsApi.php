@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV3\Api\Channels;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApiNoDelete;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResponseModels\Channel;
-
 
 use BigCommerce\ApiV3\ResourceModels\Channel\ChannelTheme;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
