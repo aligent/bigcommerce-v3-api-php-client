@@ -1,14 +1,14 @@
 <?php
 namespace BigCommerce\ApiV3\Api\Channels;
 
-use BigCommerce\ApiV3\Api\Generic\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApiNoDelete;
 use BigCommerce\ApiV3\ResourceModels\Channel\Channel;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelActiveThemeResponse;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelResponse;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelsResponse;
 use Psr\Http\Message\ResponseInterface;
 
-class ChannelsApi extends ResourceApi
+class ChannelsApi extends ResourceApiNoDelete
 {
     private const RESOURCE_NAME     = 'channels';
     private const CHANNEL_ENDPOINT  = 'channels/%d';
@@ -78,5 +78,10 @@ class ChannelsApi extends ResourceApi
     public function listings(): ChannelListingsApi
     {
         return new ChannelListingsApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function site(): ChannelSitesApi
+    {
+        return new ChannelSitesApi($this->getClient(), null, $this->getResourceId());
     }
 }

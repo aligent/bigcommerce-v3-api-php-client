@@ -2,13 +2,13 @@
 
 namespace BigCommerce\ApiV3\Api\Channels;
 
-use BigCommerce\ApiV3\Api\Generic\ResourceApi;
+use BigCommerce\ApiV3\Api\Generic\ResourceApiNoDelete;
 use BigCommerce\ApiV3\ResourceModels\Channel\ChannelListing;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelListingResponse;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelListingsResponse;
 use Psr\Http\Message\ResponseInterface;
 
-class ChannelListingsApi extends ResourceApi
+class ChannelListingsApi extends ResourceApiNoDelete
 {
     private const RESOURCE_NAME             = 'listings';
     private const CHANNEL_LISTING_ENDPOINT  = 'channels/%d/listings/%d';
