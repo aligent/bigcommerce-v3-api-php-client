@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests\Api\Channels;
 
 use BigCommerce\Tests\BigCommerceApiTest;
@@ -12,7 +13,7 @@ class ChannelsApiTest extends BigCommerceApiTest
 
         $channel = $this->getApi()->channel($id)->get()->getChannel();
         $this->assertEquals('Amazon US', $channel->name);
-        $this->assertEquals('channels/'.$id, $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('channels/' . $id, $this->getLastRequest()->getUri()->getPath());
     }
 
     public function testCanGetChannels()

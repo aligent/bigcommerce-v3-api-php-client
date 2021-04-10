@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\Tests\Api\Channels;
-
 
 use BigCommerce\ApiV3\ResourceModels\Channel\ChannelListingVariant;
 use BigCommerce\Tests\BigCommerceApiTest;
