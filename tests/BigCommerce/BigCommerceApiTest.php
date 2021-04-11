@@ -60,4 +60,9 @@ abstract class BigCommerceApiTest extends TestCase
     {
         return end($this->container)['request'];
     }
+
+    public function getLastRequestPath(): string
+    {
+        return $this->getLastRequest()->getUri()->getPath();
+    }
 }
