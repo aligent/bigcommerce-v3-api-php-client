@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV3\Api\Customers;
 
 use BigCommerce\ApiV3\Api\Generic\DeleteInIdList;
+use BigCommerce\ApiV3\Api\Subscribers\SubscribersApi;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomersResponse;
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
 use UnexpectedValueException;
@@ -83,5 +84,15 @@ class CustomersApi extends CustomerApiBase
         }
 
         return new CustomerConsentApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function subscriber(int $id): SubscribersApi
+    {
+        return new SubscribersApi($this->getClient(), $id, $this->getParentResourceId());
+    }
+
+    public function subscribers(): SubscribersApi
+    {
+        return new SubscribersApi($this->getClient(), null, $this->getParentResourceId());
     }
 }

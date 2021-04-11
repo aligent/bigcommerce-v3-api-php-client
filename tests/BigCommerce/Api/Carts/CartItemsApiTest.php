@@ -23,7 +23,7 @@ class CartItemsApiTest extends BigCommerceApiTest
 
         $this->getApi()->cart($id)->items()->add($lineItem, CartItemsApi::INCLUDE_REDIRECT_URLS);
 
-        $this->assertEquals("carts/$id/items", $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals("carts/$id/items", $this->getLastRequestPath());
     }
 
     public function testCanDeleteCartLineItem()

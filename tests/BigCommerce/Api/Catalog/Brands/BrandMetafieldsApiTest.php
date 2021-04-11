@@ -22,7 +22,7 @@ class BrandMetafieldsApiTest extends BigCommerceApiTest
 
         $response = $this->getApi()->catalog()->brand(158)->metafield(8)->get();
         $this->assertEquals('Shelf 3, Bin 5', $response->getMetafield()->value);
-        $this->assertEquals('catalog/brands/158/metafields/8', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('catalog/brands/158/metafields/8', $this->getLastRequestPath());
     }
 
     public function testCanGetAllBrandMetafields(): void
@@ -32,6 +32,6 @@ class BrandMetafieldsApiTest extends BigCommerceApiTest
         $response = $this->getApi()->catalog()->brand(11)->metafields()->getAll();
         $this->assertEquals(2, $response->getPagination()->total);
         $this->assertEquals('Warehouse Locations', $response->getMetafields()[0]->namespace);
-        $this->assertEquals('catalog/brands/11/metafields', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('catalog/brands/11/metafields', $this->getLastRequestPath());
     }
 }
