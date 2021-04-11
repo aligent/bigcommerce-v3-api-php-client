@@ -14,7 +14,6 @@ class WidgetTemplateApiTest extends BigCommerceApiTest
         $template = $this->getApi()->widgets()->template($id)->get()->getTemplate();
         $this->assertEquals('Header Images', $template->name);
         $this->assertEquals("content/widget-templates/$id", $this->getLastRequestPath());
-
     }
 
     public function testCanGetTemplates(): void
