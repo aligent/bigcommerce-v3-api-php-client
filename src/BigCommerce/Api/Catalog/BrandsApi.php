@@ -81,7 +81,8 @@ class BrandsApi extends ResourceApi
      * @see \BigCommerce\ApiV3\Api\Catalog\BrandsApi::getAllPages()
      *
      * @param array<string, mixed> $filters
-     *                          Array of optional features. For available filters, see {@see https://developer.bigcommerce.com/api-reference/store-management/catalog/brands/getbrands}
+     *          Array of optional features. For available filters,
+     *          see {@see https://developer.bigcommerce.com/api-reference/store-management/catalog/brands/getbrands}
      * @param int $page         The page number to be fetched
      * @param int $limit        Maximum brands per page returned
      * @return BrandsResponse
@@ -146,7 +147,8 @@ class BrandsApi extends ResourceApi
      * @see \BigCommerce\ApiV3\Api\Catalog\BrandsApi::getAll()
      *
      * @param array $filter
-     *          Array of optional features. For available filters, see {@see https://developer.bigcommerce.com/api-reference/store-management/catalog/brands/getbrands}
+     *          Array of optional features. For available filters,
+     *          see {@see https://developer.bigcommerce.com/api-reference/store-management/catalog/brands/getbrands}
      * @return BrandsResponse
      */
     public function getAllPages(array $filter = []): BrandsResponse
@@ -193,6 +195,7 @@ class BrandsApi extends ResourceApi
      * Get the singular Brand Metafields API
      *
      * For actions on a specific metafield for a brand.
+     *
      *
      * @see https://developer.bigcommerce.com/api-reference/store-management/catalog/brand-metafields/getbrandmetafieldbybrandid
      *
