@@ -9,8 +9,8 @@ use BigCommerce\ApiV3\ResponseModels\Customer\SubscribersResponse;
 class SubscribersApi extends ResourceApi
 {
     private const RESOURCE_NAME         = 'subscribers';
-    private const SUBSCRIBER_ENDPOINT   = 'customers/subscribers';
-    private const SUBSCRIBERS_ENDPOINT  = 'customers/subscribers/%d';
+    private const SUBSCRIBERS_ENDPOINT  = 'customers/subscribers';
+    private const SUBSCRIBER_ENDPOINT   = 'customers/subscribers/%d';
 
     protected function singleResourceEndpoint(): string
     {
