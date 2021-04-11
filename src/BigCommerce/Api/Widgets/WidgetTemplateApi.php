@@ -9,8 +9,8 @@ use BigCommerce\ApiV3\ResponseModels\Widget\WidgetTemplatesResponse;
 
 class WidgetTemplateApi extends UuidCompleteResourceApi
 {
-    private const TEMPLATE_ENDPOINT  = 'content/widget-templates';
-    private const TEMPLATES_ENDPOINT = 'content/widget-templates/%s';
+    private const TEMPLATE_ENDPOINT  = 'content/widget-templates/%s';
+    private const TEMPLATES_ENDPOINT = 'content/widget-templates';
 
     public function multipleResourceUrl(): string
     {
