@@ -38,7 +38,7 @@ class CategoryMetafieldsApiTest extends BigCommerceApiTest
         $this->setReturnData('catalog__categories__111__metafields__get_all.json');
         $this->getApi()->catalog()->category(111)->metafields()->getAll();
 
-        $this->assertEquals('catalog/categories/111/metafields', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('catalog/categories/111/metafields', $this->getLastRequestPath());
     }
 
     public function testCanSetApiUrlCorrectlyForGet(): void
@@ -46,6 +46,6 @@ class CategoryMetafieldsApiTest extends BigCommerceApiTest
         $this->setReturnData('catalog__categories__158__metafields__8__get.json');
         $this->getApi()->catalog()->category(158)->metafield(8)->get();
 
-        $this->assertEquals('catalog/categories/158/metafields/8', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('catalog/categories/158/metafields/8', $this->getLastRequestPath());
     }
 }

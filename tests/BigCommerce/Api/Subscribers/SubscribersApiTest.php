@@ -16,6 +16,6 @@ class SubscribersApiTest extends BigCommerceApiTest
         $this->setReturnData('no-data-paginated.json');
 
         $this->getApi()->customers()->subscribers()->getAll()->getSubscribers();
-        $this->assertEquals('customers/subscribers', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('customers/subscribers', $this->getLastRequestPath());
     }
 }

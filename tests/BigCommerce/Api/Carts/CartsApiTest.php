@@ -14,7 +14,7 @@ class CartsApiTest extends BigCommerceApiTest
         $id = 'aae435b7-e8a4-48f2-abcd-ad0675dc3123';
         $cart = $this->getApi()->cart($id)->get()->getCart();
         $this->assertEquals(1815, $cart->cart_amount);
-        $this->assertEquals("carts/$id", $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals("carts/$id", $this->getLastRequestPath());
     }
 
     public function testCanCreateACart()
@@ -23,7 +23,7 @@ class CartsApiTest extends BigCommerceApiTest
         $cart = new Cart();
 
         $this->getApi()->carts()->create($cart);
-        $this->assertEquals("carts", $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals("carts", $this->getLastRequestPath());
     }
 
     public function testCanUpdateCustomerIdForCart()
@@ -33,7 +33,7 @@ class CartsApiTest extends BigCommerceApiTest
 
         $this->getApi()->cart($id)->updateCustomerId(3);
 
-        $this->assertEquals("carts/$id", $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals("carts/$id", $this->getLastRequestPath());
         $this->assertEquals(json_encode(['customer_id' => 3]), $this->getLastRequest()->getBody());
         $this->markTestIncomplete();
     }

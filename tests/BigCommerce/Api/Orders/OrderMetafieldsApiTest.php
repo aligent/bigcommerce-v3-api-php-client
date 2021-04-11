@@ -11,7 +11,7 @@ class OrderMetafieldsApiTest extends BigCommerceApiTest
         $this->setReturnData('orders__2__metafields__3__get.json');
 
         $this->getApi()->order(2)->metafield(3)->get();
-        $this->assertEquals('orders/2/metafields/3', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('orders/2/metafields/3', $this->getLastRequestPath());
     }
 
     public function testCanGetAllOrderMetafields(): void
@@ -20,6 +20,6 @@ class OrderMetafieldsApiTest extends BigCommerceApiTest
 
         $response = $this->getApi()->order(1)->metafields()->getAll();
         $this->assertEquals(2, $response->getPagination()->total);
-        $this->assertEquals('orders/1/metafields', $this->getLastRequest()->getUri()->getPath());
+        $this->assertEquals('orders/1/metafields', $this->getLastRequestPath());
     }
 }
