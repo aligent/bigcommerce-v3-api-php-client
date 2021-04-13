@@ -4,6 +4,7 @@ namespace BigCommerce\ApiV3;
 
 use BigCommerce\ApiV3\Api\Carts\CartsApi;
 use BigCommerce\ApiV3\Api\Catalog\CatalogApi;
+use BigCommerce\ApiV3\Api\Channels\ChannelsApi;
 use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
 use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
@@ -177,5 +178,15 @@ class Client
     public function customTemplateAssociations(): CustomTemplateAssociationsApi
     {
         return new CustomTemplateAssociationsApi($this);
+    }
+
+    public function channel(int $id): ChannelsApi
+    {
+        return new ChannelsApi($this, $id);
+    }
+
+    public function channels(): ChannelsApi
+    {
+        return new ChannelsApi($this);
     }
 }

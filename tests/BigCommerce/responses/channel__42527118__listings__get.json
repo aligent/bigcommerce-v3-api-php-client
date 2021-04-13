@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "channel_id": 42527118,
+      "listing_id": 58667643,
+      "external_id": "EXT-1",
+      "product_id": 76825686,
+      "name": "Baseball bat",
+      "description": "A steel baseball bat",
+      "state": "active",
+      "date_created": "2019-01-20T22:11:39.384Z",
+      "date_modified": "2019-02-06T22:59:36.867Z",
+      "variants": [
+        {
+          "channel_id": 42527118,
+          "product_id": 76825686,
+          "variant_id": 77,
+          "external_id": "ext-1-var",
+          "name": "Baseball Bat - short",
+          "description": "A shorter baseball bat",
+          "state": "deleted",
+          "date_created": "2019-01-20T22:11:39.384Z",
+          "date_modified": "2019-02-06T22:59:36.867Z"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=1000"
+      }
+    }
+  }
+}
