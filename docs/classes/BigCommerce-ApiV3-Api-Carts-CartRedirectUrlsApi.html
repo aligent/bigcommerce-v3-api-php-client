@@ -97,13 +97,28 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartRedirectUrlsApi.php"><a href="files/bigcommerce-api-carts-cartredirecturlsapi.html"><abbr title="BigCommerce/Api/Carts/CartRedirectUrlsApi.php">CartRedirectUrlsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">8</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 </aside>
 
-            <p class="phpdocumentor-summary">V3ApiBase</p>
+            <p class="phpdocumentor-summary">Cart Redirect URLS</p>
 
-    <section class="phpdocumentor-description"><p>Add constructors and some basic scaffolding that will work for all API classes
-regardless of which endpoints they implement</p>
+    <section class="phpdocumentor-description"><p>Creates a Cart redirect URL for redirecting a shopper to an already created cart using the cartId.</p>
+<h4>Usage Notes</h4>
+<ul>
+<li>Redirect URLs can also be created via Create a Cart requests by appending include=redirect_urls.</li>
+<li>A Carts redirect URLs may only be used once.</li>
+<li>Once a redirect URL has been visited, it will be invalidated and cannot be used again.</li>
+<li>If your application requires URLs to be visited more than once, consider generating a fresh one each time you need
+to restore a cart, and redirecting to the URL from your own application.</li>
+<li>Redirect URLs can be generated only from carts created using the Server to Server Cart API.</li>
+<li>To restore a cart that was created on the storefront, either by a shopper or the Storefront Cart API, first
+recreate the cart using the Server to Server Cart API.</li>
+</ul>
+<p>Example:</p>
+<code class="prettyprint">
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+<p>$urls = $api-&gt;cart('sadfghj')-&gt;redirectUrls()-&gt;getRedirectUrls();
+</code></p>
 </section>
 
 
@@ -264,7 +279,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartRedirectUrlsApi.php"><a href="files/bigcommerce-api-carts-cartredirecturlsapi.html"><abbr title="BigCommerce/Api/Carts/CartRedirectUrlsApi.php">CartRedirectUrlsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">12</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 </aside>
 
     

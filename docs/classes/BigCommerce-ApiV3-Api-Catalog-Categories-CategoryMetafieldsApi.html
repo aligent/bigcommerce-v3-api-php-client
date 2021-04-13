@@ -98,16 +98,38 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-categories-categorymetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php">CategoryMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 </aside>
 
-            <p class="phpdocumentor-summary">V3ApiBase</p>
+            <p class="phpdocumentor-summary">Category Metafields API</p>
 
-    <section class="phpdocumentor-description"><p>Add constructors and some basic scaffolding that will work for all API classes
-regardless of which endpoints they implement</p>
+    <section class="phpdocumentor-description"><p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+// Get All Metafields
+$metafields = $api-&gt;catalog()-&gt;category(1)-&gt;metafields();
+
+// Delete a single Metafield
+$api-&gt;catalog()-&gt;category(1)-&gt;metafield($metafields[0]-&gt;id)-&gt;delete();
+</code></pre>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://developer.bigcommerce.com/api-reference/store-management/catalog/category-metafields/getcategorymetafieldsbycategoryid"><abbr title="https://developer.bigcommerce.com/api-reference/store-management/catalog/category-metafields/getcategorymetafieldsbycategoryid">https://developer.bigcommerce.com/api-reference/store-management/catalog/category-metafields/getcategorymetafieldsbycategoryid</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -258,7 +280,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-categories-categorymetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php">CategoryMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">43</span>
+    <span class="phpdocumentor-element-found-in__line">60</span>
 </aside>
 
     
@@ -300,7 +322,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-categories-categorymetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php">CategoryMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">50</span>
 </aside>
 
     
@@ -332,7 +354,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-categories-categorymetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php">CategoryMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 </aside>
 
     
@@ -484,7 +506,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-categories-categorymetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryMetafieldsApi.php">CategoryMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">66</span>
 </aside>
 
     
