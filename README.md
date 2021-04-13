@@ -1,21 +1,21 @@
 # BigCommerce V3 Api Library
 
-![Latest Release](https://img.shields.io/github/v/release/aligent/bigcommerce-v3-api-php-client?sort=semver)
-![Packagist Latest](https://img.shields.io/packagist/v/aligent/bigcommerce-api-client)
+[![Latest Release](https://img.shields.io/github/v/release/aligent/bigcommerce-v3-api-php-client?sort=semver)](https://github.com/aligent/bigcommerce-v3-api-php-client/releases)
+[![Packagist Latest](https://img.shields.io/packagist/v/aligent/bigcommerce-api-client)](https://packagist.org/packages/aligent/bigcommerce-api-client)
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/aligent/bigcommerce-api-client/dev-main)
-![Packagist PHP Version Support](https://img.shields.io/github/license/aligent/bigcommerce-v3-api-php-client)
-![Packagist PHP Version Support](https://img.shields.io/github/workflow/status/aligent/bigcommerce-v3-api-php-client/Validate%20PHP%20dependancies%20and%20test)
-
+[![License](https://img.shields.io/github/license/aligent/bigcommerce-v3-api-php-client)](https://github.com/aligent/bigcommerce-v3-api-php-client/blob/main/LICENSE.md)
+[![Build Status](https://img.shields.io/github/workflow/status/aligent/bigcommerce-v3-api-php-client/Validate%20PHP%20dependancies%20and%20test)](https://github.com/aligent/bigcommerce-v3-api-php-client/actions/workflows/php.yml)
 
 ## Introduction
 
-This is an easy-to-use API client for BigCommerce.
+This is an easy-to-use API client for [BigCommerce](https://developer.bigcommerce.com/api-reference).
 
 ## Installation
 
-Install via _composer_: `composer require aligent/bigcommerce-api-client`.
+Install [aligent/bigcommerce-api-client ](https://packagist.org/packages/aligent/bigcommerce-api-client) 
+from packagist using [composer](https://getcomposer.org/): `composer require aligent/bigcommerce-api-client`.
 
-## Usage
+## Usage Examples
 
 Trivial example of updating a product name:
 
@@ -75,68 +75,105 @@ try {
 }
 ```
 
+### API Design
+
+There are three components to the library:
+
+- [BigCommerce/Api](./src/BigCommerce/Api) - which represent the API endpoints and tries to mimic the layout of the 
+  documentation.
+  
+- [BigCommerce/ResourceModels](./src/BigCommerce/ResourceModels) - which represent the resources that are sent to and 
+  received from the API, for example a `Product` or an `Order`.
+  
+- [BigCommerce/ResponseModels](./src/BigCommerce/ResponseModels) - which represent the responses from the BigCommerce 
+  API.
+  
+For additional documentation, see the [code documentation](https://aligent.github.io/bigcommerce-v3-api-php-client/).
+  
+#### API Classes
+
+To interact with the API, always start with the [BigCommerce\ApiV3\Client](./src/BigCommerce/Client.php) class. All APIs
+can be accessed in two ways: with and without an ID.
+
+If you are querying about a specific resource instance (e.g. Product 5), then you would use singular endpoint (
+`->catalog()->product(5)`), otherwise you would use the plural endpoint (i.e. `->catalog()->products()`). 
+
+For example, suppose we want to find all the metafields for a brand with and id of `123`. Our query is for a _specific_
+brand, but any metafield, so the call would look like:
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$metafieldsResponse = $api->catalog()->brand(123)->metafields()->getAll();
+$metafields = $metafieldsResponse->getMetafields();
+```
+
+Suppose we now want to delete metafield `456` on brand `123`. Now our query is for a _specific_ brand and a _specific_ 
+metafield.
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$api->catalog()->brand(123)->metafield(456)->delete();
+```
+
+#### Resource Model Classes
+
+The resource models represent the resources we provided to the API and the responses we receive.
+
+To create a new resource, simply instantiate a new object of the correct resource model and then send it to the create
+endpoint. For example, if we want to create a new brand:
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$brand = new BigCommerce\ApiV3\ResourceModels\Catalog\Brand\Brand();
+$brand->name = "My Brand";
+$brand->meta_description = "My wonderful brand";
+
+$api->catalog()->brands()->create($brand);
+```
+
+#### Response Model Classes
+
+Responses from the API all use similar response classes for consistency. There are two types generally: singular responses, 
+and plural responses. Singular responses will have a single method in the format `get<resource>()`,
+for example (`ProductResponse::getProduct()`). Plural responses will have two methods, a `getPagination()`
+ and `get<resources>()` (e.g. `ProductsResponse::getProducts()`).
+
+Note that the API request is sent when the action is called and the response
+is returned.
+
+```php
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+// Singular Responses
+$category = $api->catalog()->category(456)->get()->getCategory();
+$brand    = $api->catalog()->brand(123)->get()->getBrand(); 
+
+// Plural Responses
+$categoryResponse = $api->catalog()->categories()->getAll(limit: 10);
+$totalCategories  = $categoryResponse->getPagination()->total;
+$categories       = $categoryResponse->getCategories();
+
+$brands = $api->catalog()->brands()->getAll()->getBrands();
+```
+
 ## Development
 
-Running tests: `composer run-script test`
+- Running tests: `composer run-script test`
+- Checking PHP style rules: `composer run-scruot check-style`
+- Auto fix code style rules: `composer run-script fix-style`
 
+### Writing Tests
 
-## Coverage
+All tests are located in the _tests_ folder in the namespace `BigCommerce\Tests`. The namespace should match the class
+being tested after this, e.g. `BigCommerce\Tests\Api\Carts` for testing `BigCommerce\ApiV3\Api\Carts\CartsApi`.
 
-### Store Management
+Responses can be mocked using the  `BigCommerceApiTest::setReturnData()` function then you can inspect the request that
+was made with `BigCommerceApiTest::getLastRequest()`. Response JSON files are stored in _tests/BigCommerce/responses_.
 
-#### Customers 
+## Full Documentation
 
-- ☑️ Customers
-- ☑️ Addresses
-- ☑️ Attributes
-- ☑️ Attribute Values
-- ☑️ Form Field Values
-- ☑️ Consent
-
-#### Orders (V3)
-
-- ☑️ Order Metafields
-- ☑️ Transactions
-- ☑️ Order Refunds
-
-#### Payment Methods
-
-- ☑️ Payment Access Token
-- ☑️ Payment Methods
-
-#### Scripts
-
-- ☑️ Scripts
-
-#### Subscribers
-
-- ☑️ Subscribers
-
-#### Themes
-
-- ☑️ Themes
-- ☑️ Theme Actions
-- ☑️ Theme Jobs
-
-#### Widgets
-
-- ☑️ Regions
-- ☑️ Widget Template
-- ☑️ Widget
-- ☑️ Placement
-
-### Catalog
-
-#### Catalog API
-
-- ☑️ Brands
-- ☑️ Category
-- ☑️ Product
-- ☑️ Summary
-- ☑️ Variants
-
-#### Price Lists
-
-- ☑️ Price Lists
-- ☑️ Assignments
-- ☑️ Records 
+If you would like to have full class documentation, run 
+`docker run --rm -v /path/to/vendor/aligent/bigcommerce-api:/data phpdoc/phpdoc:3 run -d /data/src -t /data/docs --defaultpackagename BigCommerce --visibility public`

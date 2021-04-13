@@ -11,7 +11,7 @@ trait CreateImage
     abstract protected function multipleResourceUrl(): string;
 
     /**
-     * Add an image to a category
+     * Add an image to a resource
      *
      * @param string $filename Any path that can be opened using fopen
      * @return string The url to the stored image

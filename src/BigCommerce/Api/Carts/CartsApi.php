@@ -10,6 +10,20 @@ use BigCommerce\ApiV3\ResourceModels\Cart\Cart;
 use BigCommerce\ApiV3\ResponseModels\Cart\CartResponse;
 use GuzzleHttp\RequestOptions;
 
+/**
+ * Carts API
+ *
+ * The is the store management access for creating and viewing carts (not for customers to access carts)
+ *
+ * Example fetching the contents of a cart:
+ *
+ * <code>
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $cart = $api->carts('abcdefg;)->get()->getCart();
+ * </code>
+ * @package BigCommerce\ApiV3\Api\Carts
+ */
 class CartsApi extends UuidResourceApi
 {
     use GetResource;

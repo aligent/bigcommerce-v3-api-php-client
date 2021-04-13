@@ -8,6 +8,27 @@ use BigCommerce\ApiV3\ResourceModels\Cart\CartItem;
 use BigCommerce\ApiV3\ResponseModels\Cart\CartResponse;
 use GuzzleHttp\RequestOptions;
 
+/**
+ * Cart Items API
+ *
+ *
+ * Example for adding a line item to a cart:
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $lineItem = new CartItem();
+ * $lineItem->line_items[] = [
+ *     "sku"        => "made-up",
+ *     "name"       => "My product",
+ *     "quantity"   => 33,
+ *     "list_price" => 55
+ * ];
+ *
+ * $api()->cart($id)->items()->add($lineItem, CartItemsApi::INCLUDE_REDIRECT_URLS);
+ * ```
+ *
+ */
 class CartItemsApi extends UuidResourceWithUuidParentApi
 {
     use DeleteResource;

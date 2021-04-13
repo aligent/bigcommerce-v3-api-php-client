@@ -7,6 +7,23 @@ use BigCommerce\ApiV3\ResourceModels\Catalog\Brand\BrandMetafield;
 use BigCommerce\ApiV3\ResponseModels\Brand\BrandMetafieldResponse;
 use BigCommerce\ApiV3\ResponseModels\Brand\BrandMetafieldsResponse;
 
+/**
+ * Brand Metafields API
+ *
+ * Usage:
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * // Get All Metafields
+ * $metafields = $api->catalog()->brand(1)->metafields();
+ *
+ * // Delete a single Metafield
+ * $api->catalog()->brand(1)->metafield($metafields[0]->id)->delete();
+ * ```
+ *
+ * @see https://developer.bigcommerce.com/api-reference/store-management/catalog/brand-metafields/getbrandmetafieldsbybrandid
+ *
+ */
 class BrandMetafieldsApi extends ResourceApi
 {
     private const RESOURCE_NAME = 'metafields';
