@@ -35,7 +35,7 @@ abstract class Metafield extends ResourceModel
     public string $namespace;
     public string $permission_set;
     public string $resource_type;
-    public int $resource_id;
+    public ?int $resource_id;
     public string $description;
     public string $date_created;
     public string $date_modified;
