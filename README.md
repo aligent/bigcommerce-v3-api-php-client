@@ -88,6 +88,8 @@ There are three components to the library:
 - [BigCommerce/ResponseModels](./src/BigCommerce/ResponseModels) - which represent the responses from the BigCommerce 
   API.
   
+For additional documentation, see the [code documentation](https://aligent.github.io/bigcommerce-v3-api-php-client/).
+  
 #### API Classes
 
 To interact with the API, always start with the [BigCommerce\ApiV3\Client](./src/BigCommerce/Client.php) class. All APIs
