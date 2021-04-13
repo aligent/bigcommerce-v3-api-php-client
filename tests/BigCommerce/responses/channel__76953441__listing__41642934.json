@@ -1,0 +1,49 @@
+{
+  "data": {
+    "channel_id": 76953441,
+    "listing_id": -41642934,
+    "external_id": "voluptate Ut aliquip id non",
+    "product_id": -10442488,
+    "name": "consequat sunt in",
+    "description": "esse ut",
+    "state": "pending",
+    "date_created": "1983-02-18T22:15:06.619Z",
+    "date_modified": "1968-11-21T09:39:57.067Z",
+    "variants": [
+      {
+        "channel_id": 47820013,
+        "product_id": 20462375,
+        "variant_id": 57410296,
+        "external_id": "dolor nulla ipsum",
+        "name": "cillum laborum",
+        "description": "ad pariatur quis sit",
+        "state": "deleted",
+        "date_created": "2017-05-29T10:17:39.098Z",
+        "date_modified": "1977-09-05T16:23:58.812Z"
+      },
+      {
+        "channel_id": 19713462,
+        "product_id": 19463120,
+        "variant_id": 29707671,
+        "external_id": "ullamco ipsum veniam",
+        "name": "ullamco",
+        "description": "ex id ut pariatur nulla",
+        "state": "active",
+        "date_created": "1947-09-19T12:51:47.853Z",
+        "date_modified": "1970-04-26T02:18:59.359Z"
+      },
+      {
+        "channel_id": 35515643,
+        "product_id": 77549222,
+        "variant_id": 35862420,
+        "external_id": "aliqua culpa",
+        "name": "enim anim",
+        "description": "incididunt",
+        "state": "error",
+        "date_created": "1941-04-19T21:53:38.279Z",
+        "date_modified": "1954-12-07T16:08:06.950Z"
+      }
+    ]
+  },
+  "meta": {}
+}

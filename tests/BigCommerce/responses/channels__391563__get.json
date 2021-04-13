@@ -1,0 +1,31 @@
+{
+  "data": {
+    "id": 391563,
+    "name": "Amazon US",
+    "platform": "amazon",
+    "type": "marketplace",
+    "date_created": "2020-08-25T18:45:11Z",
+    "date_modified": "2020-08-25T18:45:11Z",
+    "external_id": "",
+    "is_listable_from_ui": true,
+    "is_enabled": true,
+    "is_visible": true,
+    "status": "connected",
+    "config_meta": {
+      "app": {
+        "id": 123,
+        "sections": [
+          {
+            "title": "Overview",
+            "query_path": "overview"
+          },
+          {
+            "title": "Settings",
+            "query_path": "settings"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {}
+}

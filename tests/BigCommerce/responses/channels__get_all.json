@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "type": "storefront",
+      "platform": "bigcommerce",
+      "name": "myBC-store.com",
+      "date_created": "2018-01-04T04:15:50.000Z",
+      "date_modified": "2018-01-18T01:22:10.000Z",
+      "external_id": "",
+      "is_enabled": false
+    },
+    {
+      "id": 2,
+      "type": "storefront",
+      "platform": "wordpress",
+      "name": "mysite.com",
+      "date_created": "2018-01-04T04:15:50.000Z",
+      "date_modified": "2018-01-18T01:22:10.000Z",
+      "external_id": "",
+      "is_enabled": false
+    },
+    {
+      "id": 3,
+      "name": "Square",
+      "platform": "square",
+      "type": "pos",
+      "date_created": "2019-03-19T16:05:37Z",
+      "date_modified": "2019-03-19T16:05:37Z",
+      "external_id": "",
+      "is_enabled": true
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1
+    }
+  }
+}
