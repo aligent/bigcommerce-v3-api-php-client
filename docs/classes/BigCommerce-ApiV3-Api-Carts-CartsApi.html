@@ -97,13 +97,17 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">13</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 </aside>
 
-            <p class="phpdocumentor-summary">V3ApiBase</p>
+            <p class="phpdocumentor-summary">Carts API</p>
 
-    <section class="phpdocumentor-description"><p>Add constructors and some basic scaffolding that will work for all API classes
-regardless of which endpoints they implement</p>
+    <section class="phpdocumentor-description"><p>The is the store management access for creating and viewing carts (not for customers to access carts)</p>
+<p>Example fetching the contents of a cart:</p>
+<code class="prettyprint">
+$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+<p>$cart = $api-&gt;carts('abcdefg;)-&gt;get()-&gt;getCart();
+</code></p>
 </section>
 
 
@@ -299,7 +303,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">41</span>
 </aside>
 
     
@@ -341,7 +345,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">22</span>
+    <span class="phpdocumentor-element-found-in__line">36</span>
 </aside>
 
     
@@ -501,7 +505,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 </aside>
 
     
@@ -543,7 +547,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">62</span>
+    <span class="phpdocumentor-element-found-in__line">76</span>
 </aside>
 
     
@@ -575,7 +579,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">63</span>
 </aside>
 
     
@@ -607,7 +611,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">84</span>
 </aside>
 
     
@@ -681,7 +685,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">44</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 </aside>
 
     
@@ -713,7 +717,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 </aside>
 
     

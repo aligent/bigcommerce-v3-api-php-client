@@ -98,16 +98,43 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryImageApi.php"><a href="files/bigcommerce-api-catalog-categories-categoryimageapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryImageApi.php">CategoryImageApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">7</span>
+    <span class="phpdocumentor-element-found-in__line">22</span>
 </aside>
 
-            <p class="phpdocumentor-summary">V3ApiBase</p>
+            <p class="phpdocumentor-summary">Category Images API</p>
 
-    <section class="phpdocumentor-description"><p>Add constructors and some basic scaffolding that will work for all API classes
-regardless of which endpoints they implement</p>
+    <section class="phpdocumentor-description"><p>Usage (creating an image for Category with ID of 1):</p>
+<pre class="prettyprint"><code class="language-php">$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$api-&gt;catalog()-&gt;category(1)-&gt;image()-&gt;create('/path/to/image.png');
+</code></pre>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://developer.bigcommerce.com/api-reference/store-management/catalog/brand-images/createbrandimage"><abbr title="https://developer.bigcommerce.com/api-reference/store-management/catalog/brand-images/createbrandimage">https://developer.bigcommerce.com/api-reference/store-management/catalog/brand-images/createbrandimage</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                            <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="classes/BigCommerce-ApiV3-Api-Generic-CreateImage.html#method_create"><abbr title="\BigCommerce\ApiV3\Api\Generic\CreateImage::create()">CreateImage::create()</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -188,7 +215,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Categories/CategoryImageApi.php"><a href="files/bigcommerce-api-catalog-categories-categoryimageapi.html"><abbr title="BigCommerce/Api/Catalog/Categories/CategoryImageApi.php">CategoryImageApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">9</span>
+    <span class="phpdocumentor-element-found-in__line">24</span>
 </aside>
 
     

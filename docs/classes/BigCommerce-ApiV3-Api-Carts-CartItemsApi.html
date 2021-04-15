@@ -97,13 +97,24 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 </aside>
 
-            <p class="phpdocumentor-summary">V3ApiBase</p>
+            <p class="phpdocumentor-summary">Cart Items API</p>
 
-    <section class="phpdocumentor-description"><p>Add constructors and some basic scaffolding that will work for all API classes
-regardless of which endpoints they implement</p>
+    <section class="phpdocumentor-description"><p>Example for adding a line item to a cart:</p>
+<pre class="prettyprint"><code class="language-php">$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+$lineItem = new CartItem();
+$lineItem-&gt;line_items[] = [
+    &quot;sku&quot;        =&gt; &quot;made-up&quot;,
+    &quot;name&quot;       =&gt; &quot;My product&quot;,
+    &quot;quantity&quot;   =&gt; 33,
+    &quot;list_price&quot; =&gt; 55
+];
+
+$api()-&gt;cart($id)-&gt;items()-&gt;add($lineItem, CartItemsApi::INCLUDE_REDIRECT_URLS);
+</code></pre>
 </section>
 
 
@@ -243,7 +254,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">31</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 </aside>
 
         <p class="phpdocumentor-summary">The Cart returns an abbreviated result. Use this to return digital items product options.</p>
@@ -270,7 +281,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 </aside>
 
         <p class="phpdocumentor-summary">The Cart returns an abbreviated result. Use this to return physical items product options.</p>
@@ -297,7 +308,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">21</span>
+    <span class="phpdocumentor-element-found-in__line">42</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create a direct link to a Cart.</p>
@@ -393,7 +404,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 </aside>
 
     
@@ -602,7 +613,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 </aside>
 
     
@@ -718,7 +729,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">66</span>
+    <span class="phpdocumentor-element-found-in__line">87</span>
 </aside>
 
     
@@ -750,7 +761,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartItemsApi.php"><a href="files/bigcommerce-api-carts-cartitemsapi.html"><abbr title="BigCommerce/Api/Carts/CartItemsApi.php">CartItemsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">68</span>
 </aside>
 
     

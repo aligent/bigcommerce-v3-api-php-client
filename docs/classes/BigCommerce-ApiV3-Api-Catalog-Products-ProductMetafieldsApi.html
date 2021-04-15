@@ -98,16 +98,38 @@
         <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Products/ProductMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-products-productmetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Products/ProductMetafieldsApi.php">ProductMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">11</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 </aside>
 
-            <p class="phpdocumentor-summary">V3ApiBase</p>
+            <p class="phpdocumentor-summary">Product Metafields API</p>
 
-    <section class="phpdocumentor-description"><p>Add constructors and some basic scaffolding that will work for all API classes
-regardless of which endpoints they implement</p>
+    <section class="phpdocumentor-description"><p>Usage:</p>
+<pre class="prettyprint"><code class="language-php">$api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+
+// Get All Metafields
+$metafields = $api-&gt;catalog()-&gt;product(1)-&gt;metafields();
+
+// Delete a single Metafield
+$api-&gt;catalog()-&gt;product(1)-&gt;metafield($metafields[0]-&gt;id)-&gt;delete();
+</code></pre>
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">see</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                    <span class="phpdocumentor-tag-link"><a href="https://developer.bigcommerce.com/api-reference/store-management/catalog/product-metafields/getproductmetafieldsbyproductid"><abbr title="https://developer.bigcommerce.com/api-reference/store-management/catalog/product-metafields/getproductmetafieldsbyproductid">https://developer.bigcommerce.com/api-reference/store-management/catalog/product-metafields/getproductmetafieldsbyproductid</abbr></a></span>
+                                        
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                        </dl>
 
 
 
@@ -244,7 +266,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Products/ProductMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-products-productmetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Products/ProductMetafieldsApi.php">ProductMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">32</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 </aside>
 
     
@@ -276,7 +298,7 @@ regardless of which endpoints they implement</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Catalog/Products/ProductMetafieldsApi.php"><a href="files/bigcommerce-api-catalog-products-productmetafieldsapi.html"><abbr title="BigCommerce/Api/Catalog/Products/ProductMetafieldsApi.php">ProductMetafieldsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">37</span>
+    <span class="phpdocumentor-element-found-in__line">54</span>
 </aside>
 
     

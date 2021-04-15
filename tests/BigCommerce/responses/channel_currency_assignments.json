@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "channel_id": 1,
+      "enabled_currencies": [
+        "AUD"
+      ],
+      "default_currency": "AUD"
+    }
+  ],
+  "meta": {}
+}
