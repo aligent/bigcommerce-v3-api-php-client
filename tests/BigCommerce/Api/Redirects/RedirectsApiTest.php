@@ -27,7 +27,7 @@ class RedirectsApiTest extends BigCommerceApiTest
     {
         $this->setReturnData('storefront__redirects.json', 200);
 
-        $redirects= $this->getApi()->redirects()->getAll()->getRedirects();
+        $redirects = $this->getApi()->redirects()->getAll()->getRedirects();
         $this->assertEquals('/old-url', $redirects[0]->from_path);
         $this->assertInstanceOf(RedirectTo::class, $redirects[0]->to);
     }
