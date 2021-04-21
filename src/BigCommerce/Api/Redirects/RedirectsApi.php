@@ -8,6 +8,37 @@ use BigCommerce\ApiV3\Api\Generic\GetAllResources;
 use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResponseModels\Redirect\RedirectsResponse;
 
+/**
+ * Redirects API
+ *
+ * For management of storefront redirects.
+ *
+ * Example for adding a generated list of nonsense redirects. All urls of the format `/old-url/[1-50]` will be
+ * redirected to product 1, at url `/new-url/1`.
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $range = range(1, 50);
+ * $redirects = [];
+ *
+ * $redirectTo = new RedirectTo();
+ * $redirectTo->type      = RedirectTo::TYPE__PRODUCT;
+ * $redirectTo->entity_id = 1;
+ * $redirectTo->url       = '/new-url/1'
+ *
+ * foreach ($range as $i) {
+ *   $redirect = new Redirect();
+ *   $redirect->from_path = "/old-url/$i";
+ *   $redirect->site_id   = 0;
+ *
+ *   $redirects[] = $redirect;
+ * }
+ *
+ * $api->redirects()->upsert($redirects);
+ * ```
+ *
+ */
 class RedirectsApi extends V3ApiBase
 {
     use GetAllResources;
