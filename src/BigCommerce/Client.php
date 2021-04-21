@@ -9,6 +9,7 @@ use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
 use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
+use BigCommerce\ApiV3\Api\Redirects\RedirectsApi;
 use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
@@ -188,5 +189,10 @@ class Client
     public function channels(): ChannelsApi
     {
         return new ChannelsApi($this);
+    }
+
+    public function redirects(): RedirectsApi
+    {
+        return new RedirectsApi($this);
     }
 }
