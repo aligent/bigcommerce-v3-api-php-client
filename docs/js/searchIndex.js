@@ -2296,6 +2296,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Client.html#method_channels"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Aredirects\u0028\u0029",
+            "name": "redirects",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_redirects"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003ADEFAULT_HANDLER",
             "name": "DEFAULT_HANDLER",
             "summary": "",
@@ -6806,6 +6811,116 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Channel-ChannelsResponse.html#method_getChannels"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Redirects\\RedirectsApi",
+            "name": "RedirectsApi",
+            "summary": "Redirects\u0020API",
+            "url": "classes/BigCommerce-ApiV3-Api-Redirects-RedirectsApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Redirects\\RedirectsApi\u003A\u003AmultipleResourceUrl\u0028\u0029",
+            "name": "multipleResourceUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Redirects-RedirectsApi.html#method_multipleResourceUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Redirects\\RedirectsApi\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Redirects-RedirectsApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Redirects\\RedirectsApi\u003A\u003AbatchUpdate\u0028\u0029",
+            "name": "batchUpdate",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Redirects-RedirectsApi.html#method_batchUpdate"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Redirects\\RedirectsApi\u003A\u003Aupsert\u0028\u0029",
+            "name": "upsert",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Redirects-RedirectsApi.html#method_upsert"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect",
+            "name": "Redirect",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#method___construct"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003A\u0024from_path",
+            "name": "from_path",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#property_from_path"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003A\u0024site_id",
+            "name": "site_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#property_site_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003A\u0024to",
+            "name": "to",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#property_to"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo",
+            "name": "RedirectTo",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__PRODUCT",
+            "name": "TYPE__PRODUCT",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#constant_TYPE__PRODUCT"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__BRAND",
+            "name": "TYPE__BRAND",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#constant_TYPE__BRAND"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__CATEGORY",
+            "name": "TYPE__CATEGORY",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#constant_TYPE__CATEGORY"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__PAGE",
+            "name": "TYPE__PAGE",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#constant_TYPE__PAGE"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__POST",
+            "name": "TYPE__POST",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#constant_TYPE__POST"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__URL",
+            "name": "TYPE__URL",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#constant_TYPE__URL"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#property_type"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003A\u0024entity_id",
+            "name": "entity_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#property_entity_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#property_url"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Redirect\\RedirectsResponse",
+            "name": "RedirectsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Redirect-RedirectsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Redirect\\RedirectsResponse\u003A\u003AgetRedirects\u0028\u0029",
+            "name": "getRedirects",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Redirect-RedirectsResponse.html#method_getRedirects"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -6890,6 +7005,11 @@ Search.appendIndex(
             "name": "PriceLists",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-api-pricelists.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Redirects",
+            "name": "Redirects",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-api-redirects.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Scripts",
             "name": "Scripts",
@@ -6981,6 +7101,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-resourcemodels-pricelist.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect",
+            "name": "Redirect",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-redirect.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Script",
             "name": "Script",
             "summary": "",
@@ -7055,6 +7180,11 @@ Search.appendIndex(
             "name": "Product",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-responsemodels-product.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Redirect",
+            "name": "Redirect",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-responsemodels-redirect.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Script",
             "name": "Script",

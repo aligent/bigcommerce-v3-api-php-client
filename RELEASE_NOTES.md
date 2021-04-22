@@ -1,4 +1,7 @@
 ### New Features
 
-- Implement the [Channel Currency Assignments API](https://developer.bigcommerce.com/api-reference/store-management/channels/channel-currency-assignments/post-channels-currency-assignments)
+Implemented the [Redirects V3 API](https://developer.bigcommerce.com/api-reference/store-management/redirects/redirects/getredirects)
+
+### Fixed Issues
+
 

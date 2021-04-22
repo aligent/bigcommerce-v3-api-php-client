@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "from_path": "/old-url",
+      "site_id": 0,
+      "to": {
+        "type": "product",
+        "entity_id": 0,
+        "url": "/new-url"
+      },
+      "id": 0,
+      "to_url": "https://store-domain.com/new-url"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 246,
+      "count": 5,
+      "per_page": 5,
+      "current_page": 1,
+      "total_pages": 50,
+      "links": {
+        "next": "?limit=5&page=2",
+        "current": "?limit=5&page=1"
+      }
+    }
+  }
+}
