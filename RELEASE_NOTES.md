@@ -1,7 +1,5 @@
-### New Features
+### Fixes
 
-Implemented the [Redirects V3 API](https://developer.bigcommerce.com/api-reference/store-management/redirects/redirects/getredirects)
+Added missing create and update endpoints for:
 
-
-
-
+- [ProductMetafieldsApi](https://aligent.github.io/bigcommerce-v3-api-php-client/classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductMetafieldsApi.html)
