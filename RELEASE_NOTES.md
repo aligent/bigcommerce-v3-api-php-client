@@ -5,3 +5,4 @@ Added missing create and update endpoints for:
  - ProductReviewsApi
  - ProductBulkPricingRulesApi
  - ProductVariantMetafieldsApi
+ - ProductOptionValuesApi
