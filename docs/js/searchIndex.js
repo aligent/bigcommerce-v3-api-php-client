@@ -511,6 +511,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductBulkPricingRulesApi.html#method_getAll"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductBulkPricingRulesApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductBulkPricingRulesApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductBulkPricingRulesApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductBulkPricingRulesApi.html#method_update"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductBulkPricingRulesApi\u003A\u003ARESOURCE_NAME",
             "name": "RESOURCE_NAME",
             "summary": "",
@@ -575,6 +585,16 @@ Search.appendIndex(
             "name": "getAll",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductMetafieldsApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductMetafieldsApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductMetafieldsApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductMetafieldsApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductMetafieldsApi.html#method_update"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductModifier\\ProductModifierImagesApi",
             "name": "ProductModifierImagesApi",
@@ -666,6 +686,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductOption-ProductOptionValuesApi.html#method_getAll"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductOption\\ProductOptionValuesApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductOption-ProductOptionValuesApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductOption\\ProductOptionValuesApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductOption-ProductOptionValuesApi.html#method_update"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductOption\\ProductOptionValuesApi\u003A\u003ARESOURCE_NAME",
             "name": "RESOURCE_NAME",
             "summary": "",
@@ -695,6 +725,16 @@ Search.appendIndex(
             "name": "getAll",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductReviewsApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductReviewsApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductReviewsApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductReviewsApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductReviewsApi.html#method_update"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductReviewsApi\u003A\u003ARESOURCE_NAME",
             "name": "RESOURCE_NAME",
@@ -850,6 +890,16 @@ Search.appendIndex(
             "name": "getAll",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductVariant-ProductVariantMetafieldsApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductVariant\\ProductVariantMetafieldsApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductVariant-ProductVariantMetafieldsApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductVariant\\ProductVariantMetafieldsApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Catalog-Products-ProductVariant-ProductVariantMetafieldsApi.html#method_update"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Catalog\\Products\\ProductVideosApi",
             "name": "ProductVideosApi",
