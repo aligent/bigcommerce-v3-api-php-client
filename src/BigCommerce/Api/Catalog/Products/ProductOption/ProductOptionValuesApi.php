@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV3\Api\Catalog\Products\ProductOption;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOptionValue;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValueResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValuesResponse;
 
@@ -10,9 +11,9 @@ class ProductOptionValuesApi extends ResourceApi
 {
     private int $productId;
 
-    public const RESOURCE_NAME   = 'values';
+    public const RESOURCE_NAME = 'values';
     public const VALUES_ENDPOINT = 'catalog/products/%d/options/%d/values';
-    public const VALUE_ENDPOINT  = 'catalog/products/%d/options/%d/values/%d';
+    public const VALUE_ENDPOINT = 'catalog/products/%d/options/%d/values/%d';
 
     public function setProductId(int $productId): void
     {
@@ -66,5 +67,15 @@ class ProductOptionValuesApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductOptionValuesResponse
     {
         return new ProductOptionValuesResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function create(ProductOptionValue $optionValue): ProductOptionValueResponse
+    {
+        return new ProductOptionValueResponse($this->createResource($optionValue));
+    }
+
+    public function update(ProductOptionValue $optionValue): ProductOptionValueResponse
+    {
+        return new ProductOptionValueResponse($this->updateResource($optionValue));
     }
 }
