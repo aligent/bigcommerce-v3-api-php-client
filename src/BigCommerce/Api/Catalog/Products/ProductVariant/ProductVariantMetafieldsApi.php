@@ -71,6 +71,7 @@ class ProductVariantMetafieldsApi extends ResourceApi
 
     public function create(ProductVariantMetafield $metafield): ProductVariantMetafieldResponse
     {
+        $metafield->resource_id = $this->getParentResourceId() ?? 0;
         return new ProductVariantMetafieldResponse($this->createResource($metafield));
     }
 
