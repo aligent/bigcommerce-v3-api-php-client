@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV3\Api\Catalog\Products;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductMetafield;
 use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductMetafieldResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductMetafieldsResponse;
@@ -28,8 +29,8 @@ use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 class ProductMetafieldsApi extends ResourceApi
 {
     private const RESOURCE_NAME       = 'metafields';
-    private const METAFIELD_ENDPOINT  = 'catalog/product/%d/metafields/%d';
-    private const METAFIELDS_ENDPOINT = 'catalog/product/%d/metafields';
+    private const METAFIELD_ENDPOINT  = 'catalog/products/%d/metafields/%d';
+    private const METAFIELDS_ENDPOINT = 'catalog/products/%d/metafields';
 
     protected function singleResourceEndpoint(): string
     {
@@ -54,5 +55,16 @@ class ProductMetafieldsApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): ProductMetafieldsResponse
     {
         return new ProductMetafieldsResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function create(ProductMetafield $productMetafield): ProductMetafieldResponse
+    {
+        $productMetafield->resource_id = $this->getParentResourceId() ?? 0;
+        return new ProductMetafieldResponse($this->createResource($productMetafield));
+    }
+
+    public function update(ProductMetafield $productMetafield): ProductMetafieldResponse
+    {
+        return new ProductMetafieldResponse($this->updateResource($productMetafield));
     }
 }
