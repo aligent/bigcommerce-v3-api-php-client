@@ -7,7 +7,7 @@ use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductImage;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductImageResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductImagesResponse;
 
-class ProductImagesApi extends ResourceApi
+class delaide team ProductImagesApi extends ResourceApi
 {
     public const RESOURCE_NAME   = 'images';
     public const IMAGES_ENDPOINT = 'catalog/products/%d/images';

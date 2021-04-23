@@ -1,6 +1,8 @@
-### New Features
+### Fixes
 
-Implemented the [Redirects V3 API](https://developer.bigcommerce.com/api-reference/store-management/redirects/redirects/getredirects)
+Added missing create and update endpoints for:
+
+ - ProductReviewsApi
 
 
 
