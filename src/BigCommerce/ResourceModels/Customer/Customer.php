@@ -26,6 +26,12 @@ class Customer extends ResourceModel
     public string $country_iso2;
     public string $phone;
     public int $customer_group_id;
+    public string $notes;
+    public string $tax_exempt_category;
+    public bool $accepts_product_review_abandoned_cart_emails;
+    public ?array $store_credit_amounts;
+    public ?int $origin_channel_id;
+    public ?array $channel_ids;
 
     /**
      * @var CustomerAddress[]
