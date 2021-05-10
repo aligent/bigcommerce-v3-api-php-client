@@ -25,4 +25,37 @@ class Customer extends ResourceModel
     public string $country;
     public string $country_iso2;
     public string $phone;
+    public int $customer_group_id;
+    public string $notes;
+    public string $tax_exempt_category;
+    public bool $accepts_product_review_abandoned_cart_emails;
+    public ?array $store_credit_amounts;
+    public ?int $origin_channel_id;
+    public ?array $channel_ids;
+
+    /**
+     * @var CustomerAddress[]
+     */
+    public array $addresses;
+
+    /**
+     * @var AttributeValue[]
+     */
+    public array $attributes;
+
+    /**
+     * @var CustomerFormFieldValue[]
+     */
+    public array $form_fields;
+
+    public ?CustomerAuthentication $authentication;
+
+
+    protected function beforeBuildObject(): void
+    {
+        $this->buildObjectArray('addresses', CustomerAddress::class);
+        $this->buildObjectArray('attributes', AttributeValue::class);
+        $this->buildObjectArray('form_fields', CustomerFormFieldValue::class);
+        $this->buildPropertyObject('authentication', CustomerAuthentication::class);
+    }
 }

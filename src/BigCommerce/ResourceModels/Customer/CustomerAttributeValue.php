@@ -8,6 +8,6 @@ class CustomerAttributeValue extends ResourceModel
 {
     public int $attribute_id;
     public string $value;
-    public int $customer_id;
-    public int $id;
+    public ?int $customer_id;
+    public ?int $id;
 }
