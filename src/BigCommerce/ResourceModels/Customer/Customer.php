@@ -25,6 +25,7 @@ class Customer extends ResourceModel
     public string $country;
     public string $country_iso2;
     public string $phone;
+    public int $customer_group_id;
 
     /**
      * @var CustomerAddress[]
