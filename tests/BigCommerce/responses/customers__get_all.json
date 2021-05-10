@@ -17,7 +17,28 @@
       "date_created": "2020-08-27T06:18:07Z",
       "date_modified": "2020-08-28T06:03:38Z",
       "accepts_product_review_abandoned_cart_emails": true,
-      "channel_ids": null
+      "channel_ids": null,
+      "addresses": [
+        {
+          "address1": "Addr 1",
+          "address2": "",
+          "address_type": "residential",
+          "city": "San Francisco",
+          "company": "History",
+          "country_code": "US",
+          "first_name": "Ronald",
+          "last_name": "Swimmer",
+          "phone": "707070707",
+          "postal_code": "33333",
+          "state_or_province": "California"
+        }
+      ],
+      "attributes": [
+          {
+            "attribute_id": 0,
+            "value": "string"
+          }
+      ]
     }
   ],
   "meta": {
