@@ -57,5 +57,7 @@ abstract class ResourceModel implements JsonSerializable
     /**
      * Override this function to implement custom build functionality
      */
-    protected function beforeBuildObject(): void {}
+    protected function beforeBuildObject(): void
+    {
+    }
 }

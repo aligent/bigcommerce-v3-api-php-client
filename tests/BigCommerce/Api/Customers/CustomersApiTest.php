@@ -19,7 +19,6 @@ class CustomersApiTest extends BigCommerceApiTest
         $this->assertInstanceOf(CustomerAddress::class, $customers[0]->addresses[0]);
         $this->assertInstanceOf(CustomerAttributeValue::class, $customers[0]->attributes[0]);
         $this->assertEquals('California', $customers[0]->addresses[0]->state_or_province);
-
     }
 
     public function testCanGetCustomerByEmail()
