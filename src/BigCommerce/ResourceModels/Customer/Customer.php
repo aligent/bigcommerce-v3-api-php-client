@@ -3,7 +3,6 @@
 namespace BigCommerce\ApiV3\ResourceModels\Customer;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
-use stdClass;
 
 /**
  * @package BigCommerce\ApiV3\ResourceModels
@@ -33,7 +32,7 @@ class Customer extends ResourceModel
     public array $addresses;
 
     /**
-     * @var CustomerAttributeValue[]
+     * @var AttributeValue[]
      */
     public array $attributes;
 
@@ -48,7 +47,7 @@ class Customer extends ResourceModel
     protected function beforeBuildObject(): void
     {
         $this->buildObjectArray('addresses', CustomerAddress::class);
-        $this->buildObjectArray('attributes', CustomerAttributeValue::class);
+        $this->buildObjectArray('attributes', AttributeValue::class);
         $this->buildObjectArray('form_fields', CustomerFormFieldValue::class);
         $this->buildPropertyObject('authentication', CustomerAuthentication::class);
     }
