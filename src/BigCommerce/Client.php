@@ -17,6 +17,8 @@ use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsA
 
 class Client extends BaseApiClient
 {
+    public const API_URI = 'https://api.bigcommerce.com/stores/%s/v3/';
+
     public function catalog(): CatalogApi
     {
         return new CatalogApi($this);
@@ -111,5 +113,10 @@ class Client extends BaseApiClient
     public function redirects(): RedirectsApi
     {
         return new RedirectsApi($this);
+    }
+
+    protected function defaultBaseUrl(): string
+    {
+        return self::API_URI;
     }
 }

@@ -14,7 +14,6 @@ abstract class BaseApiClient
     public const DEFAULT_HEADERS      = 'headers';
     public const HEADERS__AUTH_CLIENT = 'X-Auth-Client';
     public const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
-    public const API_URI              = 'https://api.bigcommerce.com/stores/%s/v3/';
 
     private string $storeHash;
 
@@ -37,7 +36,7 @@ abstract class BaseApiClient
         $this->storeHash    = $storeHash;
         $this->clientId     = $clientId;
         $this->accessToken  = $accessToken;
-        $this->setBaseUri(sprintf(self::API_URI, $this->storeHash));
+        $this->setBaseUri(sprintf($this->defaultBaseUrl(), $this->storeHash));
 
         $this->client = $client ?? $this->buildDefaultHttpClient();
     }
@@ -89,4 +88,6 @@ abstract class BaseApiClient
     {
         print_r(json_decode(array_pop($this->debugContainer)['request']->getBody()));
     }
+
+    abstract protected function defaultBaseUrl(): string;
 }

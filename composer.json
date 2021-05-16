@@ -21,7 +21,9 @@
     "autoload": {
         "psr-4": {
             "BigCommerce\\ApiV3\\": "src/BigCommerce/",
-            "BigCommerce\\Tests\\": "tests/BigCommerce"
+            "BigCommerce\\ApiV2\\": "src/BigCommerceLegacyApi/",
+            "BigCommerce\\Tests\\": "tests/BigCommerce/",
+            "BigCommerce\\Tests\\V2\\": "tests/BigCommerceLegacyApi/"
         }
     },
     "require-dev": {
