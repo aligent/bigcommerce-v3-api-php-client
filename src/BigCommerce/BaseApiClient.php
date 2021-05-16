@@ -12,8 +12,12 @@ abstract class BaseApiClient
     public const DEFAULT_HANDLER      = 'handler';
     public const DEFAULT_BASE_URI     = 'base_uri';
     public const DEFAULT_HEADERS      = 'headers';
-    public const HEADERS__AUTH_CLIENT = 'X-Auth-Client';
-    public const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
+
+    private const HEADERS__AUTH_CLIENT  = 'X-Auth-Client';
+    private const HEADERS__AUTH_TOKEN   = 'X-Auth-Token';
+    private const HEADERS__CONTENT_TYPE = 'Content-Type';
+    private const HEADERS__ACCEPT       = 'Accept';
+    private const APPLICATION_JSON      = 'application/json';
 
     private string $storeHash;
 
@@ -51,8 +55,10 @@ abstract class BaseApiClient
             self::DEFAULT_HANDLER  => $stack,
             self::DEFAULT_BASE_URI => $this->getBaseUri(),
             self::DEFAULT_HEADERS  => [
-                self::HEADERS__AUTH_CLIENT => $this->clientId,
-                self::HEADERS__AUTH_TOKEN  => $this->accessToken,
+                self::HEADERS__AUTH_CLIENT  => $this->clientId,
+                self::HEADERS__AUTH_TOKEN   => $this->accessToken,
+                self::HEADERS__CONTENT_TYPE => self::APPLICATION_JSON,
+                self::HEADERS__ACCEPT       => self::APPLICATION_JSON,
             ],
         ]);
     }
