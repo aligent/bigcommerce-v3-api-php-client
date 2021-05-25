@@ -22,10 +22,10 @@ class OrdersApi extends V2ApiBase
         return self::ORDERS_ENDPOINT;
     }
 
-    public function create(Order $order): bool
+    public function create(Order $order): ?\Psr\Http\Message\ResponseInterface
     {
         $response = $this->createResource($order);
 
-        return in_array($response->getStatusCode(), [200, 201, 204]);
+        return in_array($response->getStatusCode(), [200, 201, 204]) ? $response : null;
     }
 }

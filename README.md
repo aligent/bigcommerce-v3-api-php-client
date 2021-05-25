@@ -79,20 +79,20 @@ try {
 
 There are three components to the library:
 
-- [BigCommerce/Api](./src/BigCommerce/Api) - which represent the API endpoints and tries to mimic the layout of the 
+- [BigCommerce/Api](src/BigCommerce/Api) - which represent the API endpoints and tries to mimic the layout of the 
   documentation.
   
-- [BigCommerce/ResourceModels](./src/BigCommerce/ResourceModels) - which represent the resources that are sent to and 
+- [BigCommerce/ResourceModels](src/BigCommerce/ResourceModels) - which represent the resources that are sent to and 
   received from the API, for example a `Product` or an `Order`.
   
-- [BigCommerce/ResponseModels](./src/BigCommerce/ResponseModels) - which represent the responses from the BigCommerce 
+- [BigCommerce/ResponseModels](src/BigCommerce/ResponseModels) - which represent the responses from the BigCommerce 
   API.
   
 For additional documentation, see the [code documentation](https://aligent.github.io/bigcommerce-v3-api-php-client/).
   
 #### API Classes
 
-To interact with the API, always start with the [BigCommerce\ApiV3\Client](./src/BigCommerce/Client.php) class. All APIs
+To interact with the API, always start with the [BigCommerce\ApiV3\Client](src/BigCommerce/Client.php) class. All APIs
 can be accessed in two ways: with and without an ID.
 
 If you are querying about a specific resource instance (e.g. Product 5), then you would use singular endpoint (
