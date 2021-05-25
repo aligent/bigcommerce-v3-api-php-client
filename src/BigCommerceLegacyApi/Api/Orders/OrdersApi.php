@@ -25,7 +25,6 @@ class OrdersApi extends V2ApiBase
     public function create(Order $order): ?\Psr\Http\Message\ResponseInterface
     {
         $response = $this->createResource($order);
-
         return in_array($response->getStatusCode(), [200, 201, 204]) ? $response : null;
     }
 }
