@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3\ResourceModels;
-
 
 use BigCommerce\Tests\Api\Catalog\CustomUrl;
 

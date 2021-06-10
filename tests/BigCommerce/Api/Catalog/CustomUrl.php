@@ -1,6 +1,5 @@
 <?php
 
-
 namespace BigCommerce\Tests\Api\Catalog;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
