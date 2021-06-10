@@ -1,4 +1,4 @@
 
 ### New Features
 
- - Add `setCustomUrl()` to **Category** and **Product** for simpler custom url setup
+ - Add `setCustomUrl()` to **Category**, **Brand**, and **Product** for simpler custom url setup

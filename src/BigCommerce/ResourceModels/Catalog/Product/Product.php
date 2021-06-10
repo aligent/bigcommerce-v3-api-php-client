@@ -87,13 +87,15 @@ class Product extends ResourceModel
 
     public function __construct(?stdClass $optionObject = null)
     {
+        if (!is_null($optionObject)) {
+            $this->buildCustomUrl($optionObject);
+        }
+
         if (!is_null($optionObject) && isset($optionObject->modifiers)) {
             $this->modifiers = array_map(function ($m) {
                 return new ProductModifier($m);
             }, $optionObject->modifiers);
             unset($optionObject->modifiers);
-
-            $this->buildCustomUrl($optionObject);
         }
 
         parent::__construct($optionObject);
