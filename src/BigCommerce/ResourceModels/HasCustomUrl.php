@@ -8,7 +8,7 @@ use BigCommerce\Tests\Api\Catalog\CustomUrl;
 
 trait HasCustomUrl
 {
-    public CustomUrl $custom_url;
+    public ?CustomUrl $custom_url;
 
     /**
      * Set the URL for a category, brand, or product.

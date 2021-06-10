@@ -2,11 +2,14 @@
 
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
 
+use BigCommerce\ApiV3\ResourceModels\HasCustomUrl;
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;
 
 class Product extends ResourceModel
 {
+    use HasCustomUrl;
+
     public const INVENTORY_TRACKING_NONE    = 'none';
     public const INVENTORY_TRACKING_PRODUCT = 'product';
     public const INVENTORY_TRACKING_VARIANT = 'variant';
@@ -64,7 +67,6 @@ class Product extends ResourceModel
     public bool $is_preorder_only;
     public bool $is_price_hidden;
     public string $price_hidden_label;
-    public ?object $custom_url;
     public ?int $base_variant_id;
     public string $open_graph_type;
     public string $open_graph_title;
@@ -90,6 +92,8 @@ class Product extends ResourceModel
                 return new ProductModifier($m);
             }, $optionObject->modifiers);
             unset($optionObject->modifiers);
+
+            $this->buildCustomUrl($optionObject);
         }
 
         parent::__construct($optionObject);
