@@ -2,10 +2,14 @@
 
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Category;
 
+use BigCommerce\ApiV3\ResourceModels\HasCustomUrl;
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
+use stdClass;
 
 class Category extends ResourceModel
 {
+    use HasCustomUrl;
+
     public int $id;
     public int $parent_id;
     public string $name;
@@ -20,5 +24,12 @@ class Category extends ResourceModel
     public bool $is_visible;
     public string $search_keywords;
     public string $default_product_sort;
-    public object $custom_url;
+
+    public function __construct(?stdClass $optionObject = null)
+    {
+        if (isset($optionObject)) {
+            $this->buildCustomUrl($optionObject);
+        }
+        parent::__construct($optionObject);
+    }
 }

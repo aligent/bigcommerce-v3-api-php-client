@@ -3,11 +3,20 @@
 namespace BigCommerce\Tests\Api\Catalog;
 
 use BigCommerce\ApiV3\Api\Catalog\Categories\CategoryImageApi;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Category\Category;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Category\CategoryTreeBranch;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class CategoriesApiTest extends BigCommerceApiTest
 {
+    public function testCanSetCustomUrl(): void
+    {
+        $category = new Category();
+        $category->setCustomUrl('/my-slug');
+        $this->assertTrue($category->custom_url->is_customized);
+        $this->assertEquals('/my-slug', $category->custom_url->url);
+    }
+
     public function testCategoryIdIsSet(): void
     {
         $expectedCategoryId = 1025;
