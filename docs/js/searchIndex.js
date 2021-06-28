@@ -2506,6 +2506,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Brand-Brand.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Brand\\Brand\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Brand-Brand.html#method___construct"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Brand\\Brand\u003A\u003A\u0024id",
             "name": "id",
             "summary": "",
@@ -2536,11 +2541,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Brand-Brand.html#property_search_keywords"
         },                {
-            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Brand\\Brand\u003A\u003A\u0024custom_url",
-            "name": "custom_url",
-            "summary": "",
-            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Brand-Brand.html#property_custom_url"
-        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Brand\\BrandMetafield",
             "name": "BrandMetafield",
             "summary": "",
@@ -2555,6 +2555,11 @@ Search.appendIndex(
             "name": "Category",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Category-Category.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Category\\Category\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Category-Category.html#method___construct"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Category\\Category\u003A\u003A\u0024id",
             "name": "id",
@@ -2625,11 +2630,6 @@ Search.appendIndex(
             "name": "default_product_sort",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Category-Category.html#property_default_product_sort"
-        },                {
-            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Category\\Category\u003A\u003A\u0024custom_url",
-            "name": "custom_url",
-            "summary": "",
-            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Category-Category.html#property_custom_url"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Category\\CategoryMetafield",
             "name": "CategoryMetafield",
@@ -3135,11 +3135,6 @@ Search.appendIndex(
             "name": "price_hidden_label",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#property_price_hidden_label"
-        },                {
-            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003A\u0024custom_url",
-            "name": "custom_url",
-            "summary": "",
-            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#property_custom_url"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003A\u0024base_variant_id",
             "name": "base_variant_id",
@@ -3995,6 +3990,61 @@ Search.appendIndex(
             "name": "phone",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_phone"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024customer_group_id",
+            "name": "customer_group_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_customer_group_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024notes",
+            "name": "notes",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_notes"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024tax_exempt_category",
+            "name": "tax_exempt_category",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_tax_exempt_category"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024accepts_product_review_abandoned_cart_emails",
+            "name": "accepts_product_review_abandoned_cart_emails",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_accepts_product_review_abandoned_cart_emails"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024store_credit_amounts",
+            "name": "store_credit_amounts",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_store_credit_amounts"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024origin_channel_id",
+            "name": "origin_channel_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_origin_channel_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024channel_ids",
+            "name": "channel_ids",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_channel_ids"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024addresses",
+            "name": "addresses",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_addresses"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024attributes",
+            "name": "attributes",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_attributes"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024form_fields",
+            "name": "form_fields",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_form_fields"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Customer\u003A\u003A\u0024authentication",
+            "name": "authentication",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-Customer.html#property_authentication"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerAddress",
             "name": "CustomerAddress",
@@ -6970,6 +7020,51 @@ Search.appendIndex(
             "name": "getRedirects",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Redirect-RedirectsResponse.html#method_getRedirects"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\AttributeValue",
+            "name": "AttributeValue",
+            "summary": "This\u0020is\u0020used\u0020when\u0020creating\u0020a\u0020customer\u0020with\u0020attribute\u0020values",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-AttributeValue.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\AttributeValue\u003A\u003A\u0024attribute_id",
+            "name": "attribute_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-AttributeValue.html#property_attribute_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\AttributeValue\u003A\u003A\u0024attribute_value",
+            "name": "attribute_value",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-AttributeValue.html#property_attribute_value"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerAuthentication",
+            "name": "CustomerAuthentication",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerAuthentication.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerAuthentication\u003A\u003A\u0024force_password_reset",
+            "name": "force_password_reset",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerAuthentication.html#property_force_password_reset"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerAuthentication\u003A\u003A\u0024new_password",
+            "name": "new_password",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerAuthentication.html#property_new_password"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\HasCustomUrl",
+            "name": "HasCustomUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-HasCustomUrl.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\HasCustomUrl\u003A\u003AsetCustomUrl\u0028\u0029",
+            "name": "setCustomUrl",
+            "summary": "Set\u0020the\u0020URL\u0020for\u0020a\u0020category,\u0020brand,\u0020or\u0020product.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-HasCustomUrl.html#method_setCustomUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\HasCustomUrl\u003A\u003A\u0024custom_url",
+            "name": "custom_url",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-HasCustomUrl.html#property_custom_url"
         },                {
             "fqsen": "\\",
             "name": "\\",
