@@ -23,11 +23,11 @@ class CustomerAddressesApi extends CustomerApiBase
 
     public function create(array $resources): CustomerAddressesResponse
     {
-        return new CustomerAddressesResponse($this->createResources());
+        return new CustomerAddressesResponse($this->createResources($resources));
     }
 
     public function update(array $resources): CustomerAddressesResponse
     {
-        return new CustomerAddressesResponse($this->updateResources());
+        return new CustomerAddressesResponse($this->updateResources($resources));
     }
 }
