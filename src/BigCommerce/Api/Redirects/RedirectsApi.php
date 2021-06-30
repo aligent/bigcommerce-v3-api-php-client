@@ -49,7 +49,7 @@ class RedirectsApi extends V3ApiBase
 
     protected function maxBatchSize(): int
     {
-        return 100;
+        return 50;
     }
 
     public function multipleResourceUrl(): string
