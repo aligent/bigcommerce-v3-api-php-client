@@ -42,11 +42,11 @@ class Redirect extends ResourceModel
 
     public function toProduct(int $productId): void
     {
-        $this->to = RedirectTo::Build(RedirectTo::TYPE__PRODUCT, $productId);
+        $this->to = RedirectTo::buildRedirectTo(RedirectTo::TYPE__PRODUCT, $productId);
     }
 
     public function toCategory(int $categoryId): void
     {
-        $this->to = RedirectTo::Build(RedirectTo::TYPE__CATEGORY, $categoryId);
+        $this->to = RedirectTo::buildRedirectTo(RedirectTo::TYPE__CATEGORY, $categoryId);
     }
 }
