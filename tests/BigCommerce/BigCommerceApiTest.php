@@ -37,11 +37,14 @@ abstract class BigCommerceApiTest extends TestCase
         );
     }
 
-    protected function setReturnData(string $filename, int $statusCode = 200, array $headers = []): void
+    protected function setReturnData(string $filename, int $statusCode = 200, array $headers = [], int $numberOfResponses = 1): void
     {
-        $mock = new MockHandler([
-            new Response($statusCode, $headers, file_get_contents(self::RESPONSES_PATH . $filename)),
-        ]);
+        $responses = [];
+        for ($i = 1; $i <= $numberOfResponses; $i++) {
+            $responses[] = new Response($statusCode, $headers, file_get_contents(self::RESPONSES_PATH . $filename));
+        }
+
+        $mock = new MockHandler($responses);
 
         $handlerStack = HandlerStack::create($mock);
         $handlerStack->push(Middleware::history($this->container));
