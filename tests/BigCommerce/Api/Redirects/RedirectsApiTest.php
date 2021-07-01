@@ -14,10 +14,10 @@ class RedirectsApiTest extends BigCommerceApiTest
         $redirect = new Redirect();
         $redirect->from_path = '/old-url';
         $redirect->site_id = 0;
-        $redirect->to = new RedirectTo();
-        $redirect->to->type = RedirectTo::TYPE__PRODUCT;
-        $redirect->to->entity_id = 0;
-        $redirect->to->url = '/new-url';
+        $redirect->toProduct(1);
+
+        $this->assertEquals(RedirectTo::TYPE__PRODUCT, $redirect->to->type);
+        $this->assertEquals(1, $redirect->to->entity_id);
 
         $this->getApi()->redirects()->upsert([$redirect]);
         $this->assertEquals('storefront/redirects', $this->getLastRequestPath());
