@@ -15,5 +15,15 @@ class RedirectTo extends ResourceModel
 
     public string $type;
     public ?int $entity_id;
-    public string $url;
+    public ?string $url;
+
+    public static function buildRedirectTo(string $type, ?int $entityId = null, ?string $url = null): RedirectTo
+    {
+        $redirectTo = new self();
+        $redirectTo->type = $type;
+        $redirectTo->entity_id = $entityId;
+        $redirectTo->url = $url;
+
+        return $redirectTo;
+    }
 }
