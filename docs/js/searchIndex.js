@@ -6938,13 +6938,23 @@ Search.appendIndex(
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect",
             "name": "Redirect",
-            "summary": "",
+            "summary": "Redirect\u0020Resource",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#method___construct"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003AtoProduct\u0028\u0029",
+            "name": "toProduct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#method_toProduct"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003AtoCategory\u0028\u0029",
+            "name": "toCategory",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html#method_toCategory"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\Redirect\u003A\u003A\u0024from_path",
             "name": "from_path",
@@ -6965,6 +6975,11 @@ Search.appendIndex(
             "name": "RedirectTo",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003AbuildRedirectTo\u0028\u0029",
+            "name": "buildRedirectTo",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Redirect-RedirectTo.html#method_buildRedirectTo"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Redirect\\RedirectTo\u003A\u003ATYPE__PRODUCT",
             "name": "TYPE__PRODUCT",
