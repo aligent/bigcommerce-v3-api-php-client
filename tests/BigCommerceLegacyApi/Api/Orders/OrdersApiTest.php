@@ -10,14 +10,15 @@ class OrdersApiTest extends V2ApiClientTest
 {
     public function testCanCreateOrder()
     {
-        $this->setReturnData(self::EMPTY_RESPONSE);
+        $this->setReturnData('orders_v2_create.json');
 
         $order = new Order();
         $order->products = [
             OrderProduct::build('test', 1, 12, 10),
         ];
 
-        $this->assertTrue($this->getApi()->orders()->create($order));
+        $response = $this->getApi()->orders()->create($order);
+        $this->assertEquals(218, $response->id);
         $this->assertEquals('orders', $this->getLastRequestPath());
     }
 }
