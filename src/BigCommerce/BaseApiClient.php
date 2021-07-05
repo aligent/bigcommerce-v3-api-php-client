@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV3;
-
 
 use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;

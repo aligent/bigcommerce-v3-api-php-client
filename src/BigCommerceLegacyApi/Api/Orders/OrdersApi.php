@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV2\Api\Orders;
 
 use BigCommerce\ApiV2\Api\Generic\V2ApiBase;

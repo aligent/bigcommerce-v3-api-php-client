@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\Tests\V2;
-
 
 use BigCommerce\ApiV2\V2ApiClient;
 use GuzzleHttp\Handler\MockHandler;

@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV2\Api\Generic;
-
 
 use BigCommerce\ApiV2\V2ApiClient;
 

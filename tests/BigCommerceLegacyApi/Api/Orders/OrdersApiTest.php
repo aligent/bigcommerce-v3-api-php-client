@@ -14,7 +14,7 @@ class OrdersApiTest extends V2ApiClientTest
 
         $order = new Order();
         $order->products = [
-            OrderProduct::build('test', 1, 12,10),
+            OrderProduct::build('test', 1, 12, 10),
         ];
 
         $this->assertTrue($this->getApi()->orders()->create($order));

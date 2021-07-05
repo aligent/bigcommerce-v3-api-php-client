@@ -1,8 +1,6 @@
 <?php
 
-
 namespace BigCommerce\ApiV2\ResourceModels\Order;
-
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
