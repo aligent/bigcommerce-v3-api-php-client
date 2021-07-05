@@ -12,6 +12,8 @@ use BigCommerce\ApiV3\Api\Generic\CreateResource;
  * Currently only implements _create_.
  *
  * ### Example
+ *
+ * ```php
  * $api = new BigCommerce\ApiV2\V2ApiClient($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
  *
  * $order = new BigCommerce\ApiV2\ResourceModels\Order\Order();
@@ -23,6 +25,7 @@ use BigCommerce\ApiV3\Api\Generic\CreateResource;
  * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
  *     echo "Unable to update product: {$exception->getMessage()}";
  * }
+ * ```
  */
 class OrdersApi extends V2ApiBase
 {
