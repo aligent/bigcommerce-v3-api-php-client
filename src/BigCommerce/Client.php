@@ -15,6 +15,70 @@ use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
 
+/**
+ * The parent API class
+ *
+ * ## Usage Examples
+ *
+ * Trivial example of updating a product name:
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $product = $api->catalog()->product(123)->get()->getProduct();
+ * $product->name = 'Updated product name';
+ * try {
+ *     $api->catalog()->product($product->id)->update($product);
+ * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+ *     echo "Unable to update product: {$exception->getMessage()}";
+ * }
+ * ```
+ *
+ * Fetching all visible products (all pages of products):
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $productsResponse = $api->catalog()->products()->getAllPages(['is_visible' => true]);
+ *
+ * echo "Found {$productsResponse->getPagination()->total} products";
+ *
+ * $products = $productsResponse->getProducts();
+ * ```
+ *
+ * Example of updating a product variant
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $productVariant = $api->catalog()->product(123)->variant(456)->get()->getProductVariant();
+ * $productVariant->price = '12';
+ *
+ * try {
+ *     $api->catalog()->product($productVariant->product_id)->variant($productVariant->id)->update($productVariant);
+ * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+ *     echo "Unable to update product variant: {$exception->getMessage()}";
+ * }
+ * ```
+ *
+ * Example of creating a product variant
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $productVariant = new \BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductVariant();
+ * $productVariant->product_id = 123;
+ * $productVariant->sku = "SKU-123";
+ * //...
+ *
+ * try {
+ *     $api->catalog()->product($productVariant->product_id)->variants()->create($productVariant);
+ * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+ *     echo "Unable to create product variant: {$exception->getMessage()}";
+ * }
+ * ```
+ *
+ */
 class Client extends BaseApiClient
 {
     public const API_URI = 'https://api.bigcommerce.com/stores/%s/v3/';
