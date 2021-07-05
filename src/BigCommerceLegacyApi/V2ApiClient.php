@@ -8,7 +8,8 @@ use BigCommerce\ApiV3\BaseApiClient;
 /**
  * Class for accessing BigCommerce V2 Endpoints
  *
- * Currently only the [Create Order](https://developer.bigcommerce.com/api-reference/store-management/orders/orders/createanorder)
+ * Currently only the
+ * [Create Order](https://developer.bigcommerce.com/api-reference/store-management/orders/orders/createanorder)
  * endpoint is implement as it has no V3 equivalent.
  *
  * The class is used similarly to the V3 client.
