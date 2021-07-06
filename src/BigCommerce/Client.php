@@ -14,91 +14,74 @@ use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Middleware;
 
-class Client
+/**
+ * The parent API class
+ *
+ * ## Usage Examples
+ *
+ * Trivial example of updating a product name:
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $product = $api->catalog()->product(123)->get()->getProduct();
+ * $product->name = 'Updated product name';
+ * try {
+ *     $api->catalog()->product($product->id)->update($product);
+ * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+ *     echo "Unable to update product: {$exception->getMessage()}";
+ * }
+ * ```
+ *
+ * Fetching all visible products (all pages of products):
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $productsResponse = $api->catalog()->products()->getAllPages(['is_visible' => true]);
+ *
+ * echo "Found {$productsResponse->getPagination()->total} products";
+ *
+ * $products = $productsResponse->getProducts();
+ * ```
+ *
+ * Example of updating a product variant
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $productVariant = $api->catalog()->product(123)->variant(456)->get()->getProductVariant();
+ * $productVariant->price = '12';
+ *
+ * try {
+ *     $api->catalog()->product($productVariant->product_id)->variant($productVariant->id)->update($productVariant);
+ * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+ *     echo "Unable to update product variant: {$exception->getMessage()}";
+ * }
+ * ```
+ *
+ * Example of creating a product variant
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ *
+ * $productVariant = new \BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductVariant();
+ * $productVariant->product_id = 123;
+ * $productVariant->sku = "SKU-123";
+ * //...
+ *
+ * try {
+ *     $api->catalog()->product($productVariant->product_id)->variants()->create($productVariant);
+ * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
+ *     echo "Unable to create product variant: {$exception->getMessage()}";
+ * }
+ * ```
+ *
+ */
+class Client extends BaseApiClient
 {
-    public const DEFAULT_HANDLER      = 'handler';
-    public const DEFAULT_BASE_URI     = 'base_uri';
-    public const DEFAULT_HEADERS      = 'headers';
-    public const HEADERS__AUTH_CLIENT = 'X-Auth-Client';
-    public const HEADERS__AUTH_TOKEN  = 'X-Auth-Token';
-    public const API_URI              = 'https://api.bigcommerce.com/stores/%s/v3/';
-
-    private string $storeHash;
-
-    private string $clientId;
-
-    private string $accessToken;
-
-    private string $baseUri;
-
-    private \GuzzleHttp\Client $client;
-
-    private array $debugContainer = [];
-
-    public function __construct(
-        string $storeHash,
-        string $clientId,
-        string $accessToken,
-        ?\GuzzleHttp\Client $client = null
-    ) {
-        $this->storeHash    = $storeHash;
-        $this->clientId     = $clientId;
-        $this->accessToken  = $accessToken;
-        $this->setBaseUri(sprintf(self::API_URI, $this->storeHash));
-
-        $this->client = $client ?? $this->buildDefaultHttpClient();
-    }
-
-    private function buildDefaultHttpClient(): \GuzzleHttp\Client
-    {
-        $history = Middleware::history($this->debugContainer);
-        $stack   = HandlerStack::create();
-        $stack->push($history);
-
-        return new \GuzzleHttp\Client([
-            self::DEFAULT_HANDLER  => $stack,
-            self::DEFAULT_BASE_URI => $this->getBaseUri(),
-            self::DEFAULT_HEADERS  => [
-                self::HEADERS__AUTH_CLIENT => $this->clientId,
-                self::HEADERS__AUTH_TOKEN  => $this->accessToken,
-            ],
-        ]);
-    }
-
-    public function getBaseUri(): string
-    {
-        return $this->baseUri;
-    }
-
-    public function setBaseUri(string $baseUri)
-    {
-        $this->baseUri = $baseUri;
-    }
-
-    public function getRestClient(): \GuzzleHttp\Client
-    {
-        return $this->client;
-    }
-
-    public function setRestClient(\GuzzleHttp\Client $client): void
-    {
-        $this->client = $client;
-    }
-
-    public function printDebug()
-    {
-        foreach ($this->debugContainer as $transaction) {
-            print_r(json_decode($transaction['request']->getBody()));
-        }
-    }
-
-    public function printDebugLastRequest()
-    {
-        print_r(json_decode(array_pop($this->debugContainer)['request']->getBody()));
-    }
+    public const API_URI = 'https://api.bigcommerce.com/stores/%s/v3/';
 
     public function catalog(): CatalogApi
     {
@@ -194,5 +177,10 @@ class Client
     public function redirects(): RedirectsApi
     {
         return new RedirectsApi($this);
+    }
+
+    protected function defaultBaseUrl(): string
+    {
+        return self::API_URI;
     }
 }

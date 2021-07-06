@@ -1,12 +1,11 @@
+### Changes
+
+This release changes the root API client class from `BigCommerce\ApiV3\Client` 
+to `BigCommerce\ApiV3\BaseApiClient`. The interface is unchanged, this abstract class
+has been added to allow for a common parent to both the V3 and V2 apis.
+
 ### New Features
 
-- Add `Redirect::toProduct()` and `toCategory()` methods. See 
-  [documentation](https://aligent.github.io/bigcommerce-v3-api-php-client/classes/BigCommerce-ApiV3-ResourceModels-Redirect-Redirect.html) 
-  for details.
-  
-- Add ability for batch update to auto-retry chunks
-
-### Fixes
-
-- Fixes bug in creating/updating Customer Addresses (thanks @davidnathanael)
-  
+ - Add support for creating Orders via the V2 API. It's a bit rough at the moment,
+   but since this hasn't been implemented in BigCommerce V3 yet, it will do. In the future
+   this will be removed in favour of a V3 API.
