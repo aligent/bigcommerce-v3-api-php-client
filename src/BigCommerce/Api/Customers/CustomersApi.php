@@ -22,6 +22,13 @@ class CustomersApi extends CustomerApiBase
         return new CustomersResponse($this->getAllResources($filters, $page, $limit));
     }
 
+    public function getAllPages(array $filter = []): CustomersResponse
+    {
+        return CustomersResponse::buildFromAllPages(function ($page) use ($filter) {
+            return $this->getAllResources($filter, $page, 200);
+        });
+    }
+
     public function getByEmail(string $email): ?Customer
     {
         $customers = $this->getAll([self::FILTER__EMAIL_IN => $email])->getCustomers();
