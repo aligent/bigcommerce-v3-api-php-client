@@ -3,10 +3,9 @@
 namespace BigCommerce\ApiV3\ResponseModels\Customer;
 
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
-use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
-use stdClass;
+use BigCommerce\ApiV3\ResponseModels\PaginatedBatchableResponse;
 
-class CustomersResponse extends PaginatedResponse
+class CustomersResponse extends PaginatedBatchableResponse
 {
     /**
      * @return Customer[]

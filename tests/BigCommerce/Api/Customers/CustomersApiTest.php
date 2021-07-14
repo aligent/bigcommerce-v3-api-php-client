@@ -21,6 +21,15 @@ class CustomersApiTest extends BigCommerceApiTest
         $this->assertEquals('California', $customers[0]->addresses[0]->state_or_province);
     }
 
+    public function testCanGetAllPagesOfCustomers()
+    {
+        $this->setReturnData('customers__get_all.json');
+
+        $customersResponse = $this->getApi()->customers()->getAll();
+
+        $this->assertEquals(1, $customersResponse->getPagination()->total);
+    }
+
     public function testCanGetCustomerByEmail()
     {
         $this->setReturnData('customers__get_all.json');
