@@ -93,5 +93,15 @@ abstract class BaseApiClient
         print_r(json_decode(array_pop($this->debugContainer)['request']->getBody()));
     }
 
+    public function printDebugLastResponse()
+    {
+        print_r(json_decode(array_pop($this->debugContainer)['response']->getBody()));
+    }
+
     abstract protected function defaultBaseUrl(): string;
+
+    public function getDebugContainer(): array
+    {
+        return $this->debugContainer;
+    }
 }
