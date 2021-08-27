@@ -26,7 +26,7 @@ abstract class ResourceModel implements JsonSerializable
     {
         $data = [];
         foreach ($this as $key => $value) {
-            if (isset($this->$key)) {
+            if (isset($this->$key) && $key !== 'optionObject') {
                 $data[$key] = $value;
             }
         }
