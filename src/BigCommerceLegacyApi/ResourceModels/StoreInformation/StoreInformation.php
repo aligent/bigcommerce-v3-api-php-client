@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\ApiV2\ResourceModels\StoreInformation;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
