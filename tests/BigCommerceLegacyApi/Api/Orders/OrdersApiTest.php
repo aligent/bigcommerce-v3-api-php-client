@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\V2\Api\Carts;
+namespace BigCommerce\Tests\V2\Api\Orders;
 
 use BigCommerce\ApiV2\ResourceModels\Order\Order;
 use BigCommerce\ApiV2\ResourceModels\Order\OrderProduct;
