@@ -3,6 +3,8 @@
 namespace BigCommerce\ApiV2;
 
 use BigCommerce\ApiV2\Api\Orders\OrdersApi;
+use BigCommerce\ApiV2\Api\StoreInformation\StoreInformationApi;
+use BigCommerce\ApiV2\ResourceModels\Order\Order;
 use BigCommerce\ApiV3\BaseApiClient;
 
 /**
@@ -36,8 +38,13 @@ class V2ApiClient extends BaseApiClient
         return self::API_URL;
     }
 
-    public function orders()
+    public function orders(): OrdersApi
     {
         return new OrdersApi($this);
+    }
+
+    public function storeInformation(): StoreInformationApi
+    {
+        return new StoreInformationApi($this);
     }
 }
