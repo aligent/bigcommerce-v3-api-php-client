@@ -45,7 +45,7 @@ class Order extends ResourceModel
     public int $status_id;
     public string $base_handling_cost;
     public string $base_shipping_cost;
-    public string|float|int $base_wrapping_cost;
+    public string $base_wrapping_cost;
 
     public OrderBillingAddress $billing_address;
 
@@ -68,7 +68,7 @@ class Order extends ResourceModel
     public int $items_total;
     public bool $order_is_digital;
     public string $payment_method;
-    public string|int|float $payment_provider_id;
+    public string $payment_provider_id;
     public string $refunded_amount;
     public string $shipping_cost_ex_tax;
     public string $shipping_cost_inc_tax;
