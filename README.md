@@ -162,7 +162,7 @@ $brands = $api->catalog()->brands()->getAll()->getBrands();
 ## Development
 
 - Running tests: `composer run-script test`
-- Checking PHP style rules: `composer run-scruot check-style`
+- Checking PHP style rules: `composer run-script check-style`
 - Auto fix code style rules: `composer run-script fix-style`
 
 ### Writing Tests

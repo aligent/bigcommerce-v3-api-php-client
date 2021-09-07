@@ -1,6 +1,6 @@
 <?php
 
-namespace BigCommerce\Tests\Api\CustomTemplateAssociation;
+namespace BigCommerce\Tests\Api\CustomTemplateAssociations;
 
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
 use BigCommerce\ApiV3\ResourceModels\CustomTemplateAssociation\CustomTemplateAssociation;

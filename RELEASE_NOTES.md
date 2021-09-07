@@ -1,7 +1,5 @@
-### Changes
+### Fixes
 
- - The JSON output from ResourceModels will no longer include the `$optionObject` that was used to construct them.
+ - Fix invalid namespace in a test class (@AymericPlanche)
+ - Fix PHP compatibility issue in LegacyAPI class #90 (@AymericPlanche)
 
-### New Features
-
- - Implement Store Information endpoints
