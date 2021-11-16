@@ -32,6 +32,7 @@ class Product extends ResourceModel
     public float $sale_price;
     public array $categories;
     public int $brand_id;
+    public ?string $brand_name;
     public int $inventory_level;
     public int $inventory_warning_level;
     public string $inventory_tracking;
