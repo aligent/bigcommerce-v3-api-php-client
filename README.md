@@ -165,6 +165,8 @@ $brands = $api->catalog()->brands()->getAll()->getBrands();
 - Checking PHP style rules: `composer run-script check-style`
 - Auto fix code style rules: `composer run-script fix-style`
 
+If you do not have composer installed, you can use the docker version: `docker run --rm -it -v $PWD:/app composer run-script check-style`
+
 ### Writing Tests
 
 All tests are located in the _tests_ folder in the namespace `BigCommerce\Tests`. The namespace should match the class

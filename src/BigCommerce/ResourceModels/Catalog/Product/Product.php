@@ -32,6 +32,11 @@ class Product extends ResourceModel
     public float $sale_price;
     public array $categories;
     public int $brand_id;
+    /**
+     * @var string|null If brand_name is used, the brand will be created if it doesn't already exist. However,
+     *                  brand_name will never be part of a product response, only the brand_id will.
+     */
+    public ?string $brand_name;
     public int $inventory_level;
     public int $inventory_warning_level;
     public string $inventory_tracking;
