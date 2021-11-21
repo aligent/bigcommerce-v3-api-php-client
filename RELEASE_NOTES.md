@@ -1,5 +1,4 @@
 ### Fixes
 
- - Fix invalid namespace in a test class (@AymericPlanche)
- - Fix PHP compatibility issue in LegacyAPI class #90 (@AymericPlanche)
+ - Add `brand_name` property to Product (Issue #99, thanks @guillaume-sarramegna) 
 
