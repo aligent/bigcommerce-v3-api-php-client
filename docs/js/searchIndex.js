@@ -2916,6 +2916,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#property_brand_id"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003A\u0024brand_name",
+            "name": "brand_name",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#property_brand_name"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003A\u0024inventory_level",
             "name": "inventory_level",
             "summary": "",
@@ -7816,6 +7821,41 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV2-ResourceModels-StoreInformation-StoreInformation.html#property_features"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client",
+            "name": "Client",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html#method___construct"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client\u003A\u003AgetFileContents\u0028\u0029",
+            "name": "getFileContents",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html#method_getFileContents"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client\u003A\u003AuploadFile\u0028\u0029",
+            "name": "uploadFile",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html#method_uploadFile"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client\u003A\u003AgetUrl\u0028\u0029",
+            "name": "getUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html#method_getUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client\u003A\u003AgetGuzzleClient\u0028\u0029",
+            "name": "getGuzzleClient",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html#method_getGuzzleClient"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav\\Client\u003A\u003AprintDebug\u0028\u0029",
+            "name": "printDebug",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-WebDav-Client.html#method_printDebug"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -8095,6 +8135,11 @@ Search.appendIndex(
             "name": "Widget",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-responsemodels-widget.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\WebDav",
+            "name": "WebDav",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-webdav.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV2\\Api\\Generic",
             "name": "Generic",
