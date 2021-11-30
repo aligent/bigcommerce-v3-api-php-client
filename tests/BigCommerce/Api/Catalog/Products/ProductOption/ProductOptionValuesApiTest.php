@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests\Api\Catalog\Products\ProductOption;
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOptionValue;
@@ -17,7 +18,7 @@ class ProductOptionValuesApiTest extends BigCommerceApiTest
         $optionValue->is_default = true;
         $optionValue->label      = 'Colors';
         $optionValue->value_data = (object)[
-            "colors"=> ["#123c91, #FFFF00, #397a44"]
+            "colors" => ["#123c91, #FFFF00, #397a44"]
         ];
 
         $productOptionValuesApi = $this->getApi()->catalog()->product($productId)->option($optionId)->values();
