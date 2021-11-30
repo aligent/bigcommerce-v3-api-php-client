@@ -33,6 +33,7 @@ class BrandsApi extends ResourceApi
     private const BRAND_ENDPOINT  = 'catalog/brands/%d';
     private const BRANDS_ENDPOINT = 'catalog/brands';
 
+    public const DO_NOT_MERGE = "this because it's only to test the new phpcs github action with annotations. This line is clearly too long.";
     public const FILTER_INCLUDE_FIELDS = 'include_fields';
     public const FILTER_EXCLUDE_FIELDS = 'exclude_fields';
 
