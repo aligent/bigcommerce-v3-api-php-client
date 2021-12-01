@@ -1,0 +1,13 @@
+{
+  "data": {
+    "id": 44,
+    "label": "Pick a color",
+    "sort_order": 9,
+    "value_data": {
+      "colors": [
+        "#123c91, #FFFF00, #397a44"
+      ]
+    },
+    "is_default": false
+  }
+}
