@@ -7,6 +7,12 @@ use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductOptionValue;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValueResponse;
 use BigCommerce\ApiV3\ResponseModels\Product\ProductOptionValuesResponse;
 
+/**
+ * Referred to in the documentation as Product Variant Options Values
+ *
+ * https://developer.bigcommerce.com/api-reference/store-management/catalog/product-variant-option-values/createoptionvalue
+ *
+ */
 class ProductOptionValuesApi extends ResourceApi
 {
     private int $productId;
