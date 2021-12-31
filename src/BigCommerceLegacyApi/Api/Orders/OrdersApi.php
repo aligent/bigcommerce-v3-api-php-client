@@ -5,6 +5,8 @@ namespace BigCommerce\ApiV2\Api\Orders;
 use BigCommerce\ApiV2\Api\Generic\V2ApiBase;
 use BigCommerce\ApiV2\ResourceModels\Order\Order;
 use BigCommerce\ApiV3\Api\Generic\CreateResource;
+use BigCommerce\ApiV3\Api\Generic\GetResource;
+use BigCommerce\ApiV2\ResponseModels\Order\Order as OrderResponse;
 
 /**
  * Orders v2 API
@@ -30,6 +32,7 @@ use BigCommerce\ApiV3\Api\Generic\CreateResource;
 class OrdersApi extends V2ApiBase
 {
     use CreateResource;
+    use GetResource;
 
     private const ORDERS_ENDPOINT = 'orders';
     private const ORDER_ENDPOINT  = 'orders/%d';
@@ -49,5 +52,12 @@ class OrdersApi extends V2ApiBase
         $response = $this->createResource($order);
 
         return json_decode($response->getBody());
+    }
+
+    public function get(): ?OrderResponse
+    {
+        $response = $this->getResource();
+
+        return new OrderResponse(json_decode($response->getBody()));
     }
 }

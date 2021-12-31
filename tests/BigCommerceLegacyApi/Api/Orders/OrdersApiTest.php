@@ -21,4 +21,16 @@ class OrdersApiTest extends V2ApiClientTest
         $this->assertEquals(218, $response->id);
         $this->assertEquals('orders', $this->getLastRequestPath());
     }
+
+    public function testCanGetOrder()
+    {
+        $api = new \BigCommerce\ApiV2\V2ApiClient(
+
+        );
+
+        $orderResponse = $api->order(101)->get();
+
+
+        $this->markTestIncomplete();
+    }
 }
