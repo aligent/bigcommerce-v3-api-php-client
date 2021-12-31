@@ -24,13 +24,18 @@ class OrdersApiTest extends V2ApiClientTest
 
     public function testCanGetOrder()
     {
-        $api = new \BigCommerce\ApiV2\V2ApiClient(
+        $this->setReturnData('orders_v2__101__get.json');
+        $orderResponse = $this->getApi()->order(101)->get();
 
-        );
+        $this->assertEquals(101, $orderResponse->id);
+        $this->assertEquals('321 Main Street', $orderResponse->billing_address->street_1);
+    }
 
-        $orderResponse = $api->order(101)->get();
+    public function testCanGetOrders()
+    {
+        $this->setReturnData('orders_v2__get_all.json');
+        $orders = $this->getApi()->orders()->getAll([], 1, 3);
 
-
-        $this->markTestIncomplete();
+        $this->assertEquals('123 Main Street', $orders[2]->billing_address->street_1);
     }
 }
