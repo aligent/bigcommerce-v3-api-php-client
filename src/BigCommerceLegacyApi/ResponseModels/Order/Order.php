@@ -7,7 +7,6 @@ use BigCommerce\ApiV2\ResourceModels\ResourceReference;
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;
 
-
 class Order extends ResourceModel
 {
     public ?int $id;

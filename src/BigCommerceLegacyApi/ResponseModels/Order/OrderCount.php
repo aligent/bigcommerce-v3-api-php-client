@@ -1,6 +1,7 @@
 <?php
 
 namespace BigCommerce\ApiV2\ResponseModels\Order;
+
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 use stdClass;
 
