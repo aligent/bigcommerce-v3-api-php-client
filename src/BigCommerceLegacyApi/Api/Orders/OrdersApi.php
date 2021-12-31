@@ -4,6 +4,7 @@ namespace BigCommerce\ApiV2\Api\Orders;
 
 use BigCommerce\ApiV2\Api\Generic\V2ApiBase;
 use BigCommerce\ApiV2\ResourceModels\Order\Order;
+use BigCommerce\ApiV2\ResourceModels\Order\OrderProduct;
 use BigCommerce\ApiV2\ResponseModels\Order\OrderCount;
 use BigCommerce\ApiV3\Api\Generic\CreateResource;
 use BigCommerce\ApiV3\Api\Generic\GetAllResources;
@@ -13,13 +14,20 @@ use BigCommerce\ApiV2\ResponseModels\Order\Order as OrderResponse;
 /**
  * Orders v2 API
  *
+ * Some functionality for Orders is not available in V3, so this V2 API class has been implemented.
+ *
+ * @see \BigCommerce\ApiV3\Api\Orders\OrdersApi for the V3 API
  *
  * ### Example
  *
+ * #### Create an Order
  * ```php
  * $api = new BigCommerce\ApiV2\V2ApiClient($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
  *
  * $order = new BigCommerce\ApiV2\ResourceModels\Order\Order();
+ * $order->products = [
+ *     OrderProduct::build('test', 1, 12, 10),
+ * ];
  * // set order details...
  *
  * try {
@@ -28,6 +36,13 @@ use BigCommerce\ApiV2\ResponseModels\Order\Order as OrderResponse;
  * } catch (\Psr\Http\Client\ClientExceptionInterface $exception) {
  *     echo "Unable to update product: {$exception->getMessage()}";
  * }
+ * ```
+ *
+ * #### Get Order Counts
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV2\V2ApiClient($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ * $ordersAwaitingFulfillmentCount = $api->orders()->count()->statuses['Awaiting Fulfillment'];
  * ```
  */
 class OrdersApi extends V2ApiBase
