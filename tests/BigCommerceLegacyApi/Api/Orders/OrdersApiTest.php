@@ -38,4 +38,12 @@ class OrdersApiTest extends V2ApiClientTest
 
         $this->assertEquals('123 Main Street', $orders[2]->billing_address->street_1);
     }
+
+    public function testCanGetOrderCount()
+    {
+        $this->setReturnData('orders_v2__get_order_count.json');
+        $orderCount = $this->getApi()->orders()->count();
+        $this->assertEquals(1, $orderCount->statuses['Shipped']->count);
+        $this->assertEquals(13, $orderCount->count);
+    }
 }

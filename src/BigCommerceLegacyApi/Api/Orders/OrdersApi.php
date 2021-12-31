@@ -4,6 +4,7 @@ namespace BigCommerce\ApiV2\Api\Orders;
 
 use BigCommerce\ApiV2\Api\Generic\V2ApiBase;
 use BigCommerce\ApiV2\ResourceModels\Order\Order;
+use BigCommerce\ApiV2\ResponseModels\Order\OrderCount;
 use BigCommerce\ApiV3\Api\Generic\CreateResource;
 use BigCommerce\ApiV3\Api\Generic\GetAllResources;
 use BigCommerce\ApiV3\Api\Generic\GetResource;
@@ -12,7 +13,6 @@ use BigCommerce\ApiV2\ResponseModels\Order\Order as OrderResponse;
 /**
  * Orders v2 API
  *
- * Currently only implements _create_.
  *
  * ### Example
  *
@@ -38,6 +38,7 @@ class OrdersApi extends V2ApiBase
 
     private const ORDERS_ENDPOINT = 'orders';
     private const ORDER_ENDPOINT  = 'orders/%d';
+    private const ORDER_COUNT_ENDPOINT = '/orders/count';
 
     public function singleResourceUrl(): string
     {
@@ -71,5 +72,14 @@ class OrdersApi extends V2ApiBase
         $response = $this->getAllResources($filters, $page, $limit);
 
         return array_map(fn($r) => new OrderResponse($r), json_decode($response->getBody()));
+    }
+
+    public function count(): OrderCount
+    {
+        $response = $this->getClient()->getRestClient()->get(
+            self::ORDER_COUNT_ENDPOINT
+        );
+
+        return new OrderCount(json_decode($response->getBody()));
     }
 }
