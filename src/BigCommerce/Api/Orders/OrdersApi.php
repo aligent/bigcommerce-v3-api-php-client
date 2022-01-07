@@ -5,6 +5,14 @@ namespace BigCommerce\ApiV3\Api\Orders;
 use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
 use BigCommerce\ApiV3\ResponseModels\Order\TransactionsResponse;
 
+/**
+ * V3 Orders API
+ *
+ * V3 API for Orders is quite limited, so a V2 API client is provided.
+ *
+ * @see \BigCommerce\ApiV2\Api\Orders\OrdersApi
+ *
+ */
 class OrdersApi extends V3ApiBase
 {
     private const ORDER_ENDPOINT = 'orders/%d';

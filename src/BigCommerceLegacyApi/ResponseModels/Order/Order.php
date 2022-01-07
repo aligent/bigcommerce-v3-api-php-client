@@ -1,8 +1,11 @@
 <?php
 
-namespace BigCommerce\ApiV2\ResourceModels\Order;
+namespace BigCommerce\ApiV2\ResponseModels\Order;
 
+use BigCommerce\ApiV2\ResourceModels\Order\OrderBillingAddress;
+use BigCommerce\ApiV2\ResourceModels\ResourceReference;
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
+use stdClass;
 
 class Order extends ResourceModel
 {
@@ -30,15 +33,8 @@ class Order extends ResourceModel
     public bool $is_email_opt_in;
     public string $order_source;
 
-    /**
-     * @var OrderProduct[]
-     */
-    public array $products;
-
-    /**
-     * @var OrderShippingAddress[]
-     */
-    public array $shipping_addresses;
+    public ResourceReference $products;
+    public ResourceReference $shipping_addresses;
 
     public object $coupons;
 
@@ -81,4 +77,25 @@ class Order extends ResourceModel
     public string $total_inc_tax;
     public string $wrapping_cost_ex_tax;
     public string $wrapping_cost_inc_tax;
+
+
+    public function __construct(?stdClass $optionObject = null)
+    {
+        if (isset($optionObject->billing_address)) {
+            $this->billing_address = new OrderBillingAddress($optionObject->billing_address);
+            unset($optionObject->billing_address);
+        }
+
+        if (isset($optionObject->products)) {
+            $this->products = new ResourceReference($optionObject->products);
+            unset($optionObject->products);
+        }
+
+        if (isset($optionObject->shipping_addresses)) {
+            $this->shipping_addresses = new ResourceReference($optionObject->shipping_addresses);
+            unset($optionObject->shipping_addresses);
+        }
+
+        parent::__construct($optionObject);
+    }
 }
