@@ -86,4 +86,11 @@ class BigCommerceFilesClient
 
         return $response->getStatusCode() === 201;
     }
+
+    public function mkdir(string $dirname): bool
+    {
+        $response = $this->client->request('MKCOL', $dirname);
+
+        return $response->getStatusCode() === 201;
+    }
 }
