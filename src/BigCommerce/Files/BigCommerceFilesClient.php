@@ -50,7 +50,8 @@ class BigCommerceFilesClient
             self::DEFAULT_HANDLER  => $stack,
             self::DEFAULT_BASE_URI => $this->webdavPath,
             'auth' => [$this->webdavUsername, $this->webdavPassword, 'digest'],
-            'http_errors' => false
+            'http_errors' => false,
+            'version' => 1.1,
         ]);
     }
 
@@ -72,8 +73,17 @@ class BigCommerceFilesClient
         }
     }
 
-    public function put()
+    public function put(string $localFilename, string $targetFilename): bool
     {
+        $file = fopen($localFilename, 'r');
 
+        if (!$file) return false;
+
+        $response = $this->client->put($targetFilename,
+            [
+                'body' => $file
+            ]);
+
+        return $response->getStatusCode() === 201;
     }
 }
