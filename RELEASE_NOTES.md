@@ -1,4 +1,5 @@
-### Fixes
+### New Features
 
- - Fixes issue with Product Option Value API  
+- Implement V2 Get Order and Get all Orders
+
 
