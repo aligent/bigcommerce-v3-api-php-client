@@ -14,5 +14,5 @@ class ProductBulkPricingRule extends ResourceModel
     public int $quantity_min;
     public int $quantity_max;
     public string $type;
-    public int $amount;
+    public float $amount;
 }
