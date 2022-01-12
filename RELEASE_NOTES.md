@@ -1,4 +1,8 @@
+### New Features
+
+ - Implement V2 Get Order and Get all Orders
+
 ### Fixes
 
- - Fixes issue with Product Option Value API  
+ - Fixed error where amount was `int` instead of `float` in price rules
 

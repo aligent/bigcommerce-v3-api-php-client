@@ -43,6 +43,11 @@ class V2ApiClient extends BaseApiClient
         return new OrdersApi($this);
     }
 
+    public function order(int $orderId): OrdersApi
+    {
+        return new OrdersApi($this, $orderId);
+    }
+
     public function storeInformation(): StoreInformationApi
     {
         return new StoreInformationApi($this);
