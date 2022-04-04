@@ -2,15 +2,15 @@
 
 namespace BigCommerce\ApiV2\Api\Generic;
 
-use BigCommerce\ApiV2\V2ApiClient;
+use BigCommerce\ApiV3\BaseApiClient;
 
 class V2ApiBase implements V2Api
 {
-    private V2ApiClient $client;
+    private BaseApiClient $client;
     private ?int $resourceId;
     private ?int $parentResourceId;
 
-    public function __construct(V2ApiClient $client, ?int $resourceId = null, ?int $parentResourceId = null)
+    public function __construct(BaseApiClient $client, ?int $resourceId = null, ?int $parentResourceId = null)
     {
         $this->client = $client;
         $this->resourceId = $resourceId;
@@ -27,7 +27,7 @@ class V2ApiBase implements V2Api
         return $this->parentResourceId;
     }
 
-    public function getClient(): V2ApiClient
+    public function getClient(): BaseApiClient
     {
         return $this->client;
     }
