@@ -107,4 +107,14 @@ class OrdersApi extends V2ApiBase
     {
         return new OrderProductsApi($this->getClient(), $orderProductId, $this->getResourceId());
     }
+
+    public function shippingAddresses(): OrderShippingAddressesApi
+    {
+        return new OrderShippingAddressesApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function shippingAddress(int $id): OrderShippingAddressesApi
+    {
+        return new OrderShippingAddressesApi($this->getClient(), $id, $this->getResourceId());
+    }
 }
