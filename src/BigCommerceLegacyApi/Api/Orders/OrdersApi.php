@@ -97,4 +97,14 @@ class OrdersApi extends V2ApiBase
 
         return new OrderCount(json_decode($response->getBody()));
     }
+
+    public function products(): OrderProductsApi
+    {
+        return new OrderProductsApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function product(int $orderProductId): OrderProductsApi
+    {
+        return new OrderProductsApi($this->getClient(), $orderProductId, $this->getResourceId());
+    }
 }
