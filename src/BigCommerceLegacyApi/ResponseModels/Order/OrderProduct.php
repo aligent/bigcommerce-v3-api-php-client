@@ -33,13 +33,13 @@ class OrderProduct extends \BigCommerce\ApiV3\ResourceModels\ResourceModel
     public string $wrapping_cost_tax;
     public string $wrapping_message;
     public int $quantity_shipped;
-    public string $event_name;
-    public string $event_date;
+    public ?string $event_name;
+    public ?string $event_date;
     public string $fixed_shipping_cost;
-    public string $ebay_item_id;
-    public string $ebay_transaction_id;
-    public int $option_set_id;
-    public int $parent_order_product_id;
+    public ?string $ebay_item_id;
+    public ?string $ebay_transaction_id;
+    public ?int $option_set_id;
+    public ?int $parent_order_product_id;
     public bool $is_bundled_product;
     public string $bin_picking_number;
     public array $applied_discounts;
@@ -48,9 +48,9 @@ class OrderProduct extends \BigCommerce\ApiV3\ResourceModels\ResourceModel
      * @var OrderProductOption[]
      */
     public array $product_options;
-    public string $external_id;
-    public string $upc;
-    public int $variant_id;
+    public ?string $external_id;
+    public ?string $upc;
+    public ?int $variant_id;
     public string $name_merchant;
 
     public function __construct(?stdClass $optionObject = null)
