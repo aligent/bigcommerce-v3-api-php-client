@@ -7,6 +7,22 @@ use BigCommerce\ApiV2\ResponseModels\Order\OrderProduct;
 use BigCommerce\ApiV3\Api\Generic\GetAllResources;
 use BigCommerce\ApiV3\Api\Generic\GetResource;
 
+/**
+ * Order Products v2 API
+ *
+ * For listing the products in an order.
+ *
+ * ### Example
+ * #### Get Order Products
+ *
+ * ```php
+ * $api = new BigCommerce\ApiV2\V2ApiClient($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['ACCESS_TOKEN']);
+ * $orderId = 231;
+ * $products = $api->order($orderId)->products();
+ *
+ * $productNamesOrdered = array_column('name', $products);
+ * ```
+ */
 class OrderProductsApi extends V2ApiBase
 {
     use GetResource;

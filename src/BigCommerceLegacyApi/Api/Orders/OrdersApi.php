@@ -4,7 +4,6 @@ namespace BigCommerce\ApiV2\Api\Orders;
 
 use BigCommerce\ApiV2\Api\Generic\V2ApiBase;
 use BigCommerce\ApiV2\ResourceModels\Order\Order;
-use BigCommerce\ApiV2\ResourceModels\Order\OrderProduct;
 use BigCommerce\ApiV2\ResponseModels\Order\OrderCount;
 use BigCommerce\ApiV3\Api\Generic\CreateResource;
 use BigCommerce\ApiV3\Api\Generic\GetAllResources;
@@ -17,6 +16,7 @@ use BigCommerce\ApiV2\ResponseModels\Order\Order as OrderResponse;
  * Some functionality for Orders is not available in V3, so this V2 API class has been implemented.
  *
  * @see \BigCommerce\ApiV3\Api\Orders\OrdersApi for the V3 API
+ * @see OrderProductsApi for listing the products in an order
  *
  * ### Example
  *
