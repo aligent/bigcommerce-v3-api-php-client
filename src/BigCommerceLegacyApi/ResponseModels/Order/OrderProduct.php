@@ -26,12 +26,12 @@ class OrderProduct extends \BigCommerce\ApiV3\ResourceModels\ResourceModel
     public bool $is_refunded;
     public string $refunded_amount;
     public int $return_id;
-    public string $wrapping_name;
+    public ?string $wrapping_name;
     public string $base_wrapping_cost;
     public string $wrapping_cost_ex_tax;
     public string $wrapping_cost_inc_tax;
     public string $wrapping_cost_tax;
-    public string $wrapping_message;
+    public ?string $wrapping_message;
     public int $quantity_shipped;
     public ?string $event_name;
     public ?string $event_date;
@@ -41,7 +41,7 @@ class OrderProduct extends \BigCommerce\ApiV3\ResourceModels\ResourceModel
     public ?int $option_set_id;
     public ?int $parent_order_product_id;
     public bool $is_bundled_product;
-    public string $bin_picking_number;
+    public ?string $bin_picking_number;
     public array $applied_discounts;
 
     /**
