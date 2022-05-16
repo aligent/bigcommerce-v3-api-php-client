@@ -33,7 +33,7 @@ class CustomersApi extends CustomerApiBase
     {
         $customers = $this->getAll([self::FILTER__EMAIL_IN => $email])->getCustomers();
 
-        if (!$customers[0]) {
+        if (count($customers) === 0) {
             return null;
         } elseif (count($customers) > 1) {
             throw new UnexpectedValueException("There are more than one customer with the email address $email");
