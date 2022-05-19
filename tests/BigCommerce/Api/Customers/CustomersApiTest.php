@@ -38,6 +38,14 @@ class CustomersApiTest extends BigCommerceApiTest
         $this->assertEquals('John', $customer->first_name);
     }
 
+    public function testUnknownCustomerReturnsEmptyResult()
+    {
+        $this->setReturnData('customers__get_all_no_results.json');
+        $customer = $this->getApi()->customers()->getByEmail('wade.wilson@spam.me');
+
+        $this->assertNull($customer);
+    }
+
     public function testCanGetCustomerById()
     {
         $this->setReturnData('customers__get_all.json');

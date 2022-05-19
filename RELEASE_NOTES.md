@@ -1,7 +1,7 @@
-### New Features
+### Fixes
 
-- Implement V2 Order Products API
-- Implement V2 Order Shipping Addresses API (read-only)
+- Fixes _Undefined index within customer getByEmail method_ (thanks @dniccum)
+
 
 
 
