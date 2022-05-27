@@ -20,13 +20,10 @@ class ProductModifierValue implements JsonSerializable
     {
         $modifierValue = new ProductModifierValue(null, '');
         foreach ($optionObject as $key => $value) {
-            switch ($key) {
-                case 'adjusters':
-                    $modifierValue->$key = new ProductModifierValueAdjuster($optionObject->$key);
-                    break;
-                default:
-                    $modifierValue->$key = $value;
-            }
+            $modifierValue->$key = match ($key) {
+                'adjusters' => new ProductModifierValueAdjuster($optionObject->$key),
+                default => $value,
+            };
         }
 
         return $modifierValue;
