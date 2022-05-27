@@ -37,9 +37,7 @@ abstract class PaginatedResponse
 
     protected function mapDataAsClass(array $data, string $className): array
     {
-        return array_map(function (stdClass $c) use ($className) {
-            return new $className($c);
-        }, $data);
+        return array_map(fn (stdClass $c) => new $className($c), $data);
     }
 
     protected function getData(): array
