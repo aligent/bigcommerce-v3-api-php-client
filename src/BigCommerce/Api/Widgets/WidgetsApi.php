@@ -7,11 +7,8 @@ use BigCommerce\ApiV3\Client;
 
 class WidgetsApi
 {
-    private Client $client;
-
-    public function __construct(Client $client)
+    public function __construct(private Client $client)
     {
-        $this->client = $client;
     }
 
     public function widget(string $id): WidgetApi

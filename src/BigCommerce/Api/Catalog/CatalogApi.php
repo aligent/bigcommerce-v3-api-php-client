@@ -10,11 +10,8 @@ use BigCommerce\ApiV3\Client;
 
 class CatalogApi
 {
-    private Client $client;
-
-    public function __construct(Client $client)
+    public function __construct(private Client $client)
     {
-        $this->client = $client;
     }
 
     public function products(): ProductsApi

@@ -17,12 +17,6 @@ abstract class BaseApiClient
     private const HEADERS__ACCEPT       = 'Accept';
     private const APPLICATION_JSON      = 'application/json';
 
-    private string $storeHash;
-
-    private string $clientId;
-
-    private string $accessToken;
-
     private string $baseUri;
 
     private \GuzzleHttp\Client $client;
@@ -30,14 +24,11 @@ abstract class BaseApiClient
     private array $debugContainer = [];
 
     public function __construct(
-        string $storeHash,
-        string $clientId,
-        string $accessToken,
+        private string $storeHash,
+        private string $clientId,
+        private string $accessToken,
         ?\GuzzleHttp\Client $client = null
     ) {
-        $this->storeHash    = $storeHash;
-        $this->clientId     = $clientId;
-        $this->accessToken  = $accessToken;
         $this->setBaseUri(sprintf($this->defaultBaseUrl(), $this->storeHash));
 
         $this->client = $client ?? $this->buildDefaultHttpClient();

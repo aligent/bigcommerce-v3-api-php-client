@@ -8,16 +8,12 @@ class ProductModifierValue implements JsonSerializable
 {
     public int $id;
     public int $option_id;
-    public ?int $productId;
-    public string $label;
     public bool $is_default = false;
     public int $sort_order;
     public ?ProductModifierValueAdjuster $adjusters;
 
-    public function __construct(?int $productId, string $label)
+    public function __construct(public ?int $productId, public string $label)
     {
-        $this->productId = $productId;
-        $this->label = $label;
     }
 
     public static function buildFromResponse(\stdClass $optionObject): ProductModifierValue
