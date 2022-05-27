@@ -174,7 +174,7 @@ class BrandsApi extends ResourceApi
      */
     public function image(): BrandImageApi
     {
-        return new BrandImageApi($this->getClient(), null, $this->getResourceId());
+        return new BrandImageApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     /**
@@ -188,7 +188,7 @@ class BrandsApi extends ResourceApi
      */
     public function metafields(): BrandMetafieldsApi
     {
-        return new BrandMetafieldsApi($this->getClient(), null, $this->getResourceId());
+        return new BrandMetafieldsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     /**

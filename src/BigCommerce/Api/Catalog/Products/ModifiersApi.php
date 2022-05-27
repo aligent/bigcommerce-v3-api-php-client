@@ -52,7 +52,7 @@ class ModifiersApi extends ResourceApi
 
     public function values(): ProductModifierValuesApi
     {
-        $api = new ProductModifierValuesApi($this->getClient(), null, $this->getResourceId());
+        $api = new ProductModifierValuesApi($this->getClient(), parentResourceId: $this->getResourceId());
         $api->setProductId($this->getParentResourceId());
         return $api;
     }

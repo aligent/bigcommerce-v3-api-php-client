@@ -29,7 +29,7 @@ class OrdersApi extends V3ApiBase
 
     public function refunds(): RefundsApi
     {
-        return new RefundsApi($this->getClient(), null, $this->getResourceId());
+        return new RefundsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function refund(): RefundsApi
@@ -39,7 +39,7 @@ class OrdersApi extends V3ApiBase
 
     public function metafields(): OrderMetafieldsApi
     {
-        return new OrderMetafieldsApi($this->getClient(), null, $this->getResourceId());
+        return new OrderMetafieldsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function metafield(int $id): OrderMetafieldsApi

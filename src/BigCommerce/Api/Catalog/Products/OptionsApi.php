@@ -51,7 +51,7 @@ class OptionsApi extends ResourceApi
 
     public function values(): ProductOptionValuesApi
     {
-        $api = new ProductOptionValuesApi($this->getClient(), null, $this->getResourceId());
+        $api = new ProductOptionValuesApi($this->getClient(), parentResourceId: $this->getResourceId());
         $api->setProductId($this->getParentResourceId());
         return $api;
     }

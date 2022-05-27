@@ -78,16 +78,16 @@ class ChannelsApi extends ResourceApiNoDelete
 
     public function listings(): ChannelListingsApi
     {
-        return new ChannelListingsApi($this->getClient(), null, $this->getResourceId());
+        return new ChannelListingsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function site(): ChannelSitesApi
     {
-        return new ChannelSitesApi($this->getClient(), null, $this->getResourceId());
+        return new ChannelSitesApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function currencyAssignments(): ChannelCurrencyAssignmentsApi
     {
-        return new ChannelCurrencyAssignmentsApi($this->getClient(), null, $this->getResourceId());
+        return new ChannelCurrencyAssignmentsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 }

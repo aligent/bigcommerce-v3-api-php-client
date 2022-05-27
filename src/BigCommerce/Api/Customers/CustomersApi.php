@@ -90,7 +90,7 @@ class CustomersApi extends CustomerApiBase
             throw new UnexpectedValueException('Customer ID must be set');
         }
 
-        return new CustomerConsentApi($this->getClient(), null, $this->getResourceId());
+        return new CustomerConsentApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function subscriber(int $id): SubscribersApi
@@ -100,6 +100,6 @@ class CustomersApi extends CustomerApiBase
 
     public function subscribers(): SubscribersApi
     {
-        return new SubscribersApi($this->getClient(), null, $this->getParentResourceId());
+        return new SubscribersApi($this->getClient(), parentResourceId: $this->getParentResourceId());
     }
 }

@@ -12,7 +12,7 @@ trait ProductsSubResourceApi
 
     public function variants(): VariantsApi
     {
-        return new VariantsApi($this->getClient(), null, $this->getResourceId());
+        return new VariantsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function variant(int $variantId): VariantsApi
@@ -23,7 +23,7 @@ trait ProductsSubResourceApi
 
     public function modifiers(): ModifiersApi
     {
-        return new ModifiersApi($this->getClient(), null, $this->getResourceId());
+        return new ModifiersApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function modifier(int $modifierId): ModifiersApi
@@ -33,7 +33,7 @@ trait ProductsSubResourceApi
 
     public function complexRules(): ComplexRulesApi
     {
-        return new ComplexRulesApi($this->getClient(), null, $this->getResourceId());
+        return new ComplexRulesApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function complexRule(int $ruleId): ComplexRulesApi
@@ -43,7 +43,7 @@ trait ProductsSubResourceApi
 
     public function customFields(): CustomFieldsApi
     {
-        return new CustomFieldsApi($this->getClient(), null, $this->getResourceId());
+        return new CustomFieldsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function customField(int $customFieldId): CustomFieldsApi
@@ -53,7 +53,7 @@ trait ProductsSubResourceApi
 
     public function options(): OptionsApi
     {
-        return new OptionsApi($this->getClient(), null, $this->getResourceId());
+        return new OptionsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function option(int $optionId): OptionsApi
@@ -63,7 +63,7 @@ trait ProductsSubResourceApi
 
     public function images(): ProductImagesApi
     {
-        return new ProductImagesApi($this->getClient(), null, $this->getResourceId());
+        return new ProductImagesApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function image(int $imageId): ProductImagesApi
@@ -78,7 +78,7 @@ trait ProductsSubResourceApi
 
     public function bulkPricingRules(): ProductBulkPricingRulesApi
     {
-        return new ProductBulkPricingRulesApi($this->getClient(), null, $this->getResourceId());
+        return new ProductBulkPricingRulesApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function metafield(int $metafieldId): ProductMetafieldsApi
@@ -88,7 +88,7 @@ trait ProductsSubResourceApi
 
     public function metafields(): ProductMetafieldsApi
     {
-        return new ProductMetafieldsApi($this->getClient(), null, $this->getResourceId());
+        return new ProductMetafieldsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function review(int $reviewId): ProductReviewsApi
@@ -98,7 +98,7 @@ trait ProductsSubResourceApi
 
     public function reviews(): ProductReviewsApi
     {
-        return new ProductReviewsApi($this->getClient(), null, $this->getResourceId());
+        return new ProductReviewsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 
     public function video(int $videoId): ProductVideosApi
@@ -108,6 +108,6 @@ trait ProductsSubResourceApi
 
     public function videos(): ProductVideosApi
     {
-        return new ProductVideosApi($this->getClient(), null, $this->getResourceId());
+        return new ProductVideosApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 }

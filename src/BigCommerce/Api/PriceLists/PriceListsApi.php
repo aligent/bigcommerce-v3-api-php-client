@@ -44,6 +44,6 @@ class PriceListsApi extends ResourceApi
 
     public function records(): PriceListRecordsApi
     {
-        return new PriceListRecordsApi($this->getClient(), null, $this->getResourceId());
+        return new PriceListRecordsApi($this->getClient(), parentResourceId: $this->getResourceId());
     }
 }
