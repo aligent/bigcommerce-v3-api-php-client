@@ -34,7 +34,7 @@ class StoreInformationApiTest extends V2ApiClientTest
 
         $information = $this->getApi()->storeInformation()->storeInformation();
 
-        $this->assertEquals('BigCommerce', $information->name);
+        $this->assertEquals('MLITest', $information->name);
         $this->assertNull($information->logo);
     }
 }
