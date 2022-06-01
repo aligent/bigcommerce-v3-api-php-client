@@ -22,7 +22,8 @@ class StoreInformationApiTest extends V2ApiClientTest
         $this->assertEquals('BigCommerce', $information->name);
         $this->assertEquals('my-awesome.store', $information->domain);
         $this->assertEquals(
-            'https://cdn8.bigcommerce.com/s-{store_hash}/product_images/screen_shot_2018-05-15_at_12.22.26_pm__05547_1529512135.png',
+            'https://cdn8.bigcommerce.com/s-{store_hash}/product_images/'
+            . 'screen_shot_2018-05-15_at_12.22.26_pm__05547_1529512135.png',
             $information->logo->url
         );
     }
