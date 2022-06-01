@@ -3,6 +3,7 @@
 namespace BigCommerce\ApiV2\ResourceModels\StoreInformation;
 
 use BigCommerce\ApiV3\ResourceModels\ResourceModel;
+use stdClass;
 
 class StoreInformation extends ResourceModel
 {
@@ -37,8 +38,16 @@ class StoreInformation extends ResourceModel
     public string $plan_name;
     public string $plan_level;
     public string $industry;
-    public object $logo;
+    public ?object $logo;
     public string $is_price_entered_with_tax;
     public array $active_comparison_modules;
     public object $features;
+
+    public function __construct(?stdClass $optionObject = null)
+    {
+        if (isset($optionObject->logo) && is_array($optionObject->logo)) {
+            $optionObject->logo = null;
+        }
+        parent::__construct($optionObject);
+    }
 }
