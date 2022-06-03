@@ -47,4 +47,17 @@ class VariantsApiTest extends BigCommerceApiTest
         $this->assertEquals(3, $variantsResponse->getPagination()->total);
         $this->assertCount(3, $variantsResponse->getProductVariants());
     }
+
+    public function testCanDeleteProductVariant(): void
+    {
+        $this->setReturnData(self::EMPTY_RESPONSE, 204);
+
+        $productId = 192;
+        $variantId = 384;
+
+        $this->getApi()->catalog()->product($productId)->variant($variantId)->delete();
+
+        $this->assertEquals("catalog/products/$productId/variants/$variantId", $this->getLastRequestPath());
+        $this->assertEquals('DELETE', $this->getLastRequest()->getMethod());
+    }
 }
