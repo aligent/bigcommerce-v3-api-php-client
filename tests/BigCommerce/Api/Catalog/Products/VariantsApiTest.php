@@ -25,6 +25,9 @@ class VariantsApiTest extends BigCommerceApiTest
         $variantResponse = $this->getApi()->catalog()->product($productId)->variant($variantId)->get();
         $this->assertEquals($productId, $variantResponse->getProductVariant()->product_id);
         $this->assertEquals($variantId, $variantResponse->getProductVariant()->id);
+
+        $this->assertEquals("catalog/products/$productId/variants/$variantId", $this->getLastRequestPath());
+        $this->assertEquals('GET', $this->getLastRequest()->getMethod());
     }
 
     public function testCanGetAllProductVariants(): void
