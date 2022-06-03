@@ -28,6 +28,14 @@ class VariantsApiTest extends BigCommerceApiTest
 
         $this->assertEquals("catalog/products/$productId/variants/$variantId", $this->getLastRequestPath());
         $this->assertEquals('GET', $this->getLastRequest()->getMethod());
+
+        $methods = array_map(function($r) {
+            return $r['request']->getMethod();
+        }, $this->getRequestHistory());
+
+        $this->assertNotContains('DELETE', $methods);
+        $this->assertNotContains('PUT', $methods);
+        $this->assertNotContains('POST', $methods);
     }
 
     public function testCanGetAllProductVariants(): void
