@@ -212,12 +212,48 @@
         "default_value": "2022-06-01T00:00:00+00:00"
       },
       "option_values": []
+    },
+    {
+      "id": 119,
+      "product_id": 6962,
+      "name": "File1654474739-6962",
+      "display_name": "File",
+      "type": "file",
+      "required": false,
+      "sort_order": 9,
+      "config": {
+        "file_types_mode": "specific",
+        "file_types_supported": [
+          "images"
+        ],
+        "file_types_other": [],
+        "file_max_size": 524288
+      },
+      "option_values": []
+    },
+    {
+      "id": 120,
+      "product_id": 6962,
+      "name": "Big-Text1654474739-6962",
+      "display_name": "Big Text",
+      "type": "multi_line_text",
+      "required": false,
+      "sort_order": 9,
+      "config": {
+        "default_value": "",
+        "text_characters_limited": false,
+        "text_min_length": 0,
+        "text_max_length": 0,
+        "text_lines_limited": true,
+        "text_max_lines": 20
+      },
+      "option_values": []
     }
   ],
   "meta": {
     "pagination": {
-      "total": 6,
-      "count": 6,
+      "total": 8,
+      "count": 8,
       "per_page": 50,
       "current_page": 1,
       "total_pages": 1,

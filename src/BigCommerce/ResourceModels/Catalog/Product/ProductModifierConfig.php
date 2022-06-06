@@ -22,7 +22,7 @@ class ProductModifierConfig extends ResourceModel
     public ?string $file_types_mode;
     public ?array $file_types_supported;
     public ?array $file_types_other;
-    public ?string $file_max_size;
+    public ?int $file_max_size;
 
     public ?bool $text_characters_limited;
     public ?int $text_min_length;
