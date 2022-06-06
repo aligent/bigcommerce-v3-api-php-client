@@ -66,7 +66,8 @@ class ModifiersApiTest extends BigCommerceApiTest
         );
 
         $this->assertEquals(
-            '{"file_types_mode":"specific","file_types_supported":["images"],"file_types_other":[],"file_max_size":524288}',
+            '{"file_types_mode":"specific","file_types_supported":["images"],' .
+            '"file_types_other":[],"file_max_size":524288}',
             json_encode($fileConfig)
         );
     }
