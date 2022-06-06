@@ -3361,15 +3361,125 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html"
         },                {
-            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003APRODUCT_LIST_SHIPPING_NONE",
+            "name": "PRODUCT_LIST_SHIPPING_NONE",
             "summary": "",
-            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#method___construct"
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#constant_PRODUCT_LIST_SHIPPING_NONE"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003APRODUCT_LIST_SHIPPING_BY_WEIGHT",
             "name": "PRODUCT_LIST_SHIPPING_BY_WEIGHT",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#constant_PRODUCT_LIST_SHIPPING_BY_WEIGHT"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003APRODUCT_LIST_SHIPPING_BY_PACKAGE",
+            "name": "PRODUCT_LIST_SHIPPING_BY_PACKAGE",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#constant_PRODUCT_LIST_SHIPPING_BY_PACKAGE"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024default_value",
+            "name": "default_value",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_default_value"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024checked_by_default",
+            "name": "checked_by_default",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_checked_by_default"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024checkbox_label",
+            "name": "checkbox_label",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_checkbox_label"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024date_limited",
+            "name": "date_limited",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_date_limited"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024date_limit_mode",
+            "name": "date_limit_mode",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_date_limit_mode"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024date_earliest_value",
+            "name": "date_earliest_value",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_date_earliest_value"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024date_latest_value",
+            "name": "date_latest_value",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_date_latest_value"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024file_types_mode",
+            "name": "file_types_mode",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_file_types_mode"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024file_types_supported",
+            "name": "file_types_supported",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_file_types_supported"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024file_types_other",
+            "name": "file_types_other",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_file_types_other"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024file_max_size",
+            "name": "file_max_size",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_file_max_size"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024text_characters_limited",
+            "name": "text_characters_limited",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_text_characters_limited"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024text_min_length",
+            "name": "text_min_length",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_text_min_length"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024text_max_length",
+            "name": "text_max_length",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_text_max_length"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024text_lines_limited",
+            "name": "text_lines_limited",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_text_lines_limited"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024text_max_lines",
+            "name": "text_max_lines",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_text_max_lines"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024number_limited",
+            "name": "number_limited",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_number_limited"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024number_limit_mode",
+            "name": "number_limit_mode",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_number_limit_mode"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024number_lowest_value",
+            "name": "number_lowest_value",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_number_lowest_value"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024number_highest_value",
+            "name": "number_highest_value",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_number_highest_value"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024number_integers_only",
+            "name": "number_integers_only",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-ProductModifierConfig.html#property_number_integers_only"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductModifierConfig\u003A\u003A\u0024product_list_adjusts_inventory",
             "name": "product_list_adjusts_inventory",
@@ -7081,6 +7191,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-BaseApiClient.html#method_printDebugLastRequest"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\BaseApiClient\u003A\u003AgetDebugContainer\u0028\u0029",
+            "name": "getDebugContainer",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-BaseApiClient.html#method_getDebugContainer"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\BaseApiClient\u003A\u003ADEFAULT_HANDLER",
             "name": "DEFAULT_HANDLER",
             "summary": "",
@@ -7685,6 +7800,11 @@ Search.appendIndex(
             "name": "StoreInformation",
             "summary": "",
             "url": "classes/BigCommerce-ApiV2-ResourceModels-StoreInformation-StoreInformation.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV2\\ResourceModels\\StoreInformation\\StoreInformation\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV2-ResourceModels-StoreInformation-StoreInformation.html#method___construct"
         },                {
             "fqsen": "\\BigCommerce\\ApiV2\\ResourceModels\\StoreInformation\\StoreInformation\u003A\u003A\u0024id",
             "name": "id",
