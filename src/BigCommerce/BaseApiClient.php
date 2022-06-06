@@ -94,4 +94,9 @@ abstract class BaseApiClient
     }
 
     abstract protected function defaultBaseUrl(): string;
+
+    public function getDebugContainer(): array
+    {
+        return $this->debugContainer;
+    }
 }

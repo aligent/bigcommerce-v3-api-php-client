@@ -30,11 +30,7 @@ class ProductModifier extends ResourceModel
             !is_null($optionObject) && !empty($optionObject->config)
             && get_class($optionObject->config) !== ProductModifierConfig::class
         ) {
-            $this->config = new ProductModifierConfig(
-                $optionObject->config->product_list_adjusts_inventory,
-                $optionObject->config->product_list_adjusts_pricing,
-                $optionObject->config->product_list_shipping_calc
-            );
+            $this->config = new ProductModifierConfig($optionObject->config);
         }
 
         if (!is_null($optionObject) && isset($optionObject->config)) {

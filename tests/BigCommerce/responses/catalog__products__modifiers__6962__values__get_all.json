@@ -1,0 +1,265 @@
+{
+  "data": [
+    {
+      "id": 113,
+      "product_id": 6962,
+      "name": "Custom-Message1654474736-6962",
+      "display_name": "Custom Message",
+      "type": "text",
+      "required": true,
+      "sort_order": 5,
+      "config": {
+        "default_value": "",
+        "text_characters_limited": false,
+        "text_min_length": 0,
+        "text_max_length": 0
+      },
+      "option_values": []
+    },
+    {
+      "id": 114,
+      "product_id": 6962,
+      "name": "Include-Insurance?1654474736-6962",
+      "display_name": "Include Insurance?",
+      "type": "checkbox",
+      "required": false,
+      "sort_order": 6,
+      "config": {
+        "checkbox_label": "",
+        "checked_by_default": true
+      },
+      "option_values": [
+        {
+          "id": 98,
+          "option_id": 114,
+          "label": "Yes",
+          "sort_order": 0,
+          "value_data": {
+            "checked_value": true
+          },
+          "is_default": true,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        },
+        {
+          "id": 99,
+          "option_id": 114,
+          "label": "No",
+          "sort_order": 1,
+          "value_data": {
+            "checked_value": false
+          },
+          "is_default": false,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "product_id": 6962,
+      "name": "List1654474737-6962",
+      "display_name": "List",
+      "type": "radio_buttons",
+      "required": true,
+      "sort_order": 7,
+      "config": [],
+      "option_values": [
+        {
+          "id": 100,
+          "option_id": 115,
+          "label": "1",
+          "sort_order": 0,
+          "value_data": null,
+          "is_default": false,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        },
+        {
+          "id": 101,
+          "option_id": 115,
+          "label": "2",
+          "sort_order": 1,
+          "value_data": null,
+          "is_default": false,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "product_id": 6962,
+      "name": "Products1654474737-6962",
+      "display_name": "Products",
+      "type": "product_list_with_images",
+      "required": false,
+      "sort_order": 8,
+      "config": {
+        "product_list_adjusts_inventory": true,
+        "product_list_adjusts_pricing": true,
+        "product_list_shipping_calc": "weight"
+      },
+      "option_values": [
+        {
+          "id": 102,
+          "option_id": 116,
+          "label": "Husqvarna DS150 Drill Stand Suits Dm230 Drill - DS150",
+          "sort_order": 0,
+          "value_data": {
+            "product_id": 169
+          },
+          "is_default": false,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "product_id": 6962,
+      "name": "Dropdown1654474738-6962",
+      "display_name": "Dropdown",
+      "type": "dropdown",
+      "required": false,
+      "sort_order": 9,
+      "config": [],
+      "option_values": [
+        {
+          "id": 103,
+          "option_id": 117,
+          "label": "a",
+          "sort_order": 0,
+          "value_data": null,
+          "is_default": false,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        },
+        {
+          "id": 104,
+          "option_id": 117,
+          "label": "b",
+          "sort_order": 1,
+          "value_data": null,
+          "is_default": true,
+          "adjusters": {
+            "price": null,
+            "weight": null,
+            "image_url": "",
+            "purchasing_disabled": {
+              "status": false,
+              "message": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "product_id": 6962,
+      "name": "date1654474738-6962",
+      "display_name": "date",
+      "type": "date",
+      "required": false,
+      "sort_order": 9,
+      "config": {
+        "date_limited": false,
+        "date_limit_mode": "earliest",
+        "date_earliest_value": null,
+        "date_latest_value": null,
+        "default_value": "2022-06-01T00:00:00+00:00"
+      },
+      "option_values": []
+    },
+    {
+      "id": 119,
+      "product_id": 6962,
+      "name": "File1654474739-6962",
+      "display_name": "File",
+      "type": "file",
+      "required": false,
+      "sort_order": 9,
+      "config": {
+        "file_types_mode": "specific",
+        "file_types_supported": [
+          "images"
+        ],
+        "file_types_other": [],
+        "file_max_size": 524288
+      },
+      "option_values": []
+    },
+    {
+      "id": 120,
+      "product_id": 6962,
+      "name": "Big-Text1654474739-6962",
+      "display_name": "Big Text",
+      "type": "multi_line_text",
+      "required": false,
+      "sort_order": 9,
+      "config": {
+        "default_value": "",
+        "text_characters_limited": false,
+        "text_min_length": 0,
+        "text_max_length": 0,
+        "text_lines_limited": true,
+        "text_max_lines": 20
+      },
+      "option_values": []
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 8,
+      "count": 8,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "current": "?page=1&limit=50"
+      }
+    }
+  }
+}
