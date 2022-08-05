@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": 60474753,
+    "type": "checkout",
+    "matching": "5",
+    "route": "/my-amazing-product"
+  },
+  "meta": {}
+}

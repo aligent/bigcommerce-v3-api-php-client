@@ -3,8 +3,6 @@
 namespace BigCommerce\ApiV3\Api\Sites;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
-use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
 use BigCommerce\ApiV3\ResponseModels\Site\SiteResponse;
 use BigCommerce\ApiV3\ResponseModels\Site\SitesResponse;
 
@@ -39,13 +37,13 @@ class SitesApi extends ResourceApi
         return new SitesResponse($this->getAllResources($filters, $page, $limit));
     }
 
-    public function routes()
+    public function routes(): SiteRoutesApi
     {
+        return new SiteRoutesApi($this->getClient(), null, $this->getResourceId());
     }
 
-    public function route(int $id)
+    public function route(int $id): SiteRoutesApi
     {
+        return new SiteRoutesApi($this->getClient(), $id, $this->getResourceId());
     }
-
-    // certificate?
 }
