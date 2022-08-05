@@ -24,6 +24,13 @@ class SiteRoutesApiTest extends BigCommerceApiTest
 
     public function testCanCreateRoute()
     {
-        $this->markTestIncomplete();
+        $this->setReturnData('blank.json');
+        $route = new SiteRoute();
+        $route->route = '/checkout';
+        $route->type = SiteRoute::TYPE_CHECKOUT;
+        $route->matching = '*';
+
+        $response = $this->getApi()->site(1)->routes()->create($route);
+        $this->assertEquals(200, $response->getStatusCode());
     }
 }

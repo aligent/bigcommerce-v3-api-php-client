@@ -3,10 +3,10 @@
 namespace BigCommerce\ApiV3\Api\Sites;
 
 use BigCommerce\ApiV3\Api\Generic\ResourceApi;
-use BigCommerce\ApiV3\ResponseModels\PaginatedResponse;
-use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
+use BigCommerce\ApiV3\ResourceModels\Site\SiteRoute;
 use BigCommerce\ApiV3\ResponseModels\Site\SiteRouteResponse;
 use BigCommerce\ApiV3\ResponseModels\Site\SiteRoutesResponse;
+use Psr\Http\Message\ResponseInterface;
 
 class SiteRoutesApi extends ResourceApi
 {
@@ -37,5 +37,15 @@ class SiteRoutesApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): SiteRoutesResponse
     {
         return new SiteRoutesResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function create(SiteRoute $siteRoute): ResponseInterface
+    {
+        return $this->createResource($siteRoute);
+    }
+
+    public function update(SiteRoute $siteRoute): ResponseInterface
+    {
+        return $this->updateResource($siteRoute);
     }
 }
