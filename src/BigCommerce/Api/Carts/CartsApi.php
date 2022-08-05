@@ -46,30 +46,13 @@ class CartsApi extends UuidResourceApi
     public function get(?string $include = null): CartResponse
     {
         $query = $include ? ['include' => $include] : [];
-        $response = $this->getClient()->getRestClient()->get(
-            $this->singleResourceUrl(),
-            [
-                RequestOptions::QUERY => $query,
-            ]
-        );
-
-        return new CartResponse($response);
-        //return new CartResponse($this->getResource());
+        return new CartResponse($this->getResource($query));
     }
 
     public function create(Cart $cart, ?string $include = null): CartResponse
     {
         $query = $include ? ['include' => $include] : [];
-        $response = $this->getClient()->getRestClient()->post(
-            $this->multipleResourceUrl(),
-            [
-                RequestOptions::JSON => $cart,
-                RequestOptions::QUERY => $query,
-            ]
-        );
-
-        return new CartResponse($response);
-        //return new CartResponse($this->createResource($cart));
+        return new CartResponse($this->createResource($cart,$query));
     }
 
     public function updateCustomerId(int $customerId, ?string $include = null): CartResponse
