@@ -7,6 +7,7 @@ use BigCommerce\ApiV3\Api\Generic\DeleteResource;
 use BigCommerce\ApiV3\Api\Generic\GetResource;
 use BigCommerce\ApiV3\Api\Generic\UpdateResource;
 use BigCommerce\ApiV3\Api\Generic\V3ApiBase;
+use BigCommerce\ApiV3\Api\Sites\SiteRoutesApi;
 use BigCommerce\ApiV3\ResourceModels\Channel\ChannelSite;
 use BigCommerce\ApiV3\ResponseModels\Channel\ChannelSiteResponse;
 
@@ -42,5 +43,15 @@ class ChannelSitesApi extends V3ApiBase
     public function singleResourceUrl(): string
     {
         return sprintf(self::CHANNEL_SITE_ENDPOINT, $this->getParentResourceId());
+    }
+
+    public function routes(): SiteRoutesApi
+    {
+        return new SiteRoutesApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function route(int $id): SiteRoutesApi
+    {
+        return new SiteRoutesApi($this->getClient(), $id, $this->getResourceId());
     }
 }
