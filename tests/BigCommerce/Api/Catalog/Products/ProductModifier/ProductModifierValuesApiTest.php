@@ -1,4 +1,5 @@
 <?php
+
 namespace BigCommerce\Tests\Api\Catalog\Products\ProductModifier;
 
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValueData;
