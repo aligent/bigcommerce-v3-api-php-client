@@ -44,7 +44,7 @@ class CartsApiTest extends BigCommerceApiTest
         $cart = new Cart();
         $include = CartsApi::INCLUDE_PHYSICAL_ITEMS;
 
-        $this->getApi()->carts()->create($cart,$include);
+        $this->getApi()->carts()->create($cart, $include);
         $this->assertEquals("carts", $this->getLastRequestPath());
     }
 
