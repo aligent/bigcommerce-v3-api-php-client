@@ -1,6 +1,7 @@
 <?php
 namespace BigCommerce\Tests\Api\Catalog\Products\ProductModifier;
 
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValueData;
 use BigCommerce\Tests\BigCommerceApiTest;
 
 class ProductModifierValuesApiTest extends BigCommerceApiTest
@@ -25,7 +26,7 @@ class ProductModifierValuesApiTest extends BigCommerceApiTest
 
         $this->assertCount(2, $modifierValues);
         $this->assertTrue($modifierValues[0]->value_data->checked_value);
-        $this->assertTrue($modifierValues[1]->value_data->checked_value);
+        $this->assertFalse($modifierValues[1]->value_data->checked_value);
     }
 
     public function testCanUpdateModifierValue()
@@ -35,6 +36,7 @@ class ProductModifierValuesApiTest extends BigCommerceApiTest
         $modifierValue = $this->getApi()
             ->catalog()->product(1)->modifier(222)->value(190)->get()->getModifierValue();
 
+        $modifierValue->value_data = new ProductModifierValueData();
         $modifierValue->value_data->checked_value = false;
         $modifierValue->label = "Yesish";
 
@@ -45,16 +47,14 @@ class ProductModifierValuesApiTest extends BigCommerceApiTest
     "label": "Yesish",
     "sort_order": 0,
     "value_data": {
-        "checked_value": true
+        "checked_value": false
     },
-    "value_data": {},
     "is_default": false,
     "adjusters": {
       "price": {
         "adjuster": "relative",
         "adjuster_value": 5
       },
-      "weight": {},
       "image_url": "",
       "purchasing_disabled": {
         "status": false,

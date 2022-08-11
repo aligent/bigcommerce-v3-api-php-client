@@ -12,16 +12,9 @@ class ProductModifierValueAdjuster extends ResourceModel
     public string $image_url;
     public object $purchasing_disabled;
 
-    public function __construct(?stdClass $optionObject = null)
+    protected function beforeBuildObject(): void
     {
-        if (!is_null($optionObject)) {
-            $this->price = new PriceAdjuster($optionObject->price);
-            unset($optionObject->price);
-
-            $this->weight = new WeightAdjuster($optionObject->weight);
-            unset($optionObject->weight);
-        }
-
-        parent::__construct($optionObject);
+        $this->buildPropertyObject('price', PriceAdjuster::class);
+        $this->buildPropertyObject('weight', WeightAdjuster::class);
     }
 }

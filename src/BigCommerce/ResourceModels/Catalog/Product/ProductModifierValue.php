@@ -2,9 +2,9 @@
 
 namespace BigCommerce\ApiV3\ResourceModels\Catalog\Product;
 
-use JsonSerializable;
+use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
-class ProductModifierValue implements JsonSerializable
+class ProductModifierValue extends ResourceModel
 {
     public int $id;
     public int $option_id;
@@ -13,45 +13,19 @@ class ProductModifierValue implements JsonSerializable
     public bool $is_default = false;
     public int $sort_order;
     public ?ProductModifierValueAdjuster $adjusters;
+    /**
+     * Extra data describing the value, based on the type of option or modifier with which the value is associated.
+     * The swatch type option can accept an array of colors, with up to three hexidecimal color keys; or an image_url,
+     * which is a full image URL path including protocol. The product list type option requires a product_id.
+     * The checkbox type option requires a boolean flag, called checked_value, to determine which value is considered
+     * to be the checked state. If no data is available, returns null.
+     */
+    public ?ProductModifierValueData $value_data;
 
-    public function __construct(?int $productId, string $label)
+    protected function beforeBuildObject(): void
     {
-        $this->productId = $productId;
-        $this->label = $label;
-    }
-
-    public static function buildFromResponse(\stdClass $optionObject): ProductModifierValue
-    {
-        $modifierValue = new ProductModifierValue(null, '');
-        foreach ($optionObject as $key => $value) {
-            switch ($key) {
-                case 'adjusters':
-                    $modifierValue->$key = new ProductModifierValueAdjuster($optionObject->$key);
-                    break;
-                default:
-                    $modifierValue->$key = $value;
-            }
-        }
-
-        return $modifierValue;
-    }
-
-    public function jsonSerialize(): array
-    {
-        $json = [
-            'is_default' => $this->is_default,
-            'label'      => $this->label,
-            'sort_order' => $this->sort_order,
-        ];
-
-        if (isset($this->adjusters)) {
-            $json['adjusters'] = $this->adjusters;
-        }
-        if (isset($this->productId) && $this->productId > 0) {
-            $json['value_data'] = ['product_id' => $this->productId];
-        }
-
-        return $json;
+        $this->buildPropertyObject('adjusters', ProductModifierValueAdjuster::class);
+        $this->buildPropertyObject('value_data', ProductModifierValueData::class);
     }
 
     public function addPriceAdjuster(PriceAdjuster $priceAdjuster)

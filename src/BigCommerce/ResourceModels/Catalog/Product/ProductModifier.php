@@ -39,7 +39,7 @@ class ProductModifier extends ResourceModel
 
         if (!is_null($optionObject) && isset($optionObject->option_values)) {
             $this->option_values = array_map(function ($v) {
-                return ProductModifierValue::buildFromResponse($v);
+                return new ProductModifierValue($v);
             }, $optionObject->option_values);
             unset($optionObject->option_values);
         }
