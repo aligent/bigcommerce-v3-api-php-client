@@ -33,22 +33,36 @@ class CartsApi extends UuidResourceApi
     private const CARTS_ENDPOINT = 'carts';
     private const CART_ENDPOINT  = 'carts/%s';
 
-    public function get(): CartResponse
+    /**
+     *  The Cart returns an abbreviated result. Use this to return physical items product options.
+     */
+    public const INCLUDE_PHYSICAL_ITEMS = 'line_items.physical_items.options';
+
+    /**
+     * The Cart returns an abbreviated result. Use this to return digital items product options.
+     */
+    public const INCLUDE_DIGITAL_ITEMS = 'line_items.digital_items.options';
+
+    public function get(?string $include = null): CartResponse
     {
-        return new CartResponse($this->getResource());
+        $query = $include ? ['include' => $include] : [];
+        return new CartResponse($this->getResource($query));
     }
 
-    public function create(Cart $cart): CartResponse
+    public function create(Cart $cart, ?string $include = null): CartResponse
     {
-        return new CartResponse($this->createResource($cart));
+        $query = $include ? ['include' => $include] : [];
+        return new CartResponse($this->createResource($cart,$query));
     }
 
-    public function updateCustomerId(int $customerId): CartResponse
+    public function updateCustomerId(int $customerId, ?string $include = null): CartResponse
     {
+        $query = $include ? ['include' => $include] : [];
         $response = $this->getClient()->getRestClient()->put(
             $this->singleResourceUrl(),
             [
                 RequestOptions::JSON => ['customer_id' => $customerId],
+                RequestOptions::QUERY => $query,
             ]
         );
 
@@ -83,7 +97,7 @@ class CartsApi extends UuidResourceApi
 
     public function redirectUrls(): CartRedirectUrlsApi
     {
-        $redirectsApi = new CartRedirectUrlsApi();
+        $redirectsApi = new CartRedirectUrlsApi($this->getClient());
         $redirectsApi->setParentUuid($this->getUuid());
 
         return $redirectsApi;
