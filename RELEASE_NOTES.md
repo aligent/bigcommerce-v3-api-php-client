@@ -1,6 +1,9 @@
 ### Fixes
 
 - CartsApi Missing Optional Include Parameter #145 (Thanks @jracek-chl)
+- ProductModifierValues was missing value data #150. This is a small breaking change 
+  to the [ProductModifierValue](./blob/main/src/BigCommerce/ResourceModels/Catalog/Product/ProductModifierValue.php)
+  constructor.
 
 ### New Features
 
