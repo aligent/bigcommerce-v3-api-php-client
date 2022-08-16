@@ -11,6 +11,7 @@ use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Api\Redirects\RedirectsApi;
 use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
+use BigCommerce\ApiV3\Api\Sites\SitesApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
@@ -177,6 +178,16 @@ class Client extends BaseApiClient
     public function redirects(): RedirectsApi
     {
         return new RedirectsApi($this);
+    }
+
+    public function sites(): SitesApi
+    {
+        return new SitesApi($this);
+    }
+
+    public function site(int $id): SitesApi
+    {
+        return new SitesApi($this, $id);
     }
 
     protected function defaultBaseUrl(): string

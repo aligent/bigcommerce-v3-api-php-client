@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation</title>
+            <title>Documentation</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <base href="../">
     <link rel="icon" href="images/favicon.ico"/>
@@ -54,14 +55,16 @@
 <aside class="phpdocumentor-column -four phpdocumentor-sidebar">
                     <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/bigcommerce.html">BigCommerce</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="namespaces/bigcommerce.html" class="">BigCommerce</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="namespaces/bigcommerce-apiv3.html">ApiV3</a>
+                <a href="namespaces/bigcommerce-apiv3.html" class="">ApiV3</a>
                 
             </li>
                     <li>
-                <a href="namespaces/bigcommerce-apiv2.html">ApiV2</a>
+                <a href="namespaces/bigcommerce-apiv2.html" class="">ApiV2</a>
                 
             </li>
             </ul>
@@ -69,10 +72,12 @@
                         </section>
                 <section class="phpdocumentor-sidebar__category">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
-                                    <h4 class="phpdocumentor-sidebar__root-namespace"><a href="packages/BigCommerce.html">BigCommerce</a></h4>
+                                    <h4 class="phpdocumentor-sidebar__root-namespace">
+    <a href="packages/BigCommerce.html" class="">BigCommerce</a>
+</h4>
     <ul class="phpdocumentor-list">
                     <li>
-                <a href="packages/BigCommerce-ApiV3.html">ApiV3</a>
+                <a href="packages/BigCommerce-ApiV3.html" class="">ApiV3</a>
                 
             </li>
             </ul>
@@ -119,6 +124,9 @@
         </div>
     
     
+            <span class="phpdocumentor-element__extends">
+            Uses
+                            <a href="classes/BigCommerce-ApiV3-Api-Generic-GetResource.html"><abbr title="\BigCommerce\ApiV3\Api\Generic\GetResource">GetResource</abbr></a>,                             <a href="classes/BigCommerce-ApiV3-Api-Generic-CreateResource.html"><abbr title="\BigCommerce\ApiV3\Api\Generic\CreateResource">CreateResource</abbr></a>,                             <a href="classes/BigCommerce-ApiV3-Api-Generic-DeleteResource.html"><abbr title="\BigCommerce\ApiV3\Api\Generic\DeleteResource">DeleteResource</abbr></a>                    </span>
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
@@ -139,6 +147,12 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
 </section>
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
 
 
@@ -151,101 +165,122 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#constant_INCLUDE_DIGITAL_ITEMS">INCLUDE_DIGITAL_ITEMS</a>
+    <span>
+        &nbsp;= &#039;line_items.digital_items.options&#039;                            </span>
+</dt>
+<dd>The Cart returns an abbreviated result. Use this to return digital items product options.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -constant -public">
+    <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#constant_INCLUDE_PHYSICAL_ITEMS">INCLUDE_PHYSICAL_ITEMS</a>
+    <span>
+        &nbsp;= &#039;line_items.physical_items.options&#039;                            </span>
+</dt>
+<dd>The Cart returns an abbreviated result. Use this to return physical items product options.</dd>
+
+                        <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Generic-V3ApiBase.html#method___construct">__construct()</a>
     <span>
-                        &nbsp;: mixed    </span>
+                                &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_create">create()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a>    </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/BigCommerce-ApiV3-Api-Generic-DeleteResource.html#method_delete">delete()</a>
+    <span>
+                                &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_get">get()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Generic-V3ApiBase.html#method_getClient">getClient()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Generic-V3ApiBase.html#method_getParentResourceId">getParentResourceId()</a>
     <span>
-                        &nbsp;: int|null    </span>
+                                &nbsp;: int|null    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Generic-V3ApiBase.html#method_getResourceId">getResourceId()</a>
     <span>
-                        &nbsp;: int|null    </span>
+                                &nbsp;: int|null    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Generic-UuidResourceApi.html#method_getUuid">getUuid()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_item">item()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_items">items()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_multipleResourceUrl">multipleResourceUrl()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_redirectUrls">redirectUrls()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-Api-Carts-CartRedirectUrlsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartRedirectUrlsApi">CartRedirectUrlsApi</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-Api-Carts-CartRedirectUrlsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartRedirectUrlsApi">CartRedirectUrlsApi</abbr></a>    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Generic-UuidResourceApi.html#method_setUuid">setUuid()</a>
     <span>
-                        &nbsp;: void    </span>
+                                &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_singleResourceUrl">singleResourceUrl()</a>
     <span>
-                        &nbsp;: string    </span>
+                                &nbsp;: string    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#method_updateCustomerId">updateCustomerId()</a>
     <span>
-                        &nbsp;: <a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a>    </span>
+                                &nbsp;: <a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a>    </span>
 </dt>
 <dd></dd>
 
@@ -254,6 +289,82 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
 
 
         
+    <section class="phpdocumentor-constants">
+        <h3 class="phpdocumentor-elements__header" id="constants">
+            Constants
+            <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#constants" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INCLUDE_DIGITAL_ITEMS">
+        INCLUDE_DIGITAL_ITEMS
+        <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#constant_INCLUDE_DIGITAL_ITEMS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The Cart returns an abbreviated result. Use this to return digital items product options.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INCLUDE_DIGITAL_ITEMS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;line_items.digital_items.options&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+                    <article class="phpdocumentor-element -constant -public ">
+    <h4 class="phpdocumentor-element__name" id="constant_INCLUDE_PHYSICAL_ITEMS">
+        INCLUDE_PHYSICAL_ITEMS
+        <a href="classes/BigCommerce-ApiV3-Api-Carts-CartsApi.html#constant_INCLUDE_PHYSICAL_ITEMS" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">39</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">The Cart returns an abbreviated result. Use this to return physical items product options.</p>
+
+    <code class="phpdocumentor-signature phpdocumentor-code ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">INCLUDE_PHYSICAL_ITEMS</span>
+    = <span class="phpdocumentor-signature__default-value">&#039;line_items.physical_items.options&#039;</span>
+</code>
+
+
+    
+        <section class="phpdocumentor-description"></section>
+
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+</article>
+            </section>
 
         
 
@@ -282,7 +393,7 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentResourceId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$resourceId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$parentResourceId</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -315,6 +426,12 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">mixed</span>
@@ -335,14 +452,14 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">52</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BigCommerce-ApiV3-ResourceModels-Cart-Cart.html"><abbr title="\BigCommerce\ApiV3\ResourceModels\Cart\Cart">Cart</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cart</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">create</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/BigCommerce-ApiV3-ResourceModels-Cart-Cart.html"><abbr title="\BigCommerce\ApiV3\ResourceModels\Cart\Cart">Cart</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$cart</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$include</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -356,12 +473,65 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
                     <section class="phpdocumentor-description"></section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$include</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span>
+            &mdash;
+        
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_delete">
+        delete()
+        <a href="classes/BigCommerce-ApiV3-Api-Generic-DeleteResource.html#method_delete" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Generic/DeleteResource.php"><a href="files/bigcommerce-api-generic-deleteresource.html"><abbr title="BigCommerce/Api/Generic/DeleteResource.php">DeleteResource.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">13</span>
+
+    </aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">delete</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
             &mdash;
         
     
@@ -379,19 +549,36 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">36</span>
+    <span class="phpdocumentor-element-found-in__line">46</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">get</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">get</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$include</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$include</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
     
-    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span>
@@ -419,12 +606,18 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getClient</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">getClient</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Client.html"><abbr title="\BigCommerce\ApiV3\Client">Client</abbr></a></span>
@@ -452,12 +645,18 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getParentResourceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+                    <span class="phpdocumentor-signature__name">getParentResourceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -485,12 +684,18 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getResourceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
+                    <span class="phpdocumentor-signature__name">getResourceId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int|null</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">int|null</span>
@@ -518,12 +723,18 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getUuid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">getUuid</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -544,14 +755,14 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">68</span>
+    <span class="phpdocumentor-element-found-in__line">82</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">item</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">item</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -568,6 +779,12 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a></span>
@@ -588,19 +805,25 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">90</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">items</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">items</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartItemsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartItemsApi">CartItemsApi</abbr></a></span>
@@ -621,19 +844,25 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">77</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">multipleResourceUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">multipleResourceUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -654,19 +883,25 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">84</span>
+    <span class="phpdocumentor-element-found-in__line">98</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">redirectUrls</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartRedirectUrlsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartRedirectUrlsApi">CartRedirectUrlsApi</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">redirectUrls</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartRedirectUrlsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartRedirectUrlsApi">CartRedirectUrlsApi</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-Api-Carts-CartRedirectUrlsApi.html"><abbr title="\BigCommerce\ApiV3\Api\Carts\CartRedirectUrlsApi">CartRedirectUrlsApi</abbr></a></span>
@@ -694,7 +929,7 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setUuid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uuid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                    <span class="phpdocumentor-signature__name">setUuid</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$uuid</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -711,6 +946,12 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
@@ -731,19 +972,25 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">58</span>
+    <span class="phpdocumentor-element-found-in__line">72</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">singleResourceUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+                    <span class="phpdocumentor-signature__name">singleResourceUrl</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
 
         <section class="phpdocumentor-description"></section>
 
     
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">string</span>
@@ -764,14 +1011,14 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="BigCommerce/Api/Carts/CartsApi.php"><a href="files/bigcommerce-api-carts-cartsapi.html"><abbr title="BigCommerce/Api/Carts/CartsApi.php">CartsApi.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">46</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">updateCustomerId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$customerId</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span></code>
+                    <span class="phpdocumentor-signature__name">updateCustomerId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$customerId</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$include</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -785,9 +1032,23 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
                     <section class="phpdocumentor-description"></section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$include</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
             </dl>
 
     
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                </dl>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type"><a href="classes/BigCommerce-ApiV3-ResponseModels-Cart-CartResponse.html"><abbr title="\BigCommerce\ApiV3\ResponseModels\Cart\CartResponse">CartResponse</abbr></a></span>
@@ -797,66 +1058,96 @@ $api = new BigCommerce\ApiV3\Client($_ENV['hash'], $_ENV['CLIENT_ID'], $_ENV['AC
 </article>
             </section>
 
-        
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/BigCommerce/Api/Carts/CartsApi.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
     <script type="text/javascript">
-        function loadExternalCodeSnippets(line) {
-            Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach((pre) => {
-                var src = pre.getAttribute('data-src').replace( /\\/g, '/');
-                var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
-                var language = 'php';
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
 
-                var code = document.createElement('code');
-                code.className = 'language-' + language;
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
 
-                pre.textContent = '';
+                    var xhr = new XMLHttpRequest();
 
-                pre.setAttribute('data-line', line)
-                code.textContent = 'Loading…';
+                    xhr.open('GET', src, true);
 
-                pre.appendChild(code);
-
-                var xhr = new XMLHttpRequest();
-
-                xhr.open('GET', src, true);
-
-                xhr.onreadystatechange = function () {
-                    if (xhr.readyState == 4) {
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
 
                         if (xhr.status < 400 && xhr.responseText) {
                             code.textContent = xhr.responseText;
-
                             Prism.highlightElement(code);
+                            return;
                         }
-                        else if (xhr.status >= 400) {
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
                             code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
                         }
-                        else {
-                            code.textContent = '✖ Error: File does not exist, is empty or trying to view from localhost';
-                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
                     }
-                };
+                    modal.classList.add("phpdocumentor-modal__open");
 
-                xhr.send(null);
-            });
-        }
-
-        var modals = document.querySelectorAll("[data-modal]");
-
-        modals.forEach(function (trigger) {
-            trigger.addEventListener("click", function (event) {
-                //event.preventDefault();
-                const modal = document.getElementById(trigger.dataset.modal);
-                modal.classList.add("phpdocumentor-modal__open");
-                loadExternalCodeSnippets(trigger.dataset.line)
-                const exits = modal.querySelectorAll("[data-exit-button]");
-                exits.forEach(function (exit) {
-                    exit.addEventListener("click", function (event) {
-                        event.preventDefault();
-                        modal.classList.remove("phpdocumentor-modal__open");
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
                     });
                 });
             });
-        });
+        })();
     </script>
 
     </article>
