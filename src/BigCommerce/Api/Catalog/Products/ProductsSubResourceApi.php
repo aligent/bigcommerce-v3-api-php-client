@@ -3,6 +3,8 @@
 namespace BigCommerce\ApiV3\Api\Catalog\Products;
 
 use BigCommerce\ApiV3\Client;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ChannelAssignment;
+
 
 trait ProductsSubResourceApi
 {
@@ -110,4 +112,8 @@ trait ProductsSubResourceApi
     {
         return new ProductVideosApi($this->getClient(), null, $this->getResourceId());
     }
+	public function channel_assignments(): ChannelAssignmentsApi
+	{
+		return new ChannelAssignmentsApi($this->getClient(), null, $this->getResourceId());
+	}
 }
