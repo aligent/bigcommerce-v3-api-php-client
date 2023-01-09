@@ -9,6 +9,7 @@ abstract class BaseApiClient
 {
     public const DEFAULT_HANDLER      = 'handler';
     public const DEFAULT_BASE_URI     = 'base_uri';
+    public const TIMEOUT              = 'timeout';
     public const DEFAULT_HEADERS      = 'headers';
 
     private const HEADERS__AUTH_CLIENT  = 'X-Auth-Client';
@@ -52,6 +53,7 @@ abstract class BaseApiClient
         return new \GuzzleHttp\Client([
             self::DEFAULT_HANDLER  => $stack,
             self::DEFAULT_BASE_URI => $this->getBaseUri(),
+            self::TIMEOUT          => 45,
             self::DEFAULT_HEADERS  => [
                 self::HEADERS__AUTH_CLIENT  => $this->clientId,
                 self::HEADERS__AUTH_TOKEN   => $this->accessToken,
