@@ -53,7 +53,7 @@ class OrdersApi extends V2ApiBase
 
     private const ORDERS_ENDPOINT = 'orders';
     private const ORDER_ENDPOINT  = 'orders/%d';
-    private const ORDER_COUNT_ENDPOINT = '/orders/count';
+    private const ORDER_COUNT_ENDPOINT = 'orders/count';
 
     public function singleResourceUrl(): string
     {
