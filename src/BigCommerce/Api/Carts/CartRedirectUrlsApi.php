@@ -31,11 +31,11 @@ use BigCommerce\ApiV3\ResponseModels\Cart\CartRedirectUrlsResponse;
  */
 class CartRedirectUrlsApi extends UuidResourceWithUuidParentApi
 {
-    private const REDIRECT_URL = 'carts/%d/redirect_urls';
+    private const REDIRECT_URL = 'carts/%s/redirect_urls';
 
     public function create(): CartRedirectUrlsResponse
     {
-        $response = $this->getClient()->getRestClient()->put(
+        $response = $this->getClient()->getRestClient()->post(
             sprintf(self::REDIRECT_URL, $this->getParentUuid())
         );
 
