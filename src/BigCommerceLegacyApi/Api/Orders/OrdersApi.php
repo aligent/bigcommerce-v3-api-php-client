@@ -53,7 +53,7 @@ class OrdersApi extends V2ApiBase
 
     private const ORDERS_ENDPOINT = 'orders';
     private const ORDER_ENDPOINT  = 'orders/%d';
-    private const ORDER_COUNT_ENDPOINT = '/orders/count';
+    private const ORDER_COUNT_ENDPOINT = 'orders/count';
 
     public function singleResourceUrl(): string
     {
@@ -85,6 +85,10 @@ class OrdersApi extends V2ApiBase
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): array
     {
         $response = $this->getAllResources($filters, $page, $limit);
+
+        if ($response->getStatusCode() === 204) {
+            return [];
+        }
 
         return array_map(fn($r) => new OrderResponse($r), json_decode($response->getBody()));
     }

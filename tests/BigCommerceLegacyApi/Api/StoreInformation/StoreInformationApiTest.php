@@ -17,7 +17,7 @@ class StoreInformationApiTest extends V2ApiClientTest
     {
         $this->setReturnData('storeinformation_store.json');
 
-        $information = $this->getApi()->storeInformation()->storeInformation();
+        $information = $this->getApi()->storeInformation()->get();
 
         $this->assertEquals('BigCommerce', $information->name);
         $this->assertEquals('my-awesome.store', $information->domain);
@@ -33,7 +33,7 @@ class StoreInformationApiTest extends V2ApiClientTest
         //Weird API design means the logo is set to empty array if no logo present
         $this->setReturnData('storeinformation_store__no-logo.json');
 
-        $information = $this->getApi()->storeInformation()->storeInformation();
+        $information = $this->getApi()->storeInformation()->get();
 
         $this->assertEquals('MLITest', $information->name);
         $this->assertNull($information->logo);

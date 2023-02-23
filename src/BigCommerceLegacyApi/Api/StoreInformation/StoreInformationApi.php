@@ -15,8 +15,20 @@ class StoreInformationApi extends V2ApiBase
      *
      * @return StoreInformation
      * @throws \GuzzleHttp\Exception\GuzzleException
+     * @deprecated Replaced by `get()` function.
      */
     public function storeInformation(): StoreInformation
+    {
+        return $this->get();
+    }
+
+    /**
+     * Returns metadata about a store.
+     *
+     * @return StoreInformation
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function get(): StoreInformation
     {
         $response = $this->getClient()->getRestClient()->get(
             self::STORE_INFORMATION_ENDPOINT
