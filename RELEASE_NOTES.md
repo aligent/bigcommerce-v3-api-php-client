@@ -5,5 +5,7 @@
 - Fixed incorrect endpoint on OrdersApi (thanks @simpleapps-io)
 - Handle the case of no orders returned in the V2 api causing error. (Issue #161)
 
+
 ### New Features
 
+- Allow overriding of most Guzzle Client defaults, and also set a timeout
