@@ -106,6 +106,22 @@ class Product extends ResourceModel
         parent::__construct($optionObject);
     }
 
+    public function addImage(string $imageUrl, string $description = "", bool $isThumbnail = false): Product
+    {
+        if (!is_array($this->images)) {
+            $this->images = [];
+        }
+
+        $image = new ProductImage();
+        $image->image_url    = $imageUrl;
+        $image->description  = $description;
+        $image->is_thumbnail = $isThumbnail;
+
+        $this->images[] = $image;
+
+        return $this;
+    }
+
     protected function beforeBuildObject(): void
     {
         $this->buildObjectArray('modifiers', ProductModifier::class);
