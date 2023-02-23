@@ -86,7 +86,9 @@ class OrdersApi extends V2ApiBase
     {
         $response = $this->getAllResources($filters, $page, $limit);
 
-        if ($response->getStatusCode() === 204) return [];
+        if ($response->getStatusCode() === 204) {
+            return [];
+        }
 
         return array_map(fn($r) => new OrderResponse($r), json_decode($response->getBody()));
     }
