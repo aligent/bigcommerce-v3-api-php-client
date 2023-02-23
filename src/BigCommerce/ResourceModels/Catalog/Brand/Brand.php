@@ -16,6 +16,7 @@ class Brand extends ResourceModel
     public ?string $meta_description;
     public string $image_url;
     public string $search_keywords;
+    public string $page_title;
 
     public function __construct(?stdClass $optionObject = null)
     {
