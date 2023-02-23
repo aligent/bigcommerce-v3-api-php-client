@@ -5,6 +5,7 @@
 - Fixed incorrect endpoint on OrdersApi (thanks @simpleapps-io)
 - Handle the case of no orders returned in the V2 api causing error. (Issue #161)
 - Fix `preorder_release_date` property type (Issue #162)
+- Add `page_title` to Brand (Issue #171)
 
 
 ### New Features
