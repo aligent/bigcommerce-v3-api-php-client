@@ -89,6 +89,11 @@ class Client extends BaseApiClient
         return new CatalogApi($this);
     }
 
+    public function customer(int $customerId): CustomersApi
+    {
+        return new CustomersApi($this, $customerId);
+    }
+
     public function customers(): CustomersApi
     {
         return new CustomersApi($this);

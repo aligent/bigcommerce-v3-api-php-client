@@ -4,7 +4,6 @@ namespace BigCommerce\ApiV3\ResponseModels\Customer;
 
 use BigCommerce\ApiV3\ResourceModels\Customer\CustomerCredentialsValidation;
 use BigCommerce\ApiV3\ResponseModels\SingleResourceResponse;
-use Psr\Http\Message\ResponseInterface;
 use stdClass;
 
 class ValidateCredentialsResponse extends SingleResourceResponse

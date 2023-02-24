@@ -90,4 +90,14 @@ class CustomersApiTest extends BigCommerceApiTest
 
         $this->assertFalse($validation->getCredentialsValidation()->is_valid);
     }
+
+    public function testCanGetStoredInstruments()
+    {
+        $this->setReturnData('customers__stored_instruments__get.json');
+
+        $instruments = $this->getApi()->customer(1)->getStoredInstruments()->getStoredInstruments();
+
+        $this->assertCount(3, $instruments);
+        $this->assertEquals('VISA', $instruments[0]->brand);
+    }
 }
