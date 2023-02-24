@@ -93,6 +93,11 @@ class CustomersApi extends CustomerApiBase
         return new CustomerConsentApi($this->getClient(), null, $this->getResourceId());
     }
 
+    public function settings(): CustomerSettingsApi
+    {
+        return new CustomerSettingsApi($this->getClient());
+    }
+
     public function subscriber(int $id): SubscribersApi
     {
         return new SubscribersApi($this->getClient(), $id, $this->getParentResourceId());
