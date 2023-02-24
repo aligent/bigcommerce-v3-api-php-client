@@ -1,0 +1,37 @@
+{
+  "data": {
+    "id": 30,
+    "customer_id": 10,
+    "name": "Christmas List",
+    "is_public": true,
+    "token": "d2d55481-13eb-4d1e-9d79-9062b518570d",
+    "items": [
+      {
+        "id": 44,
+        "product_id": 77,
+        "variant_id": 1
+      },
+      {
+        "id": 45,
+        "product_id": 80,
+        "variant_id": 1
+      },
+      {
+        "id": 46,
+        "product_id": 81,
+        "variant_id": 1
+      },
+      {
+        "id": 47,
+        "product_id": 86,
+        "variant_id": 1
+      },
+      {
+        "id": 48,
+        "product_id": 88,
+        "variant_id": 1
+      }
+    ]
+  },
+  "meta": {}
+}

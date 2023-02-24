@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "customer_id": 4,
+      "name": "My Wish List",
+      "is_public": false,
+      "token": "02d55481-13eb-4d1e-9d79-9062b518570d",
+      "items": []
+    },
+    {
+      "id": 2,
+      "customer_id": 11,
+      "name": "Christmas",
+      "is_public": false,
+      "token": "02d55481-13eb-4d1e-9d79-9062b518570d",
+      "items": [
+        {
+          "id": 1,
+          "product_id": 167
+        },
+        {
+          "id": 2,
+          "product_id": 174
+        },
+        {
+          "id": 3,
+          "product_id": 184
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "customer_id": 20,
+      "name": "Birthday",
+      "is_public": false,
+      "token": "02d55481-13eb-4d1e-9d79-9062b518570d",
+      "items": [
+        {
+          "id": 4,
+          "product_id": 184
+        },
+        {
+          "id": 5,
+          "product_id": 183
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "customer_id": 20,
+      "name": "Christmas",
+      "is_public": false,
+      "token": "02d55481-13eb-4d1e-9d79-9062b518570d",
+      "items": [
+        {
+          "id": 6,
+          "product_id": 201
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "customer_id": 19,
+      "name": "Wish List",
+      "is_public": false,
+      "token": "02d55481-13eb-4d1e-9d79-9062b518570d",
+      "items": [
+        {
+          "id": 7,
+          "product_id": 173
+        },
+        {
+          "id": 8,
+          "product_id": 176
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 0,
+      "count": 5,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 0
+    }
+  }
+}
