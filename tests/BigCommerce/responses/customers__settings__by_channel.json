@@ -1,0 +1,14 @@
+{
+  "data": {
+    "privacy_settings": {
+      "ask_shopper_for_tracking_consent": null,
+      "policy_url": "https://aligent.com.au/takeflight",
+      "ask_shopper_for_tracking_consent_on_checkout": null
+    },
+    "customer_group_settings": {
+      "guest_customer_group_id": null,
+      "default_customer_group_id": null
+    },
+    "allow_global_logins": true
+  }
+}

@@ -29,4 +29,9 @@ class CustomerSettingsApi extends V3ApiBase
     {
         return new CustomerSettingsResponse($this->updateResource($settings));
     }
+
+    public function channel(int $channelId): CustomerSettingsPerChannelApi
+    {
+        return new CustomerSettingsPerChannelApi($this->getClient(), $channelId);
+    }
 }

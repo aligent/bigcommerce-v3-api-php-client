@@ -14,4 +14,12 @@ class CustomerSettingsApiTest extends BigCommerceApiTest
 
         $this->assertEquals('https://bigcommmerce.com/policy', $settings->privacy_settings->policy_url);
     }
+
+    public function testCanGetCustomerSettingsPerChannel()
+    {
+        $this->setReturnData('customers__settings__by_channel.json');
+        $settings = $this->getApi()->customers()->settings()->channel(1)->get()->getChannelSettings();
+
+        $this->assertEquals('https://aligent.com.au/takeflight', $settings->privacy_settings->policy_url);
+    }
 }
