@@ -71,8 +71,11 @@ class CustomersApi extends CustomerApiBase
         return new CustomersResponse($this->updateResources($customers));
     }
 
-    public function validateCredentials(string $email, string $password, ?int $channel_id = null): ValidateCredentialsResponse
-    {
+    public function validateCredentials(
+        string $email,
+        string $password,
+        ?int $channel_id = null
+    ): ValidateCredentialsResponse {
         $credentials = ['email' => $email, 'password' => $password];
         if (!is_null($channel_id)) {
             $credentials['channel_id'] = $channel_id;
