@@ -7,6 +7,7 @@ use BigCommerce\ApiV3\Api\Catalog\CatalogApi;
 use BigCommerce\ApiV3\Api\Channels\ChannelsApi;
 use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
+use BigCommerce\ApiV3\Api\Pages\PagesApi;
 use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Api\Redirects\RedirectsApi;
@@ -173,6 +174,16 @@ class Client extends BaseApiClient
     public function channels(): ChannelsApi
     {
         return new ChannelsApi($this);
+    }
+
+    public function page(int $id): PagesApi
+    {
+        return new PagesApi($this, $id);
+    }
+
+    public function pages(): PagesApi
+    {
+        return new PagesApi($this);
     }
 
     public function redirects(): RedirectsApi
