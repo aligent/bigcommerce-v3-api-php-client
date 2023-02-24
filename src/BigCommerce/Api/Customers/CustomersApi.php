@@ -6,6 +6,8 @@ use BigCommerce\ApiV3\Api\Generic\DeleteInIdList;
 use BigCommerce\ApiV3\Api\Subscribers\SubscribersApi;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomersResponse;
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
+use BigCommerce\ApiV3\ResponseModels\Customer\ValidateCredentialsResponse;
+use GuzzleHttp\RequestOptions;
 use UnexpectedValueException;
 
 class CustomersApi extends CustomerApiBase
@@ -57,6 +59,23 @@ class CustomersApi extends CustomerApiBase
     public function update(array $customers): CustomersResponse
     {
         return new CustomersResponse($this->updateResources($customers));
+    }
+
+    public function validateCredentials(string $email, string $password, ?int $channel_id = null): ValidateCredentialsResponse
+    {
+        $credentials = ['email' => $email, 'password' => $password];
+        if (!is_null($channel_id)) {
+            $credentials['channel_id'] = $channel_id;
+        }
+
+        $response = $this->getClient()->getRestClient()->post(
+            'customers/validate-credentials',
+            [
+                RequestOptions::JSON => $credentials,
+            ]
+        );
+
+        return new ValidateCredentialsResponse($response);
     }
 
     protected function resourceName(): string

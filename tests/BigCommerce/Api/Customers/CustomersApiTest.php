@@ -81,4 +81,13 @@ class CustomersApiTest extends BigCommerceApiTest
 
         $this->assertTrue($this->getApi()->customers()->delete([1, 2]));
     }
+
+    public function testCanValidateCredentials()
+    {
+        $this->setReturnData('customers__validate-credentials.json');
+
+        $validation = $this->getApi()->customers()->validateCredentials('john.smith@example.com', 'Password123');
+
+        $this->assertFalse($validation->getCredentialsValidation()->is_valid);
+    }
 }
