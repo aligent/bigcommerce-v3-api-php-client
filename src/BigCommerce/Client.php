@@ -12,6 +12,7 @@ use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Api\Redirects\RedirectsApi;
 use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Sites\SitesApi;
+use BigCommerce\ApiV3\Api\StoreLogs\StoreLogsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
@@ -188,6 +189,11 @@ class Client extends BaseApiClient
     public function site(int $id): SitesApi
     {
         return new SitesApi($this, $id);
+    }
+
+    public function storeLogs(): StoreLogsApi
+    {
+        return new StoreLogsApi($this);
     }
 
     protected function defaultBaseUrl(): string

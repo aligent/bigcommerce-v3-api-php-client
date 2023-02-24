@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "type": "string",
+      "module": "string",
+      "severity": "string",
+      "summary": "string",
+      "message": "string",
+      "date_created": "2019-08-24T14:15:22Z"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 50,
+      "current_page": 1,
+      "total_pages": 1,
+      "links": {
+        "previous": "?page=1&limit=50",
+        "current": "?page=1&limit=50",
+        "next": "?page=1&limit=50"
+      }
+    }
+  }
+}
