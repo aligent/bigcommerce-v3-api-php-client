@@ -1,0 +1,19 @@
+{
+  "data": {
+    "id": 2,
+    "channel_id": 1,
+    "name": "Shipping & Returns",
+    "meta_title": "",
+    "is_visible": false,
+    "parent_id": 0,
+    "sort_order": 2,
+    "meta_keywords": "",
+    "type": "page",
+    "meta_description": "",
+    "is_homepage": false,
+    "is_customers_only": false,
+    "search_keywords": "footer",
+    "url": "/shipping-returns/"
+  },
+  "meta": {}
+}
