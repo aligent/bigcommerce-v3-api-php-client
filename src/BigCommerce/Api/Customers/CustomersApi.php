@@ -6,6 +6,9 @@ use BigCommerce\ApiV3\Api\Generic\DeleteInIdList;
 use BigCommerce\ApiV3\Api\Subscribers\SubscribersApi;
 use BigCommerce\ApiV3\ResponseModels\Customer\CustomersResponse;
 use BigCommerce\ApiV3\ResourceModels\Customer\Customer;
+use BigCommerce\ApiV3\ResponseModels\Customer\StoredInstrumentsResponse;
+use BigCommerce\ApiV3\ResponseModels\Customer\ValidateCredentialsResponse;
+use GuzzleHttp\RequestOptions;
 use UnexpectedValueException;
 
 class CustomersApi extends CustomerApiBase
@@ -36,7 +39,7 @@ class CustomersApi extends CustomerApiBase
         if (count($customers) === 0) {
             return null;
         } elseif (count($customers) > 1) {
-            throw new UnexpectedValueException("There are more than one customer with the email address $email");
+            throw new UnexpectedValueException("There is more than one customer with the email address $email");
         }
 
         return $customers[0];
@@ -49,6 +52,15 @@ class CustomersApi extends CustomerApiBase
         return $customers[0] ?? null;
     }
 
+    public function getStoredInstruments(): StoredInstrumentsResponse
+    {
+        $response = $this->getClient()->getRestClient()->get(
+            sprintf('customers/%d/stored-instruments', $this->getResourceId())
+        );
+
+        return new StoredInstrumentsResponse($response);
+    }
+
     public function create(array $customers): CustomersResponse
     {
         return new CustomersResponse($this->createResources($customers));
@@ -57,6 +69,26 @@ class CustomersApi extends CustomerApiBase
     public function update(array $customers): CustomersResponse
     {
         return new CustomersResponse($this->updateResources($customers));
+    }
+
+    public function validateCredentials(
+        string $email,
+        string $password,
+        ?int $channel_id = null
+    ): ValidateCredentialsResponse {
+        $credentials = ['email' => $email, 'password' => $password];
+        if (!is_null($channel_id)) {
+            $credentials['channel_id'] = $channel_id;
+        }
+
+        $response = $this->getClient()->getRestClient()->post(
+            'customers/validate-credentials',
+            [
+                RequestOptions::JSON => $credentials,
+            ]
+        );
+
+        return new ValidateCredentialsResponse($response);
     }
 
     protected function resourceName(): string
@@ -91,6 +123,11 @@ class CustomersApi extends CustomerApiBase
         }
 
         return new CustomerConsentApi($this->getClient(), null, $this->getResourceId());
+    }
+
+    public function settings(): CustomerSettingsApi
+    {
+        return new CustomerSettingsApi($this->getClient());
     }
 
     public function subscriber(int $id): SubscribersApi
