@@ -10,5 +10,7 @@
   - [Customer Settings](https://developer.bigcommerce.com/api-reference/0c31a6d25e5ea-get-customer-settings)
   - [Customer Settings per Channel](https://developer.bigcommerce.com/api-reference/d5e66c45b0415-get-customer-settings-per-channel)
   - [Validate credentials](https://developer.bigcommerce.com/api-reference/3d731215a3dcb-validate-a-customer-credentials)
+- Add the ability to send and receive Images via the Product API, not just the Product Images api (#189)
+
 
 
