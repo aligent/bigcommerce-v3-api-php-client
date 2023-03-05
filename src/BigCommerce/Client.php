@@ -17,6 +17,7 @@ use BigCommerce\ApiV3\Api\StoreLogs\StoreLogsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
+use BigCommerce\ApiV3\Api\Wishlists\WishlistsApi;
 
 /**
  * The parent API class
@@ -160,6 +161,16 @@ class Client extends BaseApiClient
     public function widgets(): WidgetsApi
     {
         return new WidgetsApi($this);
+    }
+
+    public function wishlist(int $id): WishlistsApi
+    {
+        return new WishlistsApi($this, $id);
+    }
+
+    public function wishlists(): WishlistsApi
+    {
+        return new WishlistsApi($this);
     }
 
     public function content(): WidgetsApi
