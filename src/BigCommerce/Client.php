@@ -7,14 +7,17 @@ use BigCommerce\ApiV3\Api\Catalog\CatalogApi;
 use BigCommerce\ApiV3\Api\Channels\ChannelsApi;
 use BigCommerce\ApiV3\Api\Orders\OrdersApi;
 use BigCommerce\ApiV3\Api\Customers\CustomersApi;
+use BigCommerce\ApiV3\Api\Pages\PagesApi;
 use BigCommerce\ApiV3\Api\Payments\PaymentsProcessingApi;
 use BigCommerce\ApiV3\Api\PriceLists\PriceListsApi;
 use BigCommerce\ApiV3\Api\Redirects\RedirectsApi;
 use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Sites\SitesApi;
+use BigCommerce\ApiV3\Api\StoreLogs\StoreLogsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
+use BigCommerce\ApiV3\Api\Wishlists\WishlistsApi;
 
 /**
  * The parent API class
@@ -89,6 +92,11 @@ class Client extends BaseApiClient
         return new CatalogApi($this);
     }
 
+    public function customer(int $customerId): CustomersApi
+    {
+        return new CustomersApi($this, $customerId);
+    }
+
     public function customers(): CustomersApi
     {
         return new CustomersApi($this);
@@ -155,6 +163,16 @@ class Client extends BaseApiClient
         return new WidgetsApi($this);
     }
 
+    public function wishlist(int $id): WishlistsApi
+    {
+        return new WishlistsApi($this, $id);
+    }
+
+    public function wishlists(): WishlistsApi
+    {
+        return new WishlistsApi($this);
+    }
+
     public function content(): WidgetsApi
     {
         return $this->widgets();
@@ -175,6 +193,16 @@ class Client extends BaseApiClient
         return new ChannelsApi($this);
     }
 
+    public function page(int $id): PagesApi
+    {
+        return new PagesApi($this, $id);
+    }
+
+    public function pages(): PagesApi
+    {
+        return new PagesApi($this);
+    }
+
     public function redirects(): RedirectsApi
     {
         return new RedirectsApi($this);
@@ -188,6 +216,11 @@ class Client extends BaseApiClient
     public function site(int $id): SitesApi
     {
         return new SitesApi($this, $id);
+    }
+
+    public function storeLogs(): StoreLogsApi
+    {
+        return new StoreLogsApi($this);
     }
 
     protected function defaultBaseUrl(): string

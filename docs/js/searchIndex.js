@@ -1421,6 +1421,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#method_getById"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomersApi\u003A\u003AgetStoredInstruments\u0028\u0029",
+            "name": "getStoredInstruments",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#method_getStoredInstruments"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomersApi\u003A\u003Acreate\u0028\u0029",
             "name": "create",
             "summary": "",
@@ -1430,6 +1435,11 @@ Search.appendIndex(
             "name": "update",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#method_update"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomersApi\u003A\u003AvalidateCredentials\u0028\u0029",
+            "name": "validateCredentials",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#method_validateCredentials"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomersApi\u003A\u003Aaddresses\u0028\u0029",
             "name": "addresses",
@@ -1456,6 +1466,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#method_consent"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomersApi\u003A\u003Asettings\u0028\u0029",
+            "name": "settings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#method_settings"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomersApi\u003A\u003Asubscriber\u0028\u0029",
             "name": "subscriber",
             "summary": "",
@@ -1475,6 +1490,56 @@ Search.appendIndex(
             "name": "FILTER__ID_IN",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomersApi.html#constant_FILTER__ID_IN"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsApi",
+            "name": "CustomerSettingsApi",
+            "summary": "V3ApiBase",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsApi.html#method_get"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsApi\u003A\u003AsingleResourceUrl\u0028\u0029",
+            "name": "singleResourceUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsApi.html#method_singleResourceUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsApi.html#method_update"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsApi\u003A\u003Achannel\u0028\u0029",
+            "name": "channel",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsApi.html#method_channel"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsApi\u003A\u003ACUSTOMER_SETTINGS_ENDPOINT",
+            "name": "CUSTOMER_SETTINGS_ENDPOINT",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsApi.html#constant_CUSTOMER_SETTINGS_ENDPOINT"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsPerChannelApi",
+            "name": "CustomerSettingsPerChannelApi",
+            "summary": "V3ApiBase",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsPerChannelApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsPerChannelApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsPerChannelApi.html#method_get"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsPerChannelApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsPerChannelApi.html#method_update"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Customers\\CustomerSettingsPerChannelApi\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Customers-CustomerSettingsPerChannelApi.html#method_getAll"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\CustomTemplateAssociations\\CustomTemplateAssociationsApi",
             "name": "CustomTemplateAssociationsApi",
@@ -2021,6 +2086,46 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Orders-RefundsApi.html#method_getAll"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi",
+            "name": "PagesApi",
+            "summary": "Includes\u0020the\u0020multiple\u0020and\u0020single\u0020page\u0020requests\u0020for\u0020pages",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003AbatchUpdate\u0028\u0029",
+            "name": "batchUpdate",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_batchUpdate"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_get"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003AbatchCreate\u0028\u0029",
+            "name": "batchCreate",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_batchCreate"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_update"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages\\PagesApi\u003A\u003AbatchDelete\u0028\u0029",
+            "name": "batchDelete",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Pages-PagesApi.html#method_batchDelete"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Payments\\PaymentsProcessingApi",
             "name": "PaymentsProcessingApi",
             "summary": "V3ApiBase",
@@ -2260,6 +2365,21 @@ Search.appendIndex(
             "name": "route",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Api-Sites-SitesApi.html#method_route"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\StoreLogs\\StoreLogsApi",
+            "name": "StoreLogsApi",
+            "summary": "V3ApiBase",
+            "url": "classes/BigCommerce-ApiV3-Api-StoreLogs-StoreLogsApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\StoreLogs\\StoreLogsApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-StoreLogs-StoreLogsApi.html#method_get"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\StoreLogs\\StoreLogsApi\u003A\u003ASYSTEM_LOGS_ENDPOINT",
+            "name": "SYSTEM_LOGS_ENDPOINT",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-StoreLogs-StoreLogsApi.html#constant_SYSTEM_LOGS_ENDPOINT"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Subscribers\\SubscribersApi",
             "name": "SubscribersApi",
@@ -2591,6 +2711,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-BaseApiClient.html#constant_DEFAULT_HEADERS"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\BaseApiClient\u003A\u003ADEFAULT_TIMEOUT",
+            "name": "DEFAULT_TIMEOUT",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-BaseApiClient.html#constant_DEFAULT_TIMEOUT"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client",
             "name": "Client",
             "summary": "The\u0020parent\u0020API\u0020class",
@@ -2600,6 +2725,11 @@ Search.appendIndex(
             "name": "catalog",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Client.html#method_catalog"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Acustomer\u0028\u0029",
+            "name": "customer",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_customer"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Acustomers\u0028\u0029",
             "name": "customers",
@@ -2661,6 +2791,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Client.html#method_widgets"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Awishlist\u0028\u0029",
+            "name": "wishlist",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_wishlist"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Awishlists\u0028\u0029",
+            "name": "wishlists",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_wishlists"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Acontent\u0028\u0029",
             "name": "content",
             "summary": "",
@@ -2681,6 +2821,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Client.html#method_channels"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Apage\u0028\u0029",
+            "name": "page",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_page"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Apages\u0028\u0029",
+            "name": "pages",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_pages"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Aredirects\u0028\u0029",
             "name": "redirects",
             "summary": "",
@@ -2695,6 +2845,11 @@ Search.appendIndex(
             "name": "site",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Client.html#method_site"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003AstoreLogs\u0028\u0029",
+            "name": "storeLogs",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_storeLogs"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003AAPI_URI",
             "name": "API_URI",
@@ -2860,6 +3015,11 @@ Search.appendIndex(
             "name": "search_keywords",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Brand-Brand.html#property_search_keywords"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Brand\\Brand\u003A\u003A\u0024page_title",
+            "name": "page_title",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Brand-Brand.html#property_page_title"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Brand\\BrandMetafield",
             "name": "BrandMetafield",
@@ -3180,6 +3340,11 @@ Search.appendIndex(
             "name": "__construct",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#method___construct"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003AaddImage\u0028\u0029",
+            "name": "addImage",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#method_addImage"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003AINVENTORY_TRACKING_NONE",
             "name": "INVENTORY_TRACKING_NONE",
@@ -3515,6 +3680,11 @@ Search.appendIndex(
             "name": "modifiers",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#property_modifiers"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\Product\u003A\u003A\u0024images",
+            "name": "images",
+            "summary": "Note\u0020that\u0020images\u0020are\u0020only\u0020returned\u0020if\u0020specifically\u0020requested\u0020with\u0020the\u0020\u0060include\u0060\u0020param.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Catalog-Product-Product.html#property_images"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Catalog\\Product\\ProductBulkPricingRule",
             "name": "ProductBulkPricingRule",
@@ -5086,6 +5256,26 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerAuthentication.html#property_new_password"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerChannelSettings",
+            "name": "CustomerChannelSettings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerChannelSettings.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerChannelSettings\u003A\u003A\u0024privacy_settings",
+            "name": "privacy_settings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerChannelSettings.html#property_privacy_settings"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerChannelSettings\u003A\u003A\u0024customer_group_settings",
+            "name": "customer_group_settings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerChannelSettings.html#property_customer_group_settings"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerChannelSettings\u003A\u003A\u0024allow_global_logins",
+            "name": "allow_global_logins",
+            "summary": "Determines\u0020if\u0020a\u0020channel\u0020allows\u0020global\u0020customer\u0020to\u0020login\nDetermines\u0020if\u0020customers\u0020created\u0020on\u0020this\u0020channel\u0020will\u0020get\u0020global\u0020access\/login",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerChannelSettings.html#property_allow_global_logins"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerConsent",
             "name": "CustomerConsent",
             "summary": "",
@@ -5105,6 +5295,21 @@ Search.appendIndex(
             "name": "updated_at",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerConsent.html#property_updated_at"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerCredentialsValidation",
+            "name": "CustomerCredentialsValidation",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerCredentialsValidation.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerCredentialsValidation\u003A\u003A\u0024customer_id",
+            "name": "customer_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerCredentialsValidation.html#property_customer_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerCredentialsValidation\u003A\u003A\u0024is_valid",
+            "name": "is_valid",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerCredentialsValidation.html#property_is_valid"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerFormFieldValue",
             "name": "CustomerFormFieldValue",
@@ -5130,6 +5335,226 @@ Search.appendIndex(
             "name": "customer_id",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerFormFieldValue.html#property_customer_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\CustomerGroupSettings",
+            "name": "CustomerGroupSettings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-CustomerGroupSettings.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\CustomerGroupSettings\u003A\u003A\u0024guest_customer_group_id",
+            "name": "guest_customer_group_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-CustomerGroupSettings.html#property_guest_customer_group_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\CustomerGroupSettings\u003A\u003A\u0024default_customer_group_id",
+            "name": "default_customer_group_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-CustomerGroupSettings.html#property_default_customer_group_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\PrivacySettings",
+            "name": "PrivacySettings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-PrivacySettings.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\PrivacySettings\u003A\u003A\u0024ask_shopper_for_tracking_consent",
+            "name": "ask_shopper_for_tracking_consent",
+            "summary": "Determines\u0020if\u0020a\u0020customer\u0020requires\u0020consent\u0020for\u0020tracking\u0020privacy.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-PrivacySettings.html#property_ask_shopper_for_tracking_consent"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\PrivacySettings\u003A\u003A\u0024policy_url",
+            "name": "policy_url",
+            "summary": "The\u0020URL\u0020for\u0020a\u0020website\u0027s\u0020privacy\u0020policy.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-PrivacySettings.html#property_policy_url"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\\PrivacySettings\u003A\u003A\u0024ask_shopper_for_tracking_consent_on_checkout",
+            "name": "ask_shopper_for_tracking_consent_on_checkout",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings-PrivacySettings.html#property_ask_shopper_for_tracking_consent_on_checkout"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings",
+            "name": "CustomerSettings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\u003A\u003A\u0024privacy_settings",
+            "name": "privacy_settings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings.html#property_privacy_settings"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings\u003A\u003A\u0024customer_group_settings",
+            "name": "customer_group_settings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-CustomerSettings.html#property_customer_group_settings"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress",
+            "name": "CardBillingAddress",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024first_name",
+            "name": "first_name",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_first_name"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024last_name",
+            "name": "last_name",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_last_name"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024company",
+            "name": "company",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_company"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024address1",
+            "name": "address1",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_address1"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024address2",
+            "name": "address2",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_address2"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024city",
+            "name": "city",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_city"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024state_or_province",
+            "name": "state_or_province",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_state_or_province"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024postal_code",
+            "name": "postal_code",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_postal_code"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024country_code",
+            "name": "country_code",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_country_code"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024state_or_province_code",
+            "name": "state_or_province_code",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_state_or_province_code"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024phone",
+            "name": "phone",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_phone"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\CardBillingAddress\u003A\u003A\u0024email",
+            "name": "email",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-CardBillingAddress.html#property_email"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredBankAccount",
+            "name": "StoredBankAccount",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredBankAccount.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredBankAccount\u003A\u003A\u0024masked_account_number",
+            "name": "masked_account_number",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredBankAccount.html#property_masked_account_number"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredBankAccount\u003A\u003A\u0024issuer",
+            "name": "issuer",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredBankAccount.html#property_issuer"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard",
+            "name": "StoredCard",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard\u003A\u003A\u0024brand",
+            "name": "brand",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html#property_brand"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard\u003A\u003A\u0024expiry_month",
+            "name": "expiry_month",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html#property_expiry_month"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard\u003A\u003A\u0024expiry_year",
+            "name": "expiry_year",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html#property_expiry_year"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard\u003A\u003A\u0024issuer_identification_number",
+            "name": "issuer_identification_number",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html#property_issuer_identification_number"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard\u003A\u003A\u0024last_4",
+            "name": "last_4",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html#property_last_4"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredCard\u003A\u003A\u0024billing_address",
+            "name": "billing_address",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredCard.html#property_billing_address"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument",
+            "name": "StoredInstrument",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument\u003A\u003ATYPE__CARD",
+            "name": "TYPE__CARD",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html#constant_TYPE__CARD"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument\u003A\u003ATYPE__PAYPAL",
+            "name": "TYPE__PAYPAL",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html#constant_TYPE__PAYPAL"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument\u003A\u003ATYPE__BANK_ACCOUNT",
+            "name": "TYPE__BANK_ACCOUNT",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html#constant_TYPE__BANK_ACCOUNT"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html#property_type"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument\u003A\u003A\u0024token",
+            "name": "token",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html#property_token"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrument\u003A\u003A\u0024is_default",
+            "name": "is_default",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrument.html#property_is_default"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrumentFactory",
+            "name": "StoredInstrumentFactory",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrumentFactory.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredInstrumentFactory\u003A\u003Abuild\u0028\u0029",
+            "name": "build",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredInstrumentFactory.html#method_build"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredPaypalAccount",
+            "name": "StoredPaypalAccount",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredPaypalAccount.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments\\StoredPaypalAccount\u003A\u003A\u0024email",
+            "name": "email",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Customer-StoredInstruments-StoredPaypalAccount.html#property_email"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\Subscriber",
             "name": "Subscriber",
@@ -5645,6 +6070,101 @@ Search.appendIndex(
             "name": "payment_method_id",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Order-Transaction.html#property_payment_method_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page",
+            "name": "Page",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_name"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024email",
+            "name": "email",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_email"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024meta_title",
+            "name": "meta_title",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_meta_title"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024body",
+            "name": "body",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_body"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024feed",
+            "name": "feed",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_feed"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024link",
+            "name": "link",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_link"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024contact_fields",
+            "name": "contact_fields",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_contact_fields"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024meta_keywords",
+            "name": "meta_keywords",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_meta_keywords"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024meta_description",
+            "name": "meta_description",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_meta_description"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024search_keywords",
+            "name": "search_keywords",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_search_keywords"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024is_visible",
+            "name": "is_visible",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_is_visible"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024parent_id",
+            "name": "parent_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_parent_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024sort_order",
+            "name": "sort_order",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_sort_order"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "Determines\u0020the\u0020type\u0020of\u0020the\u0020page.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_type"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024is_homepage",
+            "name": "is_homepage",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_is_homepage"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024is_customers_only",
+            "name": "is_customers_only",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_is_customers_only"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024url",
+            "name": "url",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_url"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page\\Page\u003A\u003A\u0024channel_id",
+            "name": "channel_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Page-Page.html#property_channel_id"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Payment\\PaymentAccessToken",
             "name": "PaymentAccessToken",
@@ -6205,6 +6725,46 @@ Search.appendIndex(
             "name": "updated_at",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResourceModels-Site-SiteUrl.html#property_updated_at"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog",
+            "name": "SystemLog",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024type",
+            "name": "type",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_type"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024module",
+            "name": "module",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_module"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024severity",
+            "name": "severity",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_severity"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024summary",
+            "name": "summary",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_summary"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024message",
+            "name": "message",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_message"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog\\SystemLog\u003A\u003A\u0024date_created",
+            "name": "date_created",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-SystemLog-SystemLog.html#property_date_created"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Theme\\JobError",
             "name": "JobError",
@@ -6811,6 +7371,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomerAttributeValuesResponse.html#method_getValues"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\CustomerChannelSettingsResponse",
+            "name": "CustomerChannelSettingsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomerChannelSettingsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\CustomerChannelSettingsResponse\u003A\u003AgetChannelSettings\u0028\u0029",
+            "name": "getChannelSettings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomerChannelSettingsResponse.html#method_getChannelSettings"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\CustomerConsentResponse",
             "name": "CustomerConsentResponse",
             "summary": "",
@@ -6841,6 +7411,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomerResponse.html#method_getCustomer"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\CustomerSettingsResponse",
+            "name": "CustomerSettingsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomerSettingsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\CustomerSettingsResponse\u003A\u003AgetCustomerSettings\u0028\u0029",
+            "name": "getCustomerSettings",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomerSettingsResponse.html#method_getCustomerSettings"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\CustomersResponse",
             "name": "CustomersResponse",
             "summary": "",
@@ -6850,6 +7430,21 @@ Search.appendIndex(
             "name": "getCustomers",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-CustomersResponse.html#method_getCustomers"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\StoredInstrumentsResponse",
+            "name": "StoredInstrumentsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-StoredInstrumentsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\StoredInstrumentsResponse\u003A\u003A__construct\u0028\u0029",
+            "name": "__construct",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-StoredInstrumentsResponse.html#method___construct"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\StoredInstrumentsResponse\u003A\u003AgetStoredInstruments\u0028\u0029",
+            "name": "getStoredInstruments",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-StoredInstrumentsResponse.html#method_getStoredInstruments"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\SubscriberResponse",
             "name": "SubscriberResponse",
@@ -6870,6 +7465,16 @@ Search.appendIndex(
             "name": "getSubscribers",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-SubscribersResponse.html#method_getSubscribers"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\ValidateCredentialsResponse",
+            "name": "ValidateCredentialsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-ValidateCredentialsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Customer\\ValidateCredentialsResponse\u003A\u003AgetCredentialsValidation\u0028\u0029",
+            "name": "getCredentialsValidation",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Customer-ValidateCredentialsResponse.html#method_getCredentialsValidation"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\CustomFieldResponse",
             "name": "CustomFieldResponse",
@@ -7000,6 +7605,26 @@ Search.appendIndex(
             "name": "getTransactions",
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Order-TransactionsResponse.html#method_getTransactions"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Page\\PageResponse",
+            "name": "PageResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Page-PageResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Page\\PageResponse\u003A\u003AgetPage\u0028\u0029",
+            "name": "getPage",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Page-PageResponse.html#method_getPage"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Page\\PagesResponse",
+            "name": "PagesResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Page-PagesResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Page\\PagesResponse\u003A\u003AgetPages\u0028\u0029",
+            "name": "getPages",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Page-PagesResponse.html#method_getPages"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\PaginatedBatchableResponse",
             "name": "PaginatedBatchableResponse",
@@ -7406,6 +8031,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-ResponseModels-Site-SitesResponse.html#method_getSites"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\StoreLogs\\SystemLogsResponse",
+            "name": "SystemLogsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-StoreLogs-SystemLogsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\StoreLogs\\SystemLogsResponse\u003A\u003AgetSystemLogs\u0028\u0029",
+            "name": "getSystemLogs",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-StoreLogs-SystemLogsResponse.html#method_getSystemLogs"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\SummaryResponse",
             "name": "SummaryResponse",
             "summary": "",
@@ -7695,6 +8330,11 @@ Search.appendIndex(
             "name": "storeInformation",
             "summary": "Returns\u0020metadata\u0020about\u0020a\u0020store.",
             "url": "classes/BigCommerce-ApiV2-Api-StoreInformation-StoreInformationApi.html#method_storeInformation"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV2\\Api\\StoreInformation\\StoreInformationApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "Returns\u0020metadata\u0020about\u0020a\u0020store.",
+            "url": "classes/BigCommerce-ApiV2-Api-StoreInformation-StoreInformationApi.html#method_get"
         },                {
             "fqsen": "\\BigCommerce\\ApiV2\\Api\\StoreInformation\\StoreInformationApi\u003A\u003Atime\u0028\u0029",
             "name": "time",
@@ -9211,6 +9851,121 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV2-V2ApiClient.html#method_storeInformation"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi",
+            "name": "WishlistsApi",
+            "summary": "V3ApiBase",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AmultipleResourceUrl\u0028\u0029",
+            "name": "multipleResourceUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_multipleResourceUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AsingleResourceUrl\u0028\u0029",
+            "name": "singleResourceUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_singleResourceUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_get"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_update"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AFILTER_CUSTOMER_ID",
+            "name": "FILTER_CUSTOMER_ID",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#constant_FILTER_CUSTOMER_ID"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist",
+            "name": "Wishlist",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "Wishlist\u0020ID,\u0020provided\u0020after\u0020creating\u0020a\u0020wishlist\u0020with\u0020a\u0020POST.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024customer_id",
+            "name": "customer_id",
+            "summary": "The\u0020ID\u0020the\u0020customer\u0020to\u0020which\u0020the\u0020wishlist\u0020belongs.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_customer_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "The\u0020name\u0020of\u0020the\u0020wishlist.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_name"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024is_public",
+            "name": "is_public",
+            "summary": "Whether\u0020the\u0020wishlist\u0020is\u0020available\u0020to\u0020the\u0020public.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_is_public"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024token",
+            "name": "token",
+            "summary": "The\u0020token\u0020of\u0020the\u0020wishlist.\u0020This\u0020is\u0020created\u0020internally\u0020within\u0020BigCommerce.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_token"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024items",
+            "name": "items",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_items"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem",
+            "name": "WishlistItem",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html#property_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem\u003A\u003A\u0024product_id",
+            "name": "product_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html#property_product_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem\u003A\u003A\u0024variant_id",
+            "name": "variant_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html#property_variant_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistResponse",
+            "name": "WishlistResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistResponse\u003A\u003AgetWishlist\u0028\u0029",
+            "name": "getWishlist",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistResponse.html#method_getWishlist"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistsResponse",
+            "name": "WishlistsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistsResponse\u003A\u003AgetWishlists\u0028\u0029",
+            "name": "getWishlists",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistsResponse.html#method_getWishlists"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -9286,6 +10041,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-api-orders.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Pages",
+            "name": "Pages",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-api-pages.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Payments",
             "name": "Payments",
             "summary": "",
@@ -9311,6 +10071,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-api-sites.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\StoreLogs",
+            "name": "StoreLogs",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-api-storelogs.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Api\\Subscribers",
             "name": "Subscribers",
             "summary": "",
@@ -9325,6 +10090,11 @@ Search.appendIndex(
             "name": "Widgets",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-api-widgets.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists",
+            "name": "Wishlists",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-api-wishlists.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3",
             "name": "ApiV3",
@@ -9371,6 +10141,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-resourcemodels-customer.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\CustomerSettings",
+            "name": "CustomerSettings",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-customer-customersettings.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Customer\\StoredInstruments",
+            "name": "StoredInstruments",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-customer-storedinstruments.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\CustomTemplateAssociation",
             "name": "CustomTemplateAssociation",
             "summary": "",
@@ -9385,6 +10165,11 @@ Search.appendIndex(
             "name": "Order",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-resourcemodels-order.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Page",
+            "name": "Page",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-page.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Payment",
             "name": "Payment",
@@ -9411,6 +10196,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-resourcemodels-site.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\SystemLog",
+            "name": "SystemLog",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-systemlog.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Theme",
             "name": "Theme",
             "summary": "",
@@ -9420,6 +10210,11 @@ Search.appendIndex(
             "name": "Widget",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-resourcemodels-widget.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist",
+            "name": "Wishlist",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-wishlist.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Brand",
             "name": "Brand",
@@ -9466,6 +10261,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-responsemodels-order.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Page",
+            "name": "Page",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-responsemodels-page.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Payment",
             "name": "Payment",
             "summary": "",
@@ -9496,6 +10296,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-responsemodels-site.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\StoreLogs",
+            "name": "StoreLogs",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-responsemodels-storelogs.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Theme",
             "name": "Theme",
             "summary": "",
@@ -9505,6 +10310,11 @@ Search.appendIndex(
             "name": "Widget",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-responsemodels-widget.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist",
+            "name": "Wishlist",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-responsemodels-wishlist.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV2\\Api\\Generic",
             "name": "Generic",

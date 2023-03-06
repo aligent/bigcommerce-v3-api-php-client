@@ -4,7 +4,7 @@
 [![Packagist Latest](https://img.shields.io/packagist/v/aligent/bigcommerce-api-client)](https://packagist.org/packages/aligent/bigcommerce-api-client)
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/aligent/bigcommerce-api-client/dev-main)
 [![License](https://img.shields.io/github/license/aligent/bigcommerce-v3-api-php-client)](https://github.com/aligent/bigcommerce-v3-api-php-client/blob/main/LICENSE.md)
-[![Build Status](https://img.shields.io/github/workflow/status/aligent/bigcommerce-v3-api-php-client/Validate%20PHP%20dependancies%20and%20test)](https://github.com/aligent/bigcommerce-v3-api-php-client/actions/workflows/php.yml)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/aligent/bigcommerce-v3-api-php-client/php.yml?branch=main)](https://github.com/aligent/bigcommerce-v3-api-php-client/actions/workflows/php.yml)
 [![Documentation](https://img.shields.io/badge/docs-generated-success)](https://aligent.github.io/bigcommerce-v3-api-php-client/)
 ## Introduction
 

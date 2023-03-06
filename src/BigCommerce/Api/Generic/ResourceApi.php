@@ -25,7 +25,7 @@ abstract class ResourceApi extends V3ApiBase
     protected function singleResourceUrl(): string
     {
         if (is_null($this->getResourceId())) {
-            throw new UnexpectedValueException("A {$this->resourceName()} id must be to be set");
+            throw new UnexpectedValueException("A {$this->resourceName()} id must be set");
         }
 
         return sprintf(

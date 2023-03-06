@@ -1,0 +1,39 @@
+[
+  {
+    "type": "stored_card",
+    "token": "84596bea275fa254da820056bdc3e495bdf01fd11c51b0336347d447ee16200c",
+    "is_default": true,
+    "brand": "VISA",
+    "expiry_month": 1,
+    "expiry_year": 0,
+    "issuer_identification_number": "411111",
+    "last_4": "1111",
+    "billing_address": {
+      "first_name": "Tester",
+      "last_name": "Tester",
+      "email": "example@email.com",
+      "company": "Test Company",
+      "address1": "1 Sample Street",
+      "address2": "Apt 1",
+      "city": "Las Vegas",
+      "postal_code": "90854",
+      "state_or_province": "Nevada",
+      "state_or_province_code": "NV",
+      "country_code": "US",
+      "phone": "101-192-0293"
+    }
+  },
+  {
+    "type": "stored_paypal_account",
+    "token": "dfghjkl4a275fa254da820056bdc3e495bdf01fd11c51b0336347d447ee16200c",
+    "is_default": false,
+    "email": "bc-buyer-paypal-express@example.com"
+  },
+  {
+    "type": "stored_bank_account",
+    "token": "536475f687vbyinfgdfdgfdg0056bdc3e495bdf01fd11c51b0336347d447ee16200c",
+    "is_default": false,
+    "masked_account_number": "12XXX56",
+    "issuer": "DE001"
+  }
+]

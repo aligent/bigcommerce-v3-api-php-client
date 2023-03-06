@@ -90,19 +90,41 @@ class Product extends ResourceModel
      */
     public ?array $modifiers;
 
+    /**
+     * Note that images are only returned if specifically requested with the `include` param.
+     *
+     * @var ProductImage[]|null
+     */
+    public ?array $images;
+
     public function __construct(?stdClass $optionObject = null)
     {
         if (!is_null($optionObject)) {
             $this->buildCustomUrl($optionObject);
         }
 
-        if (!is_null($optionObject) && isset($optionObject->modifiers)) {
-            $this->modifiers = array_map(function ($m) {
-                return new ProductModifier($m);
-            }, $optionObject->modifiers);
-            unset($optionObject->modifiers);
+        parent::__construct($optionObject);
+    }
+
+    public function addImage(string $imageUrl, string $description = "", bool $isThumbnail = false): Product
+    {
+        if (!is_array($this->images)) {
+            $this->images = [];
         }
 
-        parent::__construct($optionObject);
+        $image = new ProductImage();
+        $image->image_url    = $imageUrl;
+        $image->description  = $description;
+        $image->is_thumbnail = $isThumbnail;
+
+        $this->images[] = $image;
+
+        return $this;
+    }
+
+    protected function beforeBuildObject(): void
+    {
+        $this->buildObjectArray('modifiers', ProductModifier::class);
+        $this->buildObjectArray('images', ProductImage::class);
     }
 }
