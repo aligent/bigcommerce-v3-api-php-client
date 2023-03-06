@@ -1,4 +1,4 @@
-### Fixes
+This release adds support for a number of new and extended BigCommerce V3 API endpoints.
 
 ### New Features
 
