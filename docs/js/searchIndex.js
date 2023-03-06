@@ -2791,6 +2791,16 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV3-Client.html#method_widgets"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Awishlist\u0028\u0029",
+            "name": "wishlist",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_wishlist"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Awishlists\u0028\u0029",
+            "name": "wishlists",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Client.html#method_wishlists"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\Client\u003A\u003Acontent\u0028\u0029",
             "name": "content",
             "summary": "",
@@ -9841,6 +9851,121 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/BigCommerce-ApiV2-V2ApiClient.html#method_storeInformation"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi",
+            "name": "WishlistsApi",
+            "summary": "V3ApiBase",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AmultipleResourceUrl\u0028\u0029",
+            "name": "multipleResourceUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_multipleResourceUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AsingleResourceUrl\u0028\u0029",
+            "name": "singleResourceUrl",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_singleResourceUrl"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_get"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AgetAll\u0028\u0029",
+            "name": "getAll",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_getAll"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_update"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003Acreate\u0028\u0029",
+            "name": "create",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#method_create"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists\\WishlistsApi\u003A\u003AFILTER_CUSTOMER_ID",
+            "name": "FILTER_CUSTOMER_ID",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-Api-Wishlists-WishlistsApi.html#constant_FILTER_CUSTOMER_ID"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist",
+            "name": "Wishlist",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "Wishlist\u0020ID,\u0020provided\u0020after\u0020creating\u0020a\u0020wishlist\u0020with\u0020a\u0020POST.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024customer_id",
+            "name": "customer_id",
+            "summary": "The\u0020ID\u0020the\u0020customer\u0020to\u0020which\u0020the\u0020wishlist\u0020belongs.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_customer_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024name",
+            "name": "name",
+            "summary": "The\u0020name\u0020of\u0020the\u0020wishlist.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_name"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024is_public",
+            "name": "is_public",
+            "summary": "Whether\u0020the\u0020wishlist\u0020is\u0020available\u0020to\u0020the\u0020public.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_is_public"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024token",
+            "name": "token",
+            "summary": "The\u0020token\u0020of\u0020the\u0020wishlist.\u0020This\u0020is\u0020created\u0020internally\u0020within\u0020BigCommerce.",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_token"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\Wishlist\u003A\u003A\u0024items",
+            "name": "items",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-Wishlist.html#property_items"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem",
+            "name": "WishlistItem",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem\u003A\u003A\u0024id",
+            "name": "id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html#property_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem\u003A\u003A\u0024product_id",
+            "name": "product_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html#property_product_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist\\WishlistItem\u003A\u003A\u0024variant_id",
+            "name": "variant_id",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResourceModels-Wishlist-WishlistItem.html#property_variant_id"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistResponse",
+            "name": "WishlistResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistResponse\u003A\u003AgetWishlist\u0028\u0029",
+            "name": "getWishlist",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistResponse.html#method_getWishlist"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistsResponse",
+            "name": "WishlistsResponse",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistsResponse.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist\\WishlistsResponse\u003A\u003AgetWishlists\u0028\u0029",
+            "name": "getWishlists",
+            "summary": "",
+            "url": "classes/BigCommerce-ApiV3-ResponseModels-Wishlist-WishlistsResponse.html#method_getWishlists"
+        },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
@@ -9966,6 +10091,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-api-widgets.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\Api\\Wishlists",
+            "name": "Wishlists",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-api-wishlists.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3",
             "name": "ApiV3",
             "summary": "",
@@ -10081,6 +10211,11 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-resourcemodels-widget.html"
         },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResourceModels\\Wishlist",
+            "name": "Wishlist",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-resourcemodels-wishlist.html"
+        },                {
             "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Brand",
             "name": "Brand",
             "summary": "",
@@ -10175,6 +10310,11 @@ Search.appendIndex(
             "name": "Widget",
             "summary": "",
             "url": "namespaces/bigcommerce-apiv3-responsemodels-widget.html"
+        },                {
+            "fqsen": "\\BigCommerce\\ApiV3\\ResponseModels\\Wishlist",
+            "name": "Wishlist",
+            "summary": "",
+            "url": "namespaces/bigcommerce-apiv3-responsemodels-wishlist.html"
         },                {
             "fqsen": "\\BigCommerce\\ApiV2\\Api\\Generic",
             "name": "Generic",
