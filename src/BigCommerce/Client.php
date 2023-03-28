@@ -15,6 +15,7 @@ use BigCommerce\ApiV3\Api\Scripts\ScriptsApi;
 use BigCommerce\ApiV3\Api\Sites\SitesApi;
 use BigCommerce\ApiV3\Api\StoreLogs\StoreLogsApi;
 use BigCommerce\ApiV3\Api\Themes\ThemesApi;
+use BigCommerce\ApiV3\Api\Webhooks\WebhooksApi;
 use BigCommerce\ApiV3\Api\Widgets\WidgetsApi;
 use BigCommerce\ApiV3\Api\CustomTemplateAssociations\CustomTemplateAssociationsApi;
 use BigCommerce\ApiV3\Api\Wishlists\WishlistsApi;
@@ -221,6 +222,11 @@ class Client extends BaseApiClient
     public function storeLogs(): StoreLogsApi
     {
         return new StoreLogsApi($this);
+    }
+
+    public function webhook(int $id): WebhooksApi
+    {
+        return new WebhooksApi($this, $id);
     }
 
     protected function defaultBaseUrl(): string
