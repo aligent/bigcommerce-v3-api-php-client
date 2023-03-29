@@ -14,4 +14,11 @@ class WebhooksApiTest extends BigCommerceApiTest
         $this->assertEquals('https://665b65a6.ngrok.io/webhooks', $webhook->destination);
         $this->assertEquals('string', $webhook->headers['custom']);
     }
+
+    public function testCanGetWebhooks()
+    {
+        $this->setReturnData('webhooks__get_all.json');
+        $webhooks = $this->getApi()->webhooks()->getAll()->getWebhooks();
+        $this->assertEquals('store/order/*', $webhooks[0]->scope);
+    }
 }

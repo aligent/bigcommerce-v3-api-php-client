@@ -229,6 +229,11 @@ class Client extends BaseApiClient
         return new WebhooksApi($this, $id);
     }
 
+    public function webhooks(): WebhooksApi
+    {
+        return new WebhooksApi($this);
+    }
+
     protected function defaultBaseUrl(): string
     {
         return self::API_URI;
