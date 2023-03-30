@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "scope": "store/sku/inventory/updated",
+      "store_id": "25967773",
+      "data": {
+        "product": "new",
+        "stock": 123
+      },
+      "hash": "0c20013b66c630f5c7473eef26bd71089bb461b4",
+      "created_at": 1680144702,
+      "producer": "stores/xxbwhvt3gd"
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "total": 1,
+      "count": 1,
+      "per_page": 250,
+      "current_page": 1,
+      "total_pages": 1
+    }
+  }
+}

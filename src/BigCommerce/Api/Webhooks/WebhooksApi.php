@@ -27,7 +27,7 @@ class WebhooksApi extends ResourceApi
         return new WebhookResponse($this->createResource($webhook));
     }
 
-    public function update(Webhook  $webhook): WebhookResponse
+    public function update(Webhook $webhook): WebhookResponse
     {
         return new WebhookResponse($this->updateResource($webhook));
     }
@@ -50,5 +50,10 @@ class WebhooksApi extends ResourceApi
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): WebhooksResponse
     {
         return new WebhooksResponse($this->getAllResources($filters, $page, $limit));
+    }
+
+    public function events(): WebhookEventsApi
+    {
+        return new WebhookEventsApi($this->getClient());
     }
 }
