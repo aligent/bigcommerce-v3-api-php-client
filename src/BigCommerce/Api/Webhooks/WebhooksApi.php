@@ -56,4 +56,9 @@ class WebhooksApi extends ResourceApi
     {
         return new WebhookEventsApi($this->getClient());
     }
+
+    public function admin(): WebhookAdminApi
+    {
+        return new WebhookAdminApi($this->getClient());
+    }
 }

@@ -11,14 +11,14 @@ class Webhook extends ResourceModel
     public string $store_hash;
     public string $scope;
     public string $destination;
-    public array $headers;
+    public ?array $headers;
     public string $created_at;
     public string $updated_at;
     public bool $is_active;
 
     protected function beforeBuildObject(): void
     {
-        parent::beforeBuildObject();
         self::buildHashArray('headers');
+        parent::beforeBuildObject();
     }
 }
