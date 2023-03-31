@@ -12,6 +12,7 @@ class ProductVariant extends ResourceModel
     public ?int $sku_id;
     public ?float $price;
     public ?float $calculated_price;
+    public ?float $map_price;
     public ?float $sale_price;
     public ?float $retail_price;
     public ?float $weight;
@@ -31,4 +32,5 @@ class ProductVariant extends ResourceModel
     public int $inventory_warning_level;
     public string $bin_picking_number;
     public array $option_values;
+    public float $calculated_weight;
 }

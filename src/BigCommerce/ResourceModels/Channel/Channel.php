@@ -44,4 +44,5 @@ class Channel extends ResourceModel
     public bool $is_visible;
     public string $name;
     public string $status;
+    public bool $is_enabled;
 }

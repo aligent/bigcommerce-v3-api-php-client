@@ -35,6 +35,14 @@ final class ProductsApiTest extends BigCommerceApiTest
         $this->assertEquals('include_fields=weight%2Cwidth', $this->getLastRequest()->getUri()->getQuery());
     }
 
+    public function testCanGetProductWithoutError(): void
+    {
+        $this->setReturnData('catalog__products__77__get.json');
+        $product = $this->getApi()->catalog()->product(77)->get()->getProduct();
+        $this->assertEquals(77, $product->id);
+        $this->assertEquals('SLCTBS', $product->sku);
+    }
+
     public function testCanGetAllPagesForProducts(): void
     {
         $this->setReturnData('catalog__products__get_all.json');

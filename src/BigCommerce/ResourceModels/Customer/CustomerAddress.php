@@ -17,4 +17,5 @@ class CustomerAddress extends ResourceModel
     public string $phone;
     public string $address_type;
     public int $customer_id;
+    public ?string $company;
 }

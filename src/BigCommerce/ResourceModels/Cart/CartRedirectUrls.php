@@ -8,4 +8,5 @@ class CartRedirectUrls extends ResourceModel
 {
     public string $cart_url;
     public string $checkout_url;
+    public string $embedded_checkout_url;
 }

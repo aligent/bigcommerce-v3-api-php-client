@@ -16,4 +16,5 @@ class OrderRefundItem extends ResourceModel
     public ?float $amount;
     public ?float $quantity;
     public ?string $reason;
+    public ?float $requested_amount;
 }

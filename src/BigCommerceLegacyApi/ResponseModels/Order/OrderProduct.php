@@ -52,6 +52,15 @@ class OrderProduct extends \BigCommerce\ApiV3\ResourceModels\ResourceModel
     public ?string $upc;
     public ?int $variant_id;
     public string $name_merchant;
+    public int $product_id;
+    public string $base_total;
+    public string $total_ex_tax;
+    public string $total_inc_tax;
+    public string $total_tax;
+    public string $quantity_refunded;
+    public string $refund_amount;
+    public string $fulfillment_source;
+    public array $configurable_fields;
 
     public function __construct(?stdClass $optionObject = null)
     {

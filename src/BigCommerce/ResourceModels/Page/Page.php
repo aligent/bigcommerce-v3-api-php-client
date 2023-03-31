@@ -6,6 +6,7 @@ use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
 class Page extends ResourceModel
 {
+    public int $id;
     public string $name;
     public ?string $email;
     public string $meta_title;
