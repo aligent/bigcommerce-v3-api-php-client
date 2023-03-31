@@ -59,6 +59,7 @@ class Order extends ResourceModel
     public string $handling_cost_ex_tax;
     public string $handling_cost_inc_tax;
     public string $ip_address;
+    public string $ip_address_v6;
     public bool $is_deleted;
     public int $items_shipped;
     public int $items_total;
@@ -77,6 +78,13 @@ class Order extends ResourceModel
     public string $total_inc_tax;
     public string $wrapping_cost_ex_tax;
     public string $wrapping_cost_inc_tax;
+    public string $custom_status;
+    public string $total_tax;
+    public ?string $credit_card_type;
+    public ?string $external_merchant_id;
+    public string $store_default_currency_code;
+    public string $store_default_to_transactional_exchange_rate;
+
 
 
     public function __construct(?stdClass $optionObject = null)

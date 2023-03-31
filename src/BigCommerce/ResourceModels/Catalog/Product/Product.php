@@ -81,6 +81,8 @@ class Product extends ResourceModel
     public bool $open_graph_use_image;
     public int $reviews_rating_sum;
     public int $total_sold;
+
+
     /**
      * @var CustomField[]|null
      */

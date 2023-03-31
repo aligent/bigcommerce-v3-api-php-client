@@ -9,8 +9,8 @@
       "resource_type": "brand",
       "resource_id": 1,
       "id": 6,
-      "created_at": "1973-01-20T21:34:57.903Z",
-      "updated_at": "1990-12-30T00:29:23.515Z"
+      "date_created": "1973-01-20T21:34:57.903Z",
+      "date_updated": "1990-12-30T00:29:23.515Z"
     },
     {
       "permission_set": "read",
@@ -21,8 +21,8 @@
       "resource_type": "order",
       "resource_id": 1,
       "id": 6,
-      "created_at": "1973-01-20T21:34:57.903Z",
-      "updated_at": "1990-12-30T00:29:23.515Z"
+      "date_created": "1973-01-20T21:34:57.903Z",
+      "date_updated": "1990-12-30T00:29:23.515Z"
     }
   ],
   "meta": {

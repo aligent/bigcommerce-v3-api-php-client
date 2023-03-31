@@ -42,6 +42,11 @@ class StoreInformation extends ResourceModel
     public string $is_price_entered_with_tax;
     public array $active_comparison_modules;
     public object $features;
+    public int $default_channel_id;
+    public int $default_site_id;
+    public int $store_id;
+    public bool $plan_is_trial;
+    public string $account_uuid;
 
     public function __construct(?stdClass $optionObject = null)
     {
