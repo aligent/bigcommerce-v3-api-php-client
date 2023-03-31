@@ -29,6 +29,8 @@ class Redirect extends ResourceModel
     public string $from_path;
     public int $site_id;
     public RedirectTo $to;
+    public int $id;
+    public string $to_url;
 
     public function __construct(?stdClass $optionObject = null)
     {

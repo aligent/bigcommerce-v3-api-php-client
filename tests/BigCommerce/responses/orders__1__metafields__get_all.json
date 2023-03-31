@@ -10,7 +10,7 @@
       "resource_id": 1,
       "id": 6,
       "date_created": "1973-01-20T21:34:57.903Z",
-      "date_updated": "1990-12-30T00:29:23.515Z"
+      "date_modified": "1990-12-30T00:29:23.515Z"
     },
     {
       "permission_set": "read",
@@ -22,7 +22,7 @@
       "resource_id": 1,
       "id": 6,
       "date_created": "1973-01-20T21:34:57.903Z",
-      "date_updated": "1990-12-30T00:29:23.515Z"
+      "date_modified": "1990-12-30T00:29:23.515Z"
     }
   ],
   "meta": {

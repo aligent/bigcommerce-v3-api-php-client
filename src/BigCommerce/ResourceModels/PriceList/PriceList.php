@@ -9,6 +9,6 @@ class PriceList extends ResourceModel
     public int $id;
     public string $name;
     public string $date_created;
-    public string $data_modified;
+    public string $date_modified;
     public bool $active;
 }

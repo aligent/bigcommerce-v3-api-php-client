@@ -23,7 +23,7 @@
         21
       ],
       "brand_id": 36,
-      "option_set_id": {},
+      "option_set_id": null,
       "option_set_display": "right",
       "inventory_level": 0,
       "inventory_warning_level": 0,
@@ -81,7 +81,7 @@
           "id": 345,
           "product_id": 174,
           "sku": "",
-          "sku_id": {},
+          "sku_id": null,
           "price": 7.95,
           "calculated_price": 7.95,
           "sale_price": 0,
@@ -189,7 +189,7 @@
           "id": 338,
           "product_id": 167,
           "sku": "",
-          "sku_id": {},
+          "sku_id": null,
           "price": 225,
           "calculated_price": 225,
           "sale_price": 0,
@@ -227,8 +227,7 @@
       "links": {
         "next": "?sort=name&include=variants&limit=10&page=2",
         "current": "?sort=name&include=variants&limit=10&page=1"
-      },
-      "too_many": false
+      }
     }
   }
 }

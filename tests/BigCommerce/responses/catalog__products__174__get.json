@@ -22,7 +22,7 @@
       21
     ],
     "brand_id": 36,
-    "option_set_id": {},
+    "option_set_id": null,
     "option_set_display": "right",
     "inventory_level": 0,
     "inventory_warning_level": 0,

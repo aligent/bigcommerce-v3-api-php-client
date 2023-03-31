@@ -29,4 +29,5 @@ class Script extends ResourceModel
     public string $api_client_id;
     public string $consent_category;
     public bool $enabled;
+    public string $name;
 }
