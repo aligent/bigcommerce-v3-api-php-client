@@ -81,6 +81,14 @@ class Product extends ResourceModel
     public bool $open_graph_use_image;
     public int $reviews_rating_sum;
     public int $total_sold;
+    public int $reviews_count;
+    public ?int $option_set_id;
+    public ?float $calculated_price;
+    public ?string $option_set_display;
+    public string $product_tax_code;
+    public int $tax_class_id;
+    public ?float $map_price;
+
     /**
      * @var CustomField[]|null
      */
@@ -96,6 +104,11 @@ class Product extends ResourceModel
      * @var ProductImage[]|null
      */
     public ?array $images;
+
+    /**
+     * @var ProductVariant[]|null
+     */
+    public ?array $variants;
 
     public function __construct(?stdClass $optionObject = null)
     {
@@ -126,5 +139,6 @@ class Product extends ResourceModel
     {
         $this->buildObjectArray('modifiers', ProductModifier::class);
         $this->buildObjectArray('images', ProductImage::class);
+        $this->buildObjectArray('variants', ProductVariant::class);
     }
 }

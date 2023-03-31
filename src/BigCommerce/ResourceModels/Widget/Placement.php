@@ -17,6 +17,9 @@ class Placement extends ResourceModel
     public int $sort_order;
     public string $region;
     public ?Widget $widget;
+    public string $date_created;
+    public string $date_modified;
+    public string $uuid;
 
     public function __construct(?stdClass $optionObject = null)
     {

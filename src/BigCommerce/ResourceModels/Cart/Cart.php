@@ -22,4 +22,11 @@ class Cart extends ResourceModel
     public string $updated_time;
     public int $channel_id;
     public string $locale;
+    public ?CartRedirectUrls $redirect_urls;
+
+    protected function beforeBuildObject(): void
+    {
+        parent::beforeBuildObject();
+        self::buildPropertyObject('redirect_urls', CartRedirectUrls::class);
+    }
 }

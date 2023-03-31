@@ -32,6 +32,9 @@ class Customer extends ResourceModel
     public ?array $store_credit_amounts;
     public ?int $origin_channel_id;
     public ?array $channel_ids;
+    public ?string $registration_ip_address;
+    public string $date_created;
+    public string $date_modified;
 
     /**
      * @var CustomerAddress[]

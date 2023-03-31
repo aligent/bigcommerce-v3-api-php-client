@@ -10,7 +10,7 @@ class ProductVideo extends ResourceModel
 
     public string $title;
     public string $description;
-    public int $sort_oder;
+    public int $sort_order;
     public string $type;
     public string $video_id;
     public int $id;

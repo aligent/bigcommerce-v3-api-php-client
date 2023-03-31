@@ -30,4 +30,12 @@ class Pagination extends ResourceModel
      * @var int The total number of pages in the collection
      */
     public int $total_pages;
+
+    public ?Links $links;
+
+    protected function beforeBuildObject(): void
+    {
+        self::buildPropertyObject('links', Links::class);
+        parent::beforeBuildObject();
+    }
 }
