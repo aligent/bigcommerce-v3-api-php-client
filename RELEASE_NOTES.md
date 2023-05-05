@@ -1,6 +1,7 @@
 
 ### Issues Fixed
 
+Allow null `meta_description` on Product (Thanks @macbookandrew)
 
 ### New Features
 
