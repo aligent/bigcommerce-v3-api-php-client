@@ -16,7 +16,7 @@ class WeightAdjuster extends ResourceModel
     {
         if (!is_null($this->optionObject)) {
             if(is_null($this->optionObject->adjuster)){
-                $this->optionObject->adjuster = ADJUSTER_FIXED;
+                $this->optionObject->adjuster = self::ADJUSTER_FIXED;
             }
         }
     }
