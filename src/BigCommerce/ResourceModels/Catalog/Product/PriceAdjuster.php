@@ -11,4 +11,13 @@ class PriceAdjuster extends ResourceModel
 
     public string $adjuster;
     public float $adjuster_value;
+    
+    protected function beforeBuildObject(): void
+    {
+        if (!is_null($this->optionObject)) {
+            if(is_null($this->optionObject->adjuster)){
+                $this->optionObject->adjuster = self::ADJUSTER_FIXED;
+            }
+        }
+    }
 }

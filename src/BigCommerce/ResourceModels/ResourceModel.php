@@ -7,7 +7,7 @@ use stdClass;
 
 abstract class ResourceModel implements JsonSerializable
 {
-    private ?stdClass $optionObject;
+    protected ?stdClass $optionObject;
 
     public function __construct(?stdClass $optionObject = null)
     {
