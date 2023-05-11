@@ -6,6 +6,9 @@ use BigCommerce\ApiV3\ResourceModels\ResourceModel;
 
 class WeightAdjuster extends ResourceModel
 {
-    public string $adjuster;
+    public const ADJUSTER_RELATIVE = 'relative';
+    public const ADJUSTER_FIXED    = 'fixed';
+
+    public string $adjuster = self::ADJUSTER_FIXED;
     public float $adjuster_value;
 }

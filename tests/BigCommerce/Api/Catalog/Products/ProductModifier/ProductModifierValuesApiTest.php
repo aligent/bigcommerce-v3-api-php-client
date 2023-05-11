@@ -2,6 +2,8 @@
 
 namespace BigCommerce\Tests\Api\Catalog\Products\ProductModifier;
 
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\PriceAdjuster;
+use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifier;
 use BigCommerce\ApiV3\ResourceModels\Catalog\Product\ProductModifierValueData;
 use BigCommerce\Tests\BigCommerceApiTest;
 
@@ -67,5 +69,25 @@ EOT;
 
 
         $this->assertJsonStringEqualsJsonString($expectedJson, json_encode($modifierValue));
+    }
+
+    public function testCanSetDefaultAdjusterType()
+    {
+        $adjuster = new PriceAdjuster();
+        $this->assertEquals(PriceAdjuster::ADJUSTER_FIXED, $adjuster->adjuster);
+
+        $this->setReturnData('catalog__products__modifiers__222__values__190__get.json');
+
+        $modifierValue = $this->getApi()
+            ->catalog()->product(1)->modifier(222)->value(190)->get()->getModifierValue();
+
+        $this->assertEquals(PriceAdjuster::ADJUSTER_RELATIVE, $modifierValue->adjusters->price->adjuster);
+
+        $this->setReturnData('catalog__products__modifiers__222__values__190__get-no-adjuster.json');
+
+        $modifierValue = $this->getApi()
+            ->catalog()->product(1)->modifier(222)->value(190)->get()->getModifierValue();
+
+        $this->assertEquals(PriceAdjuster::ADJUSTER_FIXED, $modifierValue->adjusters->price->adjuster);
     }
 }
