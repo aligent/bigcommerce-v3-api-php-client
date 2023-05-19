@@ -63,7 +63,7 @@ class Product extends ResourceModel
     public int $order_quantity_maximum;
     public string $page_title;
     public array $meta_keywords;
-    public string $meta_description;
+    public ?string $meta_description;
     public string $date_created;
     public string $date_modified;
     public int $view_count;

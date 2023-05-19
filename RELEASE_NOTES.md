@@ -1,3 +1,8 @@
-### Fixes
 
-- Many deprecation notices for PHP 8.2 about creation of dynamic properties (#201)
+### Issues Fixed
+
+Allow null `meta_description` on Product (Thanks @macbookandrew)
+
+### New Features
+
+Adds support for Webhooks API (#187)

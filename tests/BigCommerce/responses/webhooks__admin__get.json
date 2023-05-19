@@ -1,0 +1,35 @@
+{
+  "data": {
+    "emails": [
+      "jarrod.swift@aligent.com.au"
+    ],
+    "hooks_list": [
+      {
+        "id": 25967773,
+        "client_id": "6qczasxdcbgvjubghnynimwthwr",
+        "store_hash": "xxabcdt9gd",
+        "scope": "store/sku/inventory/updated",
+        "destination": "https://aligent.com.au/test",
+        "headers": null,
+        "is_active": true,
+        "created_at": 1680144702,
+        "updated_at": 1680144702,
+        "events_history_enabled": false
+      },
+      {
+        "id": 25967774,
+        "client_id": "6qczasxdcbgvjubghnynimwthwr",
+        "store_hash": "xxabcdt9gd",
+        "scope": "store/sku/inventory/updated",
+        "destination": "https://httpstat.us/200",
+        "headers": null,
+        "is_active": true,
+        "created_at": 1680144907,
+        "updated_at": 1680144907,
+        "events_history_enabled": false
+      }
+    ],
+    "blocked_domains": []
+  },
+  "meta": {}
+}

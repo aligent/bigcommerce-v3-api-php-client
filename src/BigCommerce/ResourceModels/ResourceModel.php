@@ -54,6 +54,15 @@ abstract class ResourceModel implements JsonSerializable
         }
     }
 
+    protected function buildHashArray(string $property): void
+    {
+        if (!is_null($this->optionObject) && isset($this->optionObject->$property)) {
+            $this->$property = (array) $this->optionObject->$property;
+
+            unset($this->optionObject->$property);
+        }
+    }
+
     /**
      * Override this function to implement custom build functionality
      */
