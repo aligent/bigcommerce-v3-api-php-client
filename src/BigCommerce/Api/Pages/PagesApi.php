@@ -24,6 +24,8 @@ class PagesApi extends ResourceWithBatchUpdateApi
     private const PAGE_ENDPOINT = 'content/pages/%d';
     private const PAGES_ENDPOINT = 'content/pages';
     private const RESOURCE_NAME = 'pages';
+    
+    public const FILTER_INCLUDE = 'include';
 
     public function batchUpdate(array $resources): PagesResponse
     {
@@ -45,9 +47,14 @@ class PagesApi extends ResourceWithBatchUpdateApi
         return self::RESOURCE_NAME;
     }
 
-    public function get(): PageResponse
+    public function get(?string $include = null): PageResponse
     {
-        return new PageResponse($this->getResource());
+      $params = [];
+
+      if (!is_null($include)) {
+        $params[self::FILTER_INCLUDE] = $include;
+      }
+      return new PageResponse($this->getResource($params));
     }
 
     public function getAll(array $filters = [], int $page = 1, int $limit = 250): PagesResponse
