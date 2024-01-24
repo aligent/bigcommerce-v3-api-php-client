@@ -12,8 +12,8 @@ class ProductVariantMetafieldsApi extends ResourceApi
     private int $productId;
 
     private const RESOURCE_NAME = 'metafields';
-    private const METAFIELD_ENDPOINT = 'catalog/product/%d/variants/%d/metafields/%d';
-    private const METAFIELDS_ENDPOINT = 'catalog/product/%d/variants/%d/metafields';
+    private const METAFIELD_ENDPOINT = 'catalog/products/%d/variants/%d/metafields/%d';
+    private const METAFIELDS_ENDPOINT = 'catalog/products/%d/variants/%d/metafields';
 
     public function getProductId(): int
     {
