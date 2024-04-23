@@ -42,4 +42,9 @@ class ProductImagesApi extends ResourceApi
     {
         return new ProductImageResponse($this->createResource($productImage));
     }
+
+    public function update(ProductImage $productImage): ProductImageResponse
+    {
+        return new ProductImageResponse($this->updateResource($productImage));
+    }
 }
